@@ -1,0 +1,537 @@
+[
+  {
+    "id": "asg_nidhogg",
+    "source": "ASG",
+    "name": "NIDHOGG",
+    "mechtype": ["Artillery"],
+    "y_pos": 57,
+    "license": "NIDHOGG",
+    "license_level": 2,
+    "description": "<p>A prototype compact version of ASGARD's intimidating Nidhogg-class Autonomous Dreadnought, the \"Nidhogg Junior\" was created by engineers working at the Kykrfjall foundry on Niflheim. While the reduction in size makes it far more viable for widespread use, concessions to the mech's internal architecture ensured that the frame never saw an actual commercial release. Nonetheless, plans for the mech made their way to the public after a crew of pilots returned to the abandoned foundry and found the hitherto unused schematics buried in a dusty server deep within the bowels of the facility.</p>",
+    "mounts": ["Heavy"],
+    "stats": {
+      "size": 3,
+      "stress": 4,
+      "structure": 4,
+      "armor": 3,
+      "hp": 10,
+      "evasion": 6,
+      "edef": 6,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Heavy Frame",
+        "description": "The Nidhogg can’t be pushed, pulled, knocked Prone, or knocked back by smaller characters."
+      },
+      {
+        "name": "\"Nastrond\" Point Defense Subsystem",
+        "description": "Adjacent allied characters gain soft cover, even in the open."
+      },
+      {
+        "name": "Thermal Engine Recycling",
+        "description": "Once per mission, when taking Stress damage, you may choose to not make a Overheat roll. This does not prevent the damage, and all Heat is cleared as though you Overheated normally."
+      },
+      {
+        "name": "Alpha Retrofit",
+        "description": "The Nidhogg receives +1 Difficulty on AGILITY and ENGINEERING checks and saves.",
+        "synergies": [
+          {
+            "locations": ["agility", "skill_check"],
+            "detail": "The Nidhogg gains +1 Difficulty on AGILITY checks and saves."
+          },
+          {
+            "locations": ["engineering", "skill_check"],
+            "detail": "The Nidhogg gains +1 Difficulty on ENGINEERING checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Roots of Yggdrasil V2.07",
+      "description": "Rather than being a single weapon, the Roots of Yggdrasil are a suite of autonomous cannons and turrets mounted around the entire body of the Nidhogg, capable of suppressing a large area or focusing down a single high priority target. Though this variant suite is far less powerful than the original, the redesign doesn't require the same access to a dedicated foundry that the original relied upon to keep all two-hundred and fourteen of its turrets supplied.",
+      "active_name": "Ragnarok",
+      "active_effect": "Activate the Roots of Yggdrasil's Annihilation Mode.",
+      "activation": "Protocol",
+      "integrated": ["mw_nidhogg_integrated"]
+    },
+    "data_type": "frame",
+    "image_url": "https://lh4.googleusercontent.com/ycLNhoJrL_7eBw6d9RgCS1L4X5_vgOQDzUAkMFVawyU_Ujc4QUnA-DebcdFokmtgY6s=w2400"
+  },
+  {
+    "id": "asg_fenrir",
+    "license_level": 2,
+    "source": "ASG",
+    "name": "FENRIR",
+    "mechtype": ["Striker"],
+    "y_pos": 23,
+    "description": "The utility of ASGARD's Fenrir model has always been in question. A mech designed in such a way that the pilot puts themself in maximum danger to eke out a tiny extra bit of effectiveness in combat doesn't seem, on its surface, that it would appeal to many pilots. Indeed, it doesn't. However, to a specific kind of pilot, with just enough bravery and a touch of insanity, the Fenrir's integrated battlesuit offers enough utility and safety to be incredibly appealing. As such, despite many, many attempts by the Outer Arm Frontier Sector Administration to discourage the production of the Fenrir, it has remained in steady, if limited, production since it was first conceived.",
+    "mounts": ["Heavy", "Main"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 4,
+      "repcap": 6,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 6,
+      "sp": 4
+    },
+    "traits": [
+      {
+        "name": "Call of the Wild",
+        "description": "Pilots may mount and dismount from the Fenrir as a quick action instead of a full action."
+      },
+      {
+        "name": "Intimidate",
+        "description": "Melee attacks made against the Fenrir suffer +1 Difficulty from Engagement."
+      },
+      {
+        "name": "Fenriswolf-Class Integrated NHP",
+        "description": "The Fenrir gains the AI tag, if it doesn't already have it from its systems.<br>If you install an system with the AI tag on the Fenrir, its system point cost is reduced by 1, to a minimum of 0."
+      },
+      {
+        "name": "Weak Computer",
+        "description": "The Fenrir receives +1 Difficulty on all SYSTEM saves and checks.",
+        "synergies": [
+          {
+            "locations": ["systems"],
+            "detail": "The Fenrir receives +1 Difficulty on all SYSTEM saves and checks."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "WARWOLVES",
+      "description": "\"It's like ASGARD read stories about the stupid shit Lancers pull and designed a Mech based on that.\"",
+      "active_name": "Beasts of Slaughter",
+      "active_effect": "For the rest of the scene:<ul><li>The Tyr Battlesuit has resistance to all damage and burn.</li><li>Whenever you attack with the Wolfstooth, the Fenrir may Overwatch your target.</li></ul>",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "passive_name": "Tyr Battlesuit",
+      "passive_effect": "When you dismount from the Fenrir for any reason, you may choose to exit while wearing the linked Tyr Battlesuit, instead of your normal Hardsuit. Doing so offers several benefits as long as the Battlesuit is worn:<ul><li>Your speed is increased to match the Fenrir's.</li><li>You gain an HP boost equal to half the Fenrir's HP. This bonus HP is inherent to the Battlesuit, and is not regained each time you exit the mech if it was previously lost.<li>You gain 2 Armor.</li><li>Your Evasion and E-Defense are increased to 11.</li><li>You gain access to the ASG-BERSERK Stimulant Injection Reaction and the Wolfstooth weapon.</li></ul><br>However, the Battlesuit needs to draw power from the Fenrir to function. If you end your turn more than range 5 away from the Fenrir, or if the Fenrir is destroyed, your Battlesuit enters emergency standby: you are Immobilized and Jammed until the Fenrir comes back into range or until you exit the Battlesuit as a Full Action.",
+      "passive_actions": [
+        {
+          "activation": "Reaction",
+          "name": "ASG-BERSERK Stimulant Injection",
+          "trigger": "You would be reduced to 0 HP while wearing the Tyr Battlesuit.",
+          "detail": "You regain all HP and clear any Burn affecting you.<br>If you have already used this reaction during this scene, you may mark a repair when you Stabilize while directly piloting the Fenrir. If you do, you regain the ability to use this reaction.",
+          "frequency": "1/Scene"
+        }
+      ],
+      "integrated": ["asg_tyr_sword"]
+    },
+    "data_type": "frame",
+    "image_url": "https://lh3.googleusercontent.com/GX86BK7hKHwzEgXGSxrmZcfLhqID6yiee7UvsjKARo5mVMM7w0P_Ye9hYWLzx8PG_wA=w2400"
+  },
+  {
+    "id": "asg_jormungandr",
+    "license_level": 2,
+    "source": "ASG",
+    "name": "JORMUNGANDR",
+    "mechtype": ["Controller", "Striker"],
+    "y_pos": 25,
+    "description": "ASGARD developed the Jormungandr frame on technology recovered from damaged HORUS Hydra pattern group mechs. While the utility of the Hydra's suite of drones was appealing to ASGARD's engineers, ASGARD insisted that they design its variation to meet the needs of defense enterprises that wanted a more straightforward mech. The resulting frame far exceeded ASGARD's typical technical specifications, and ASGARD began to heavily push it as their primary frontline mech in an attempt to recover from their disastrous investment in their Niflheim Mining and Research Initiative. Still reeling from their financial losses, ASGARD is relying on the Jormungandr's success to snatch them from the jaws of bankruptcy and obsolecence.",
+    "mounts": ["Main", "Main"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 7,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Ouroboros",
+        "description": "1/Round the Jormungandr may swap places with one of its Deployables or Drones.",
+        "actions":[
+          {
+            "activation": "Quick Tech",
+            "name": "Ouroboros",
+            "detail": "As long as you aren't Immobilized or Slowed, choose one of your Deployables or Drones within Range 10. You teleport to its location, and it simultaneously teleports to your original location. If the chosen Deployable was an armed Mine, it immediately triggers.",
+            "frequency": "1/Round"
+          }
+        ]
+      },
+      {
+        "name": "Ophidian Rage",
+        "description": "1/Scene, when a Deployable or Drone placed by the Jormungandr is destroyed, it may activate a System with the Deployable or Drone tag or <i>Autotomize</i> as a Reaction."
+      },
+      {
+        "name": "Amputation",
+        "description": "While the Jormungandr has no undestroyed and undeployed weapons installed on it, it is considered size 1/2."
+      },
+      {
+        "name": "Specialized Weapon Mounts",
+        "description": "The Jormungandr can never install Superheavy weapons."
+      }
+    ],
+    "core_system": {
+      "name": "\"Serpent's Head\" Remote Weapons Platform",
+      "description": "<i>When you alone are not enough, Jormungandr is there to help you encircle and protect what matters to you.</i> - ASGARD Promotional Material",
+      "active_name": "Kraken Duplicate Deployment",
+      "active_effect": "Deploy a Serpent's Head turret for one weapon on each of your mounts. These Serpent's Heads do not disable the mount they are deployed from and have no negative effects when they are destroyed.",
+      "activation": "Full",
+      "use": "Encounter",
+      "passive_name": "Autotomize",
+      "passive_effect": "As a quick action, you can separate a weapon from the Jormungandr, deploying it as a Serpent's Head turret.<br>When you deploy a Serpent's Head choose one of your weapons. As long as the Serpent's Head is deployed, you cannot use the mount that weapon was mounted on for normal attacks or to deploy other Serpent's Heads. Instead, that weapon is mounted on the Serpent's Head for use with the Snakebite reaction, which can be taken once per Round for each deployed Serpent's Head. Your Serpent's Heads share your E-Defense and Evasion. When a Serpent's Head is destroyed, destroy the mount that its weapon was taken from.",
+      "deployables": [
+        {
+          "type": "Drone",
+          "name": "Serpent's Head",
+          "activation": "Quick",
+          "evasion": "Special",
+          "detail": "Gain the Snakebite reaction, which can be taken once per deployed Serpent's Head.",
+          "edef": "Special",
+          "size": 0.5,
+          "hp": "15 + {grit}",
+          "actions":[
+            {
+              "name": "Snakebite",
+              "activation": "Reaction",
+              "trigger": "You or an ally make an attack against an enemy within range of the weapon on this Serpent's Head.",
+              "frequency": "1/Round",
+              "detail": "Make an attack, originating from this Serpent's Head, against the targeted enemy."
+            },
+            {
+              "activation": "Free",
+              "name": "Recombine",
+              "detail": "Reclaim an adjacent Serpent's Head into your mech, undeploying it and regaining normal use of the mount. If you reclaim a damaged Serpent's Head, you may not use that mount to deploy a new Serpent's Head until you Stabilize."
+            }
+          ]
+        }
+      ]
+    },
+    "data_type": "frame",
+    "image_url": "https://lh3.googleusercontent.com/DQ5vccdX2L4U-EGqR0utXa4o_GmMOt4iiXXmQIPgCE7qF3R3TZo_JoA1Olj-6hx0nn4=w2400"
+  },
+  {
+    "id": "lumico_virtuoso",
+    "license_level": 2,
+    "source": "LUMICO",
+    "name": "VIRTUOSO",
+    "mechtype": ["Controller","Artillery"],
+    "y_pos": 22,
+    "description": "The Virtuoso is the only mech frame that Lumiera Corporation has produced for widespread release, if you can consider a release to a hand-vetted waitlist of pilots 'widespread'. It's gaudy, over-engineered, and ludicrously expensive, and yet, hordes of pilots clamber over one another to wait on a list for access to its license. Merely possessing this mech tells a potential employer, \"If I couldn't do everything I claim, Lumiera would have never let me pilot one of their precious mechs.\" After all, Lumiera's standards are astronomical, both for the capabilities of their own mechs and of the pilots that use them.<br><i>Note: Wings are for display purposes only. Lumiera Corporation requests that pilots disconnect the Virtuoso's wings before combat use.</i>",
+    "mounts": ["Heavy", "Main/Aux"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 2,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Dissonance",
+        "description": "When the Virtuoso successfully Invades an enemy, it gains +1 Accuracy on all Ranged attacks against that target until the end of its turn."
+      },
+      {
+        "name": "Harmony",
+        "description": "The Virtuoso still benefits from and can take tech actions while Jammed."
+      }
+    ],
+    "core_system": {
+      "name": "\"CAPTIVE AUDIENCE\" Theory Engine",
+      "description": "<i>In this moment, an evil man stands above the beaten and broken hero, mighty and seemingly invulnerable... but the Play has entered its Third Act. He does not know it, but in this—his moment of greatest triumph—he has already lost.</i>",
+      "active_name": "Third Act",
+      "active_effect": "Delivers a single-use payload of code so destructive that it shatters a Mech's defenses. Gain an Act die, 1d6 starting at 3. Choose a character within Sensors: their Armor, Evasion and E-Defence are reduced to 0. At the start of each of their turns, they may attempt a SYSTEMS save. On a success, reduce the value of the Act die by 1. When the Act die's value would reduced to 0, the effect ends.",
+      "activation": "Full"
+    },
+    "data_type": "frame",
+    "image_url": "https://lh3.googleusercontent.com/yZN_o-F39Y8M_J5hPrSL9Ylz9KHmhpWdi972JtEOE-2GwDHKSZH5ExykxnYjkF5JT8I=w2400"
+  },
+  {
+    "id": "lumico_philosopher",
+    "license_level": 2,
+    "source": "LUMICO",
+    "name": "PHILOSOPHER",
+    "mechtype": ["Support"],
+    "y_pos": 25,
+    "description": "START BOOT SEQUENCE... -&gt;<br>USING LUMIERA CORPORATION MECH FRAMEWORK 209.1 \"PHILOSOPHER\"... -&gt;<br>NOTE: THIS IS PROPRIETARY EXPERIMENTAL TECHNOLOGY... -&gt;<br>IMPROPER USE OF CAUSALITY ENGINE MAY RESULT IN TEMPORAL ERASURE... -&gt;<br>IF YOU BELIEVE YOU SHOULD NOT HAVE ACCESS TO THIS SYSTEM, PLEASE CONTACT AN ADMINISTRATOR... -&gt;<br>ACTIVATING CAUSALITY ENGINE NOVA... -&gt;<br>CAUSALITY RECORDER ACTIVE... -&gt;<br>TIMELINE ALTERATION READY... -&gt;<br>GO. -&gt;",
+    "mounts": ["Aux"],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 4,
+      "evasion": 6,
+      "edef": 12,
+      "heatcap": 4,
+      "repcap": 2,
+      "sensor_range": 20,
+      "tech_attack": 2,
+      "save": 12,
+      "speed": 3,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Causality Micro-Fracture",
+        "description": "1/Round the Philosopher may activate NOVA to cause an event to repeat.",
+        "actions":[
+          {
+            "activation": "Reaction",
+            "name": "REQUEST: REPEAT SEQUENCE",
+            "trigger": "Any other character within Sensors and Line of Sight takes a quick action.",
+            "detail": "That character immediately takes the same action again as a free action. They do not need to choose the same target, but they must use the same systems/weapons, if applicable. You may only take 1 quick action on your next turn, and you may not take full actions on your next turn.",
+            "frequency": "1/Round"
+          }
+        ]
+      },
+      {
+        "name": "Slow",
+        "description": "The Philosopher gets +1 Difficulty on Agility checks and saves.",
+        "synergies": [{
+          "locations": ["agility", "skill_check"],
+          "detail": "The Philosopher gains +1 Difficulty on Agility checks and saves."
+        }]
+      }
+    ],
+    "core_system": {
+      "name": "\"NOVA\" Perfect Causality Engine",
+      "description": "READY -&gt;<br>I WILL GRANT YOU ONE WISH... -&gt;<br>3... 2... 1... GO! -&gt;",
+      "active_name": "Forge of Hours",
+      "active_effect": "NOVA prepares to alter the passage of time on a larger scale. At the start of your next turn gain a Miracle die, 1d6 starting at 3, and enter a transcendent state: you gain immunity to all effects, hostile and friendy, and access to a suite of powerful actions. During your turn, you may take no movement or actions except ones provided by this system. Each time you use one of the actions granted by this die, reduce the Miracle die by 1. When the Miracle die's value would be reduced to 0, this effect ends.",
+      "activation": "Full",
+      "active_actions": [
+        {
+          "activation": "Full",
+          "name": "REQUEST: AVERT SEQUENCE",
+          "detail": "Restore an ally in Sensors to full HP and clear all Heat, Burn and conditions affecting them, or restore a destroyed ally Mech to a functioning state with full HP, no Heat, 1 STRUCTURE and 1 STRESS. The pilot of that mech is returned to the cockpit, alive, even if they died."
+        },
+        {
+          "activation": "Reaction",
+          "name": "REQUEST: ALTER SEQUENCE",
+          "trigger": "An ally within Sensors is damaged by an attack.",
+          "detail": "The damage from the attack is prevented. That ally teleports to any space where they could validly attack the attacker, then immediately attacks the target with a valid weapon. You may not take actions on your next turn."
+        },
+        {
+          "activation": "Full",
+          "name": "REQUEST: ENHANCE SEQUENCE",
+          "detail": "Target hostile character within Sensors is Stunned and Shredded until the end of their next turn."
+        }
+      ]
+    },
+    "data_type": "frame",
+    "image_url": "https://lh6.googleusercontent.com/Ey44B0eFSxc2VYLye67Sa6TxgrWWE34xfo3TirOtaxJ2AZ5WW8Ji6yBsc5GIZL_52fQ=w2400"
+  },
+  {
+    "id": "lumico_trailblazer",
+    "license_level": 2,
+    "source": "LUMICO",
+    "name": "TRAILBLAZER",
+    "mechtype": ["Striker"],
+    "y_pos": 35,
+    "description": "The colonists of the Outer Arm are practical people, with no need or patience for the typical theatrical flair of the Lumiera Corporation. This proved to be an issue for the company, who had built their reputation on the idea that the greatest adventurers and pilots sought out their mechs as a prize. In an effort to convice the pioneers of the Outer Arm of their value, Lumiera Corporation developed the Trailblazer, released to specific individuals that the company deemed \"of interest\", built using practical designs that lacked the usual flair of Lumiera's other designs. Whether its reception will lead to further release, only time will tell.",
+    "mounts": ["Heavy","Main","Flex"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 7,
+      "evasion": 9,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 2,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Manifest Destiny",
+        "description": "1/Round as a free action, as long as the Trailblazer isn't Immobilized or Slowed, it may move up to 3 spaces towards an enemy.",
+        "actions":[
+          {
+            "activation": "Free",
+            "name": "Manifest Destiny",
+            "detail": "As long as you aren't Immobilized or Slowed, move up to 3 spaces towards an enemy.",
+            "frequency": "1/Round"
+          }
+        ]
+      },
+      {
+        "name": "Burning Heart",
+        "description": "1/Round, when the Trailblazer gains Heat from a quick action, full action, free action or reaction taken by any character, the Trailblazer deals 2 bonus Burn damage on its next successful non-Tech attack that turn. The action that generated the Heat does not benefit from this effect (e.g. if a Skirmish taken by the Trailblazer causes it to gain Heat from one of the weapons used, it does not benefit from this effect until that Skirmish completely resolves, including any further attacks the Trailblazer makes.)"
+      },
+      {
+        "name": "Bloody Flux",
+        "description": "Whenever the Trailblazer begins a movement, if it was not the Trailblazer's standard move, it takes 1 Kinetic damage. This damage cannot be reduced or prevented by any means."
+      }
+    ],
+    "core_system": {
+      "name": "\"PIONEER\" Combat Engine",
+      "description": "<i>\"Go West, Pioneer, go West,<br>With your gun in hand,<br>Go West, Pioneer, go West,<br>And take the Promised Land.\"</i>",
+      "passive_name": "Work Song",
+      "passive_effect": "Gain a Verse die, 1d6 beginning at 3.<br>1/Turn, when the Trailblazer deals damage with a melee or ranged attack, the value of the Verse die decreases by 1 if either:<ul><li>The Trailblazer already dealt damage with with the opposite type this round (e.g., if the Trailblazer deals damage with a melee attack after it dealt damage with a ranged attack.)</li><li>Or, the Trailblazer deals bonus damage with <i>Burning Heart</i>.</li></ul> When the die would be reduced to 0, the Trailblazer immediately makes a special attack with a single weapon against an enemy within Range 3. This attack does not count as an action or reaction and ignores Difficulty from all sources. If this attack would damage multiple characters, all characters beyond the first take a maximum of 1 damage from the attack. Then, reset the Verse Die to 3.",
+      "active_name": "Call & Response",
+      "active_effect": "Until the end of the scene, the Verse die is reset to 2 instead of 3 when it is reduced to 0, and whenever the Trailblazer makes a special attack through to the effect of <i>Work Song</i>, the Trailblazer nominates an allied character within Range 15. That character immediately makes an attack following the conditions of <i>Work Song.</i> The Trailblazer may not nominate the same character to receive this effect twice in a row.",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "image_url": "https://lh5.googleusercontent.com/HKgB0oT0l5ZybXSDdTI4PBC61RclF29QqIdqNG1N1UL1QtnwHt9txwfsFJnsZVi1ZS4=w2400"
+  },
+  {
+    "id": "ind_slowpoke",
+    "license_level": 2,
+    "source": "IND",
+    "name": "SLOWPOKE",
+    "mechtype": ["Striker", "Artillery"],
+    "y_pos": 35,
+    "description": "<i>Independent frames are not available as a part of any license and are only accessible as Exotic Gear.</i><br>Sam \"Poke\" Rodriguez never accepted half measures. As a member of ASGARD's Engineering Research department, he was largely focused on packing the most bang into the smallest frame possible. Though his designs never saw the open market after ASGARD's collapse as a major force in the Outer Arm Frontier sector, Poke went on to refine his designs, ensuring that they would be maximally functional in actual combat. He didn't have a choice after all: he either made his designs work or died trying to use them.",
+    "mounts": ["Heavy","Aux/Aux"],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 10,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 4,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 3,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Super Stabilizers",
+        "description": "The Slowpoke is cannot be pushed, pulled, or knocked Prone by other characters."
+      },
+      {
+        "name": "Shockwave Disruption",
+        "description": "1/Round, when the Slowpoke deals Explosive damage to a Mech, they also take 2 Heat."
+      },
+      {
+        "name": "Weak Computer",
+        "description": "The Slowpoke receives +1 Difficulty on all SYSTEM saves and checks.",
+        "synergies": [{
+          "locations": ["systems"],
+          "detail": "The Slowpoke receives +1 Difficulty on all SYSTEM saves and checks."
+        }]
+      }
+    ],
+    "core_system": {
+      "name": "ASG-44R \"Pneuma\" Howitzer and Feed System",
+      "description": "The \"Pnuema\" Howitzer is an outsized weapon designed for use on the railways of frontier planets, to defend them from bombardment from low-altitude spacecraft. Its raw power is enough to launch a round into orbit, albeit with greatly reduced stopping power, and more than enough to heavily damage any spacecraft within the atmosphere. It was, however, never designed for use on Mechs, relying on the incredible mass of a full railway train (with stabilizers) to mitigate the weapon's earth-shattering recoil. Poke viewed this physical limitation not as a hard line, but as a challenge.",
+      "passive_name": "Quickdraw",
+      "passive_actions": [
+        {
+          "activation": "Quick Tech",
+          "name": "Quickdraw",
+          "detail": "Roll 1d6. On a roll of 6, you immediately reload all Loading weapons as a Free Action. Otherwise, you are Jammed until the end of your turn.<br/>You may also activate this system as a Protocol. This action may not be taken as a Free Action for any reason, excluding its own effect."
+        }
+      ],
+      "active_name": "High Noon",
+      "active_effect": "Until the end of combat, whenever you attack with a ranged Loading weapon, roll 1d6. On a 6, the weapon reloads itself immediately.",
+      "activation": "Quick",
+      "use": "Encounter",
+      "integrated": ["mw_poke_integrated"]
+    },
+    "data_type": "frame",
+    "image_url": "https://lh4.googleusercontent.com/LMT0-KbjJ0h9U8h00r-lGf9QLWyzhkMlBz4A2Z8eO7NNrt4wKgsONqIkfd88bIyLpJM=w2400"
+  },
+  {
+    "id": "ind_bayhound",
+    "license_level": 2,
+    "source": "IND",
+    "name": "BAYHOUND",
+    "mechtype": ["Striker", "Artillery"],
+    "y_pos": 35,
+    "description": "<i>Independent frames are not available as a part of any license and are only accessible as Exotic Gear.</i><br>",
+    "mounts": ["Heavy","Main","Main"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 5,
+      "repcap": 6,
+      "sensor_range": 5,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Sound Disruption",
+        "description": "1/scene, when the Bayhound takes Kinetic or Explosive damage, it may gain Immunity to Kinetic and Explosive damage for that attack."
+      },
+      {
+        "name": "Houndhunt",
+        "description": "1/round, when a character becomes Shredded, the Bayhound may move and attack them with the Sonic Burst System.",
+        "actions":[
+          {
+            "activation": "Reaction",
+            "name": "Houndhunt",
+            "trigger": "A character becomes Shredded.",
+            "detail": "Move up to 3 spaces, then make an attack with the Sonic Burst System. The movement ignores engagement and doesn't provoke reactions, and the attack must target the character that triggered this reaction.",
+            "frequency": "1/Round"
+          }
+        ]
+      },
+      {
+        "name": "Exposed Reactor",
+        "description": "The Bayhound has +1 Difficulty on Engineering checks and saves.",
+        "synergies": [{
+          "locations": ["engineering", "skill checks"],
+          "detail": "The Bayhound has +1 Difficulty on Engineering checks and saves."
+        }]
+      }
+    ],
+    "core_system": {
+      "name": "Sonic Burst System",
+      "description": "",
+      "active_name": "Super Amplifiers",
+      "active_effect": "Until the end of combat, the Sonic Burst System deals 3 bonus Energy damage and applies Shredded on hit.",
+      "activation": "Quick",
+      "use": "Encounter",
+      "integrated": ["mw_bayhound_integrated"]
+    },
+    "data_type": "frame",
+    "image_url": "https://lh4.googleusercontent.com/LMT0-KbjJ0h9U8h00r-lGf9QLWyzhkMlBz4A2Z8eO7NNrt4wKgsONqIkfd88bIyLpJM=w2400"
+  }
+]

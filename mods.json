@@ -1,0 +1,41 @@
+[
+  {
+    "id": "lumico_perfectionist",
+    "name": "Perfectionist Mod",
+    "sp": 2,
+    "allowed_types": ["Rifle", "CQB", "Cannon"],
+    "restricted_sizes": [
+        "Auxiliary", "Superheavy"
+    ],
+    "source": "LUMICO",
+    "license": "VIRTUOSO",
+    "license_level": 3,
+    "effect": "1/Turn, you may expend a charge from this system when you attack with the weapon this mod is applied to. On a hit, the weapon deals 1d6 bonus damage of any damage type it dealt, excluding Burn. Then, you may reroll any number of damage dice from this weapon's attack. You must use the new roll, even if it is worse.<br>This mod may only be applied to weapons that only damage a single target (i.e., weapons that do not deal damage in a Line, Cone, Burst or Blast). A charge is expended even if the attack misses.",
+    "description": "Lumiera Corporation encourages you to ask yourself: \"Why simply settle for <i>Good</i>, when you could be <i>Perfect?</i>\"",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "lumico_whetstone",
+    "name": "Whetstone Mod",
+    "sp": 1,
+    "allowed_types": ["Melee"],
+    "source": "LUMICO",
+    "license": "TRAILBLAZER",
+    "license_level": 2,
+    "effect": "At the start of combat and after each time you Stabilize, the weapon this mod is applied to gains +1 Accuracy on all attacks until you deal damage with it. The damage of the attack that consumes this effect becomes Armor-Piercing. If the weapon this mod is applied to already deals Armor-Piercing damage, the enhanced attack deals 1d6 bonus Kinetic damage, instead.",
+    "description": "Ensure that your tools are kept sharp and well maintained, for best results.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ]
+  }
+]

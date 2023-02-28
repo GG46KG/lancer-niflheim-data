@@ -1,0 +1,697 @@
+[
+  {
+    "id": "asg_big_missile",
+    "name": "BDM",
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": "2"
+      }
+    ],
+    "source": "ASG",
+    "license": "NIDHOGG",
+    "license_level": 3,
+    "effect": "Damage from this system treats all characters as though they were Shredded.<br/>The missiles provided by this system were not designed for use on a mech: they are primed and launched on the exterior of the chassis and may be targeted by enemies while you have a missile primed. The primed missile shares your evasion, is immune to tech actions and has (10 + twice your Hull) HP, resistance to Kinetic and Energy damage, and immunity to Burn. If the missile is reduced to 0 HP, the primed missile detonates: you lose one charge and the missile deals damage as though you were the target of the strike.",
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "name": "Target BDM",
+        "detail": "Choose a target within range 20 affected by Lock On to prime a ballistic strike against. As long as you have a strike primed, you are Immobilized and gain access to the <i>Ballistic Launch</i> action."
+      },
+      {
+        "activation": "Full Tech",
+        "name": "Ballistic Launch",
+        "detail": "If the primed target is Locked On, you expend a charge to launch a missile at them. Lock On is consumed, and the target and all characters in a Burst 3 area around them take 3d6 Armor-Piercing Explosive damage at the end of your turn. All characters besides the primary target may attempt a Hull Save to halve the damage."
+      }
+    ],
+    "description": "ASGARD insists that \"BDM\" actually stands for \"Ballistic Dispersion Missile\", as it was designed for saturation fire in ship-to-ship space combat. <i>Not</i> \"Big Damn Missile.\""
+  },
+  {
+    "id": "asg_dreadnought_engine",
+    "name": "Dreadnought Thermal Engine",
+    "type": "System",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_danger_zone"
+      }
+    ],
+    "source": "ASG",
+    "license": "NIDHOGG",
+    "license_level": 2,
+    "effect": "Your speed is reduced by 3 minus your size, rounded up, as long as this system is installed. While you are in the Danger Zone, you may take 1 Heat to Boost as a free action 1/round.",
+    "description": "A thermal engine used to provide some extra power for Dreadnoughts, <i>slightly</i> miniaturized."
+  },
+  {
+    "id": "asg_ai_ullr",
+    "type": "AI",
+    "name": "ULLR-Class NHP",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "ASG",
+    "license": "NIDHOGG",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Reaction",
+        "name": "Glorious Hunt",
+        "trigger": "A non-adjacent hostile character starts a movement within the range of one of your weapons with the Ordnance tag.",
+        "detail": "Expend a charge to Overwatch the target with that weapon. You may not take Full Actions on your next turn."
+      }
+    ],
+    "description": "ULLR has been ASGARD's NHP of choice for siege platforms almost since the founding of the company. ULLR-class NHPs are generally coarse but friendly, and just a bit too enthusiastic about blowing things up, which makes them a perfect fit for ASGARD's preferred method of operation."
+  },
+  {
+    "id": "asg_lockdown",
+    "name": "Asgard Lockdown System",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_indestructible"
+      }
+    ],
+    "source": "ASG",
+    "license": "NIDHOGG",
+    "license_level": 1,
+    "effect": "When you Brace, you may choose to activate this system. If you do, you gain Immunity to all damage, burn and heat from the triggering attack instead of Resistance. In addition, you gain Resistance to all damage, burn, and heat and adjacent allies can use you for hard cover until the end of your next turn. However, you are also Stunned until the end of your next turn.",
+    "description": "ASGARD came to prominence due to the high performance of their security doors: while they were unreasonably unwieldy, one of their higher end models almost entirely survived the detonation of a tactical nuclear device at point blank range. The ASGARD Lockdown System was devised in an attempt to bring the defensive power of ASGARD's doors to the battlefield."
+  },
+  {
+    "id": "asg_ai_fenrisii",
+    "name": "Mark II FENRISWOLF-Class NHP",
+    "type": "AI",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      }
+    ],
+    "source": "ASG",
+    "license": "FENRIR",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Quick",
+        "name": "Jaws of the Wolf",
+        "detail": "Scoops up an adjacent, willing, and friendly non-Mech character. While held, the target gains hard cover while still being able to take all actions as normal. The held character can jump free as a part of their movement."
+      },
+      {
+        "activation": "Free",
+        "name": "Down the River Ván",
+        "detail": "Throws a held character up to Range 5. If the target is friendly, they can choose to enter a friendly mech or Jockey a hostile mech that they would pass through or adjacent to during the throw as a Reaction. They receive +1 Accuracy and the target receives +1 Difficulty if they attempt to Jockey. While being thrown, the character does not provoke reactions."
+      }
+    ],
+    "description": "By separating the Fenriswolf NHP from the Fenrir's architecture, it gained increased awareness of the fragility of the pilots it interacted with. It did retain its reckless and aggressive nature, however, leading to the invention of some <i>unorthodox</i> techniques."
+  },
+  {
+    "id": "asg_beasthunter_knife",
+    "name": "Beasthunter Tactical Knife",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "source": "ASG",
+    "license": "FENRIR",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Free",
+        "name": "Beasthunter",
+        "frequency": "1/Round",
+        "detail": "You may only take this action immediately after you make a melee attack against a target you are grappling. Make a melee attack with the following profile:<br>Aux Melee, Reliable 1, Armor Piercing<br>Range 1, 1d3 Kinetic Damage.<br/>If the target you attacked was a larger Size than you, you may make a second attack."
+      }
+    ],
+    "description": "The Beasthunter™ Tactical Knife was designed specifically as a backup weapon, to be used in close combat when all other options have failed. However, as its name suggests, it was often used by pilots hunting down large prey in the depths of space, and modifications were made to better enable this particular use."
+  },
+  {
+    "id": "asg_reverse_beartrap",
+    "name": "REVERSE BEARTRAP",
+    "type": "System",
+    "sp": 4,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "source": "ASG",
+    "license": "FENRIR",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Full",
+        "name": "Start the Game",
+        "detail": "Choose an adjacent Mech. The target must succeed at an Agility save or have a Reverse Beartrap attached to them. A charge is only expended if the device is attached successfully.<br>Once a Beartrap is attached to a target, it will explode at the end of their third turn following the device being attached. While the device is attached, they may try to remove the device by attemping a Hull save as a Full Action, with +2 Difficulty if they are Engaged.<br>If they fail to remove the device before it explodes, they take Armor-Piercing kinetic damage equal to their maximum HP when it detonates. This damage ignores damage resistance and immunity, and bypasses effects that would prevent damage or destruction. If the target is not destroyed by this damage, they are Stunned until the end of their next turn.<br>Once a character has had a Beartrap attached to them, they may not be targeted by this action for the rest of the scene."
+      }
+    ],
+    "description": "A horrific device, apparently originally designed for use on humans, scaled up for use on Mechs. ASGARD public relations has disavowed its use."
+  },
+  {
+    "id": "asg_disposable_heatsink",
+    "name": "Disposable Heatsinks",
+    "type": "System",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 6
+      }
+    ],
+    "effect": "When this System is reduced to 0 charges, it is destroyed. You may spend 2 Repairs to restore all of this systems charges. If you do, it is also fixed if it was destroyed.",
+    "actions": [
+      {
+        "activation": "Reaction",
+        "name": "Shunt Heat",
+        "trigger": "You take Heat from any source, including yourself.",
+        "detail": "Expend any number of charges. The Heat you would receive is reduced by 1 for each charge expended."
+      }
+    ]
+  },
+  {
+    "id": "asg_command_system",
+    "name": "HEIMDALL Nanobot Command System",
+    "type": "System",
+    "sp": 4,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_aura",
+        "val": 15
+      }
+    ],
+    "source": "ASG",
+    "license": "JORMUNGANDR",
+    "license_level": 3,
+    "effect": "While this system is active, your you are Immobilized, your Evasion cannot exceed 5, and you project a field of nanomachines that can influence the battlefield. All Drones and Deployables of your choice within this System's Aura regain 5 HP at the start of each of your turns and gain resistance to all damage, Heat and Burn while this System is active. In addition, you gain access to this system's actions, which may only be used while this System's Aura is active.",
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "name": "Defend Order",
+        "detail": "An allied Mech, Drone, or object within this System's Aura gains 6 Overshield. Drones and Deployables gain twice this amount."
+      },
+      {
+        "activation": "Quick Tech",
+        "name": "Warp Order",
+        "detail": "An allied Mech, Drone, or object within this System's Aura is teleported up to 5 spaces in any direction of your choice."
+      },
+      {
+        "activation": "Quick Tech",
+        "name": "Dissolve Order",
+        "detail": "A Drone or object within this System's Aura takes 10 AP kinetic damage."
+      }
+    ],
+    "deployables": [
+      {
+        "type": "Mine",
+        "name": "Nanite Mine",
+        "activation": "Quick Tech",
+        "detail": "This Mine may be placed anywhere within this System's Aura. All characters within a Burst 1 area must pass a Hull Save or take 1d3+3 Explosive damage. On a success, they take half damage."
+      }
+    ],
+    "description": "The Heimdall command system hijacks a mech's computers to generate a large nanite field that can directly control a large fleet of drones. While the mech's defensive routines will be largely disabled, it will be able to secure a large area through its capabilities as a command post."
+  },
+  {
+    "id": "asg_spare_drone_parts",
+    "name": "XS-Series Drone Parts",
+    "type": "System",
+    "sp": 2,
+    "source": "ASG",
+    "license": "JORMUNGANDR",
+    "license_level": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "XS5 Sentry Microgun",
+        "activation": "Reaction",
+        "trigger": "A character begins a turn or enters a space within Range 7 of one of your deployed Drones.",
+        "detail": "Make a ranged attack with the chosen Drone against the triggering character. If the attack hits, it deals 6 Kinetic damage to the target. If the target has at least 1 Armor and isn't Shredded, they gain resistance to this damage."
+      },
+      {
+        "name": "XS18 Thermal Micromissiles",
+        "activation": "Reaction",
+        "trigger": "A character gains Heat within Range 10 of one of your deployed Drones.",
+        "detail": "Make a Smart ranged attack with the chosen Drone with +1 Accuracy against the triggering character. If the attack hits, it deals 2 Explosive damage to the target and they gain 2 Heat."
+      },
+      {
+        "name": "XS31 Miniature Napalm Gun",
+        "activation": "Reaction",
+        "trigger": "A character begins a turn or enters a space within Range 3 of one of your deployed Drones.",
+        "detail": "Make a Cone 3 ranged attack with the chosen Drone against the triggering character. Each character hit by the attack takes 2 Burn."
+      }
+    ],
+    "effect": "When you deploy a drone, it is deployed with a special integrated weapon with limited ammunition. When you use one of the Reactions granted by this system, you consume all of the ammunition on that Drone and cannot use it for this System's reactions unless you undeploy and redeploy it. All attacks made with this System gain your Grit as a bonus to the roll.",
+    "description": "The XS-Series is a mass-produciton kit provided by ASGARD to allow clever engineers to add concealed weaponry to drones that would not normally provide fire support in the field. ASGARD pilots familiar with this system tend to excersice caution around all drones, no matter how innocuous they may seem."
+  },
+  {
+    "id": "asg_bomb_bag",
+    "name": "Explosives Satchel",
+    "type": "System",
+    "sp": 2,
+    "source": "ASG",
+    "license": "JORMUNGANDR",
+    "license_level": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": "2"
+      }
+    ],
+    "effect": "Whenever you would expend a charge from a system with the Mine or Grenade tag, you may expend a charge from this system instead.",
+    "description": "It's a heat-proof bag meant to store extra components to make explosives. It's not complex, but it certainly has merit."
+  },
+  {
+    "id": "asg_r1_concussion",
+    "name": "R1 Concussion Charges",
+    "type": "System",
+    "sp": 2,
+    "source": "ASG",
+    "license": "JORMUNGANDR",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Quick",
+        "name": "R1 Concussion Grenade",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "3"
+          }
+        ],
+        "detail": "Throw a Concussion Grenade within Range 5. All characters within a Burst 1 area must pass a Hull save or take 3 Explosive damage and be Impaired until the end of their next turn. On a success, they are not Impaired."
+      }
+    ],
+    "deployables": [
+      {
+        "type": "Mine",
+        "name": "R1 Concussion Mine",
+        "activation": "Quick",
+        "detail": "All characters in a Burst 1 area must pass a Hull save or take 1d3+3 Explosive damage and be Impaired and Shredded until the end of their next turn. On a success, they are not Shredded and take a maximum of 3 damage."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "description": "These shockwave generating charges deal limited direct damage compared to conventional explosives, but they are capable of damaging computer systems through dense mech armor."
+  },
+  {
+    "id": "asg_laser_scan_grenades",
+    "name": "Full Spectrum Hunt/Kill System",
+    "type": "System",
+    "sp": 3,
+    "source": "ASG",
+    "license": "JORMUNGANDR",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Quick",
+        "name": "UV Recon Grenade",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 3
+          }
+        ],
+        "detail": "Throw a UV Recon Grenade within Range 5. All characters in a Burst 3 Area must pass a Systems save or suffer the following effects until the end of their next turn:<ul><li>Tech actions may target affected characters even without line of sight.</li><li>Affected characters cannot Hide or benefit from Invisible.</li><li>Drone, Seeking and Nexus weapons gain +1 Accuracy against affected characters.</li></ul>Targets affected by Lock On automatically fail this save. If at least one target is affected by this grenade, you may deploy your IR Seeker Drone or move it up to 3 spaces as a free action."
+      }
+    ],
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "IR Seeker Drone",
+        "activation": "Quick",
+        "evasion": "10",
+        "detail": "Deploying this drone does not consume one of this system's charges, and it may be deployed to any free, adjacent space. Only one IR Seeker Drone may be deployed at a time. If the drone is destroyed, you may expend a charge to immediately recall and repair it.",
+        "edef": "10",
+        "size": 0.5,
+        "hp": "10",
+        "actions":[
+          {
+            "name": "Hunt/Kill",
+            "activation": "Free",
+            "frequency": "1/Round",
+            "detail": "Move this drone up to 3 spaces, then make a Smart ranged attack against an enemy Mech with it, gaining your Grit as a bonus to its roll. On a hit, it deals 3 Energy damage. Against targets currently affected by a UV Recon Grenade, it deals 1d3+3 Energy damage and applies Lock On instead."
+          }
+        ]
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      },
+      {
+        "id": "tg_limited",
+        "val": 4
+      }
+    ],
+    "description": "This high-end recon system was designed by ASGARD's software team as a tactical breaching suite that could be used to locate and neutralize threats before they even had a chance to respond. While it has not yet been heavily field tested, ASGARD has high hopes that it will be widely adopted."
+  },
+  {
+    "id": "lumico_fugue_system",
+    "name": "Fugue System",
+    "type": "Tech",
+    "sp": 3,
+    "source": "LUMICO",
+    "license": "VIRTUOSO",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Invade",
+        "name": "Fugue Polyphony",
+        "detail": "This Invade option does not cause the target to take any Heat. Until the end of the target's next turn, the first Ranged or Melee attack against the target each turn gets +1 Accuracy. In additon, the next successful Ranged or Melee attack against them deals 1d6 bonus Energy damage."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_luxury",
+        "val": 1
+      }
+    ],
+    "description": "The Lumiera Corporation Fugue System synchronizes the target's active defenses and evasive algorithms into operating at a synchronized frequency, causing gaps to appear in the target's defenses at regular intervals."
+  },
+  {
+    "id": "lumico_choreograph_system",
+    "name": "Choreograph System",
+    "type": "Tech",
+    "sp": 2,
+    "source": "LUMICO",
+    "license": "VIRTUOSO",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Invade",
+        "name": "Closed Position: Waltz",
+        "detail": "Once before the start of the target's next turn, when any character makes an attack that affects an area (i.e., a Line, Cone, Burst, or Blast), you may force the target to move up to 3 spaces toward the affected area as a Reaction. If they would become a target of the attack, the attack gets +1 Accuracy against them, and they get +1 Difficulty on any Saves they must make as a result of the attack."
+      },
+      {
+        "activation": "Invade",
+        "name": "Closed Position: Tango",
+        "detail": "The target is pulled adjacent to their nearest ally within Range 6, then must attempt to Grapple that ally with +1 Accuracy. If successful, the target's ally also gains 2 Heat. This Grapple cannot be ended by either party until the end of the target's next turn."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_luxury",
+        "val": 1
+      }
+    ],
+    "description": "Anything can be art, claims Lumiera Corporation, even battle. If hostile actors introduce chaos, take control and show them where they are <i>supposed</i> to be."
+  },
+  {
+    "id": "lumico_nova_recorder",
+    "name": "NOVA Fragment: Record",
+    "type": "Tech",
+    "sp": 4,
+    "source": "LUMICO",
+    "license": "PHILOSOPHER",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Invade",
+        "name": "REQUEST: RECORD SEQUENCE",
+        "detail": "Mark the current position of the target. Gain access to the REQUEST: ERASE SEQUENCE reaction, until that reaction is used. Only one target may be under this effect at a time: using this action on another target ends this effect on the original."
+      },
+      {
+        "activation": "Reaction",
+        "trigger": "Immediately before or after any character takes any action or movement, while the target of REQUEST: RECORD SEQUENCE is within Sensors.",
+        "name": "REQUEST: ERASE SEQUENCE",
+        "detail": "Take 4 Heat. The target of REQUEST: RECORD SEQUENCE is returned to the marked position, and the effects of any actions they have taken this turn are undone."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "description": "<i>\"NOVA is barely real, in a way we can understand. It operates in a different frame of reference. The physical device we see within the Philosopher is merely a shadow of the full mechanism, projected from a higher plane of existence. Even these fragments: they seem like they're seperate entities, but in reality, they're all part of the same machine, completely connected to NOVA in ways we can't see.\"</i>"
+  },
+  {
+    "id": "lumico_nova_wish",
+    "name": "NOVA Fragment: Wish",
+    "type": "System",
+    "sp": 3,
+    "source": "LUMICO",
+    "license": "PHILOSOPHER",
+    "license_level": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": "1"
+      }
+    ],
+    "effect": "You may not regain uses of this systems, except during a Full Repair.",
+    "actions": [
+      {
+        "activation": "Full",
+        "name": "REQUEST: WISH GRANTED",
+        "detail": "Expend a charge to activate one effect of any System without the Exotic Gear tag, even if you do not have the License for that system."
+      }
+    ],
+    "description": "<i>\"Have you ever wondered what things would be like if you were someone else—if you had chosen differently?\"</i>"
+  },
+  {
+    "id": "lumico_pocket_star",
+    "name": "Pocket Star",
+    "type": "System",
+    "sp": 4,
+    "source": "LUMICO",
+    "license": "PHILOSOPHER",
+    "license_level": 3,
+    "tags": [
+      {
+        "id": "tg_indestructible"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "effect": "During you a rest, you may activate this system to recharge your and one ally's core power. This system may only has one use, regained when you make a Full Repair.",
+    "description": "Lumico's Near-Zero-Mass Fusion Reactor, internally dubbed the \"Pocket Star\", provides an ingenious method of storing energy. Originally intented to fulfill a similar role to a mech's standard reactor, logistical issues related to actually <i>extracting</i> the energy produced by the Pocket Star meant that it was more valuable as an emergency reserve of energy rather than as a primary power source."
+  },
+  {
+    "id": "lumico_nova_predict",
+    "name": "NOVA Fragment: Predict",
+    "type": "System",
+    "sp": 2,
+    "source": "LUMICO",
+    "license": "PHILOSOPHER",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Invade",
+        "name": "REQUEST: PREDICT SEQUENCE",
+        "detail": "The target gains Lock On until the start of their next turn if they were not already affected by it. Until Lock On is removed from the target, your allies may Overwatch the target if the target takes any action within their Threat. Overwatches made this way automatically consume Lock On if the attack hits, regardless of whether the attacker chose to consume it for their attack."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_luxury",
+        "val": "1"
+      }
+    ],
+    "description": "<i>\"How does NOVA predict the future? It doesn't, really. It travels to a point in time in the near future, records what it sees, then returns so that the user can review its logs. Nothing as arcane as 'prediction.'\"</i>"
+  },
+  {
+    "id": "lumico_black_hole",
+    "name": "Nanoscopic Black Hole Projector",
+    "type": "System",
+    "sp": 3,
+    "source": "LUMICO",
+    "license": "PHILOSOPHER",
+    "license_level": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_aura",
+        "val": 3
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "name": "Gravitational Crush",
+        "detail": "You may only take this action if this system's Aura is active. All characters within the Aura must make a Hull save or take 1d6 Kinetic damage and be pulled 2 units toward the center of the Aura. Characters within the <i>Event Horizon</i> take 1d6 AP Kinetic damage, without a save. Using this action does not consume charges from this system.",
+        "frequency": "1/Round"
+      }
+    ],
+    "effect": "When this Aura is activated, choose a point within sensors. This system's Aura is centered on that point, rather than the user.<br>Any character adjacent to or on the origin of the Aura is within this system's <i>Event Horizon</i>. Characters within the Aura are Slowed, and enemies within the <i>Event Horizon</i> are Stunned. Enemies within the Aura are have resistance to all damage, Heat, and Burn from Ranged Attacks, increased to immunity within the <i>Event Horizon</i>. At the start of each turn that the Aura is active, it's Aura size increases by 1.",
+    "description": "By generating an extremely small but superdense mass, one can harness and direct gravitational waves to directly affect ambient energy. At this scale, Hawking radiation causes the object to degrade at a high speed and the object will evaporate if it is not actively maintained by the generator."
+  },
+  {
+    "id": "lumico_babel",
+    "name": "Babel System",
+    "type": "System",
+    "sp": 2,
+    "source": "LUMICO",
+    "license": "PHILOSOPHER",
+    "license_level": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Reaction",
+        "trigger": "An ally within Sensors is targeted by a hostile tech action, before any Invade rolls are made.",
+        "name": "Activate Babel System",
+        "detail": "You redirect the effect of the action to yourself. You may only use this effect on each ally once per scene.",
+        "frequency": "1/Round"
+      }
+    ],
+    "description": "In the event of an emergency, the \"Babel\" System generates a cypher that causes an enemy to mistakenly target the system's user, instead. The system is somewhat basic, by Lumiera Corporation's standards, and generally will only confuse a hostile system if it isn't actively correcting for the interference."
+  },
+  {
+    "id": "lumico_lullaby",
+    "name": "The Lullaby",
+    "type": "System",
+    "sp": 3,
+    "source": "LUMICO",
+    "license": "TRAILBLAZER",
+    "license_level": 3,
+    "effect": "While this system is active, you are Slowed. 1/Round, when a character within the Aura attempts to attack you, they must make a Systems save. If they fail, they are Immobilized until the end of their next turn and the triggering attack automatically misses.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_aura",
+        "val": 5
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "description": "Lumiera Corporation's \"Lullaby\" system projects a chaotic signal that disrupts the operation of mech systems, preventing them from accurately targeting the source of the signal. During testing, however, pilots of mechs targeted by the Lullaby's signal reported extreme distress, citing phantom sounds produced within the cockpit. Lumiera Corporation intended to delay its release but an error caused the system to be released to the public anyway."
+  },
+  {
+    "id": "lumico_lamplighter",
+    "name": "Lamplight Chemical Charges",
+    "type": "System",
+    "sp": 2,
+    "source": "LUMICO",
+    "license": "TRAILBLAZER",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Quick",
+        "name": "Lamplight Oil Grenade",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          }
+        ],
+        "detail": "Throw a Lamplight Grenade within Range 5. The target must succeed on an Agility save or become coated in an unstable substance. Coated targets are Slowed unless the substance is removed, which affected characters may do as a quick action. When a coated target receives any Heat or Burn, the substance degrades explosively, removing the coating and causing the affected target to take 1d6 AP Explosive damage."
+      }
+    ],
+    "deployables": [
+      {
+        "type": "Mine",
+        "name": "Lamplight Tar Mine",
+        "activation": "Quick",
+        "detail": "All characters in a Burst 1 area must succeed on an Agility save or become coated, as above. However, the substance Immobilizes affected characters instead and requires a Full Action to remove."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "description": "Inspired by olden tales of tar bombs used by pioneers in the pre-spaceflight era, the Lamplight Grenade deploys a volatile chemical payload that detonates after receiving a small amount of sustained agitation."
+  }
+]

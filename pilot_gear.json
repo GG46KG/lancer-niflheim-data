@@ -1,0 +1,71 @@
+[
+  {
+    "id": "ms_tyr_battlesuit",
+    "name": "TYR Battlesuit",
+    "type": "Armor",
+    "description": "This battlesuit may not be taken as normal pilot gear and is instead granted by the ASG Fenrir chassis, which details its functionality.",
+    "bonuses": [
+      {
+        "id": "pilot_hp",
+        "val": 5
+      },
+      {
+        "id": "pilot_armor",
+        "val": 2
+      },
+      {
+        "id": "pilot_evasion",
+        "val": 11,
+        "replace": true
+      },
+      {
+        "id": "pilot_edef",
+        "val": 11,
+        "replace": true
+      },
+      {
+        "id": "pilot_speed",
+        "val": 6,
+        "replace": true
+      }
+    ]
+  },
+  {
+    "id": "ms_quietus_revolver",
+    "name": "QUIETUS REVOLVER NO. 27",
+    "type": "Weapon",
+    "description": "Eventually, the design for this weapon would be reworked into Lumiera Corporation's Breathtaker Revolver, ending the production of Quietus Revolvers altogether. While no more than 1,500 total were made, this individual instance's unusually low serial number makes it exceptionally desireable even among its peers.",
+    "effect": "Energy damage dealt by this weapon is Armor-Piercing.",
+    "tags": [
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_sidearm"
+      },
+      {
+        "id": "tg_luxury",
+        "val": 2
+      },
+      {
+        "id": "tg_oneofakind"
+      }
+    ],
+    "range": [
+      {
+        "type": "range",
+        "val": 3
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      },
+      {
+        "type": "Energy",
+        "val": "1"
+      }
+    ]
+  }
+]

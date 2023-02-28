@@ -1,0 +1,672 @@
+[
+  {
+    "id": "mw_nidhogg_integrated",
+    "name": "ROOTS OF YGGDRASIL",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "effect": "When using this weapon, choose three valid targets to attack. The same character can be chosen multiple times, in which case you roll an additional attack against that character for each additional time they were targeted.",
+    "profiles": [
+      {
+        "name": "Recon Mode",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d3"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          }
+        ],
+        "actions": [
+          {
+            "activation": "Protocol",
+            "name": "Activate Fortress Mode",
+            "detail": "Activate this weapon's Fortress mode."
+          }
+        ],
+        "effect": "You may use this weapon with Skirmish and Overwatch in Recon Mode. If you do, you only make one attack. At the end of your turn, choose one target that was damaged by this weapon this turn and apply Lock On to them."
+      },
+      {
+        "name": "Fortress Mode",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          }
+        ],
+        "actions": [
+          {
+            "activation": "Protocol",
+            "name": "Activate Recon Mode",
+            "detail": "Activate this weapon's Recon mode."
+          }
+        ],
+        "effect": "Your speed is halved while in this mode.<br>Attacks made against targets affected by Lock On deal 1 bonus Explosive damage and are Armor Piercing and Accurate.",
+        "tags": [
+          {
+            "id": "tg_ordnance"
+          }
+        ]
+      },
+      {
+        "name": "Annihilation Mode",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          }
+        ],
+        "effect": "This mode may only be activated through the Nidhogg's core power.<br>While in this mode:<ul><li>You may choose an additional 3 targets when attacking.</li><li>The target of each attack and all adjacent Characters take 1 Explosive damage even if the attack misses.</li><li>You may not clear Heat by any means other than Overheating.</ul></ul>",
+        "on_hit": "Increases the Explosive damage caused by the attack to 3.",
+        "tags": [
+          {
+            "id": "tg_ordnance"
+          },
+          {
+            "id": "tg_ap"
+          },
+          {
+            "id": "tg_heat_self",
+            "val": 3
+          }
+        ],
+        "actions": [
+          {
+            "activation": "Free",
+            "name": "End Annihilation Mode",
+            "detail": "Immediately activates Recon or Fortress mode."
+          }
+        ]
+      }
+    ],
+    "description": "<i>From below the dragon dark comes forth, Nithhogg flying from Nithafjoll; The bodies of men on his wings he bears.</i>"
+  },
+  {
+    "id": "mw_asg_snjobolti_turret",
+    "name": "'SNJOBOLTI' BALL TURRET",
+    "mount": "Heavy",
+    "type": "CQB",
+    "profiles": [
+      {
+        "name": "Automatic Targeting",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 7
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_inaccurate"
+          }
+        ]
+      },
+      {
+        "name": "Manual Operation",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 7
+          },
+          {
+            "type": "Threat",
+            "val": 5
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_reliable",
+            "val": 2
+          }
+        ],
+        "actions": [
+          {
+            "activation": "Reaction",
+            "name": "Emergency Exit",
+            "trigger": "The gunner or the Mech this weapon is mounted on is damaged or destroyed, or if this weapon is destroyed by other means.",
+            "detail": "Performs an emergency eject, allowing the character inside the turret to exit the turret and move to any location within range 3. This weapon is destroyed."
+          }
+        ],
+        "effect": "The gunner may attack with this weapon twice when Barraging."
+      }
+    ],
+    "source": "ASG",
+    "license": "NIDHOGG",
+    "license_level": 2,
+    "effect": "While this turret can be rotated and fired using a mech's internal computers, it was designed to accept a gunner to manually aim and fire it. Adjacent, non-Immobilized allied characters can use a Full Action to mount the turret, and a Quick Action to exit the turret from within. The turret has space for a non-Mech character or a character of size no greater than yours minus 1½.<br><br>While inside the turret, the gunner:<ul><li>Cannot attack using their own weapons or systems in any way and cannot use any systems with the Deployable tag unless they were already deployed.</li><li>May use this weapon in its \"Manual Operation\" profile as if it was their own.</li><li>Has hard cover at all times. If their size is at least 2½ less than yours, or if they are a non-Mech character, they cannot be targeted by attacks at all.</li></ul><br>While a gunner is inside the turret, you may not use it for attacks, and, for safety reasons, the turret will lock itself and prevent manual operation if there is no pilot physically present in the Mech's cockpit.",
+    "description": "ASGARD is not well known for its new and exotic technology, but the decision to model their \"Snjobolti\" turret on a design abandoned before humanity had escaped their home planet raised eyebrows even among those familiar with the company's reputation. Nonetheless, their improvements to the design's safety and effectiveness meant that the turret saved almost as many lives as it took.",
+    "sp": 1
+  },
+  {
+    "id": "mw_asg_beamcannon",
+    "name": "TEAM GUN",
+    "mount": "Heavy",
+    "source": "ASG",
+    "license": "NIDHOGG",
+    "license_level": 1,
+    "type": "Cannon",
+    "range": [
+      {
+        "type": "Line",
+        "val": 6
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+2"
+      }
+    ],
+    "on_hit": "Choose one character or object hit by the attack. That target and all adjacent characters take 4 bonus Explosive damage. Secondary targets of the explosion may attempt an Agility save to halve the damage.",
+    "description": "ASGARD's Timed-Explosion Anti-Mech Gun fires a heavy slug that is detonated within a target after it pierces a mech's frame. Though such technology has existed for several centuries, ASGARD's signature improvement was to create a secondary projectile, launched by the detonation, that continues through the target even after the main round has been detonated. Somehow.",
+    "tags": [
+      {
+        "id": "tg_ordnance"
+      }
+    ]
+  },
+  {
+    "id": "asg_tyr_sword",
+    "name": "Wolfstooth",
+    "mount": "Battlesuit",
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+2"
+      }
+    ],
+    "effect": "This weapon is not mounted on the mech itself: instead, it is an integrated part of the Tyr Battlesuit and is used as a pilot weapon.<br>If this weapon is used to attack a target that the Fenrir damaged since the start of your previous turn, it gains +1 Accuracy on its attack.<br>While Jockeying a hostile Mech, you may attack it with this weapon instead of the standard options. If you do, that attack is Armor-Piercing and deals 4 bonus kinetic damage.",
+    "description": "A sword, designed for the most foolhardy and dangerous mech pilots ever seen on a battlefield."
+  },
+  {
+    "id": "mw_asg_greatsword",
+    "name": "Greatsword",
+    "mount": "Superheavy",
+    "source": "ASG",
+    "license": "FENRIR",
+    "license_level": 3,
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Line",
+        "val": 3
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "3d6"
+      }
+    ],
+    "effect": "After attacking with this weapon, you are Slowed, cannot take Reactions, and have +2 Difficulty on all saves until the start of your next turn. You may make a maximum of 2 attacks per turn with this weapon.",
+    "on_crit": "The target is Shredded until the end of its next turn.",
+    "description": "This sword, with its thick blade, is one of the largest of its kind. Highly destructive, if intolerably heavy.",
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": "4"
+      }
+    ]
+  },
+  {
+    "id": "mw_asg_injectionblade",
+    "name": "Reactive Injection Blade",
+    "mount": "Main",
+    "source": "ASG",
+    "license": "FENRIR",
+    "license_level": 1,
+    "type": "Melee",
+    "sp": 1,
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "on_hit": "Until the end of your turn, when you damage the target with a melee attack, you deal 1d3 bonus Energy damage.",
+    "description": "Attacks with the Injection Blade leave volatile chemicals on the target's armor, which can be \"encouraged\" into a violent reaction through the application of force.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ]
+  },
+  {
+    "id": "mw_asg_fenrir_claws",
+    "name": "Berserker Claws",
+    "mount": "Heavy",
+    "source": "ASG",
+    "license": "FENRIR",
+    "license_level": 2,
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "on_hit": "1/turn, when you deal bonus damage with this weapon, you may make another attack with this weapon against the same target as a Free Action",
+    "description": "A pair of mech sized shredder claws, to bring out the animal in any pilot."
+  },
+  {
+    "id": "mw_asg_grenade_launcher",
+    "name": "Nastrond Flexible Grenade Launcher",
+    "mount": "Main",
+    "source": "ASG",
+    "license": "JORMUNGANDR",
+    "license_level": 2,
+    "type": "Launcher",
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "3"
+      },
+      {
+        "type": "Explosive",
+        "val": "1d6"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": "4"
+      }
+    ],
+    "on_attack": "You may choose to launch a grenade from another System instead of this weapon's typical ammunition. If you do, expend a charge from system with the Grenade tag instead of this weapon.",
+    "on_hit": "If you chose to fire a grenade from another system, this weapon deals no Explosive damage, but the chosen Grenade's effects trigger at the target's location. The target of the attack automatically fails any saves associated with the Grenade's detonation. Other affected characters still attempt saves as normal.",
+    "description": "ASGARD's Nastrond-model grenade launcher was adapted to fire most types of mass produced contact charge through the use of a large container that acts somewhat like a sabot. While the flexibility of this is praiseworthy, the actual projectiles don't fly with any particular grace, limiting their effective range compared to the capabilities of similar weapon system."
+  },
+  {
+    "id": "mw_lumico_quint_rifle",
+    "name": "Quintessence Rifle",
+    "mount": "Heavy",
+    "source": "LUMICO",
+    "license": "VIRTUOSO",
+    "license_level": 3,
+    "type": "Rifle",
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+1"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+
+      {
+        "id": "tg_luxury",
+        "val": "1"
+      }
+    ],
+    "effect": "If this weapon is fired with at least +4 Accuracy, it automatically hits and deals 1d6+4 bonus Energy damage.",
+    "description": "Lumiera Corporation's luxury Quintessence Rifle was not designed for use by the masses, but instead only by experts in the art of war. In the hands of the average user, it is a slightly better than average rifle. In the hands of a master, it will never miss."
+  },
+  {
+    "id": "mw_lumico_breathtaker",
+    "name": "Breathtaker Revolver",
+    "mount": "Main",
+    "source": "LUMICO",
+    "license": "VIRTUOSO",
+    "license_level": 2,
+    "type": "CQB",
+    "range": [
+      {
+        "type": "Range",
+        "val": 7
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      },
+      {
+        "type": "Energy",
+        "val": "1d3"
+      },
+      {
+        "type": "Burn",
+        "val": "1"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_luxury",
+        "val": "2"
+      }
+    ],
+    "description": "A beautifully engineered revolver, made by hand and inlaid with sustainably sourced gold and pearl in a completely unique pattern designed specifically for the commissioner, to leave your enemies breathless in their final moments."
+  },
+  {
+    "id": "mw_lumico_heartseeker",
+    "name": "Heartseeker",
+    "mount": "Auxiliary",
+    "source": "LUMICO",
+    "license": "VIRTUOSO",
+    "license_level": 1,
+    "type": "Launcher",
+    "sp": 1,
+    "range": [
+      {
+        "type": "Range",
+        "val": 7
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_luxury",
+        "val": "1"
+      },
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "on_hit": "Apply Lock On to the target.",
+    "description": "A tiny launcher that fires a small tracker that attaches to the target on contact. While not as flashy as some of Lumiera Corporation's other offerings, it is still built to their high standards."
+  },
+  {
+    "id": "mw_lumico_sycamore_axe",
+    "name": "Sycamore Axe",
+    "mount": "Heavy",
+    "source": "LUMICO",
+    "license": "TRAILBLAZER",
+    "license_level": 3,
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "effect": "Damage dealt by this weapon ignores damage resistance. Kinetic damage dealt by this weapon ignores damage immunity.",
+    "on_hit": "1/Turn, any bonus damage dealt by this weapon is doubled.",
+    "description": "<i>I didn't want to cut you down, but I had to. I hope you can understand.</i>"
+  },
+  {
+    "id": "mw_lumico_hatchet",
+    "name": "Hunter's Hatchet",
+    "mount": "Auxiliary",
+    "source": "LUMICO",
+    "license": "TRAILBLAZER",
+    "license_level": 1,
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_thrown",
+        "val": "5"
+      },
+      {
+        "id": "tg_luxury",
+        "val": "1"
+      }
+    ],
+    "effect": "You may Overwatch with this weapon as though it had Threat 5. If the target is not adjacent to you, the Overwatch must be be made as a thrown attack.",
+    "description": "A good tool is simple, easy to repair, and serves many purposes. This hatchet was designed to fill such a duty, in peace and in conflict."
+  },
+  {
+    "id": "mw_lumico_teacher",
+    "name": "\"Stern Teacher\" Smoothbore Gun",
+    "mount": "Main",
+    "source": "LUMICO",
+    "license": "TRAILBLAZER",
+    "license_level": 2,
+    "type": "CQB",
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+5"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_inaccurate"
+      },
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "effect": "You may only attack with this weapon 1/Round.",
+    "description": "Lumiera Corporation is usually well known for complex and over-designed weapons designed to mitigate any flaw that a human user introduces. The \"Teacher\" does not follow this tradition. It is the simplest kind of gun and offers no fancy tricks, only raw power. It teaches humility, in its form and execution. The only question is who this lesson will reach: the user, or their target."
+  },
+  {
+    "id": "mw_poke_integrated",
+    "name": "Big Iron",
+    "mount": "Jury-Rigged",
+    "type": "Railway Gun",
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "5d6+6"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_reliable",
+        "val": "20"
+      }
+    ],
+    "effect": "This weapon begins unloaded at the start of each scene and may only be reloaded by the effect of Quickdraw. Damage from this weapon ignores Resistance. If the target of the attack has immunity to Explosive damage, Big Iron deals Kinetic damage instead.",
+    "on_hit": "If the target is destroyed, all characters in a Cone 5 emanating from the target away from you take 2d6 Explosive damage. Affected characters may attempt a Hull Save to halve the damage.",
+    "on_attack": "You gain +3 Accuracy when attacking with Big Iron.",
+    "actions": [
+      {
+        "activation": "Full",
+        "name": "Fire Big Iron",
+        "detail": "You can attack on your turn with Big Iron as a full action if it is loaded, but you may not move or take any other actions on the same turn."
+      }
+    ],
+    "description": "<i>He's here to do some business with the big iron on his hip.</i>"
+  },
+  {
+    "id": "mw_asgard_door",
+    "name": "A4 ASGARD Security \"Shield\"",
+    "mount": "Main",
+    "source": "EXOTIC",
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "val": "2"
+      },
+      {
+        "id": "tg_exotic"
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Protocol",
+        "name": "Lockdown",
+        "detail": "You are Immobilized until the start of your next turn. This weapon grants you Immunity to damage from enemies that make ranged attacks from the <i>Covered</i> area this Round, instead of Resistance."
+      }
+    ],
+    "effect": "At the end of your turn, you choose a Cone 30 area to <i>Cover</i>. You have Resistance to all damage and Burn from ranged attacks from within the <i>Covered</i> area until the start of your next turn. This effect ends if you move for any reason while it is active.",
+    "description": "This is not a weapon, exactly, but a high-end ASGARD security door ripped free of its frame and repurposed as a shield, in an effort to harness the ridiculous strength of ASGARD's security doors in combat."
+  },
+  {
+    "id": "mw_bayhound_integrated",
+    "name": "Sonic Burst System",
+    "mount": "Heavy",
+    "type": "CQB",
+    "profiles": [
+      {
+        "name": "BARK",
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "1d6+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 3
+          },
+          {
+            "type": "Threat",
+            "val": 3
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_accurate"
+          },
+          {
+            "id": "tg_reliable",
+            "val": 2
+          }
+        ],
+        "on_crit": "The target is Shredded until the end of the turn."
+      },
+      {
+        "name": "HOWL",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "burst",
+            "val": 3
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_accurate"
+          },
+          {
+            "id": "tg_reliable",
+            "val": 2
+          }
+        ],
+        "effect": "This weapon counts as a Superheavy weapon when attacking in this mode.<br>You may choose to add +2 Difficulty to your attack when attacking in this mode to choose which characters are affected.",
+        "on_crit": "The target is Shredded until the end of the turn."
+      }
+    ]
+  }
+]

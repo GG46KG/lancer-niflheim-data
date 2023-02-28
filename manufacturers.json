@@ -1,0 +1,28 @@
+[
+    {
+        "id": "ASG",
+        "name": "ASGARD MINING AND MANUFACTURING",
+        "light": "#92d6fc",
+        "dark": "#5594fa",
+        "description": "",
+        "quote": "<i>Frost and Fortune</i>",
+        "logo_url": "https://drive.google.com/uc?export=download&id=1zuNrOOhrUdelSxTmQ5i8bnl38FTFhMN8"
+    },
+    {
+        "id": "LUMICO",
+        "name": "LUMIERA CORPORATION",
+        "light": "#ed6fc7",
+        "dark": "#eb34b4",
+        "description": "",
+        "quote": "<i>Accept Nothing Less</i>",
+        "logo_url": "https://drive.google.com/uc?export=download&id=1Jp5hGYj3o_Rw-8gW45OO4Ek_LrL7L556"
+    },
+    {
+        "id": "IND",
+        "name": "INDEPENDENT",
+        "light": "#556B2F",
+        "dark": "#556B2F",
+        "description": "Independent frames represent the ingenuity of individuals, mech chassis designed by pilots rather than full companies. As such, no broad support surrounds these mechs. If you want to use them, you need to find the individual who designed them and get the plans from them directly.",
+        "quote": ""
+    }
+]
