@@ -232,9 +232,10 @@
         "val": "3d6"
       }
     ],
-    "effect": "After attacking with this weapon, you are Slowed, cannot take Reactions, and have +2 Difficulty on all saves until the start of your next turn. You may make a maximum of 2 attacks per turn with this weapon.",
+    "effect": "After each attack with this weapon, you suffer +1 Difficulty on all attacks, saves, and skill checks until the start of your next turn.",
+    "on_attack": "This weapon ignores Invisibility and Resistance to Kinetic damage.",
     "on_crit": "The target is Shredded until the end of its next turn.",
-    "description": "This sword, with its thick blade, is one of the largest of its kind. Highly destructive, if intolerably heavy.",
+    "description": "This sword, with its thick blade, is one of the largest of its kind. Highly destructive, if intolerably heavy, it is little more than a heap of raw iron.",
     "tags": [
       {
         "id": "tg_reliable",
@@ -451,14 +452,9 @@
         "val": "1d6"
       }
     ],
-    "tags": [
-      {
-        "id": "tg_ap"
-      }
-    ],
-    "effect": "Damage dealt by this weapon ignores damage resistance. Kinetic damage dealt by this weapon ignores damage immunity.",
+    "effect": "Damage dealt by this weapon ignores damage resistance. Kinetic damage dealt by this weapon cannot be reduced in any way.",
     "on_hit": "1/Turn, any bonus damage dealt by this weapon is doubled.",
-    "description": "<i>I didn't want to cut you down, but I had to. I hope you can understand.</i>"
+    "description": "He dropped the axe to the ground in exhaustion, its blade damaged beyond repair, and spoke softly, with pain in his voice but without regret: <i>I didn't want to cut you down, but I had to. I hope you can understand.</i>"
   },
   {
     "id": "mw_lumico_hatchet",
@@ -593,6 +589,9 @@
         "val": "2"
       },
       {
+        "id": "tg_indestructible"
+      },
+      {
         "id": "tg_exotic"
       }
     ],
@@ -600,15 +599,15 @@
       {
         "activation": "Protocol",
         "name": "Lockdown",
-        "detail": "You are Immobilized until the start of your next turn. This weapon grants you Immunity to damage from enemies that make ranged attacks from the <i>Covered</i> area this Round, instead of Resistance."
+        "detail": "You choose the an area to <i>Cover</i> immediately, are Immobilized and Impaired until the start of your next turn, and may only target characters within the <i>Covered</i> area for Ranged and Tech attacks. You gain Immunity to damage and Burn from ranged attacks that originate within the <i>Covered</i> area this Round, instead of Resistance."
       }
     ],
-    "effect": "At the end of your turn, you choose a Cone 30 area to <i>Cover</i>. You have Resistance to all damage and Burn from ranged attacks from within the <i>Covered</i> area until the start of your next turn. This effect ends if you move for any reason while it is active.",
-    "description": "This is not a weapon, exactly, but a high-end ASGARD security door ripped free of its frame and repurposed as a shield, in an effort to harness the ridiculous strength of ASGARD's security doors in combat."
+    "effect": "While installed, Mechs of Size 1 or less have their Speed reduced by 2 by this weapon.<br>At the end of your turn, you Immobilize yourself until the start of your next turn to choose a Cone 30 area to <i>Cover</i>. You have Resistance to all damage and Burn from ranged attacks that originate within the <i>Covered</i> area until the start of your next turn. This effect ends if you move for any reason while it is active.",
+    "description": "This is not a weapon, exactly, but a high-end ASGARD security door ripped free of its frame and repurposed as a shield, in a strange effort to harness the ridiculous strength of ASGARD's security doors in combat."
   },
   {
     "id": "mw_bayhound_integrated",
-    "name": "Sonic Burst System",
+    "name": "Sonic Burst Driver",
     "mount": "Heavy",
     "type": "CQB",
     "profiles": [

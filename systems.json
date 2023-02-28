@@ -21,7 +21,7 @@
       {
         "activation": "Quick Tech",
         "name": "Target BDM",
-        "detail": "Choose a target within range 20 affected by Lock On to prime a ballistic strike against. As long as you have a strike primed, you are Immobilized and gain access to the <i>Ballistic Launch</i> action."
+        "detail": "Choose a target within range 20 affected by Lock On to prime a ballistic strike against. You may only have a single target primed at a time, using this action again changes the target of this effect to the new one. As long as you have a strike primed, you are Immobilized and gain access to the <i>Ballistic Launch</i> action. You may end this effect as a free action."
       },
       {
         "activation": "Full Tech",
@@ -191,13 +191,14 @@
         "val": 6
       }
     ],
-    "effect": "When this System is reduced to 0 charges, it is destroyed. You may spend 2 Repairs to restore all of this systems charges. If you do, it is also fixed if it was destroyed.",
+    "effect": "When this System is reduced to 0 charges, it is destroyed. You may spend 2 Repairs to restore all of this System's charges. If you do, it is also fixed if it was destroyed.",
     "actions": [
       {
         "activation": "Reaction",
         "name": "Shunt Heat",
         "trigger": "You take Heat from any source, including yourself.",
-        "detail": "Expend any number of charges. The Heat you would receive is reduced by 1 for each charge expended."
+        "detail": "Expend any number of charges. The Heat you would receive is reduced by 1 for each charge expended.",
+        "frequency": "1/turn"
       }
     ]
   },
@@ -223,17 +224,18 @@
       {
         "activation": "Quick Tech",
         "name": "Defend Order",
-        "detail": "An allied Mech, Drone, or object within this System's Aura gains 6 Overshield. Drones and Deployables gain twice this amount."
+        "detail": "An allied Mech, Drone, or object within this System's Aura gains 5 Overshield. Drones and Deployables gain twice this amount."
       },
       {
         "activation": "Quick Tech",
         "name": "Warp Order",
+        "frequency": "1/Round",
         "detail": "An allied Mech, Drone, or object within this System's Aura is teleported up to 5 spaces in any direction of your choice."
       },
       {
         "activation": "Quick Tech",
         "name": "Dissolve Order",
-        "detail": "A Drone or object within this System's Aura takes 10 AP kinetic damage."
+        "detail": "A Drone or object within this System's Aura takes 10 AP kinetic damage. Each object or Drone may only be targeted 1/round."
       }
     ],
     "deployables": [
@@ -241,7 +243,7 @@
         "type": "Mine",
         "name": "Nanite Mine",
         "activation": "Quick Tech",
-        "detail": "This Mine may be placed anywhere within this System's Aura. All characters within a Burst 1 area must pass a Hull Save or take 1d3+3 Explosive damage. On a success, they take half damage."
+        "detail": "This Mine may be placed anywhere within this System's Aura. Only one Nanite mine may be deployed per round. All characters within a Burst 1 area must pass a Hull Save or take 1d3+3 Explosive damage. On a success, they take half damage."
       }
     ],
     "description": "The Heimdall command system hijacks a mech's computers to generate a large nanite field that can directly control a large fleet of drones. While the mech's defensive routines will be largely disabled, it will be able to secure a large area through its capabilities as a command post."
@@ -521,7 +523,7 @@
       {
         "activation": "Full",
         "name": "REQUEST: WISH GRANTED",
-        "detail": "Expend a charge to activate one effect of any System without the Exotic Gear tag, even if you do not have the License for that system."
+        "detail": "Expend a charge to activate one action granted by any System without the Exotic Gear tag, even if you do not have the License for that system."
       }
     ],
     "description": "<i>\"Have you ever wondered what things would be like if you were someone else—if you had chosen differently?\"</i>"
@@ -557,7 +559,7 @@
       {
         "activation": "Invade",
         "name": "REQUEST: PREDICT SEQUENCE",
-        "detail": "The target gains Lock On until the start of their next turn if they were not already affected by it. Until Lock On is removed from the target, your allies may Overwatch the target if the target takes any action within their Threat. Overwatches made this way automatically consume Lock On if the attack hits, regardless of whether the attacker chose to consume it for their attack."
+        "detail": "The target gains Lock On until the end of their next turn if they were not already affected by it. Until Lock On is removed from the target, your allies may Overwatch the target if the target takes any action within their Threat. Overwatches made this way automatically consume Lock On if the attack hits, regardless of whether the attacker chose to consume it for their attack."
       }
     ],
     "tags": [

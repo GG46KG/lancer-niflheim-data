@@ -1,49 +1,62 @@
 [
-    {
-        "id": "asg_final_hour",
-        "name": "FINAL HOUR",
-        "source": "ASG",
-        "description": "ASGARD Mechs are powered with Thermal Engines, a proprietary technology of the company. By removing all safety restrictions on the engine, one can allow it to enter a slow meltdown that will eventually result in the mech's destruction, but potentially buy the pilot just enough to survive the final hour of a battle by forcing the engine to keep running regardless of how damaged the mech becomes.",
-        "effect": "During a short rest, you may choose to activate your Mech's <i>Final Hour.</i> Once you choose to do this, this effect cannot be ended except during a Full Repair.<br>During your <i>Final Hour</i>:<ul><li>You are considered to be in the Danger Zone at all times, regardless of your current Heat.</li><li>Reduce your Mech's Structure to 1. For each Structure lost this way, regain 1 Stress (minimum of 1). This can exceed your Mech's Stress cap.</li><li>Any time you would take damage, you take the same amount of Heat instead. This Heat gain cannot be reduced by any means, and the amount of Heat gained is determined before damage reduction, like Armor or Resistance.</li><li>You cannot clear Heat except through Overheating.</li><li>Whenever you would make a Overheat roll, you always roll 1 die, regardless of how much Stress you are missing.</li></ul>"
-    },
-    {
-        "id": "asg_disposable_heatsinks",
-        "name": "DISPOSABLE HEATSINKS",
-        "source": "ASG",
-        "description": "Low quality (and extremely cheap) heatsinks are produced in incredible numbers by ASGARD. Once used, they are reduced to slag that can be recycled, provided the pilot is willing to haul the scrap back with them.",
-        "effect": "Gain the Disposable Heatsinks system.",
-        "integrated": [
-            "asg_disposable_heatsink"
-        ]
-    },
-    {
-        "id": "asg_no_kill_like_overkill",
-        "name": "NO KILL LIKE OVERKILL",
-        "source": "ASG",
-        "description": "ASGARD believes that all combat should be handled with the biggest stick available at any given moment, and that nothing gives a pilot the same sort of adrenaline rush as firing heavy artillery at a target and seeing nothing but a crater when the smoke clears.",
-        "effect": "1/round, when you destroy a non-Grunt Mech with a damage from a Heavy or Superheavy weapon, you may immediately Skirmish as a Free Action."
-    },
-    {
-        "id": "lumico_commissioned_refinements",
-        "name": "COMMISSIONED REFINEMENTS",
-        "source": "LUMICO",
-        "description": "While Lumiera Corporation does not produce modifications to other manufacturers on masse, at a valued customer's request, they will produce add-ons for any weapons to dramatically improve their reliability in combat.",
-        "effect": "Choose one mount. Negate up to 2 Difficulty that would apply to attack rolls made with weapons on that mount.",
-        "mounted_effect": "Attacks made with weapons on this mount negate 2 Difficulty that would be applied to their rolls."
-    },
-    {
-        "id": "lumico_pulse_battery",
-        "name": "RADIO PULSE BATTERY",
-        "source": "LUMICO",
-        "description": "By adding secondary store of power designed to dramatically boost the power of a single burst transmission, allowing the transmission of what would normally be a targeted signal to a broad area. Unfortunately, the sudden jolt of power caused by activating this reserve power is usually enough to force a mech to soft reboot.",
-        "effect": "1/mission, when you take a Quick Tech action that targets a single character, you may activate this Core Bonus to cause that action to target any number of characters within Sensors. At the end of your turn, you are Jammed until the end of your next turn. The Jammed condition caused by this Core Bonus ignores any effects that grant Immunity to Jammed or that would negate a portion of Jammed's effects."
-    },
-    {
-        "id": "lumico_accept_nothing_less",
-        "name": "ACCEPT NOTHING LESS",
-        "source": "LUMICO",
-        "description": "Perfection, as Lumiera Corporation defines it, is largely based on a pilot's skill. Lumiera does understand that luck plays a factor in combat however, but they do look positively on pilots who can make the most out of their luck.",
-        "effect": "Choose one weapon. When you roll a 19 or 20 on a die when making an attack roll with that weapon, you may make a second attack with that weapon as a free action. This extra attack deals half damage and does not trigger this effect again.",
-        "mounted_effect": "One weapon on this mount triggers extra attacks on a roll of 19 or 20."
-    }
+  {
+    "id": "asg_final_hour",
+    "name": "FINAL HOUR",
+    "source": "ASG",
+    "description": "ASGARD Mechs are powered with Thermal Engines, a proprietary technology of the company. By removing all safety restrictions on the engine, one can allow it to enter a slow meltdown that will eventually result in the mech's destruction, but potentially buy the pilot just enough to survive the final hour of a battle by forcing the engine to keep running regardless of how damaged the mech becomes.",
+    "effect": "During a short rest, you may choose to activate your Mech's <i>Final Hour.</i> Once you choose to do this, this effect cannot be ended except during a Full Repair.<br>During your <i>Final Hour</i>:<ul><li>You are considered to be in the Danger Zone at all times, regardless of your current Heat.</li><li>Reduce your Mech's Structure to 1. For each Structure lost this way, regain 1 Stress (minimum of 1). This can exceed your Mech's Stress cap.</li><li>Any time you would take damage, you take the same amount of Heat instead. This Heat gain cannot be reduced by any means, and the amount of Heat gained is determined before damage reduction, like Armor or Resistance.</li><li>You cannot clear Heat except through Overheating.</li><li>Whenever you would make a Overheat roll, you always roll 1 die, regardless of how much Stress you are missing.</li></ul>"
+  },
+  {
+    "id": "asg_disposable_heatsinks",
+    "name": "DISPOSABLE HEATSINKS",
+    "source": "ASG",
+    "description": "Low quality (and extremely cheap) heatsinks are produced in incredible numbers by ASGARD. Once used, they are reduced to slag that can be recycled, provided the pilot is willing to haul the scrap back with them.",
+    "effect": "Gain the Disposable Heatsinks system.",
+    "integrated": ["asg_disposable_heatsink"]
+  },
+  {
+    "id": "asg_no_kill_like_overkill",
+    "name": "NO KILL LIKE OVERKILL",
+    "source": "ASG",
+    "description": "ASGARD believes that all combat should be handled with the biggest stick available at any given moment, and that nothing gives a pilot the same sort of adrenaline rush as firing heavy artillery at a target and seeing nothing but a crater when the smoke clears.",
+    "effect": "1/round, when you destroy a non-Grunt Mech with a damage from a Heavy or Superheavy weapon, you may immediately Skirmish as a Free Action."
+  },
+  {
+    "id": "lumico_bespoke_accessories",
+    "name": "BESPOKE ACCESSORIES",
+    "source": "LUMICO",
+    "description": "While Lumiera Corporation does not produce modifications to other manufacturers on masse, at a valued customer's request, they will produce high-end, single-use addons for any weapons to dramatically improve their functionality and utility in combat.",
+    "effect": "Gain the <i>Attach Accessories</i> protocol, which has 3 uses. You regain 1 use when you rest, and all uses are regained during a Full Repair.",
+    "actions": [
+      {
+        "activation": "Protocol",
+        "name": "Attach Accessories",
+        "detail": "Choose a weapon installed on your Mech and a single weapon mod that could be applied to it, even if you do not possess the license for that mod. For the rest of the turn, treat that weapon as though that mod was applied to it. If the chosen mod would cost 3 or more SP to install, it consumes 2 uses of Attach Accessories when chosen.<br><i>If the chosen mod has limited uses, you may always use it as though it still had charges remaining. If the chosen mod has multiple states (e.g. the Caliban's Supermassive Mod), the mod can be activated in the state of your choice.</i>"
+      }
+    ],
+    "counters": [
+      {
+        "id": "ctr_bespoke",
+        "name": "Attach Accessories",
+        "default_value": 3,
+        "min": 0,
+        "max": 3
+      }
+    ]
+  },
+  {
+    "id": "lumico_pulse_battery",
+    "name": "RADIO PULSE BATTERY",
+    "source": "LUMICO",
+    "description": "By adding secondary store of power designed to dramatically boost the power of a single burst transmission, allowing the transmission of what would normally be a targeted signal to a broad area. Unfortunately, the sudden jolt of power caused by activating this reserve power is usually enough to force a mech to soft reboot.",
+    "effect": "1/Mission, when you take a Quick Tech action that targets a single character, you may activate this Core Bonus to cause that action to target any number of characters within Sensors. At the end of your turn, you are Jammed until the end of your next turn. The Jammed condition caused by this Core Bonus ignores any effects that grant Immunity to Jammed or that would negate a portion of Jammed's effects. You may not use this effect on a turn where you expend your mech's Core Power."
+  },
+  {
+    "id": "lumico_accept_nothing_less",
+    "name": "ACCEPT NOTHING LESS",
+    "source": "LUMICO",
+    "description": "Perfection, as Lumiera Corporation defines it, is largely based on a pilot's skill. Lumiera does understand that luck plays a factor in combat however, but they do look positively on pilots who can make the most out of their luck.",
+    "effect": "Choose one weapon. When you roll a 19 or 20 on a die when making an attack roll with that weapon, you may make a second attack with that weapon as a free action. This extra attack deals half damage and does not trigger this effect again.",
+    "mounted_effect": "One weapon on this mount triggers extra attacks on a roll of 19 or 20."
+  }
 ]

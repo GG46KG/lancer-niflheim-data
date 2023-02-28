@@ -412,8 +412,8 @@
     "license_level": 2,
     "source": "IND",
     "name": "SLOWPOKE",
-    "mechtype": ["Striker", "Artillery"],
-    "y_pos": 35,
+    "mechtype": ["Artillery"],
+    "y_pos": 15,
     "description": "<i>Independent frames are not available as a part of any license and are only accessible as Exotic Gear.</i><br>Sam \"Poke\" Rodriguez never accepted half measures. As a member of ASGARD's Engineering Research department, he was largely focused on packing the most bang into the smallest frame possible. Though his designs never saw the open market after ASGARD's collapse as a major force in the Outer Arm Frontier sector, Poke went on to refine his designs, ensuring that they would be maximally functional in actual combat. He didn't have a choice after all: he either made his designs work or died trying to use them.",
     "mounts": ["Heavy","Aux/Aux"],
     "stats": {
@@ -451,8 +451,8 @@
       }
     ],
     "core_system": {
-      "name": "ASG-44R \"Pneuma\" Howitzer and Feed System",
-      "description": "The \"Pnuema\" Howitzer is an outsized weapon designed for use on the railways of frontier planets, to defend them from bombardment from low-altitude spacecraft. Its raw power is enough to launch a round into orbit, albeit with greatly reduced stopping power, and more than enough to heavily damage any spacecraft within the atmosphere. It was, however, never designed for use on Mechs, relying on the incredible mass of a full railway train (with stabilizers) to mitigate the weapon's earth-shattering recoil. Poke viewed this physical limitation not as a hard line, but as a challenge.",
+      "name": "ASG-R44 \"Pneuma\" Howitzer and Feed System",
+      "description": "The \"Pnuema\" Howitzer is an outsized weapon designed for use on the railways of frontier planets, to defend them from bombardment from low-altitude spacecraft. Its raw power is enough to launch a round into orbit, albeit with greatly reduced stopping power, and more than enough to heavily damage any spacecraft within the atmosphere. It was, however, never designed for use on Mechs, relying on the incredible mass of a full railway train (with stabilizers) to mitigate the weapon's earth-shattering recoil. Poke viewed this physical limitation not as a concept-killing impossibility, but as a challenge.",
       "passive_name": "Quickdraw",
       "passive_actions": [
         {
@@ -475,9 +475,9 @@
     "license_level": 2,
     "source": "IND",
     "name": "BAYHOUND",
-    "mechtype": ["Striker", "Artillery"],
-    "y_pos": 35,
-    "description": "<i>Independent frames are not available as a part of any license and are only accessible as Exotic Gear.</i><br>",
+    "mechtype": ["Striker"],
+    "y_pos": 30,
+    "description": "<i>Independent frames are not available as a part of any license and are only accessible as Exotic Gear.</i><br>\"Bayhound\" Rikishi was an orphan, by its literal meaning, for longer than he could reasonably remember, but he never felt at a loss for family. He was taken in at a young age by the venerable scrapper \"Junk Dog\" Joe, founder of the Junkyard Dogs, alongside another young man \"Killer Dog\" X, who, alongside the rest of the scrapper crew, offered him more than enough family for his entire youth. Never one to be upstaged by his more level headed adoptive older brother, Rikishi developed a mech that was a brash and loud as him. Never one to rest on his laurels, Rikishi still continually tweaks his self-made Sonic Burst Driver, ever aspiring to raise it to a legendary status that would secure his name and Junkyard Dogs in history.",
     "mounts": ["Heavy","Main","Main"],
     "stats": {
       "size": 1,
@@ -497,18 +497,18 @@
     },
     "traits": [
       {
-        "name": "Sound Disruption",
+        "name": "Pulse Disruption Field",
         "description": "1/scene, when the Bayhound takes Kinetic or Explosive damage, it may gain Immunity to Kinetic and Explosive damage for that attack."
       },
       {
         "name": "Houndhunt",
-        "description": "1/round, when a character becomes Shredded, the Bayhound may move and attack them with the Sonic Burst System.",
+        "description": "1/round, when a character becomes Shredded, the Bayhound may move and attack them with the Sonic Burst Driver.",
         "actions":[
           {
             "activation": "Reaction",
             "name": "Houndhunt",
             "trigger": "A character becomes Shredded.",
-            "detail": "Move up to 3 spaces, then make an attack with the Sonic Burst System. The movement ignores engagement and doesn't provoke reactions, and the attack must target the character that triggered this reaction.",
+            "detail": "Move up to 3 spaces, then make an attack with the Sonic Burst Driver. The movement ignores engagement and doesn't provoke reactions, and the attack must target the character that triggered this reaction.",
             "frequency": "1/Round"
           }
         ]
@@ -523,15 +523,15 @@
       }
     ],
     "core_system": {
-      "name": "Sonic Burst System",
-      "description": "",
-      "active_name": "Super Amplifiers",
-      "active_effect": "Until the end of combat, the Sonic Burst System deals 3 bonus Energy damage and applies Shredded on hit.",
+      "name": "Sonic Burst Driver",
+      "description": "Rikishi's signature weapon, the Sonic Burst Driver launches high frequency shockwaves from a set of purpose built speakers to damage hostile mechs by literally vibrating them apart with concussive force. A secondary set of high power speakers, the so-called \"Deadsteel Amplifiers\", dramatically boost the amplitude of the weapon's shockwaves, but cannot be used for long before the mech they're mounted on starts to literally fall to pieces from the intense vibrations.",
+      "active_name": "Deadsteel Amplifiers",
+      "active_effect": "Until the end of combat, the Sonic Burst Driver deals 3 bonus Energy damage and applies Shredded on hit.",
       "activation": "Quick",
       "use": "Encounter",
       "integrated": ["mw_bayhound_integrated"]
     },
     "data_type": "frame",
-    "image_url": "https://lh4.googleusercontent.com/LMT0-KbjJ0h9U8h00r-lGf9QLWyzhkMlBz4A2Z8eO7NNrt4wKgsONqIkfd88bIyLpJM=w2400"
+    "image_url": "https://lh6.googleusercontent.com/6bP_qlii2xNgpKgSoly3Nx4yX-8FqzIg97AQYCQx1vVZKbv4RPRZimfz4-wZAJNaeMs=w2400"
   }
 ]
