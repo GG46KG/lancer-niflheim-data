@@ -392,7 +392,7 @@
         "edef": "10",
         "size": 0.5,
         "hp": "10",
-        "actions":[
+        "actions": [
           {
             "name": "Hunt/Kill",
             "activation": "Free",
@@ -415,6 +415,105 @@
       }
     ],
     "description": "This high-end recon system was designed by ASGARD's software team as a tactical breaching suite that could be used to locate and neutralize threats before they even had a chance to respond. While it has not yet been heavily field tested, ASGARD has high hopes that it will be widely adopted."
+  },
+  {
+    "id": "asg_martial_doctrine_3",
+    "name": "Martial Doctrine III",
+    "type": "System",
+    "sp": 4,
+    "source": "ASG",
+    "license": "DRAUGR",
+    "license_level": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      }
+    ],
+    "effect": "Gain increasing benefits based on the number of Martial Doctrine systems installed:<ul><li>1+: You may make Improvised Attacks as a quick action as long as you aren't Jammed.</li><li>2+: Your Improvised Attacks deal 1d6 bonus Kinetic damage on a critical hit.</li><li>3: Your Improvised Attacks count as attacks with Main Melee weapons.</li></ul>This effect is shared between all Martial Doctrine systems and only applies once.",
+    "actions": [
+      {
+        "name": "Martial Stance: Ripper",
+        "activation": "Protocol",
+        "detail": "Until the end of the turn, if you damage a target you are Grappling with an Improvised Attack, you may force the target to attempt a Hull Save or become Exposed. This can only target each character 1/Scene.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
+      },
+      {
+        "name": "Combo: Suplex",
+        "activation": "Free",
+        "detail": "Make a melee attack against a character you are Grappling that is the same Size as you or smaller. If the attack lands, they take 2d6 Kinetic damage, are knocked Prone, and are moved to the space opposite you from their current position. You are also knocked prone on a successful attack. You may only take this action immediately after dealing damage with an Improvised Attack.",
+        "frequency": "1/Round"
+      }
+    ],
+    "description": "The \"Martial Doctrine\" are a set of emergency subroutines that improve a mech's capabilities in the situation that it is forced into disarmed combat. Though they were distributed by ASGARD in three different releases, they were clearly intended to form a greater whole, as each version has hidden code that only activates in the presence of the others."
+  },
+  {
+    "id": "asg_martial_doctrine_2",
+    "name": "Martial Doctrine II",
+    "type": "System",
+    "sp": 3,
+    "source": "ASG",
+    "license": "DRAUGR",
+    "license_level": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "effect": "Gain increasing benefits based on the number of Martial Doctrine systems installed:<ul><li>1+: You may make Improvised Attacks as a quick action as long as you aren't Jammed.</li><li>2+: Your Improvised Attacks deal 1d6 bonus Kinetic damage on a critical hit.</li><li>3: Your Improvised Attacks count as attacks with Main Melee weapons.</li></ul>This effect is shared between all Martial Doctrine systems and only applies once.",
+    "actions": [
+      {
+        "name": "Martial Stance: Brutalizer",
+        "activation": "Protocol",
+        "detail": "Until the end of the turn, your Improvised Attacks gain Knockback 3. 1/Round, after inflicting Knockback as part of any Melee Attack, you may move an equal number of spaces towards the same target by the most direct route possible. If you do, you may make an Improvised Attack with no Knockback against the target for half damage as a free action.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
+      },
+      {
+        "name": "Combo: Hullbreaker",
+        "activation": "Free",
+        "detail": "Make a melee attack against a target you damaged with an Improvised Attack this turn. On a success, you slam them into an object or Mech adjacent to them, dealing 3 Kinetic damage to both targets. Objects take 10 AP Kinetic damage instead. You may only take this action immediately after dealing damage with an Improvised Attack.",
+        "frequency": "1/Round"
+      }
+    ],
+    "description": "The \"Martial Doctrine\" are a set of emergency subroutines that improve a mech's capabilities in the situation that it is forced into disarmed combat. Though they were distributed by ASGARD in three different releases, they were clearly intended to form a greater whole, as each version has hidden code that only activates in the presence of the others."
+  },
+  {
+    "id": "asg_martial_doctrine_1",
+    "name": "Martial Doctrine I",
+    "type": "System",
+    "sp": 3,
+    "source": "ASG",
+    "license": "DRAUGR",
+    "license_level": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "effect": "Gain increasing benefits based on the number of Martial Doctrine systems installed:<ul><li>1+: You may make Improvised Attacks as a quick action as long as you aren't Jammed.</li><li>2+: Your Improvised Attacks deal 1d6 bonus Kinetic damage on a critical hit.</li><li>3: Your Improvised Attacks count as attacks with Main Melee weapons.</li></ul>This effect is shared between all Martial Doctrine systems and only applies once.",
+    "actions": [
+      {
+        "name": "Martial Stance: Hunter",
+        "activation": "Protocol",
+        "detail": "Once this turn, you may Boost towards a target as a part of an Improvised Attack. If you do, you gain +1 Accuracy on that attack.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
+      },
+      {
+        "name": "Combo: Haymaker",
+        "activation": "Free",
+        "detail": "Make a melee attack against a target you damaged with an Improvised Attack this turn. On a success, your target is Slowed and Impaired until the end of your next turn. You may only take this action immediately after dealing damage with an Improvised Attack.",
+        "frequency": "1/Round"
+      }
+    ],
+    "description": "The \"Martial Doctrine\" are a set of emergency subroutines that improve a mech's capabilities in the situation that it is forced into disarmed combat. Though they were distributed by ASGARD in three different releases, they were clearly intended to form a greater whole, as each version has hidden code that only activates in the presence of the others."
   },
   {
     "id": "lumico_fugue_system",
@@ -598,11 +697,11 @@
       {
         "activation": "Quick Tech",
         "name": "Gravitational Crush",
-        "detail": "You may only take this action if this system's Aura is active. All characters within the Aura must make a Hull save or take 1d6 Kinetic damage and be pulled 2 units toward the center of the Aura. Characters within the <i>Event Horizon</i> take 1d6 AP Kinetic damage, without a save. Using this action does not consume charges from this system.",
+        "detail": "You may only take this action if this system's Aura is active. All characters within the Aura must make a Hull save or take 1d6 Energy damage and be pulled 2 spaces toward the center of the Aura. On a success, they are pulled 1 space and take half damage. Characters within the <i>Event Horizon</i> take 1d6 AP Energy damage, without a save. Objects within the Aura take 20 AP Energy damage. Using this action does not consume charges from this system.",
         "frequency": "1/Round"
       }
     ],
-    "effect": "When this Aura is activated, choose a point within sensors. This system's Aura is centered on that point, rather than the user.<br>Any character adjacent to or on the origin of the Aura is within this system's <i>Event Horizon</i>. Characters within the Aura are Slowed, and enemies within the <i>Event Horizon</i> are Stunned. Enemies within the Aura are have resistance to all damage, Heat, and Burn from Ranged Attacks, increased to immunity within the <i>Event Horizon</i>. At the start of each turn that the Aura is active, it's Aura size increases by 1.",
+    "effect": "When this Aura is activated, choose a point within sensors. This system's Aura is centered on that point, rather than the user.<br>Any character adjacent to or on the origin of the Aura is within this system's <i>Event Horizon</i>. Characters within the Aura are Slowed, and enemies within the <i>Event Horizon</i> are Stunned. Characters and Objects within the Aura have resistance to all damage, Heat, and Burn from Ranged Attacks, increased to immunity within the <i>Event Horizon</i>. At the start of each turn that the Aura is active, it's Aura value increases by 1.",
     "description": "By generating an extremely small but superdense mass, one can harness and direct gravitational waves to directly affect ambient energy. At this scale, Hawking radiation causes the object to degrade at a high speed and the object will evaporate if it is not actively maintained by the generator."
   },
   {

@@ -7,7 +7,7 @@
     "bonuses": [
       {
         "id": "pilot_hp",
-        "val": 5
+        "val": "3 + grit"
       },
       {
         "id": "pilot_armor",
@@ -25,7 +25,7 @@
       },
       {
         "id": "pilot_speed",
-        "val": 6,
+        "val": "Special",
         "replace": true
       }
     ]

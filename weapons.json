@@ -195,7 +195,7 @@
   {
     "id": "asg_tyr_sword",
     "name": "Wolfstooth",
-    "mount": "Battlesuit",
+    "mount": "Auxiliary",
     "type": "Melee",
     "range": [
       {
@@ -209,7 +209,8 @@
         "val": "1d3+2"
       }
     ],
-    "effect": "This weapon is not mounted on the mech itself: instead, it is an integrated part of the Tyr Battlesuit and is used as a pilot weapon.<br>If this weapon is used to attack a target that the Fenrir damaged since the start of your previous turn, it gains +1 Accuracy on its attack.<br>While Jockeying a hostile Mech, you may attack it with this weapon instead of the standard options. If you do, that attack is Armor-Piercing and deals 4 bonus kinetic damage.",
+    "effect": "This weapon is not mounted on the mech itself: instead, it is an integrated part of the Tyr Battlesuit and may only be used for attacks as though it were a pilot weapon. However, the Wolfstooth benefits from your talents as though it were a Mech weapon.<br>While Jockeying a hostile Mech, you may attack it with this weapon instead of the standard options. If you do, damage dealt by that attack is Armor-Piercing and deals 4 bonus kinetic damage.",
+    "on_attack": "If the Fenrir damaged your target since the start of your previous turn, your attack gains +1 Accuracy.",
     "description": "A sword, designed for the most foolhardy and dangerous mech pilots ever seen on a battlefield."
   },
   {
@@ -328,6 +329,128 @@
     "on_attack": "You may choose to launch a grenade from another System instead of this weapon's typical ammunition. If you do, expend a charge from system with the Grenade tag instead of this weapon.",
     "on_hit": "If you chose to fire a grenade from another system, this weapon deals no Explosive damage, but the chosen Grenade's effects trigger at the target's location. The target of the attack automatically fails any saves associated with the Grenade's detonation. Other affected characters still attempt saves as normal.",
     "description": "ASGARD's Nastrond-model grenade launcher was adapted to fire most types of mass produced contact charge through the use of a large container that acts somewhat like a sabot. While the flexibility of this is praiseworthy, the actual projectiles don't fly with any particular grace, limiting their effective range compared to the capabilities of similar weapon system."
+  },
+  {
+    "id": "mw_asg_titanium_hook",
+    "name": "Titanium Hook",
+    "mount": "Auxiliary",
+    "source": "ASG",
+    "license": "DRAUGR",
+    "license_level": 1,
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "2"
+      }
+    ],
+    "effect": "This weapon's on hit effect only applies to targets who are adjacent to you when the attack is made. Biological targets take double damage from this weapon.",
+    "on_hit": "The hook's blade catches in the target's armor: if adjacency is broken between you and the target before the start of your next turn, the target takes 2 Armor-Piercing Kinetic damage.",
+    "description": "<i>It is a hook. A well tempered and competently made one, to be sure, but just a simple hook, nonetheless. The sight of it makes me shiver at the thought of what it might do to flesh.</i>"
+  },
+  {
+    "id": "mw_asg_cats_cradle",
+    "name": "Cat's Cradle",
+    "mount": "Main",
+    "source": "ASG",
+    "license": "DRAUGR",
+    "license_level": 2,
+    "type": "Melee",
+    "sp": 1,
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Full",
+        "name": "Tighten String",
+        "detail": "All characters marked by <i>Hairline Entanglement</i> are pulled up to 5 spaces directly toward you, Shredded, take 2d6 Kinetic Damage, and have <i>Hairline Entanglement</i> removed from them. Affected characters may attempt a Hull save to halve the damage and prevent being Shredded. Single Human targets affected by this action are instantly killed."
+      }
+    ],
+    "on_hit": "The target becomes unwittingly entangled in nearly invisible wire and marked with <i>Hairline Entanglement</i>. This effect ends if the target moves more than Range 20 away from you at any point.",
+    "description": "<i>It looks like armor plating for a mech's hands, but it's actually a weapon that projects a net of thin wire around the target. You can see light reflect off it at the right angle, but otherwise it's nearly impossible to tell it's even there. It's too easy to lose fingers...</i>"
+  },
+  {
+    "id": "mw_asg_innocuous_sword",
+    "name": "Prototype No. 161 (Discarded)",
+    "mount": "Main",
+    "source": "ASG",
+    "license": "DRAUGR",
+    "license_level": 3,
+    "type": "Melee",
+    "sp": 1,
+    "profiles": [
+      {
+        "name": "Inactive",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "effect": "You can cause this weapon to become Bloodstoked until the end of the turn by dealing 1d6 Energy damage to yourself as a free action. You can not prevent or reduce this damage in any way."
+      },
+      {
+        "name": "Bloodstoked",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          },
+          {
+            "type": "Energy",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 3
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ap"
+          },
+          {
+            "id": "tg_knockback",
+            "val": 3
+          },
+          {
+            "id": "tg_accurate"
+          }
+        ],
+        "effect": "If this profile is active at any point during your turn, you must attack with it before the end of the turn. If you fail to do so, you deal 1d6 Energy damage to yourself and the weapon becomes Bloodstoked until the end of your next turn. You can not prevent or reduce this damage in any way."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_oneofakind"
+      }
+    ],
+    "effect": "This weapon begins Inactive. Whenever a Character is destroyed or takes Structure damage, this weapon's Bloodstoked profile activates until the end of your next turn. If you kill a Biological target with this weapon, it becomes Bloodstoked until the end of combat.",
+    "description": "<i>It doesn't look like much, does it? But... it draws a lot more power than it seems like it should.</i>"
   },
   {
     "id": "mw_lumico_quint_rifle",
@@ -602,7 +725,7 @@
         "detail": "You choose the an area to <i>Cover</i> immediately, are Immobilized and Impaired until the start of your next turn, and may only target characters within the <i>Covered</i> area for Ranged and Tech attacks. You gain Immunity to damage and Burn from ranged attacks that originate within the <i>Covered</i> area this Round, instead of Resistance."
       }
     ],
-    "effect": "While installed, Mechs of Size 1 or less have their Speed reduced by 2 by this weapon.<br>At the end of your turn, you Immobilize yourself until the start of your next turn to choose a Cone 30 area to <i>Cover</i>. You have Resistance to all damage and Burn from ranged attacks that originate within the <i>Covered</i> area until the start of your next turn. This effect ends if you move for any reason while it is active.",
+    "effect": "While installed, Mechs of Size 1 or less have their Speed reduced by 2 by this weapon.<br>At the end of your turn, you may Immobilize yourself until the start of your next turn to choose a Cone 30 area to <i>Cover</i>. You have Resistance to all damage and Burn from ranged attacks that originate within the <i>Covered</i> area until the start of your next turn. This effect ends if you move for any reason while it is active.",
     "description": "This is not a weapon, exactly, but a high-end ASGARD security door ripped free of its frame and repurposed as a shield, in a strange effort to harness the ridiculous strength of ASGARD's security doors in combat."
   },
   {
@@ -615,7 +738,7 @@
         "name": "BARK",
         "damage": [
           {
-            "type": "Energy",
+            "type": "Explosive",
             "val": "1d6+2"
           }
         ],
@@ -644,7 +767,7 @@
         "name": "HOWL",
         "damage": [
           {
-            "type": "Kinetic",
+            "type": "Explosive",
             "val": "1d6+2"
           }
         ],
@@ -667,5 +790,43 @@
         "on_crit": "The target is Shredded until the end of the turn."
       }
     ]
+  },
+  {
+    "id": "mw_dogma_integrated",
+    "name": "Fiery Revolving Sword",
+    "mount": "Heavy",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+1"
+      },
+      {
+        "type": "Burn",
+        "val": "4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "effect": "This weapon may only be used to attack as a part of a Reaction.<br/>If a Mech or Vehicle is destroyed due to damage from this weapon, the Pilot or Crew always survive the Mech or Vehicle's destruction. Human targets take no damage from this weapon and are Jammed instead.",
+    "on_crit": "This weapon deals 3 extra Burn and its Energy damage is maximized.",
+    "description": "<i>Deep calls to deep in the roar of your waterfalls; all your waves and breakers have swept over me.</i>"
   }
 ]

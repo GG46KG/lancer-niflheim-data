@@ -71,7 +71,7 @@
     "name": "FENRIR",
     "mechtype": ["Striker"],
     "y_pos": 23,
-    "description": "The utility of ASGARD's Fenrir model has always been in question. A mech designed in such a way that the pilot puts themself in maximum danger to eke out a tiny extra bit of effectiveness in combat doesn't seem, on its surface, that it would appeal to many pilots. Indeed, it doesn't. However, to a specific kind of pilot, with just enough bravery and a touch of insanity, the Fenrir's integrated battlesuit offers enough utility and safety to be incredibly appealing. As such, despite many, many attempts by the Outer Arm Frontier Sector Administration to discourage the production of the Fenrir, it has remained in steady, if limited, production since it was first conceived.",
+    "description": "The utility of ASGARD's Fenrir model has always been in question. A mech designed in such a way that the pilot puts themself in maximum danger to eke out a tiny extra bit of effectiveness in combat doesn't seem, on its surface, that it would appeal to many pilots. Indeed, it doesn't. However, to a specific kind of pilot, with just enough bravery and a touch of insanity, the Fenrir's integrated battlesuit offers enough utility and safety to be incredibly appealing. As such, despite many, many attempts by the Outer Arm Frontier Sector Administration to discourage the production of the Fenrir, it has remained in steady, if limited, production since it was first conceived.<br/><i>\"It's like ASGARD read stories about the stupid shit Lancers pull and designed a Mech based on that.\"</i>",
     "mounts": ["Heavy", "Main"],
     "stats": {
       "size": 1,
@@ -95,12 +95,8 @@
         "description": "Pilots may mount and dismount from the Fenrir as a quick action instead of a full action."
       },
       {
-        "name": "Intimidate",
-        "description": "Melee attacks made against the Fenrir suffer +1 Difficulty from Engagement."
-      },
-      {
         "name": "Fenriswolf-Class Integrated NHP",
-        "description": "The Fenrir gains the AI tag, if it doesn't already have it from its systems.<br>If you install an system with the AI tag on the Fenrir, its system point cost is reduced by 1, to a minimum of 0."
+        "description": "The Fenrir gains the AI tag, if it doesn't already have it from its systems.<br>While you are wearing the Tyr Battlesuit, as long as it is not in Emergency Standby, any NHP that pilots your mech benefits from your talents."
       },
       {
         "name": "Weak Computer",
@@ -115,19 +111,19 @@
     ],
     "core_system": {
       "name": "WARWOLVES",
-      "description": "\"It's like ASGARD read stories about the stupid shit Lancers pull and designed a Mech based on that.\"",
+      "description": "The Revision Two ASG-BERSERK system is a complex network of neural jacks and chemical injectors within the Tyr Battlesuit that allows the pilot of the mech to control and communicate with it at the speed of thought, effectively allowing the pilot to control the mech in the same way as an NHP. Pilots who use the system have reported feeling a strong connection to the NHPs installed on their mech, and have more than once referred to them as their \"pack\". Medical and psychological analysis of said pilots show no significant or unexpected divergance from a typical pilot's neural patterns, and so the phenomenon is largely attributed to the eccentricity of mech pilots and the name of the frame, itself.",
       "active_name": "Beasts of Slaughter",
-      "active_effect": "For the rest of the scene:<ul><li>The Tyr Battlesuit has resistance to all damage and burn.</li><li>Whenever you attack with the Wolfstooth, the Fenrir may Overwatch your target.</li></ul>",
+      "active_effect": "Immediately recharge ASG-BERSERK Stimulant Injection. For the rest of the scene, whenever you attack with the Wolfstooth, the Fenrir may Overwatch your target.",
       "activation": "Protocol",
       "use": "Encounter",
       "passive_name": "Tyr Battlesuit",
-      "passive_effect": "When you dismount from the Fenrir for any reason, you may choose to exit while wearing the linked Tyr Battlesuit, instead of your normal Hardsuit. Doing so offers several benefits as long as the Battlesuit is worn:<ul><li>Your speed is increased to match the Fenrir's.</li><li>You gain an HP boost equal to half the Fenrir's HP. This bonus HP is inherent to the Battlesuit, and is not regained each time you exit the mech if it was previously lost.<li>You gain 2 Armor.</li><li>Your Evasion and E-Defense are increased to 11.</li><li>You gain access to the ASG-BERSERK Stimulant Injection Reaction and the Wolfstooth weapon.</li></ul><br>However, the Battlesuit needs to draw power from the Fenrir to function. If you end your turn more than range 5 away from the Fenrir, or if the Fenrir is destroyed, your Battlesuit enters emergency standby: you are Immobilized and Jammed until the Fenrir comes back into range or until you exit the Battlesuit as a Full Action.",
+      "passive_effect": "When you dismount from the Fenrir for any reason, you may choose to exit while wearing the linked Tyr Battlesuit, instead of your normal Hardsuit. Doing so offers several benefits as long as the Battlesuit is worn:<ul><li>Your speed is increased to match the Fenrir's.</li><li>You gain an HP boost of 3 + your Grit. This bonus HP is inherent to the Battlesuit, and is not regained each time you exit the mech if it was previously lost.<li>You gain 2 Armor.</li><li>Your Evasion and E-Defense are increased to 11.</li><li>You have Resistance to damage and Burn from attacks that target more than one character.</li><li>You gain access to the ASG-BERSERK Stimulant Injection Reaction and the Wolfstooth weapon.</li></ul>However, the Battlesuit needs to draw power from the Fenrir to function. If you end your turn more than range 5 away from the Fenrir, or if the Fenrir is destroyed, your Battlesuit enters Emergency Standby: you are Immobilized and Jammed until the Fenrir comes back into range or until you exit the Battlesuit as a Full Action. In addition, any Tech Actions that affect the Fenrir affect the Tyr Battlesuit, as well.",
       "passive_actions": [
         {
           "activation": "Reaction",
           "name": "ASG-BERSERK Stimulant Injection",
           "trigger": "You would be reduced to 0 HP while wearing the Tyr Battlesuit.",
-          "detail": "You regain all HP and clear any Burn affecting you.<br>If you have already used this reaction during this scene, you may mark a repair when you Stabilize while directly piloting the Fenrir. If you do, you regain the ability to use this reaction.",
+          "detail": "You regain all HP and clear any Burn affecting you.<br>If you have already used this reaction during this scene, you may mark a repair when you Stabilize while directly piloting the Fenrir to \"recharge\" it, allowing you to use it again in the same scene.",
           "frequency": "1/Scene"
         }
       ],
@@ -176,7 +172,7 @@
       },
       {
         "name": "Ophidian Rage",
-        "description": "1/Scene, when a Deployable or Drone placed by the Jormungandr is destroyed, it may activate a System with the Deployable or Drone tag or <i>Autotomize</i> as a Reaction."
+        "description": "1/Scene, when a Deployable or Drone placed by the Jormungandr is destroyed, it deploy a new Deployable or Drone, or use <i>Autotomize</i> as a Reaction."
       },
       {
         "name": "Amputation",
@@ -193,7 +189,6 @@
       "active_name": "Kraken Duplicate Deployment",
       "active_effect": "Deploy a Serpent's Head turret for one weapon on each of your mounts. These Serpent's Heads do not disable the mount they are deployed from and have no negative effects when they are destroyed.",
       "activation": "Full",
-      "use": "Encounter",
       "passive_name": "Autotomize",
       "passive_effect": "As a quick action, you can separate a weapon from the Jormungandr, deploying it as a Serpent's Head turret.<br>When you deploy a Serpent's Head choose one of your weapons. As long as the Serpent's Head is deployed, you cannot use the mount that weapon was mounted on for normal attacks or to deploy other Serpent's Heads. Instead, that weapon is mounted on the Serpent's Head for use with the Snakebite reaction, which can be taken once per Round for each deployed Serpent's Head. Your Serpent's Heads share your E-Defense and Evasion. When a Serpent's Head is destroyed, destroy the mount that its weapon was taken from.",
       "deployables": [
@@ -202,7 +197,7 @@
           "name": "Serpent's Head",
           "activation": "Quick",
           "evasion": "Special",
-          "detail": "Gain the Snakebite reaction, which can be taken once per deployed Serpent's Head.",
+          "detail": "Gain the Snakebite reaction, which can be taken 1/round per deployed Serpent's Head.",
           "edef": "Special",
           "size": 0.5,
           "hp": "15 + {grit}",
@@ -225,6 +220,56 @@
     },
     "data_type": "frame",
     "image_url": "https://lh3.googleusercontent.com/DQ5vccdX2L4U-EGqR0utXa4o_GmMOt4iiXXmQIPgCE7qF3R3TZo_JoA1Olj-6hx0nn4=w2400"
+  },
+  {
+    "id": "asg_draugr",
+    "license_level": 2,
+    "source": "ASG",
+    "name": "draugr",
+    "mechtype": ["Striker"],
+    "y_pos": 25,
+    "description": "<i>To anyone who reads this: the Draugr was not intended for release. If you want the benefits of ASGARD's work on the ASG-BERSERK system to make it safe long-term, get a Fenrir, instead. It doesn't have the same side effects as this thing's version. The patterns here were only ever prototypes, and while they do work, in a sense, the whole project was shadowed by mechanical failure, injury, and death. If that's not enough to dissuade you, so be it. I only maintain these licenses as a matter of personal pride as the former director of the project and as a monument to the things we accomplished, good and bad. Whatever happens from here is your own damn fault.</i>",
+    "mounts": ["Main", "Aux/Aux"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 9,
+      "edef": 6,
+      "heatcap": 7,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Martial Subroutines",
+        "description": "The Draugr may make an Improvised Attack as a quick action, instead of a full action. The Draugr's Improvised Attacks deal 3d3 Kinetic damage instead of 1d6. If you have a talent or system that also changes the damage of Improvised Attacks, you may choose which to base damage to use."
+      },
+      {
+        "name": "Walking Dead",
+        "description": "If the Draugr would be reduced to 0 HP on any turn except its own, it instead falls to 1 HP. Any further damage it would take (after reduction) is stored. At the end of the Draugr's next turn, it loses 1 Structure (and makes a Structure roll) and fully heals, then immediately takes all stored damage."
+      },
+      {
+        "name": "Unstable Targeting System",
+        "description": "The Draugr gets -2 to on all Ranged and Thrown attack rolls."
+      }
+    ],
+    "core_system": {
+      "name": "ASG-BERSERK REVISION ZERO",
+      "description": "<i>I warned you.</i>",
+      "active_name": "GIVE IN",
+      "active_effect": "This action may only be taken if you are physically present in the Draugr. Until the end of combat:<ul><li>You cannot make Ranged attacks.</li><li>You cannot take or be affected by tech actions, friendly or hostile.</li><li>Your Improvised Attacks gain +1 Accuracy, deal 1d6 bonus Energy damage and cannot have their damage reduced in any way.</li><li>You may take the Improvised Attack action any number of times per turn.</li><li>At the end of each of your turns, if you did not make an attack, the Draugr's Pilot takes 1d3 Energy damage.</li></ul>If you, the pilot, are killed or knocked Down and Out, the Draugr begins to pilot itself, as though it was controlled by a cascading NHP.<br/><br/>It is, however, <i>not</i> controlled by an NHP: just the echoes of the pilot's last, panicked thoughts.",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "image_url": "https://lh4.googleusercontent.com/ORDbkIe3DkPfl1jYexxC_Z_hlrmRXVoqEuvkmMB6XLoLGr396CrTSp5-Ro_vBcndUw0=w2400"
   },
   {
     "id": "lumico_virtuoso",
@@ -375,12 +420,12 @@
     "traits": [
       {
         "name": "Manifest Destiny",
-        "description": "1/Round as a free action, as long as the Trailblazer isn't Immobilized or Slowed, it may move up to 3 spaces towards an enemy.",
+        "description": "1/Round as a free action, as long as the Trailblazer isn't Immobilized or Slowed, it may move up to its Speed towards an enemy.",
         "actions":[
           {
             "activation": "Free",
             "name": "Manifest Destiny",
-            "detail": "As long as you aren't Immobilized or Slowed, move up to 3 spaces towards an enemy.",
+            "detail": "As long as you aren't Immobilized or Slowed, move up to your Speed towards an enemy.",
             "frequency": "1/Round"
           }
         ]
@@ -524,7 +569,7 @@
     ],
     "core_system": {
       "name": "Sonic Burst Driver",
-      "description": "Rikishi's signature weapon, the Sonic Burst Driver launches high frequency shockwaves from a set of purpose built speakers to damage hostile mechs by literally vibrating them apart with concussive force. A secondary set of high power speakers, the so-called \"Deadsteel Amplifiers\", dramatically boost the amplitude of the weapon's shockwaves, but cannot be used for long before the mech they're mounted on starts to literally fall to pieces from the intense vibrations.",
+      "description": "Rikishi's signature weapon, the Sonic Burst Driver, launches high frequency shockwaves from a set of purpose built speakers to damage hostile mechs by literally vibrating them apart with concussive force. A secondary set of high power speakers, the so-called \"Deadsteel Amplifiers\", dramatically boost the amplitude of the weapon's shockwaves, but cannot be used for long before the mech they're mounted on starts to literally fall to pieces from the intense vibrations.",
       "active_name": "Deadsteel Amplifiers",
       "active_effect": "Until the end of combat, the Sonic Burst Driver deals 3 bonus Energy damage and applies Shredded on hit.",
       "activation": "Quick",
@@ -533,5 +578,60 @@
     },
     "data_type": "frame",
     "image_url": "https://lh6.googleusercontent.com/6bP_qlii2xNgpKgSoly3Nx4yX-8FqzIg97AQYCQx1vVZKbv4RPRZimfz4-wZAJNaeMs=w2400"
+  },
+  {
+    "id": "ind_dogma",
+    "license_level": 2,
+    "source": "IND",
+    "name": "DOGMA",
+    "mechtype": ["Defender", "Striker"],
+    "y_pos": 15,
+    "description": "<i>Independent frames are not available as a part of any license and are only accessible as Exotic Gear.</i><br>Markus \"Dogma\" Brynjar could not have been more different than his father. Though both of them worked for ASGARD, Hakon \"Odin\" Brynjar had experienced true horror in his life and had chosen a path of isolation to insulate himself from tragedy. Hakon's ability to make hard decisions in times of stress made him a valuable asset to the ASGARD company, as a leader who could be ensured to get results, no matter the situation. Markus, too, had experienced the horrors of corporate war, of massacres committed by criminal gangs, and of deaths brought about by the sheer hostility of the Outer Arm Frontier Sector. Tragedy, however, merely hardened his resolve to resist the urge to harm those who hated him and to protect anyone he perceived to have even a flicker of innocence. To that end, he built this mech.",
+    "mounts": ["Main"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 12,
+      "evasion": 12,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 3,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 6,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Intercession",
+        "description": "1/round, the Dogma may take attacks in place of its allies.",
+        "actions":[
+          {
+            "activation": "Reaction",
+            "name": "Intercession",
+            "trigger": "An allied character within Range 5 of you is hit by an attack, and you are not Immobilized or Slowed.",
+            "detail": "Move to a space adjacent to the targeted character, and you are hit by the attack, instead. Then, you may make a melee attack against the triggering unit, if you are in range.",
+            "frequency": "1/Round"
+          }
+        ]
+      },
+      {
+        "name": "Righteous Indignation",
+        "description": "1/turn, when an allied Mech is destroyed, the Dogma immediately takes a turn after this one. This does not count as a friendly or hostile activation. During that turn, the Dogma may only take one quick action, may not take full actions or protocols, and the Dogma gains <i>Avenging Wrath</i> during that turn.<br/>While affected by <i>Avenging Wrath</i>, the Dogma:<ul><li>Ignores the Fiery Revolving Sword's normal restrictions on attacks.</li><li>May Boost 1/turn as a free action.</li><li>Has immunity to Immobilized, Slowed, and Jammed.</li><li>Reduces all damage it takes to 1.</li>"
+      }
+    ],
+    "core_system": {
+      "name": "\"Absolution\" Offensive Thermal Routing System",
+      "description": "<i>Defend the weak and the fatherless; uphold the cause of the poor and the oppressed. Rescue the weak and the needy; deliver them from the hand of the wicked.</i>",
+      "active_name": "Abyssus Abyssum Invocat",
+      "active_effect": "Immediately take a second turn after this one. This extra turn does not count as a friendly or hostile activation. During this turn and your next, you gain the effects of <i>Avenging Wrath</i> and may only attack with the Fiery Revolving Sword. If you Barrage, you may attack with the Fiery Revolving Sword twice. At the end of your second turn, you are Stunned until the end of your next turn, and then you are Impaired and Slowed until the end of your subsequent turn.",
+      "activation": "Protocol",
+      "integrated": ["mw_dogma_integrated"]
+    },
+    "data_type": "frame",
+    "image_url": "https://lh4.googleusercontent.com/EOf3N8Uq5_BK4vho_veCBN3lAQ4_Cj_W0jwT-SS3NM_8brJb01FrVkeBxdsILnNLvoE=w2400"
   }
 ]
