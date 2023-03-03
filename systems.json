@@ -643,7 +643,7 @@
         "id": "tg_unique"
       }
     ],
-    "effect": "During you a rest, you may activate this system to recharge your and one ally's core power. This system may only has one use, regained when you make a Full Repair.",
+    "effect": "During you a rest, you may activate this system to recharge your and one ally's core power. This system only has one use, regained when you make a Full Repair.",
     "description": "Lumico's Near-Zero-Mass Fusion Reactor, internally dubbed the \"Pocket Star\", provides an ingenious method of storing energy. Originally intented to fulfill a similar role to a mech's standard reactor, logistical issues related to actually <i>extracting</i> the energy produced by the Pocket Star meant that it was more valuable as an emergency reserve of energy rather than as a primary power source."
   },
   {
