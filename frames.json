@@ -225,7 +225,7 @@
     "id": "asg_draugr",
     "license_level": 2,
     "source": "ASG",
-    "name": "draugr",
+    "name": "DRAUGR",
     "mechtype": ["Striker"],
     "y_pos": 25,
     "description": "<i>To anyone who reads this: the Draugr was not intended for release. If you want the benefits of ASGARD's work on the ASG-BERSERK system to make it safe long-term, get a Fenrir, instead. It doesn't have the same side effects as this thing's version. The patterns here were only ever prototypes, and while they do work, in a sense, the whole project was shadowed by mechanical failure, injury, and death. If that's not enough to dissuade you, so be it. I only maintain these licenses as a matter of personal pride as the former director of the project and as a monument to the things we accomplished, good and bad. Whatever happens from here is your own damn fault.</i>",
