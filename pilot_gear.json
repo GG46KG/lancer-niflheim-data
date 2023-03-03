@@ -7,7 +7,7 @@
     "bonuses": [
       {
         "id": "pilot_hp",
-        "val": "8"
+        "val": "5"
       },
       {
         "id": "pilot_armor",
