@@ -1,0 +1,40 @@
+name: Create LCP Prerelease on Commit
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Move latest tag
+      run: |
+        git push origin :latest
+        git tag latest
+        git push origin latest
+
+    - name: Set LCP name
+      run: echo "LCP_NAME=niflheim_$(git rev-parse --short "$GITHUB_SHA")" >> $GITHUB_ENV
+
+    - name: Zip JSON files
+      run: zip ${{ env.LCP_NAME }}.zip *.json
+
+    - name: Rename to LCP
+      run: mv ${{ env.LCP_NAME }}.zip ${{ env.LCP_NAME }}.lcp
+      
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: ${{ env.LCP_NAME }}.lcp
+        prerelease: true
+        tag: "latest"
+        allowUpdates: true
+        removeArtifacts: true # These are indexed to git SHA, so axe the previous ones
+        omitDraftDuringUpdate: true
+        omitPrereleaseDuringUpdate: true

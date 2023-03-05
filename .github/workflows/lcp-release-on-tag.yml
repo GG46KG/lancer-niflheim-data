@@ -1,0 +1,33 @@
+name: Create LCP Release on Tag
+
+on:
+  push: 
+    tags:
+      - v**
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set LCP name
+      run: echo "LCP_NAME=niflheim_$GITHUB_REF_NAME" >> $GITHUB_ENV
+
+    - name: Zip JSON files
+      run: zip ${{ env.LCP_NAME }}.zip *.json
+
+    - name: Rename to LCP
+      run: mv ${{ env.LCP_NAME }}.zip ${{ env.LCP_NAME }}.lcp
+      
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: ${{ env.LCP_NAME }}.lcp
+        tag: ${{ env.GITHUB_REF_NAME }}
+        allowUpdates: true
+        omitDraftDuringUpdate: true
+        omitPrereleaseDuringUpdate: true
