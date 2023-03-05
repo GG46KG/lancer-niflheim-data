@@ -349,8 +349,8 @@
           {
             "activation": "Reaction",
             "name": "REQUEST: REPEAT SEQUENCE",
-            "trigger": "Any other character within Sensors and Line of Sight takes a quick action.",
-            "detail": "That character immediately takes the same action again as a free action. They do not need to choose the same target, but they must use the same systems/weapons, if applicable. You may only take 1 quick action on your next turn, and you may not take full actions on your next turn.",
+            "trigger": "Any other character within Sensors takes one of the following actions:<ul><li>Makes a weapon attack that does not use a Superheavy weapon.</li><li>Takes a Quick Tech action, either on its own or as a part of a Full Tech action.</li><li>Boosts, Rams, or Grapples.</li><li>Activates a System as a Quick Action.</il></ul>.",
+            "detail": "That character immediately takes the same action again. They do not need to choose the same target, but they must use the same systems/weapons, gain the same amount of Accuracy and Difficulty, and use the same profile if applicable. If the attack was made with a Loading weapon, the target may attack with it even with the weapon unloaded. You may only take 1 quick action on your next turn, and you may not take full actions on your next turn.",
             "frequency": "1/Round"
           }
         ]

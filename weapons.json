@@ -265,7 +265,7 @@
         "val": "1d3"
       }
     ],
-    "on_hit": "Until the end of your turn, when you damage the target with a melee attack, you deal 1d3 bonus Energy damage.",
+    "on_hit": "Until the end of your turn, when you hit a target with a Melee weapon attack, you deal 1d3 bonus Energy damage.",
     "description": "Attacks with the Injection Blade leave volatile chemicals on the target's armor, which can be \"encouraged\" into a violent reaction through the application of force.",
     "tags": [
       {

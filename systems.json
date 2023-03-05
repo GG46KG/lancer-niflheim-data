@@ -697,11 +697,11 @@
       {
         "activation": "Quick Tech",
         "name": "Gravitational Crush",
-        "detail": "You may only take this action if this system's Aura is active. All characters within the Aura must make a Hull save or take 1d6 Energy damage and be pulled 2 spaces toward the center of the Aura. On a success, they are pulled 1 space and take half damage. Characters within the <i>Event Horizon</i> take 1d6 AP Energy damage, without a save. Objects within the Aura take 20 AP Energy damage. Using this action does not consume charges from this system.",
+        "detail": "You may only take this action if this system's Aura is active. All characters within the Aura must make a Hull save or take 1d6 Energy damage and be pulled up to 2 spaces toward the center of the Aura and Immobilized until the end of their next turn. On a success, they only take the damage. Characters within the <i>Event Horizon</i> take 2d6 AP Energy damage, which cannot be reduced in any way, instead. Objects within the Aura take 20 AP Energy damage. Using this action does not consume charges from this system.",
         "frequency": "1/Round"
       }
     ],
-    "effect": "When this Aura is activated, choose a point within sensors. This system's Aura is centered on that point, rather than the user.<br>Any character adjacent to or on the origin of the Aura is within this system's <i>Event Horizon</i>. Characters within the Aura are Slowed, and enemies within the <i>Event Horizon</i> are Stunned. Characters and Objects within the Aura have resistance to all damage, Heat, and Burn from Ranged Attacks, increased to immunity within the <i>Event Horizon</i>. At the start of each turn that the Aura is active, it's Aura value increases by 1.",
+    "effect": "When this Aura is activated, choose a point within sensors. This system's Aura is centered on that point, rather than the user.<br>Any character adjacent to or on the same space as the center of the Aura is within this system's <i>Event Horizon</i>. Characters within the Aura are Slowed and have resistance to all damage, Heat, and Burn from attacks.",
     "description": "By generating an extremely small but superdense mass, one can harness and direct gravitational waves to directly affect ambient energy. At this scale, Hawking radiation causes the object to degrade at a high speed and the object will evaporate if it is not actively maintained by the generator."
   },
   {
