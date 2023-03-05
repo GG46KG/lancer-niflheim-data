@@ -527,7 +527,7 @@
       {
         "activation": "Invade",
         "name": "Fugue Polyphony",
-        "detail": "This Invade option does not cause the target to take any Heat. Until the end of the target's next turn, the first Ranged or Melee attack against the target each turn gets +1 Accuracy. In additon, the next successful Ranged or Melee attack against them deals 1d6 bonus Energy damage."
+        "detail": "This Invade option does not cause the target to take any Heat. All attacks against the target gain +1 Accuracy and a final attack roll against the target cannot be affected by difficulty. This effect lasts until the target is hit by an attack. The attack that consumes this effect deals 1d6 bonus Energy damage. Only one target may be under this effect at a time: using this action on a new target ends the effect on all others, even if the Invade misses."
       }
     ],
     "tags": [

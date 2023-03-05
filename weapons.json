@@ -379,7 +379,7 @@
       {
         "activation": "Full",
         "name": "Tighten String",
-        "detail": "All characters marked by <i>Hairline Entanglement</i> are pulled up to 5 spaces directly toward you, Shredded, take 2d6 Kinetic Damage, and have <i>Hairline Entanglement</i> removed from them. Affected characters may attempt a Hull save to halve the damage and prevent being Shredded. Single Human targets affected by this action are instantly killed."
+        "detail": "All characters marked by <i>Hairline Entanglement</i> are pulled up to 5 spaces directly toward you, Shredded, take 6 Kinetic Damage, and have <i>Hairline Entanglement</i> removed from them. Affected characters may attempt a Hull save to halve the damage and prevent being Shredded. Single Human targets affected by this action are instantly killed."
       }
     ],
     "on_hit": "The target becomes unwittingly entangled in nearly invisible wire and marked with <i>Hairline Entanglement</i>. This effect ends if the target moves more than Range 20 away from you at any point.",
