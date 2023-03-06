@@ -35,7 +35,7 @@
     "id": "asg_dreadnought_engine",
     "name": "Dreadnought Thermal Engine",
     "type": "System",
-    "sp": 2,
+    "sp": 1,
     "tags": [
       {
         "id": "tg_unique"
@@ -46,7 +46,7 @@
     ],
     "source": "ASG",
     "license": "NIDHOGG",
-    "license_level": 1,
+    "license_level": 2,
     "effect": "Your speed is reduced by 3 minus your size, rounded up, as long as this system is installed. While you are in the Danger Zone, you may take 1 Heat to Boost as a free action 1/round. If you do, all adjacent allied Characters may move the same number of Spaces as a reaction.",
     "description": "A thermal engine used to provide some extra power for Dreadnoughts, <i>slightly</i> miniaturized."
   },
