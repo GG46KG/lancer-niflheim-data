@@ -6,6 +6,17 @@ A [LANCER](https://massifpress.com/lancer) content pack featuring the technology
 
 ## Patch Notes
 
+### Version 1.3.1 (March 6th, 2023)
+
+- Updated the Nidhogg's type to ARTILLERY/SUPPORT
+- Adjusted the Philosopher's REQUEST: REPEAT SEQUENCE action to be functional on a much larger number of actions (e.g. single attacks from a Barrage).
+- Reworked Systems:
+  - Asgard Lockdown System (Nidhogg 1)
+  - VALKYRIE-Class NHP (Nidhogg 3) (Formerly ULLR-Class NHP)
+- Adjusted Systems:
+  - Dreadnought Thermal Engine (Nidhogg 2)
+  - Nanoscopic Black Hole Generator (Philosopher 2)
+
 ### Version 1.3.0 (March 2nd, 2023)
 
 - Fixed some spacing in the manufacturer flavor text.
