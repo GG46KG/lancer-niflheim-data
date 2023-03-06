@@ -3,7 +3,7 @@
     "id": "asg_nidhogg",
     "source": "ASG",
     "name": "NIDHOGG",
-    "mechtype": ["Artillery"],
+    "mechtype": ["Artillery", "Support"],
     "y_pos": 57,
     "license": "NIDHOGG",
     "license_level": 2,
@@ -18,11 +18,11 @@
       "evasion": 6,
       "edef": 6,
       "heatcap": 8,
-      "repcap": 4,
+      "repcap": 6,
       "sensor_range": 10,
       "tech_attack": -2,
       "save": 10,
-      "speed": 4,
+      "speed": 3,
       "sp": 6
     },
     "traits": [
