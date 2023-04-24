@@ -13,5 +13,10 @@
       "id": "tg_oneofakind",
       "name": "ONE OF A KIND",
       "description": "This weapon or system is the single example of its kind: a character can only have one copy of it installed at a time, and only one character in a party may have it installed."
+    },
+    {
+      "id": "tg_guided",
+      "name": "GUIDED",
+      "description": "This weapon may only be used to attack targets affected by Lock On and must consume Lock On when used."
     }
 ]

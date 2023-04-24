@@ -16,17 +16,17 @@
     "source": "ASG",
     "license": "NIDHOGG",
     "license_level": 3,
-    "effect": "Damage from this system treats all characters as though they were Shredded.<br/>The missiles provided by this system were not designed for use on a mech: they are primed and launched on the exterior of the chassis and may be targeted by enemies while you have a missile primed. The primed missile shares your evasion, is immune to tech actions and has (10 + twice your Hull) HP, resistance to Kinetic and Energy damage, and immunity to Burn. If the missile is reduced to 0 HP, the primed missile detonates: you lose one charge and the missile deals damage as though you were the target of the strike.",
+    "effect": "The missiles provided by this system were not designed for use on a mech: they are launched from the exterior of the chassis and may be targeted as a deployable that shares a space with you while they are primed. A primed missile shares your evasion, is immune to tech actions and has (10 + twice your Hull) HP, resistance to Kinetic and Energy damage, and immunity to Burn. If the missile is reduced to 0 HP, it detonates: you lose one charge and the missile deals damage as though you were the target of the strike. You can not use the actions provided by this system if you are Jammed.",
     "actions": [
       {
-        "activation": "Quick Tech",
+        "activation": "Quick",
         "name": "Target BDM",
-        "detail": "Choose a target within range 20 affected by Lock On to prime a ballistic strike against. You may only have a single target primed at a time, using this action again changes the target of this effect to the new one. As long as you have a strike primed, you are Immobilized and gain access to the <i>Ballistic Launch</i> action. You may end this effect as a free action."
+        "detail": "Choose a target within range 20 affected by Lock On to prime a ballistic strike against. You may only have a single target primed at a time, using this action again changes the target of this effect to the new one. After priming a missile, you are Immobilized, the missile becomes a valid target for attacks, and you gain access to the <i>Ballistic Launch</i> action at the start of your next turn. These effects last until you launch the missile or cancel the launch as a free action."
       },
       {
-        "activation": "Full Tech",
+        "activation": "Full",
         "name": "Ballistic Launch",
-        "detail": "If the primed target is Locked On, you expend a charge to launch a missile at them. Lock On is consumed, and the target and all characters in a Burst 3 area around them take 3d6 Armor-Piercing Explosive damage at the end of your turn. All characters besides the primary target may attempt a Hull Save to halve the damage."
+        "detail": "If the primed target is Locked On, you expend a charge to launch a missile at them. Lock On is consumed, and the target and all characters and objects in a Burst 3 area around them take 3d6 Explosive damage at the end of the target's next turn. Damage dealt in this way treats all affected characters and objects as though they were Shredded. All characters besides the primary target may attempt a Hull Save to halve the damage."
       }
     ],
     "description": "ASGARD insists that \"BDM\" actually stands for \"Ballistic Dispersion Missile\", as it was designed for saturation fire in ship-to-ship space combat. <i>Not</i> \"Big Damn Missile.\""
@@ -74,7 +74,7 @@
     "source": "ASG",
     "license": "NIDHOGG",
     "license_level": 3,
-    "effect": "While this system's Aura is active, you are Immobilized and your Evasion is reduced to 5, your EDef is incresed to 10, if it is lower, and you and adjacent allied Mechs gain +1 Accuracy and +3 Range when attacking with an Cannon, Launcher, or Ordnance weapon. On a critical hit with an affected Ordnance weapon, the target takes 1d6 bonus Explosive damage.<br>You and allied Mechs affected by the Aura gain access to the Roar of Valhalla reaction, which may be taken 1/scene by each Character.",
+    "effect": "While this system's Aura is active, you are Immobilized, your Evasion is reduced to 5, your EDef is incresed to 10 if it is lower, and you and adjacent allied Mechs gain +1 Accuracy and +3 Range when attacking with Cannon, Launcher, or Ordnance weapons. On a critical hit with an affected weapon, the target takes 1d6 bonus Explosive damage.<br>You and allied Mechs affected by the Aura gain access to the Roar of Valhalla reaction, which may be taken 1/scene by each character.",
     "actions": [
       {
         "activation": "Reaction",
@@ -109,7 +109,7 @@
     "source": "ASG",
     "license": "NIDHOGG",
     "license_level": 1,
-    "effect": "You may deploy a Lockdown System to a free adjacent space. Deploying the Lockdown System does not consume charges. Only one Lockdown System may be deployed at a time. While the Lockdown System is deployed, you gain the Active Defense reaction.",
+    "effect": "You may deploy a Lockdown System to a free adjacent space. Deploying the Lockdown System does not consume charges, and a new Lockdown System may be deployed without penalty if an active one is destroyed. Only one Lockdown System may be deployed at a time. While the Lockdown System is deployed, you gain the Active Defense reaction.",
     "deployables": [
       {
         "type": "Drone",
@@ -151,12 +151,12 @@
       {
         "activation": "Quick",
         "name": "Jaws of the Wolf",
-        "detail": "Scoops up an adjacent, willing, and friendly non-Mech character. While held, the target gains hard cover while still being able to take all actions as normal. The held character can jump free as a part of their movement."
+        "detail": "Scoop up an adjacent, willing, and friendly non-Mech character. While held, the target gains hard cover while still being able to take all actions as normal. The held character can jump free as a part of their movement."
       },
       {
         "activation": "Free",
         "name": "Down the River Ván",
-        "detail": "Throws a held character up to Range 5. If the target is friendly, they can choose to enter a friendly mech or Jockey a hostile mech that they would pass through or adjacent to during the throw as a Reaction. They receive +1 Accuracy and the target receives +1 Difficulty if they attempt to Jockey. While being thrown, the character does not provoke reactions."
+        "detail": "Throw a held character up to Range 5. If the target is friendly, they can choose to enter a friendly mech or Jockey a hostile mech that they would pass through or adjacent to during the throw as a Reaction. They receive +1 Accuracy and the target receives +1 Difficulty if they attempt to Jockey. While being thrown, the character does not provoke reactions."
       }
     ],
     "description": "By separating the Fenriswolf NHP from the Fenrir's architecture, it gained increased awareness of the fragility of the pilots it interacted with. It did retain its reckless and aggressive nature, however, leading to the invention of some <i>unorthodox</i> techniques."
@@ -179,7 +179,7 @@
         "activation": "Free",
         "name": "Beasthunter",
         "frequency": "1/Round",
-        "detail": "You may only take this action immediately after you make a melee attack against a target you are grappling. Make a melee attack with the following profile:<br>Aux Melee, Reliable 1, Armor Piercing<br>Range 1, 1d3 Kinetic Damage.<br/>If the target you attacked was a larger Size than you, you may make a second attack."
+        "detail": "You may only take this action immediately after you make a melee attack against a target you are grappling. Make a melee weapon attack with the following profile:<br>Aux Melee, Reliable 1<br>Range 1, 1d3 Kinetic Damage.<br/>If your target is Biological or a larger Size than you, you may immediately make a second attack with this weapon against the same target."
       }
     ],
     "description": "The Beasthunter™ Tactical Knife was designed specifically as a backup weapon, to be used in close combat when all other options have failed. However, as its name suggests, it was often used by pilots hunting down large prey in the depths of space, and modifications were made to better enable this particular use."
@@ -205,10 +205,10 @@
       {
         "activation": "Full",
         "name": "Start the Game",
-        "detail": "Choose an adjacent Mech. The target must succeed at an Agility save or have a Reverse Beartrap attached to them. A charge is only expended if the device is attached successfully.<br>Once a Beartrap is attached to a target, it will explode at the end of their third turn following the device being attached. While the device is attached, they may try to remove the device by attemping a Hull save as a Full Action, with +2 Difficulty if they are Engaged.<br>If they fail to remove the device before it explodes, they take Armor-Piercing kinetic damage equal to their maximum HP when it detonates. This damage ignores damage resistance and immunity, and bypasses effects that would prevent damage or destruction. If the target is not destroyed by this damage, they are Stunned until the end of their next turn.<br>Once a character has had a Beartrap attached to them, they may not be targeted by this action for the rest of the scene."
+        "detail": "Choose an adjacent Mech. The target must succeed at an Agility save or have a Reverse Beartrap attached to them. A charge is only expended if the device is attached successfully.<br>Once a Beartrap is attached to a target, it will explode at the end of their next turn. While the device is attached, they may try to remove the device by attemping a Hull save as a Full Action, with +2 Difficulty if they are Engaged.<br>If they fail to remove the device before it explodes, they take kinetic damage equal to their current HP when it detonates. This damage cannot be reduced or prevented in any way. If the target is not destroyed by this damage, they are Stunned until the end of their next turn.<br>Once a character has successfully had a Beartrap attached to them, they may not be targeted by this action for the rest of the scene."
       }
     ],
-    "description": "A horrific device, apparently originally designed for use on humans, scaled up for use on Mechs. ASGARD public relations has disavowed its use."
+    "description": "A horrific device that attempts to rip a mech's cockpit open, apparently originally designed for use on humans and scaled up for use on mechs. ASGARD public relations has disavowed its use."
   },
   {
     "id": "asg_disposable_heatsink",
@@ -295,19 +295,19 @@
         "name": "XS5 Sentry Microgun",
         "activation": "Reaction",
         "trigger": "A character begins a turn or enters a space within Range 7 of one of your deployed Drones.",
-        "detail": "Make a ranged attack with the chosen Drone against the triggering character. If the attack hits, it deals 6 Kinetic damage to the target. If the target has at least 1 Armor and isn't Shredded, they gain resistance to this damage."
+        "detail": "Make a ranged attack with the chosen Drone against the triggering character. If the attack hits, it deals 6 Kinetic damage to the target. If the target has at least 1 Armor and isn't Shredded, they gain Resistance to this damage."
       },
       {
         "name": "XS18 Thermal Micromissiles",
         "activation": "Reaction",
-        "trigger": "A character gains Heat within Range 10 of one of your deployed Drones.",
-        "detail": "Make a Smart ranged attack with the chosen Drone with +1 Accuracy against the triggering character. If the attack hits, it deals 2 Explosive damage to the target and they gain 2 Heat."
+        "trigger": "A character gains Heat or Burn within Range 10 of one of your deployed Drones.",
+        "detail": "Make a Smart ranged attack with the chosen Drone with +1 Accuracy against the triggering character. If the attack hits, it deals 3 Explosive damage to the target and they also gain 2 Heat."
       },
       {
         "name": "XS31 Miniature Napalm Gun",
         "activation": "Reaction",
         "trigger": "A character begins a turn or enters a space within Range 3 of one of your deployed Drones.",
-        "detail": "Make a Cone 3 ranged attack with the chosen Drone against the triggering character. Each character hit by the attack takes 2 Burn."
+        "detail": "Make a Line 3 ranged attack with the chosen Drone against the triggering character. Each character hit by the attack takes 2 Burn."
       }
     ],
     "effect": "When you deploy a drone, it is deployed with a special integrated weapon with limited ammunition. When you use one of the Reactions granted by this system, you consume all of the ammunition on that Drone and cannot use it for this System's reactions unless you undeploy and redeploy it. All attacks made with this System gain your Grit as a bonus to the roll.",
@@ -426,7 +426,7 @@
             "name": "Hunt/Kill",
             "activation": "Free",
             "frequency": "1/Round",
-            "detail": "Move this drone up to 3 spaces, then make a Smart ranged attack against an enemy Mech with it, gaining your Grit as a bonus to its roll. On a hit, it deals 3 Energy damage. Against targets currently affected by a UV Recon Grenade, it deals 1d3+3 Energy damage and applies Lock On instead."
+            "detail": "Move this drone up to 3 spaces, then make a Smart ranged attack against an enemy Mech within range 3 of it with it, gaining your Grit as a bonus to its roll. On a hit, it deals 3 Energy damage. Against targets currently affected by a UV Recon Grenade, it deals 1d3+3 Energy damage and applies Lock On on a hit, instead."
           }
         ]
       }
@@ -456,18 +456,14 @@
     "tags": [
       {
         "id": "tg_unique"
-      },
-      {
-        "id": "tg_heat_self",
-        "val": 3
       }
     ],
     "effect": "Gain increasing benefits based on the number of Martial Doctrine systems installed:<ul><li>1+: You may make Improvised Attacks as a quick action as long as you aren't Jammed.</li><li>2+: Your Improvised Attacks deal 1d6 bonus Kinetic damage on a critical hit.</li><li>3: Your Improvised Attacks count as attacks with Main Melee weapons.</li></ul>This effect is shared between all Martial Doctrine systems and only applies once.",
     "actions": [
       {
-        "name": "Martial Stance: Ripper",
+        "name": "Martial Stance: Core Ripper",
         "activation": "Protocol",
-        "detail": "Until the end of the turn, if you damage a target you are Grappling with an Improvised Attack, you may force the target to attempt a Hull Save or become Exposed. This can only target each character 1/Scene.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
+        "detail": "Gain 2 heat. Until the end of the turn, if you damage a target you are Grappling with an Improvised Attack, the target must succeed on a Hull Save or become Exposed. This can only target a character 1/Scene.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
       },
       {
         "name": "Combo: Suplex",
@@ -489,10 +485,6 @@
     "tags": [
       {
         "id": "tg_unique"
-      },
-      {
-        "id": "tg_heat_self",
-        "val": 2
       }
     ],
     "effect": "Gain increasing benefits based on the number of Martial Doctrine systems installed:<ul><li>1+: You may make Improvised Attacks as a quick action as long as you aren't Jammed.</li><li>2+: Your Improvised Attacks deal 1d6 bonus Kinetic damage on a critical hit.</li><li>3: Your Improvised Attacks count as attacks with Main Melee weapons.</li></ul>This effect is shared between all Martial Doctrine systems and only applies once.",
@@ -500,7 +492,7 @@
       {
         "name": "Martial Stance: Brutalizer",
         "activation": "Protocol",
-        "detail": "Until the end of the turn, your Improvised Attacks gain Knockback 3. 1/Round, after inflicting Knockback as part of any Melee Attack, you may move an equal number of spaces towards the same target by the most direct route possible. If you do, you may make an Improvised Attack with no Knockback against the target for half damage as a free action.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
+        "detail": "Gain 2 heat. Until the end of the turn, your Improvised Attacks gain Knockback 3. 1/Round, after inflicting Knockback as part of any Melee Attack, you may move an equal number of spaces towards the same target by the most direct route possible. If you do, you may make an Improvised Attack with no Knockback against the target for half damage as a free action.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
       },
       {
         "name": "Combo: Hullbreaker",
@@ -522,10 +514,6 @@
     "tags": [
       {
         "id": "tg_unique"
-      },
-      {
-        "id": "tg_heat_self",
-        "val": 2
       }
     ],
     "effect": "Gain increasing benefits based on the number of Martial Doctrine systems installed:<ul><li>1+: You may make Improvised Attacks as a quick action as long as you aren't Jammed.</li><li>2+: Your Improvised Attacks deal 1d6 bonus Kinetic damage on a critical hit.</li><li>3: Your Improvised Attacks count as attacks with Main Melee weapons.</li></ul>This effect is shared between all Martial Doctrine systems and only applies once.",
@@ -533,7 +521,7 @@
       {
         "name": "Martial Stance: Hunter",
         "activation": "Protocol",
-        "detail": "Once this turn, you may Boost towards a target as a part of an Improvised Attack. If you do, you gain +1 Accuracy on that attack.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
+        "detail": "Gain 2 heat. Once this turn, you may Boost towards a target as a part of an Improvised Attack. If you do, you gain +1 Accuracy on that attack.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
       },
       {
         "name": "Combo: Haymaker",
@@ -582,12 +570,12 @@
       {
         "activation": "Invade",
         "name": "Closed Position: Waltz",
-        "detail": "Once before the start of the target's next turn, when any character makes an attack that affects an area (i.e., a Line, Cone, Burst, or Blast), you may force the target to move up to 3 spaces toward the affected area as a Reaction. If they would become a target of the attack, the attack gets +1 Accuracy against them, and they get +1 Difficulty on any Saves they must make as a result of the attack."
+        "detail": "When any character makes an attack that affects an area (i.e., a Line, Cone, Burst, or Blast), you may force the target to move up to 3 spaces toward the affected area as a Reaction. If they would become a target of the attack, the attack gets +1 Accuracy against them, and they get +1 Difficulty on any Saves they must make as a result of the attack. This effect remains on a target until it is used."
       },
       {
         "activation": "Invade",
         "name": "Closed Position: Tango",
-        "detail": "The target is pulled adjacent to their nearest ally within Range 6, then must attempt to Grapple that ally with +1 Accuracy. If successful, the target's ally also gains 2 Heat. This Grapple cannot be ended by either party until the end of the target's next turn."
+        "detail": "The target is pulled adjacent to their nearest ally within Range 6, then must attempt to Grapple that ally with +1 Accuracy. If successful, the target's ally also gains 2 Heat. This Grapple cannot be ended by either party until the end of your next turn."
       }
     ],
     "tags": [
@@ -613,13 +601,13 @@
       {
         "activation": "Invade",
         "name": "REQUEST: RECORD SEQUENCE",
-        "detail": "Mark the current position of the target. Gain access to the REQUEST: ERASE SEQUENCE reaction, until that reaction is used. Only one target may be under this effect at a time: using this action on another target ends this effect on the original."
+        "detail": "You may use this Invade on Biological targets. Mark the current position of the target. Gain access to the REQUEST: ERASE SEQUENCE reaction, until that reaction is used. Only one target may be under this effect at a time: using this action on another target ends this effect on the original."
       },
       {
         "activation": "Reaction",
         "trigger": "Immediately before or after any character takes any action or movement, while the target of REQUEST: RECORD SEQUENCE is within Sensors.",
         "name": "REQUEST: ERASE SEQUENCE",
-        "detail": "Take 4 Heat. The target of REQUEST: RECORD SEQUENCE is returned to the marked position, and the effects of any actions they have taken this turn are undone."
+        "detail": "Gain 4 Heat. The target of REQUEST: RECORD SEQUENCE is returned to the marked position, and the effects of any actions they have taken this turn are undone."
       }
     ],
     "tags": [
@@ -651,7 +639,7 @@
       {
         "activation": "Full",
         "name": "REQUEST: WISH GRANTED",
-        "detail": "Expend a charge to activate one action granted by any System without the Exotic Gear tag, even if you do not have the License for that system."
+        "detail": "Expend a charge to take an action granted by any System without the Exotic Gear tag as a free action, even if you do not have the License for that system.<br>The GM has final say on how to interpret how the action will resolve in a given situation, but in general the player should be allowed to activate the chosen system in a way that is meaningful and as consistent with its normal use as possible."
       }
     ],
     "description": "<i>\"Have you ever wondered what things would be like if you were someone else—if you had chosen differently?\"</i>"
@@ -686,8 +674,13 @@
     "actions": [
       {
         "activation": "Invade",
-        "name": "REQUEST: PREDICT SEQUENCE",
-        "detail": "The target gains Lock On until the end of their next turn if they were not already affected by it. Until Lock On is removed from the target, your allies may Overwatch the target if the target takes any action within their Threat. Overwatches made this way automatically consume Lock On if the attack hits, regardless of whether the attacker chose to consume it for their attack."
+        "name": "REQUEST: AVOID SEQUENCE",
+        "detail": "Choose a character. Until the end of their next turn, each instance of damage dealt by your target to the chosen character is reduced to 1."
+      },
+      {
+        "activation": "Invade",
+        "name": "REQUEST: PREFER SEQUENCE",
+        "detail": "Choose an unobstructed space within your line of sight and Range 6 of the target's current location. Your target takes 2 Heat at the end of each of their turns until they end a turn on that space. Your target does not gain any heat from this effect if the chosen space is totally inaccessible to them (e.g. if an object is obstructing the space or if a barrier, such as a bulkhead, entirely prevents them from reaching the space)."
       }
     ],
     "tags": [
@@ -819,7 +812,7 @@
       },
       {
         "id": "tg_limited",
-        "val": 3
+        "val": 4
       }
     ],
     "description": "Inspired by olden tales of tar bombs used by pioneers in the pre-spaceflight era, the Lamplight Grenade deploys a volatile chemical payload that detonates after receiving a small amount of sustained agitation."

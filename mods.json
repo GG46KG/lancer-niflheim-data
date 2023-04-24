@@ -2,7 +2,7 @@
   {
     "id": "lumico_perfectionist",
     "name": "Perfectionist Mod",
-    "sp": 2,
+    "sp": 4,
     "allowed_types": ["Rifle", "CQB", "Cannon"],
     "restricted_sizes": [
         "Auxiliary", "Superheavy"
@@ -10,13 +10,9 @@
     "source": "LUMICO",
     "license": "VIRTUOSO",
     "license_level": 3,
-    "effect": "1/Turn, you may expend a charge from this system when you attack with the weapon this mod is applied to. On a hit, the weapon deals 1d6 bonus damage of any damage type it dealt, excluding Burn. Then, you may reroll any number of damage dice from this weapon's attack. You must use the new roll, even if it is worse.<br>This mod may only be applied to weapons that only damage a single target (i.e., weapons that do not deal damage in a Line, Cone, Burst or Blast). A charge is expended even if the attack misses.",
+    "effect": "1/Round as a protocol, you may activate this mod. If you do, during this turn, you may only attack with the weapon this mod is applied to as if it was a Superheavy weapon. If you do, the damage from the attack is Armor-Piercing and the attack deals 4 bonus Energy damage on hit for each Accuracy applied to the attack's final roll. After attacking this way, you may not attack with the modded weapon again until it is reloaded, as though it had the Loading tag.",
     "description": "Lumiera Corporation encourages you to ask yourself: \"Why simply settle for <i>Good</i>, when you could be <i>Perfect?</i>\"",
     "tags": [
-      {
-        "id": "tg_limited",
-        "val": 3
-      },
       {
         "id": "tg_unique"
       }

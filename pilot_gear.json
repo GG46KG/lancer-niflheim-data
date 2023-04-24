@@ -67,5 +67,43 @@
         "val": "1"
       }
     ]
+  },
+  {
+    "id": "pg_cookies_sandwich",
+    "name": "Cookie's Lunchbox",
+    "type": "Gear",
+    "description": "A lunchbox containing three sandwiches, the recipes for which are printed on the inside of the lid. Expend a charge to eat a sandwich and gain its effects, or to give it to an ally to grant them the effect. Each sandwich can only be eaten once per full repair, and you can re-prepare sandwiches during a full repair. Once all charges have been expended, you may still eat the third sandwich, but it will have no special effects.",
+    "tags": [
+      {
+        "id": "tg_exotic"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_oneofakind"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Eat Mom's Homemade Pepper Pastrami",
+        "activation": "Full",
+        "detail": "You are filled with generational wisdom and may ask the GM how a course of action is likely to end, to which the GM must answer honestly with “very well,” “well,” “bad,” or “very bad.”",
+        "pilot": true
+      },
+      {
+        "name": "Eat Hot and Spicy Horseradish Roast Beef",
+        "activation": "Full",
+        "detail": "You fueled on by the bitter spice and get +10 on one skill check not associated with a Downtime action. This only lasts for a few minutes immediately after eating the sandwich.",
+        "pilot": true
+      },
+      {
+        "name": "Eat Old-Fashioned Corned Beef Reuben",
+        "activation": "Full",
+        "detail": "The flavors of this sandwich will keep one's spirits high, ensuring that the next time you make a Down and Out roll, the result will be a 6.",
+        "pilot": true
+      }
+    ]
   }
 ]

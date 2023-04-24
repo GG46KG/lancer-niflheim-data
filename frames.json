@@ -172,7 +172,7 @@
       },
       {
         "name": "Ophidian Rage",
-        "description": "1/Scene, when a Deployable or Drone placed by the Jormungandr is destroyed, it deploy a new Deployable or Drone, or use <i>Autotomize</i> as a Reaction."
+        "description": "1/Scene, when a Deployable or Drone placed by the Jormungandr is destroyed, it can deploy a Deployable or Drone as a Reaction."
       },
       {
         "name": "Amputation",
@@ -180,7 +180,7 @@
       },
       {
         "name": "Specialized Weapon Mounts",
-        "description": "The Jormungandr can never install Superheavy weapons."
+        "description": "The Jormungandr cannot install Superheavy weapons for any reason. No rule supercedes this."
       }
     ],
     "core_system": {
@@ -190,7 +190,7 @@
       "active_effect": "Deploy a Serpent's Head turret for one weapon on each of your mounts. These Serpent's Heads do not disable the mount they are deployed from and have no negative effects when they are destroyed.",
       "activation": "Full",
       "passive_name": "Autotomize",
-      "passive_effect": "As a quick action, you can separate a weapon from the Jormungandr, deploying it as a Serpent's Head turret.<br>When you deploy a Serpent's Head choose one of your weapons. As long as the Serpent's Head is deployed, you cannot use the mount that weapon was mounted on for normal attacks or to deploy other Serpent's Heads. Instead, that weapon is mounted on the Serpent's Head for use with the Snakebite reaction, which can be taken once per Round for each deployed Serpent's Head. Your Serpent's Heads share your E-Defense and Evasion. When a Serpent's Head is destroyed, destroy the mount that its weapon was taken from.",
+      "passive_effect": "As a quick action, you can separate a weapon from the Jormungandr, deploying it as a Serpent's Head turret.<br>When you deploy a Serpent's Head choose one of your weapons. As long as the Serpent's Head is deployed, you cannot use the mount that weapon was mounted on for normal attacks or to deploy other Serpent's Heads. Instead, that weapon is mounted on the Serpent's Head for use with the Snakebite reaction, which can be taken once per Round for each deployed Serpent's Head. Your Serpent's Heads share your E-Defense and Evasion, and reload weapons mounted on them when you do. When a Serpent's Head is destroyed, destroy the mount that its weapon was taken from.",
       "deployables": [
         {
           "type": "Drone",
@@ -207,7 +207,7 @@
               "activation": "Reaction",
               "trigger": "You or an ally make an attack against an enemy within range of the weapon on this Serpent's Head.",
               "frequency": "1/Round",
-              "detail": "Make an attack, originating from this Serpent's Head, against the targeted enemy."
+              "detail": "Make an attack with the weapon mounted on this Serpent's Head, originating from its location, against the targeted enemy."
             },
             {
               "activation": "Free",
@@ -249,22 +249,22 @@
     "traits": [
       {
         "name": "Martial Subroutines",
-        "description": "The Draugr may make an Improvised Attack as a quick action, instead of a full action. The Draugr's Improvised Attacks deal 3d3 Kinetic damage instead of 1d6. If you have a talent or system that also changes the damage of Improvised Attacks, you may choose which to base damage to use."
+        "description": "The Draugr may make an Improvised Attack as a quick action, instead of a full action. The Draugr's Improvised Attacks deal 3d3 Kinetic damage instead of 1d6. If you have a talent or system that also changes the damage and effects of Improvised Attacks, you may choose which profile to use."
       },
       {
         "name": "Walking Dead",
-        "description": "If the Draugr would be reduced to 0 HP on any turn except its own, it instead falls to 1 HP. Any further damage it would take (after reduction) is stored. At the end of the Draugr's next turn, it loses 1 Structure (and makes a Structure roll) and fully heals, then immediately takes all stored damage."
+        "description": "If the Draugr takes damage that would reduce it to 0 HP on any turn except its own, it instead falls to 1 HP and any excess damage is prevented. Until the end of the Draugr's next turn, any further damage it would take (after reductions like Armor or Resistance) is stored. At the end of the Draugr's next turn, it loses 1 Structure (and makes a Structure roll) and fully heals, then immediately takes all stored damage."
       },
       {
         "name": "Unstable Targeting System",
-        "description": "The Draugr gets -2 to on all Ranged and Thrown attack rolls."
+        "description": "The Draugr gets -2 to on all Ranged attack rolls."
       }
     ],
     "core_system": {
       "name": "ASG-BERSERK REVISION ZERO",
       "description": "<i>I warned you.</i>",
       "active_name": "GIVE IN",
-      "active_effect": "This action may only be taken if you are physically present in the Draugr. Until the end of combat:<ul><li>You cannot make Ranged attacks.</li><li>You cannot take or be affected by tech actions, friendly or hostile.</li><li>Your Improvised Attacks gain +1 Accuracy, deal 1d6 bonus Energy damage and cannot have their damage reduced in any way.</li><li>You may take the Improvised Attack action any number of times per turn.</li><li>At the end of each of your turns, if you did not make an attack, the Draugr's Pilot takes 1d3 Energy damage.</li></ul>If you, the pilot, are killed or knocked Down and Out, the Draugr begins to pilot itself, as though it was controlled by a cascading NHP.<br/><br/>It is, however, <i>not</i> controlled by an NHP: just the echoes of the pilot's last, panicked thoughts.",
+      "active_effect": "This action may only be taken if you are physically present in the Draugr. Until the end of combat:<ul><li>You cannot make Ranged attacks.</li><li>You cannot take or be affected by tech actions, friendly or hostile.</li><li>Your Improvised Attacks gain +1 Accuracy, deal 1d3 bonus Kinetic damage and cannot have their damage reduced in any way.</li><li>You ignore the normal restrictions on duplicate actions for Inprovised Attacks.</li><li>At the end of each of your turns, if you did deal damage with an attack, the Draugr's Pilot takes 3 Energy damage.</li></ul>If you, the pilot, are killed or knocked Down and Out, the Draugr begins to pilot itself, as though it was controlled by a cascading NHP.<br/><br/>It is, however, <i>not</i> controlled by an NHP: just the echoes of the pilot's last, panicked thoughts.",
       "activation": "Protocol",
       "use": "Encounter"
     },
@@ -310,7 +310,7 @@
       "name": "\"CAPTIVE AUDIENCE\" Theory Engine",
       "description": "<i>In this moment, an evil man stands above the beaten and broken hero, mighty and seemingly invulnerable... but the Play has entered its Third Act. He does not know it, but in this—his moment of greatest triumph—he has already lost.</i>",
       "active_name": "Third Act",
-      "active_effect": "Delivers a single-use payload of code so destructive that it shatters a Mech's defenses. Gain an Act die, 1d6 starting at 3. Choose a character within Sensors: their Armor, Evasion and E-Defence are reduced to 0. At the start of each of their turns, they may attempt a SYSTEMS save. On a success, reduce the value of the Act die by 1. When the Act die's value would reduced to 0, the effect ends.",
+      "active_effect": "Delivers a single-use payload of code so destructive that it shatters a Mech's defenses. Gain an Act die, 1d6 starting at 3. Choose a character within Sensors: their Armor, Evasion and E-Defence are reduced to 0. 1/Round, at the end of each of their turns, reduce the value of the Act die by 1. When the Act die's value would reduced to 0, the effect ends.",
       "activation": "Full"
     },
     "data_type": "frame",
@@ -350,7 +350,7 @@
             "activation": "Reaction",
             "name": "REQUEST: REPEAT SEQUENCE",
             "trigger": "Any other character within Sensors takes one of the following actions:<ul><li>Makes a weapon attack that does not use a Superheavy weapon.</li><li>Takes a Quick Tech action, either on its own or as a part of a Full Tech action.</li><li>Boosts, Rams, or Grapples.</li><li>Activates a System as a Quick Action.</il></ul>.",
-            "detail": "That character immediately takes the same action again. They do not need to choose the same target, but they must use the same systems/weapons, gain the same amount of Accuracy and Difficulty, and use the same profile if applicable. If the attack was made with a Loading weapon, the target may attack with it even with the weapon unloaded. You may only take 1 quick action on your next turn, and you may not take full actions on your next turn.",
+            "detail": "That character immediately takes the same action again as a free action. They do not need to choose the same target, but they must use the same systems/weapons and use the same profile, if applicable. If an attack was made with a Loading weapon, the target may attack with it even with the weapon unloaded. Limited systems and weapons act as though they expended a single charge without actually doing so. You may only take 1 quick action on your next turn, and you may not take full actions on your next turn.",
             "frequency": "1/Round"
           }
         ]
@@ -368,7 +368,7 @@
       "name": "\"NOVA\" Perfect Causality Engine",
       "description": "READY -&gt;<br>I WILL GRANT YOU ONE WISH... -&gt;<br>3... 2... 1... GO! -&gt;",
       "active_name": "Forge of Hours",
-      "active_effect": "NOVA prepares to alter the passage of time on a larger scale. At the start of your next turn gain a Miracle die, 1d6 starting at 3, and enter a transcendent state: you gain immunity to all effects, hostile and friendy, and access to a suite of powerful actions. During your turn, you may take no movement or actions except ones provided by this system. Each time you use one of the actions granted by this die, reduce the Miracle die by 1. When the Miracle die's value would be reduced to 0, this effect ends.",
+      "active_effect": "NOVA prepares to alter the passage of time on a larger scale. At the start of your next turn gain a Miracle die, 1d6 starting at 3, and enter a transcendent state: you gain immunity to all effects, hostile and friendy, and access to a suite of powerful actions. During your turn, you may take no movement or actions except ones provided by this system and <i>REQUEST: REPEAT SEQUENCE</i>, which does not prevent you from taking Full Actions during this time. Each time you use one of the actions granted by this die, reduce the Miracle die by 1. When the Miracle die's value would be reduced to 0, this effect ends.",
       "activation": "Full",
       "active_actions": [
         {
@@ -399,7 +399,7 @@
     "name": "TRAILBLAZER",
     "mechtype": ["Striker"],
     "y_pos": 35,
-    "description": "The colonists of the Outer Arm are practical people, with no need or patience for the typical theatrical flair of the Lumiera Corporation. This proved to be an issue for the company, who had built their reputation on the idea that the greatest adventurers and pilots sought out their mechs as a prize. In an effort to convice the pioneers of the Outer Arm of their value, Lumiera Corporation developed the Trailblazer, released to specific individuals that the company deemed \"of interest\", built using practical designs that lacked the usual flair of Lumiera's other designs. Whether its reception will lead to further release, only time will tell.",
+    "description": "The colonists of the Outer Arm are practical people, with no need or patience for the typical theatrical flair of the Lumiera Corporation. This proved to be an issue for the company, who had built their reputation on the idea that the greatest adventurers and pilots sought out their mechs as a prize. In an effort to convice the pioneers of the Outer Arm of their value, Lumiera Corporation developed the Trailblazer, released to specific individuals that the company deemed \"of interest\", built using practical designs that lacked some of the usual flair of Lumiera's other mechs. Whether its reception will lead to further release, only time will tell.",
     "mounts": ["Heavy","Main","Flex"],
     "stats": {
       "size": 1,
@@ -409,8 +409,8 @@
       "hp": 7,
       "evasion": 9,
       "edef": 8,
-      "heatcap": 6,
-      "repcap": 2,
+      "heatcap": 7,
+      "repcap": 3,
       "sensor_range": 5,
       "tech_attack": 0,
       "save": 10,
@@ -432,11 +432,11 @@
       },
       {
         "name": "Burning Heart",
-        "description": "1/Round, when the Trailblazer gains Heat from a quick action, full action, free action or reaction taken by any character, the Trailblazer deals 2 bonus Burn damage on its next successful non-Tech attack that turn. The action that generated the Heat does not benefit from this effect (e.g. if a Skirmish taken by the Trailblazer causes it to gain Heat from one of the weapons used, it does not benefit from this effect until that Skirmish completely resolves, including any further attacks the Trailblazer makes.)"
+        "description": "1/Round, when the Trailblazer gains Heat from any source other than Overcharging, it deals 2 bonus Burn damage on its next successful non-Tech attack that turn. The action that generated the Heat does not benefit from this effect (e.g. if a Skirmish taken by the Trailblazer causes it to gain Heat from one of the weapons used, it does not benefit from this effect until all attacks made during that Skirmish completely resolve.)"
       },
       {
         "name": "Bloody Flux",
-        "description": "Whenever the Trailblazer begins a movement, if it was not the Trailblazer's standard move, it takes 1 Kinetic damage. This damage cannot be reduced or prevented by any means."
+        "description": "Whenever the Trailblazer begins a movement, if it was not part of the Trailblazer's standard movement, it gains 2 Heat. This cannot be reduced or prevented by any means."
       }
     ],
     "core_system": {
@@ -445,7 +445,7 @@
       "passive_name": "Work Song",
       "passive_effect": "Gain a Verse die, 1d6 beginning at 3.<br>1/Turn, when the Trailblazer deals damage with a melee or ranged attack, the value of the Verse die decreases by 1 if either:<ul><li>The Trailblazer already dealt damage with with the opposite type this round (e.g., if the Trailblazer deals damage with a melee attack after it dealt damage with a ranged attack.)</li><li>Or, the Trailblazer deals bonus damage with <i>Burning Heart</i>.</li></ul> When the die would be reduced to 0, the Trailblazer immediately makes a special attack with a single weapon against an enemy within Range 3. This attack does not count as an action or reaction and ignores Difficulty from all sources. If this attack would damage multiple characters, all characters beyond the first take a maximum of 1 damage from the attack. Then, reset the Verse Die to 3.",
       "active_name": "Call & Response",
-      "active_effect": "Until the end of the scene, the Verse die is reset to 2 instead of 3 when it is reduced to 0, and whenever the Trailblazer makes a special attack through to the effect of <i>Work Song</i>, the Trailblazer nominates an allied character within Range 15. That character immediately makes an attack following the conditions of <i>Work Song.</i> The Trailblazer may not nominate the same character to receive this effect twice in a row.",
+      "active_effect": "Until the end of the scene, the Verse die is reset to 2 instead of 3 when it is reduced to 0, and whenever the Trailblazer makes a special attack through to the effect of <i>Work Song</i>, the Trailblazer nominates an allied character within Range 15. That character may immediately make an attack following the conditions of <i>Work Song.</i> The Trailblazer may not nominate the same character to receive this effect twice in a row.",
       "activation": "Protocol",
       "use": "Encounter"
     },
@@ -480,7 +480,7 @@
     "traits": [
       {
         "name": "Super Stabilizers",
-        "description": "The Slowpoke is cannot be pushed, pulled, or knocked Prone by other characters."
+        "description": "The Slowpoke cannot be pushed, pulled, or knocked Prone by other characters."
       },
       {
         "name": "Shockwave Disruption",
@@ -497,18 +497,18 @@
     ],
     "core_system": {
       "name": "ASG-R44 \"Pneuma\" Howitzer and Feed System",
-      "description": "The \"Pnuema\" Howitzer is an outsized weapon designed for use on the railways of frontier planets, to defend them from bombardment from low-altitude spacecraft. Its raw power is enough to launch a round into orbit, albeit with greatly reduced stopping power, and more than enough to heavily damage any spacecraft within the atmosphere. It was, however, never designed for use on Mechs, relying on the incredible mass of a full railway train (with stabilizers) to mitigate the weapon's earth-shattering recoil. Poke viewed this physical limitation not as a concept-killing impossibility, but as a challenge.",
+      "description": "The \"Pnuema\" Howitzer is an outsized weapon designed for use on the railways of frontier planets to defend them from bombardment from low-altitude spacecraft. Its raw power is enough to launch a round into orbit, albeit with greatly reduced stopping power, and more than enough to heavily damage any spacecraft within the atmosphere. It was, however, never designed for use on mechs, relying on the incredible mass of a full railway train (with stabilizers) to mitigate the weapon's earth-shattering recoil. Poke viewed this physical limitation not as a concept-killing impossibility, but as a challenge.",
       "passive_name": "Quickdraw",
       "passive_actions": [
         {
           "activation": "Quick Tech",
           "name": "Quickdraw",
-          "detail": "Roll 1d6. On a roll of 6, you immediately reload all Loading weapons as a Free Action. Otherwise, you are Jammed until the end of your turn.<br/>You may also activate this system as a Protocol. This action may not be taken as a Free Action for any reason, excluding its own effect."
+          "detail": "Roll 1d6. On a roll of 6, all of your Loading weapons are immediately reloaded. Otherwise, you are Jammed until the end of your turn.<br/>You may also activate this system as a Protocol. This action may not be taken as a free action for any reason, excluding through its own effect."
         }
       ],
       "active_name": "High Noon",
       "active_effect": "Until the end of combat, whenever you attack with a ranged Loading weapon, roll 1d6. On a 6, the weapon reloads itself immediately.",
-      "activation": "Quick",
+      "activation": "Protocol",
       "use": "Encounter",
       "integrated": ["mw_poke_integrated"]
     },
@@ -522,7 +522,7 @@
     "name": "BAYHOUND",
     "mechtype": ["Striker"],
     "y_pos": 30,
-    "description": "<i>Independent frames are not available as a part of any license and are only accessible as Exotic Gear.</i><br>\"Bayhound\" Rikishi was an orphan, by its literal meaning, for longer than he could reasonably remember, but he never felt at a loss for family. He was taken in at a young age by the venerable scrapper \"Junk Dog\" Joe, founder of the Junkyard Dogs, alongside another young man \"Killer Dog\" X, who, alongside the rest of the scrapper crew, offered him more than enough family for his entire youth. Never one to be upstaged by his more level headed adoptive older brother, Rikishi developed a mech that was a brash and loud as him. Never one to rest on his laurels, Rikishi still continually tweaks his self-made Sonic Burst Driver, ever aspiring to raise it to a legendary status that would secure his name and Junkyard Dogs in history.",
+    "description": "<i>Independent frames are not available as a part of any license and are only accessible as Exotic Gear.</i><br>\"Bayhound\" Rikishi was an orphan, by its literal meaning, for longer than he could reasonably remember, but he never felt at a loss for family. He was taken in at a young age by the venerable scrapper \"Junk Dog\" Joe, founder of the Junkyard Dogs, alongside another young man, \"Killer Dog\" X, who alongside the rest of the scrapper crew, offered him more than enough family for his entire youth. Intent to not be upstaged by his more level-headed adoptive older brother, Rikishi developed a mech that was a brash and loud as him. Never one to rest on his laurels, Rikishi still continually tweaks his self-made Sonic Burst Driver, ever aspiring to reach a legendary status that would secure both his name and the Junkyard Dogs' in history.",
     "mounts": ["Heavy","Main","Main"],
     "stats": {
       "size": 1,
@@ -543,7 +543,7 @@
     "traits": [
       {
         "name": "Pulse Disruption Field",
-        "description": "1/scene, when the Bayhound takes Kinetic or Explosive damage, it may gain Immunity to Kinetic and Explosive damage for that attack."
+        "description": "1/scene, when the Bayhound would take Kinetic or Explosive damage, it may gain Immunity to Kinetic and Explosive damage caused by the triggering action."
       },
       {
         "name": "Houndhunt",
@@ -553,7 +553,7 @@
             "activation": "Reaction",
             "name": "Houndhunt",
             "trigger": "A character becomes Shredded.",
-            "detail": "Move up to 3 spaces, then make an attack with the Sonic Burst Driver. The movement ignores engagement and doesn't provoke reactions, and the attack must target the character that triggered this reaction.",
+            "detail": "Move up to 3 spaces, then you may make an attack with the Sonic Burst Driver in its HOWL profile. The movement ignores engagement and doesn't provoke reactions, and the attack must target the character that triggered this reaction.",
             "frequency": "1/Round"
           }
         ]
@@ -571,7 +571,7 @@
       "name": "Sonic Burst Driver",
       "description": "Rikishi's signature weapon, the Sonic Burst Driver, launches high frequency shockwaves from a set of purpose built speakers to damage hostile mechs by literally vibrating them apart with concussive force. A secondary set of high power speakers, the so-called \"Deadsteel Amplifiers\", dramatically boost the amplitude of the weapon's shockwaves, but cannot be used for long before the mech they're mounted on starts to literally fall to pieces from the intense vibrations.",
       "active_name": "Deadsteel Amplifiers",
-      "active_effect": "Until the end of combat, the Sonic Burst Driver deals 3 bonus Energy damage and applies Shredded on hit.",
+      "active_effect": "Until the end of combat, the Sonic Burst Driver deals 3 bonus Energy damage on hit and Shreds any target hit until the end of the turn.",
       "activation": "Quick",
       "use": "Encounter",
       "integrated": ["mw_bayhound_integrated"]
@@ -586,7 +586,7 @@
     "name": "DOGMA",
     "mechtype": ["Defender", "Striker"],
     "y_pos": 15,
-    "description": "<i>Independent frames are not available as a part of any license and are only accessible as Exotic Gear.</i><br>Markus \"Dogma\" Brynjar could not have been more different than his father. Though both of them worked for ASGARD, Hakon \"Odin\" Brynjar had experienced true horror in his life and had chosen a path of isolation to insulate himself from tragedy. Hakon's ability to make hard decisions in times of stress made him a valuable asset to the ASGARD company, as a leader who could be ensured to get results, no matter the situation. Markus, too, had experienced the horrors of corporate war, of massacres committed by criminal gangs, and of deaths brought about by the sheer hostility of the Outer Arm Frontier Sector. Tragedy, however, merely hardened his resolve to resist the urge to harm those who hated him and to protect anyone he perceived to have even a flicker of innocence. To that end, he built this mech.",
+    "description": "<i>Independent frames are not available as a part of any license and are only accessible as Exotic Gear.</i><br>Markus \"Dogma\" Brynjar could not have been more different than his father. Though both of them worked for ASGARD, Hakon \"Odin\" Brynjar had experienced true horror in his life and had chosen a path of isolation to insulate himself from tragedy. Hakon's ability to make hard decisions in times of stress made him a valuable asset to the ASGARD company-as a leader who could be ensured to get results, no matter the situation. Markus too had experienced the horrors of corporate war, of massacres committed by criminal gangs, and of deaths brought about by the sheer hostility of the Outer Arm Frontier Sector. Tragedy, however, merely hardened his resolve to resist the urge to harm those who hated him and to protect anyone he perceived to have even a flicker of innocence. To that end, he built this mech.",
     "mounts": ["Main"],
     "stats": {
       "size": 1,
