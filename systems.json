@@ -26,7 +26,7 @@
       {
         "activation": "Full",
         "name": "Ballistic Launch",
-        "detail": "If the primed target is Locked On, you expend a charge to launch a missile at them. Lock On is consumed, and the target and all characters and objects in a Burst 3 area around them take 3d6 Explosive damage at the end of the target's next turn. Damage dealt in this way treats all affected characters and objects as though they were Shredded. All characters besides the primary target may attempt a Hull Save to halve the damage."
+        "detail": "You may only use this action while under the effect of Target BDM. If the primed target is Locked On, you expend a charge to launch a missile at them. Lock On is consumed, and the target and all characters and objects in a Burst 3 area around them take 3d6 Explosive damage at the end of the target's next turn. Damage dealt in this way treats all affected characters and objects as though they were Shredded. All characters besides the primary target may attempt a Hull Save to halve the damage."
       }
     ],
     "description": "ASGARD insists that \"BDM\" actually stands for \"Ballistic Dispersion Missile\", as it was designed for saturation fire in ship-to-ship space combat. <i>Not</i> \"Big Damn Missile.\""
@@ -675,7 +675,7 @@
       {
         "activation": "Invade",
         "name": "REQUEST: AVOID SEQUENCE",
-        "detail": "Choose a character. Until the end of their next turn, each instance of damage dealt by your target to the chosen character is reduced to 1."
+        "detail": "Choose a character. Until the end of your target's next turn, each instance of damage dealt by your target to the chosen character is reduced to 1."
       },
       {
         "activation": "Invade",
