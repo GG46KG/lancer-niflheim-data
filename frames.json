@@ -39,16 +39,12 @@
         "description": "Once per mission, when taking Stress damage, you may choose to not make a Overheat roll. This does not prevent the damage, and all Heat is cleared as though you Overheated normally."
       },
       {
-        "name": "Alpha Retrofit",
-        "description": "The Nidhogg receives +1 Difficulty on AGILITY and ENGINEERING checks and saves.",
+        "name": "Slow",
+        "description": "The Nidhogg receives +1 Difficulty on AGILITY checks and saves.",
         "synergies": [
           {
             "locations": ["agility", "skill_check"],
             "detail": "The Nidhogg gains +1 Difficulty on AGILITY checks and saves."
-          },
-          {
-            "locations": ["engineering", "skill_check"],
-            "detail": "The Nidhogg gains +1 Difficulty on ENGINEERING checks and saves."
           }
         ]
       }
@@ -161,7 +157,7 @@
       {
         "name": "Ouroboros",
         "description": "1/Round the Jormungandr may swap places with one of its Deployables or Drones.",
-        "actions":[
+        "actions": [
           {
             "activation": "Quick Tech",
             "name": "Ouroboros",
@@ -201,7 +197,7 @@
           "edef": "Special",
           "size": 0.5,
           "hp": "15 + {grit}",
-          "actions":[
+          "actions": [
             {
               "name": "Snakebite",
               "activation": "Reaction",
@@ -272,11 +268,129 @@
     "image_url": "https://lh4.googleusercontent.com/ORDbkIe3DkPfl1jYexxC_Z_hlrmRXVoqEuvkmMB6XLoLGr396CrTSp5-Ro_vBcndUw0=w2400"
   },
   {
+    "id": "asg_muninn",
+    "source": "ASG",
+    "name": "MUNINN",
+    "mechtype": ["Artillery"],
+    "y_pos": 57,
+    "license": "MUNINN",
+    "license_level": 2,
+    "description": "<p>ASGARD's oldest and most venerated mech design, the MUNINN is more of a more of a mobile artillery command center than a mech. Slow and fragile, the goal of the average MUNINN pilot is to remain as far from combat as possible, raining hellfire upon its foes from a safe distance. Each revision of the mech has improved its computing capabilities, which, when coupled with its respectable arsenal, allows it to field the most cutting edge artillery available. This includes a connection to ASGARD's proprietary HUGINN siege satellite, allowing for remote strikes anywhere and everywhere in sight.</p>",
+    "mounts": ["Heavy", "Flex", "Main"],
+    "stats": {
+      "size": 2,
+      "stress": 4,
+      "structure": 4,
+      "armor": 0,
+      "hp": 4,
+      "evasion": 6,
+      "edef": 12,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 15,
+      "tech_attack": 0,
+      "save": 12,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "High-Sensitivity Thermoscope",
+        "description": "When attacking Invisible characters, the Muninn may choose to receive +1 Difficulty. If it does, the Muninn treats the target as though it isn't Invisible for that attack."
+      },
+      {
+        "name": "Raven's Eyes",
+        "description": "Seeking and Guided weapons installed on the Muninn have their range increased by 5 and gain an additional +1 Accuracy when consuming Lock On. Integrated weapons do not benefit from this effect.",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Rifle",
+              "Cannon",
+              "Launcher",
+              "CQB",
+              "Nexus",
+              "Melee"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "The range of the Muninn's Seeking and Guided weapons is increased by one and these weapons gain an additional +1 Accuracy when consuming Lock On."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Linked Seige Weapon \"HUGINN\"",
+      "description": "Each Muninn frame is built with an onboard virtual tunnel connection to a linked Huginn-Class satellite capable of delivering electromagnetic pulse strikes and deploying space-to-surface ballistic weaponry. While the official version of the Huginn weapons platform is distributed with a conventional missile battery, a version capable of housing tactical fusion weaponry was also leaked. Though ASGARD claims to have no connection to the leak, they still provide full support for the NEVERMORE missile system anyway, provided that the user is discreet when they ask.",
+      "passive_effect": "At the start of every combat scene, your Muninn automatically connects to its paired Huginn orbital satellite weapon, which can be fired as a Full Tech Action if it is charged.",
+      "active_name": "NEVERMORE",
+      "active_effect": "Call for the delivery of a NEVERMORE air burst payload from HUGINN. Upon launch, the point defense systems of most mechs and vehicles will alert their operators to an impending nuclear strike.<br/><br/>At the end of the round, after all characters have acted, NEVERMORE will detonate somewhere above the battlefield, releasing a massive thermonuclear shockwave that causes all of the following effects immediately:<ul><li>All characters in the scene, including yourself, take 2d6 AP Explosive damage and 6 Burn from the detonation. Affected characters may attempt a Systems save to prevent the Burn damage. You and your allies gain +2 Accuracy on this save.<br></li><li>All mechs Shut Down immediately, though their systems trigger an emergency restart that allows them to Boot Up as a protocol. Biological targets are Stunned until the start of their next turn, instead. Unprotected individuals in the scene (i.e. Humans that aren't part of a Squad or in a Mech) are Stunned until they receive medical attention or a Corrective.</li><li>Until an affected Mech takes a Full Action to hard reboot their computers:<ul><li>Their Guided, Seeking and Smart weapons always miss when used for an attack.</li><li>They cannot take or be affected by Tech actions.</li><li>Their systems with the AI tag cannot be Activated.</li><li>Their NHPs and Comp/Con units cannot take any actions. If an NHP was in control of their Mech when NEVERMORE detonated, that mech is Stunned until a human pilot takes control of it.</li></ul></li><li>One of the following may occur, depending on the location of the battle:<ul><li>On an artificial structure such as a starbase or spaceship, the artificial gravity generation of the structure is disabled and the battlefield becomes zero-g until the end of combat.</li><li>On the surface of a planet with an atmosphere, the blast triggers a cloudburst that causes a short bout of heavy rain. All characters gain soft cover until the end of combat.</li></ul></li></ul>",
+      "activation": "Full Tech",
+      "use": "Encounter",
+      "integrated": ["mw_muninn_integrated"]
+    },
+    "data_type": "frame",
+    "image_url": "https://lh4.googleusercontent.com/ycLNhoJrL_7eBw6d9RgCS1L4X5_vgOQDzUAkMFVawyU_Ujc4QUnA-DebcdFokmtgY6s=w2400"
+  },
+  {
+    "id": "asg_fafnir",
+    "license_level": 2,
+    "source": "ASG",
+    "name": "FAFNIR",
+    "mechtype": ["Striker"],
+    "y_pos": 35,
+    "description": "",
+    "mounts": ["Heavy", "Aux/Aux"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 12,
+      "edef": 4,
+      "heatcap": 9,
+      "repcap": 5,
+      "sensor_range": 2,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 14,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Momentum",
+        "description": "Due to the speed with which it moves, the Fafnir has limited mobility.<ul><li>When taking any movement action or reaction (such as a Boost) and when taking its standard move, the Fafnir can only move in a straight line.</li><li>The Fafnir cannot split its standard move. Once it stops during a standard move, it loses all unused movement.</li></ul>"
+      },
+      {
+        "name": "Blast Brakes",
+        "description": "Whenever the Fafnir ends any movement or takes the Boost action, it deals 3 AP Explosive damage to all characters adjacent to it."
+      },
+      {
+        "name": "Jetskate",
+        "description": "The Fafnir is immune to Slow and Immobilization caused by other characters."
+      }
+    ],
+    "core_system": {
+      "name": "Dragonfire Jets",
+      "description": "At a certain speed, movement becomes difficult for the human eye to track. At a higher speed, movement becomes difficult for computer systems to track. Beyond this point, movement may become so rapid that it is imperceptible to vision, human or digital, entirely. By overcharging its engines, the Fafnir can exceed this threshold, its movements indistinguishable from teleportation. The resulting sonic booms may be mistaken for gunfire at a distance.",
+      "active_name": "Dragonflight",
+      "active_effect": "Until the end of combat: <ul><li>Whenever the Fafnir takes its standard move or Boosts, instead of its normal movement, it teleports to a space within Range 30. This teleportation triggers Blast Brakes as normal.</li><li>When the Fafnir deals damage with Blast Brakes, it may apply Lock On to one of the characters it damaged.</li></ul>",
+      "activation": "Protocol",
+      "use": "Encounter"
+    },
+    "data_type": "frame",
+    "image_url": "https://lh5.googleusercontent.com/HKgB0oT0l5ZybXSDdTI4PBC61RclF29QqIdqNG1N1UL1QtnwHt9txwfsFJnsZVi1ZS4=w2400"
+  },
+  {
     "id": "lumico_virtuoso",
     "license_level": 2,
     "source": "LUMICO",
     "name": "VIRTUOSO",
-    "mechtype": ["Controller","Artillery"],
+    "mechtype": ["Controller", "Artillery"],
     "y_pos": 22,
     "description": "The Virtuoso is the only mech frame that Lumiera Corporation has produced for widespread release, if you can consider a release to a hand-vetted waitlist of pilots 'widespread'. It's gaudy, over-engineered, and ludicrously expensive, and yet, hordes of pilots clamber over one another to wait on a list for access to its license. Merely possessing this mech tells a potential employer, \"If I couldn't do everything I claim, Lumiera would have never let me pilot one of their precious mechs.\" After all, Lumiera's standards are astronomical, both for the capabilities of their own mechs and of the pilots that use them.<br><i>Note: Wings are for display purposes only. Lumiera Corporation requests that pilots disconnect the Virtuoso's wings before combat use.</i>",
     "mounts": ["Heavy", "Main/Aux"],
@@ -337,38 +451,41 @@
       "repcap": 2,
       "sensor_range": 20,
       "tech_attack": 2,
-      "save": 12,
+      "save": 10,
       "speed": 3,
       "sp": 8
     },
     "traits": [
       {
-        "name": "Causality Micro-Fracture",
-        "description": "1/Round the Philosopher may activate NOVA to cause an event to repeat.",
-        "actions":[
-          {
-            "activation": "Reaction",
-            "name": "REQUEST: REPEAT SEQUENCE",
-            "trigger": "Any other character within Sensors takes one of the following actions:<ul><li>Makes a weapon attack that does not use a Superheavy weapon.</li><li>Takes a Quick Tech action, either on its own or as a part of a Full Tech action.</li><li>Boosts, Rams, or Grapples.</li><li>Activates a System as a Quick Action.</il></ul>.",
-            "detail": "That character immediately takes the same action again as a free action. They do not need to choose the same target, but they must use the same systems/weapons and use the same profile, if applicable. If an attack was made with a Loading weapon, the target may attack with it even with the weapon unloaded. Limited systems and weapons act as though they expended a single charge without actually doing so. You may only take 1 quick action on your next turn, and you may not take full actions on your next turn.",
-            "frequency": "1/Round"
-          }
-        ]
+        "name": "DISPLAYING MESSAGE FROM ADMINISTRATOR... ->",
+        "description": "<code class='horus'>DON'T LET NOVA FOOL YOU. YOU ARE NOT IN CONTROL.</code>"
       },
       {
         "name": "Slow",
         "description": "The Philosopher gets +1 Difficulty on Agility checks and saves.",
-        "synergies": [{
-          "locations": ["agility", "skill_check"],
-          "detail": "The Philosopher gains +1 Difficulty on Agility checks and saves."
-        }]
+        "synergies": [
+          {
+            "locations": ["agility", "skill_check"],
+            "detail": "The Philosopher gains +1 Difficulty on Agility checks and saves."
+          }
+        ]
       }
     ],
     "core_system": {
       "name": "\"NOVA\" Perfect Causality Engine",
       "description": "READY -&gt;<br>I WILL GRANT YOU ONE WISH... -&gt;<br>3... 2... 1... GO! -&gt;",
+      "passive_name": "Causality Micro-Fracture",
+      "passive_actions": [
+        {
+          "activation": "Reaction",
+          "name": "REQUEST: REPEAT SEQUENCE",
+          "trigger": "Any other character within Sensors takes one of the following actions:<ul><li>Makes a weapon attack that does not use a Superheavy weapon.</li><li>Takes a Quick Tech action, either on its own or as a part of a Full Tech action.</li><li>Boosts, Rams, or Grapples.</li><li>Activates a System as a Quick Action.</il></ul>",
+          "detail": "That character immediately takes the same action again as a free action. They do not need to choose the same target, but they must use the same systems/weapons and use the same profile, if applicable. If an attack was made with a Loading weapon, the target may attack with it even with the weapon unloaded. Limited systems and weapons act as though they expended a single charge without actually doing so.<br><br>On your next turn after using this action, you may only take 1 quick action and you may not take full actions. If <i>Forge of Hours</i> is active, this penalty does not apply.",
+          "frequency": "1/Round"
+        }
+      ],
       "active_name": "Forge of Hours",
-      "active_effect": "NOVA prepares to alter the passage of time on a larger scale. At the start of your next turn gain a Miracle die, 1d6 starting at 3, and enter a transcendent state: you gain immunity to all effects, hostile and friendy, and access to a suite of powerful actions. During your turn, you may take no movement or actions except ones provided by this system and <i>REQUEST: REPEAT SEQUENCE</i>, which does not prevent you from taking Full Actions during this time. Each time you use one of the actions granted by this die, reduce the Miracle die by 1. When the Miracle die's value would be reduced to 0, this effect ends.",
+      "active_effect": "NOVA prepares to alter the passage of time on a larger scale. At the start of your next turn gain a Miracle die, 1d6 starting at 3, and enter a transcendent state: you gain immunity to all effects, hostile and friendy, and access to a suite of powerful actions. During your turn, you may take no movement or actions except ones provided by the Philosopher's Core System. Each time you use one of the actions granted by this action, reduce the Miracle die by 1. When the Miracle die's value would be reduced to 0, this effect ends.",
       "activation": "Full",
       "active_actions": [
         {
@@ -400,7 +517,7 @@
     "mechtype": ["Striker"],
     "y_pos": 35,
     "description": "The colonists of the Outer Arm are practical people, with no need or patience for the typical theatrical flair of the Lumiera Corporation. This proved to be an issue for the company, who had built their reputation on the idea that the greatest adventurers and pilots sought out their mechs as a prize. In an effort to convice the pioneers of the Outer Arm of their value, Lumiera Corporation developed the Trailblazer, released to specific individuals that the company deemed \"of interest\", built using practical designs that lacked some of the usual flair of Lumiera's other mechs. Whether its reception will lead to further release, only time will tell.",
-    "mounts": ["Heavy","Main","Flex"],
+    "mounts": ["Heavy", "Main", "Flex"],
     "stats": {
       "size": 1,
       "structure": 4,
@@ -421,11 +538,11 @@
       {
         "name": "Manifest Destiny",
         "description": "1/Round as a free action, as long as the Trailblazer isn't Immobilized or Slowed, it may move up to its Speed towards an enemy.",
-        "actions":[
+        "actions": [
           {
             "activation": "Free",
             "name": "Manifest Destiny",
-            "detail": "As long as you aren't Immobilized or Slowed, move up to your Speed towards an enemy.",
+            "detail": "As long as you aren't Immobilized or Slowed, move up to your Speed towards an enemy of your choice. You must move as directly as possible and get as close to the chosen enemy as possible.",
             "frequency": "1/Round"
           }
         ]
@@ -453,6 +570,69 @@
     "image_url": "https://lh5.googleusercontent.com/HKgB0oT0l5ZybXSDdTI4PBC61RclF29QqIdqNG1N1UL1QtnwHt9txwfsFJnsZVi1ZS4=w2400"
   },
   {
+    "id": "lumico_savant",
+    "license_level": 2,
+    "source": "LUMICO",
+    "name": "SAVANT",
+    "mechtype": ["Striker"],
+    "y_pos": 35,
+    "description": "",
+    "mounts": ["Heavy", "Aux/Aux", "Flex"],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 12,
+      "edef": 8,
+      "heatcap": 4,
+      "repcap": 3,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Impalement Arts",
+        "description": "Aux and Main weapons installed on the Savant without the Thrown tag gain Thrown 3, while those with the Thrown property gain +3 Range on Thrown attacks. The Savant's Thrown attacks ignore cover granted by its target's allies.",
+        "synergies": [
+          {
+            "locations": [
+              "weapon"
+            ],
+            "weapon_types": [
+              "Melee"
+            ],
+            "weapon_sizes": [
+              "any"
+            ],
+            "detail": "Aux and Main weapons without the Thrown tag gain Thrown 3, while those that already had it gain +3 Range on Thrown attacks. The Savant's Thrown attacks ignore cover granted by its target's allies."
+          }
+        ]
+      },
+      {
+        "name": "Eyebite",
+        "description": "1/Scene, when an enemy within Range 3 would Overwatch the Savant, the Savant may make a melee attack against the attacker, throwing a hidden blade directly at their cockpit. If the Savant's attack lands, the enemy's attack fails entirely, completely negating all of the attack's effects and damage."
+      }
+    ],
+    "core_system": {
+      "name": "\"COVENANT\" Direct Service Engine",
+      "description": "<i>Congratulations on your subscription to Lumiera Corporation's COVENANT Direct Service support system! An engineer has been assigned to your account and is on standby to provide personal support by blinking </i>",
+      "passive_name": "Divine Armory",
+      "passive_effect": "At the start of each Scene, gain two Armory dice: 2d6, starting on random values, which are used to attack with the Divine Armory. All Armory Dice are lost at the end of each scene.<br/>1/Round when you target a character with a Thrown attack, you may open the Divine Armory to make an attack with it against the same target as a free action. This is the only way you may attack with the Divine Armory.",
+      "active_name": "Seven Seals",
+      "active_effect": "Gain an additional Armory Die starting on a value of your choice. Until the end of the scene, when you open the Divine Armory, you make two attacks with it instead of one.",
+      "activation": "Protocol",
+      "use": "Encounter",
+      "integrated": ["mw_savant_integrated"]
+    },
+    "data_type": "frame",
+    "image_url": "https://lh5.googleusercontent.com/HKgB0oT0l5ZybXSDdTI4PBC61RclF29QqIdqNG1N1UL1QtnwHt9txwfsFJnsZVi1ZS4=w2400"
+  },
+  {
     "id": "ind_slowpoke",
     "license_level": 2,
     "source": "IND",
@@ -460,7 +640,7 @@
     "mechtype": ["Artillery"],
     "y_pos": 15,
     "description": "<i>Independent frames are not available as a part of any license and are only accessible as Exotic Gear.</i><br>Sam \"Poke\" Rodriguez never accepted half measures. As a member of ASGARD's Engineering Research department, he was largely focused on packing the most bang into the smallest frame possible. Though his designs never saw the open market after ASGARD's collapse as a major force in the Outer Arm Frontier sector, Poke went on to refine his designs, ensuring that they would be maximally functional in actual combat. He didn't have a choice after all: he either made his designs work or died trying to use them.",
-    "mounts": ["Heavy","Aux/Aux"],
+    "mounts": ["Heavy", "Aux/Aux"],
     "stats": {
       "size": 2,
       "structure": 4,
@@ -489,10 +669,12 @@
       {
         "name": "Weak Computer",
         "description": "The Slowpoke receives +1 Difficulty on all SYSTEM saves and checks.",
-        "synergies": [{
-          "locations": ["systems"],
-          "detail": "The Slowpoke receives +1 Difficulty on all SYSTEM saves and checks."
-        }]
+        "synergies": [
+          {
+            "locations": ["systems"],
+            "detail": "The Slowpoke receives +1 Difficulty on all SYSTEM saves and checks."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -523,7 +705,7 @@
     "mechtype": ["Striker"],
     "y_pos": 30,
     "description": "<i>Independent frames are not available as a part of any license and are only accessible as Exotic Gear.</i><br>\"Bayhound\" Rikishi was an orphan, by its literal meaning, for longer than he could reasonably remember, but he never felt at a loss for family. He was taken in at a young age by the venerable scrapper \"Junk Dog\" Joe, founder of the Junkyard Dogs, alongside another young man, \"Killer Dog\" X, who alongside the rest of the scrapper crew, offered him more than enough family for his entire youth. Intent to not be upstaged by his more level-headed adoptive older brother, Rikishi developed a mech that was a brash and loud as him. Never one to rest on his laurels, Rikishi still continually tweaks his self-made Sonic Burst Driver, ever aspiring to reach a legendary status that would secure both his name and the Junkyard Dogs' in history.",
-    "mounts": ["Heavy","Main","Main"],
+    "mounts": ["Heavy", "Main", "Main"],
     "stats": {
       "size": 1,
       "structure": 4,
@@ -548,7 +730,7 @@
       {
         "name": "Houndhunt",
         "description": "1/round, when a character becomes Shredded, the Bayhound may move and attack them with the Sonic Burst Driver.",
-        "actions":[
+        "actions": [
           {
             "activation": "Reaction",
             "name": "Houndhunt",
@@ -561,10 +743,12 @@
       {
         "name": "Exposed Reactor",
         "description": "The Bayhound has +1 Difficulty on Engineering checks and saves.",
-        "synergies": [{
-          "locations": ["engineering", "skill checks"],
-          "detail": "The Bayhound has +1 Difficulty on Engineering checks and saves."
-        }]
+        "synergies": [
+          {
+            "locations": ["engineering", "skill checks"],
+            "detail": "The Bayhound has +1 Difficulty on Engineering checks and saves."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -608,7 +792,7 @@
       {
         "name": "Intercession",
         "description": "1/round, the Dogma may take attacks in place of its allies.",
-        "actions":[
+        "actions": [
           {
             "activation": "Reaction",
             "name": "Intercession",

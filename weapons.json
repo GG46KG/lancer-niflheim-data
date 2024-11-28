@@ -4,7 +4,7 @@
     "name": "Roots of Yggdrasil",
     "mount": "Superheavy",
     "type": "Cannon",
-    "effect": "When using this weapon, choose three valid targets to attack. The same character can be chosen multiple times, in which case you roll an additional attack against that character for each additional time they were targeted. Reliable damage dealt by this weapon is always Kinetic damage.",
+    "effect": "When using this weapon, choose three valid targets to attack. The same character can be chosen up to three times, in which case you roll an additional attack against that character for each additional time they were targeted. Reliable damage dealt by this weapon is always Kinetic damage.",
     "profiles": [
       {
         "name": "Recon Mode",
@@ -195,7 +195,7 @@
     "damage": [
       {
         "type": "Burn",
-        "val": 6
+        "val": 5
       }
     ],
     "effect": "This weapon does not require a valid path to its target to benefit from Seeking.",
@@ -258,8 +258,7 @@
       }
     ],
     "effect": "After each attack with this weapon, you suffer +1 Difficulty on all attacks, saves, and skill checks until the start of your next turn, even if the attack was rerolled.",
-    "on_attack": "This weapon ignores Invisibility and Resistance to Kinetic damage.",
-    "on_crit": "The target is Shredded until the end of its next turn.",
+    "on_attack": "This weapon is so large that it ignores Invisibility and Resistance to Kinetic damage.",
     "description": "This sword, with its thick blade, is one of the largest of its kind. Highly destructive, if intolerably heavy, it is little more than a heap of raw iron.",
     "tags": [
       {
@@ -314,10 +313,19 @@
     "damage": [
       {
         "type": "Kinetic",
-        "val": "1d6"
+        "val": "1d6+1"
       }
     ],
-    "on_hit": "1/turn, when you deal bonus damage with this weapon, you may make another attack with this weapon against the same target as a Free Action",
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 1
+      },
+      {
+        "id": "tg_overkill"
+      }
+    ],
+    "on_hit": "1/Turn, you may make another attack with this weapon against the same target as a Free Action",
     "description": "A pair of mech sized shredder claws, to bring out the animal in any pilot."
   },
   {
@@ -433,7 +441,13 @@
             "val": 1
           }
         ],
-        "effect": "You can cause this weapon to become Bloodstoked until the end of the turn by dealing 1d6 Energy damage to yourself as a free action. You can not prevent or reduce this damage in any way."
+        "actions": [
+          {
+            "activation": "Free",
+            "name": "Blood Pact",
+            "detail": "Deal 3 Energy damage to yourself, causing the weapon to become Bloodstoked until the end of the turn. This damage bypasses Overshield and cannot be prevented or reduced in any way."
+          }
+        ]
       },
       {
         "name": "Bloodstoked",
@@ -465,7 +479,7 @@
             "id": "tg_accurate"
           }
         ],
-        "effect": "If this profile is active at any point during your turn, you must deal damage with it before the end of the turn. If you fail to do so, you deal 1d6 Energy damage to yourself and the weapon becomes Bloodstoked until the end of your next turn. You can not prevent or reduce this damage in any way."
+        "effect": "If this profile is active at any point during your turn, you must deal damage with it before the end of the turn. If you fail to do so, you deal 3 Energy damage to yourself and the weapon becomes Bloodstoked until the end of your next turn. This damage bypasses Overshield and cannot be prevented or reduced in any way."
       }
     ],
     "tags": [
@@ -473,8 +487,252 @@
         "id": "tg_oneofakind"
       }
     ],
-    "effect": "This weapon begins Inactive. Whenever a Character is destroyed or takes Structure damage, this weapon's Bloodstoked profile activates until the end of your next turn. If you kill a Biological target with this weapon, it becomes Bloodstoked until the end of combat.",
+    "effect": "This weapon begins in its Inactive profile. Whenever a Character is destroyed or takes Structure damage, this weapon's Bloodstoked profile activates until the end of your next turn. If you kill a Biological target with this weapon, it becomes Bloodstoked until the end of combat.",
     "description": "<i>It doesn't look like much, does it? But... it draws a lot more power than it seems like it should.</i>"
+  },
+  {
+    "id": "mw_muninn_integrated",
+    "name": "GUNGNIR-Class Orbital Pulse Weapon",
+    "mount": "Orbital",
+    "type": "Spool Weapon",
+    "range": [
+      {
+        "type": "Range",
+        "val": 999
+      },
+      {
+        "type": "Blast",
+        "val": 2
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6"
+      },
+      {
+        "type": "Heat",
+        "val": 4
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Full Tech",
+        "name": "Signal Strike",
+        "detail": "Make an attack with GUNGNIR if it is loaded."
+      }
+    ],
+    "effect": "This weapon cannot be reloaded normally, is fired as a Full Tech Action, ignores cover, and does not require line of sight to the target when declaring attacks. After you attack with this weapon, gain a Charge die, 1d6 starting at 2. At the start of each of your turns, reduce the Charge die by 1. When the Charge die would be reduced to 0, you lose the Charge die and this weapon reloads itself automatically.",
+    "on_attack": "Gain +2 Accuracy when attacking targets with an unobstructed view of the sky. This weapon's Blast must be centered on a character affected by Lock-On and must consume Lock On on that target.",
+    "on_hit": "Drones and NHP controlled mechs are Stunned until the end of their controller's next turn.",
+    "description": "GUNGNIR is a weapon installed on every HUGINN class satellite capable of delivering a potent electromagnetic pulse to an area on the planet's surface with guidance from a spotter on the surface, even through solid barriers.",
+    "tags": [
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_inaccurate"
+      },
+      {
+        "id": "tg_indestructible"
+      }
+    ]
+  },
+  {
+    "id": "mw_asg_rolling_thunder",
+    "name": "Rolling Thunder",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "source": "ASG",
+    "license": "MUNINN",
+    "license_level": 3,
+    "range": [
+      {
+        "type": "Range",
+        "val": 30
+      }
+    ],
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "4d6"
+      }
+    ],
+    "on_attack": "You may choose any number of valid targets when attacking with this weapon, and attacks with this weapon are not affected by cover.",
+    "description": "The \"Rolling Thunder\" Siege System was built for the backlines. These paired mortars arrays are expected to be utilized alongside a spotter, as they offer no assistance in target-finding on their own. What they do provide is some of the highest raw explosive power available on the battlefield to date.",
+    "tags": [
+      {
+        "id": "tg_guided"
+      },
+      {
+        "id": "tg_loading"
+      },
+      {
+        "id": "tg_arcing"
+      },
+      {
+        "id": "tg_ordnance"
+      },
+      {
+        "id": "tg_reliable",
+        "val": 8
+      }
+    ]
+  },
+  {
+    "id": "mw_asg_wavegun",
+    "name": "Rho-Pattern Wave Gun",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "source": "ASG",
+    "license": "MUNINN",
+    "license_level": 2,
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      }
+    ],
+    "on_hit": "All characters in a Line 15 area from you to the target take 3 AP Energy damage. The primary target takes this damage as Burn, instead.",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_guided"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      }
+    ]
+  },
+  {
+    "id": "mw_asg_flourish_rockets",
+    "name": "Flourish Rockets",
+    "mount": "Main",
+    "type": "Launcher",
+    "source": "ASG",
+    "license": "MUNINN",
+    "license_level": 1,
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": 4
+      }
+    ],
+    "on_hit": "Apply Lock On to the target.",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_guided"
+      }
+    ]
+  },
+  {
+    "id": "mw_asg_kinetic_spike",
+    "name": "Kinetic Spike",
+    "mount": "Main",
+    "type": "Melee",
+    "source": "ASG",
+    "license": "FAFNIR",
+    "license_level": 1,
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "on_attack": "When attacking immediately after moving, this weapon gains bonuses based on how far you are from where you began the movement:<ul><li>2+ Spaces: Deal an additional 4 Kinetic damage on hit.</li><li>4+ Spaces: Gain +2 Accuracy on your attack.</li><li>7+ Spaces: Your attack becomes Reliable 4 and AP.</li></ul><br/>These bonuses only apply to the attack if it immediately follows a movement action or a standard move. Taking any action, including Free Actions, before attacking with the Kinetic Spike will forfeit any bonuses the attack would have received.",
+    "description": "On the outside, this weapon seems like nothing more than a large metal spike mounted to a mech's arm. In reality, it is a large metal spike mounted to a kinetic compensator, which can store a portion of the kinetic energy of a mech's movement, bringing that extra force to bear on its next swing."
+  },
+  {
+    "id": "mw_asg_dragonlance",
+    "name": "Drachenlanze",
+    "mount": "Superheavy",
+    "source": "ASG",
+    "license": "FAFNIR",
+    "license_level": 3,
+    "type": "Melee",
+    "sp": 3,
+    "profiles": [
+      {
+        "name": "Heavy Lance",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 2
+          }
+        ],
+        "effect": "When attacking in this profile, the Drachenlanze is considered a Melee weapon."
+      },
+      {
+        "name": "Revolver Cannon",
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d3+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 2
+          },
+          {
+            "type": "Threat",
+            "val": 2
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_heat_self",
+            "val": 1
+          }
+        ],
+        "on_attack": "You may make an additional attack with this profile against the same target as a Free Action after this attack. Each time you do so, the Heat (Self) rating of this profile doubles until the end of your current turn."
+      },
+      {
+        "name": "Exhaust Blast",
+        "range": [
+          {
+            "type": "Range",
+            "val": 2
+          }
+        ],
+        "tags" : [
+          {
+            "id": "tg_ordnance"
+          }
+        ],
+        "on_attack": "Release a burst of superheated flame from the Drachenlanze to clear up to 1d3+3 Heat.",
+        "on_hit": "Inflict 1 Burn on the target for each point of Heat you cleared."
+      }
+    ],
+    "effect": "You may use this weapon with Skirmish and Overwatch in its Heavy Lance and Revolver Cannon profiles. When you Barrage with this weapon, you may make a single attack with it in its Exhaust Blast profile or make two attacks with it in its other profiles. You may choose the same profile twice when attacking this way.",
+    "description": "The Drachenlanze weapon system is the epitome of ASGARD design: a massive steel lance fitted with an explosive, revolving-cylinder cannon and a burst flamethrower. By other manufacturer's standards, it is not complex. By ASGARD's standards, it is a joy to use and a force to be reckoned with."
   },
   {
     "id": "mw_lumico_quint_rifle",
@@ -600,7 +858,7 @@
         "val": "1d6"
       }
     ],
-    "effect": "Damage dealt by this weapon ignores damage resistance. Kinetic damage dealt by this weapon cannot be reduced in any way.",
+    "effect": "Kinetic damage dealt by this weapon cannot be reduced in any way.",
     "on_hit": "1/Turn, any bonus damage dealt by this weapon is doubled.",
     "description": "He dropped the axe to the ground in exhaustion, its blade damaged beyond repair, and spoke softly, with pain in his voice but without regret: <i>I didn't want to cut you down, but I had to. I hope you can understand.</i>"
   },
@@ -658,7 +916,7 @@
     "damage": [
       {
         "type": "Kinetic",
-        "val": "1d6+8"
+        "val": "1d6+5"
       }
     ],
     "tags": [
@@ -671,6 +929,256 @@
     ],
     "effect": "You may only attack with this weapon 1/Round.",
     "description": "Lumiera Corporation is usually well known for complex and over-designed weapons designed to mitigate any flaw that a human user introduces. The \"Teacher\" does not follow this tradition. It is the simplest kind of gun and offers no fancy tricks, only raw power. It teaches humility, in its form and execution. The only question is who this lesson will reach: the user, or their target."
+  },
+  {
+    "id": "mw_lumico_misericorde",
+    "name": "Misericorde",
+    "mount": "Auxiliary",
+    "source": "LUMICO",
+    "license": "SAVANT",
+    "license_level": 1,
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_luxury",
+        "val": 1
+      },
+      {
+        "id": "tg_thrown",
+        "val": 3
+      }
+    ],
+    "on_hit": "This weapon deals 1 Energy damage for each Structure and Stress you are missing.",
+    "description": ""
+  },
+  {
+    "id": "mw_lumico_psi_blade_array",
+    "name": "Psi Blade Array",
+    "mount": "Main",
+    "source": "LUMICO",
+    "license": "SAVANT",
+    "license_level": 2,
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": 2
+      },
+      {
+        "type": "Heat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_luxury",
+        "val": 2
+      },
+      {
+        "id": "tg_thrown",
+        "val": 5
+      }
+    ],
+    "effect": "You do not need to retrieve this weapon after using it for a Thrown attack to continue using it for attacks. This weapon can only deal Bonus Damage once per turn. Whenever you would make any attack as a free action, you may sacrifice the original attack to make a Thrown attack with this weapon instead.",
+    "on_attack": "If you are Barraging, you may choose this weapon for both attacks. After you Barrage, you may attack with this weapon once as a free action for each attack you made with this weapon during the Barrage.",
+    "description": ""
+  },
+  {
+    "id": "mw_lumico_winch_sword",
+    "name": "Chain Winch Viceblade",
+    "mount": "Heavy",
+    "source": "LUMICO",
+    "license": "SAVANT",
+    "license_level": 3,
+    "type": "Melee",
+    "sp": 1,
+    "profiles": [
+      {
+        "name": "VICEBLADE",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "effect": "During any turn where you have dealt damage with this weapon's Impalement Chain profile, you may ignore the normal restrictions on duplicate actions when choosing to Skirmish with this profile.",
+        "on_attack": "Against Immobilized and Stunned targets, this weapon gains Reliable 6 and treats the target as though they were Shredded."
+      },
+      {
+        "name": "IMPALEMENT CHAIN",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_thrown",
+            "val": 10
+          }
+        ],
+        "effect": "The Impalement Chain is automatically retracted and retrieved after being thrown.",
+        "on_hit": "If the target is the same size as you or smaller, they must pass a Hull Save or be pulled directly to you and Immobilized until the end of the current turn. If your target was larger than you, you are pulled to them, instead."
+      }
+    ],
+    "tags": [
+      {
+        "id":"tg_luxury",
+        "val": 1
+      }
+    ],
+    "description": "This heavy sword opens down the middle to expose a deadly spike, chained to a winch just above the sword's hilt. When a Mech is speared on the spike, the winch begins to turn, reeling the unfortunate victim between the Viceblade's deadly jaws."
+  },
+  {
+    "id": "mw_savant_integrated",
+    "name": "Divine Armory",
+    "mount": "Mercurial",
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "profiles": [
+      {
+        "name": "I - JERA",
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "3"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_thrown",
+            "val": 5
+          },
+          {
+            "id": "tg_reliable",
+            "val": 3
+          }
+        ]
+      },
+      {
+        "name": "II - HAGALAZ",
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "1d3"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_thrown",
+            "val": 5
+          }
+        ],
+        "on_attack": "Choose up to two additional targets for the attack. A single character cannot be damaged by this profile more than once per attack."
+      },
+      {
+        "name": "III - RAIDO",
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "1d3"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_thrown",
+            "val": 7
+          }
+        ],
+        "on_hit": "You may teleport to a space adjacent to your target."
+      },
+      {
+        "name": "IV - ISAZ",
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "1d3 + 2"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_thrown",
+            "val": 5
+          },
+          {
+            "id": "tg_ap"
+          }
+        ]
+      },
+      {
+        "name": "V - ALGIZ",
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "1d3"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_thrown",
+            "val": 5
+          }
+        ],
+        "on_hit": "You gain 3 Overshield."
+      },
+      {
+        "name": "VI - SOWILO",
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "1d3"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_thrown",
+            "val": 5
+          }
+        ],
+        "on_crit": "Reroll the Armory Die used to make this attack and immediately make another attack against the same target using the rolled profile."
+      }
+    ],
+    "effect": "<ul><li>This weapon cannot deal bonus damage.</li><li>You may only attack with this weapon through the effect of the Savant's core power. When you attack, choose a profile to attack with. Its number must match one of the Savant's Armory Dice. After attacking, reroll one Armory Die that matched the chosen profile.</li><li>Attacks with this weapon must be made as Thrown attacks. Each time this weapon is used for a thrown attack, a golden phantom weapon is directly materialized into your Mech's hands, which dematerializes after it is thrown. As such, you do not need to retrieve anything to make additional attacks with it, but the thrown weapons cannot be retrieved and used again.</li></ul>",
+    "description": ""
   },
   {
     "id": "mw_poke_integrated",

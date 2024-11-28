@@ -19,7 +19,7 @@
     "name": "NO KILL LIKE OVERKILL",
     "source": "ASG",
     "description": "ASGARD believes that all combat should be handled with the biggest stick available at any given moment, and that nothing gives a pilot the same sort of adrenaline rush as firing heavy artillery at a target and seeing nothing but a crater when the smoke clears.",
-    "effect": "1/round, when you destroy a non-Grunt Mech with a damage from a Heavy or Superheavy weapon, you may immediately Skirmish as a Free Action."
+    "effect": "1/round, when you destroy a non-Grunt Mech with a damage from a Heavy or Superheavy weapon, you may move up to your Speed, then take a Skirmish action."
   },
   {
     "id": "lumico_bespoke_accessories",
@@ -48,14 +48,14 @@
     "id": "lumico_pulse_battery",
     "name": "RADIO PULSE BATTERY",
     "source": "LUMICO",
-    "description": "By adding secondary store of power designed to dramatically boost the power of a single burst transmission, allowing the transmission of what would normally be a targeted signal to a broad area. Unfortunately, the sudden jolt of power caused by activating this reserve power is usually enough to force a mech to soft reboot.",
-    "effect": "1/Mission, when you take a Quick Tech action that targets a single character, you may activate this Core Bonus to cause that action to target any number of characters within Sensors. At the end of your turn, you are Jammed until the end of your next turn. The Jammed condition caused by this Core Bonus ignores any effects that grant Immunity to Jammed or that would negate a portion of Jammed's effects. You may not use this effect on a turn where you expend your mech's Core Power."
+    "description": "By adding a secondary store of power designed to dramatically boost the power of continuous signals, the range of certain kinds of sustained systems is vastly increases.",
+    "effect": "The Aura range of any installed systems with the Aura tag is increased by 50% (rounded down)."
   },
   {
     "id": "lumico_accept_nothing_less",
     "name": "ACCEPT NOTHING LESS",
     "source": "LUMICO",
-    "description": "Perfection, as Lumiera Corporation defines it, is largely based on a pilot's skill. Lumiera does understand that luck plays a factor in combat however, but they do look positively on pilots who can make the most out of their luck.",
+    "description": "Perfection, as Lumiera Corporation defines it, is largely based on a pilot's skill. Lumiera does understand that luck plays a factor in combat however, and they look positively on pilots who can make the most out of their circumstances.",
     "effect": "Choose one weapon. When you roll a 19 or 20 on a die when making an attack roll with that weapon, you may make a second attack with that weapon as a free action. This extra attack deals half damage and does not trigger this effect again.",
     "mounted_effect": "One weapon on this mount triggers extra attacks on a roll of 19 or 20."
   }

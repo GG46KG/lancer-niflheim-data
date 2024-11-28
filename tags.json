@@ -7,7 +7,7 @@
     {
       "id": "tg_aura",
       "name": "AURA {VAL}",
-      "description": "This system can be activated or deactivated as a Protocol. While this system is active, it generates an \"Aura\" that affects all other characters in a Burst {VAL} area around the user. Only one system with the Aura tag may be active at once: activating a new Aura deactivates all others. If this system has the Heat (Self) or Limited tag, the user gains Heat or expends charges at the end of each of their turns that it is active. If you become Jammed or Shut Down, any active Auras deactivate."
+      "description": "This system can be activated or deactivated as a Protocol. While this system is active, it generates an \"Aura\" that affects all other characters in a Burst {VAL} area around the user. Only one system with the Aura tag may be active at once: activating a new Aura deactivates all others. If this system has the Heat (Self) or Limited tag, the user gains Heat or expends charges at the end of each of their turns that it is active, and immediately deactivates upon beginning any turn with no charges remaining. If you become Jammed or Shut Down, any active Auras deactivate."
     },
     {
       "id": "tg_oneofakind",
