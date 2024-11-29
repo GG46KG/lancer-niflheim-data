@@ -18,6 +18,14 @@
         "logo_url": "https://drive.google.com/uc?export=download&id=1Jp5hGYj3o_Rw-8gW45OO4Ek_LrL7L556"
     },
     {
+        "id": "ICE",
+        "name": "ICEBREAKERS LLC",
+        "light": "#8ce6c2",
+        "dark": "#64b594",
+        "description": "Formerly known as PD&J Scrappers, after the initial founding members Peter Pachen, Dan Regel, and John Harrison. Once the company began to gain a foothold in the Frontier after a major military operation on Niflheim, Regel exited the company and Harrison passed away from old age, leaving Pachen as the only remaining member. The new company chose to rebrand as the Icebreakers, after their initial entry mech, the Icebreaker, which took the Frontier by storm.",
+        "quote": "<i>Forged in the Frontier</i>"
+    },
+    {
         "id": "IND",
         "name": "INDEPENDENT",
         "light": "#556B2F",

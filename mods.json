@@ -41,6 +41,9 @@
     "name": "Dancing Weapon",
     "sp": 3,
     "allowed_types": ["Melee"],
+    "restricted_sizes": [
+        "Heavy", "Superheavy"
+    ],
     "source": "LUMICO",
     "license": "Savant",
     "license_level": 3,

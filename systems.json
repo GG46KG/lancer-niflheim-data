@@ -750,9 +750,9 @@
       },
       {
         "activation": "Reaction",
-        "trigger": "Immediately before or after any character takes any action or movement, while the target of REQUEST: RECORD SEQUENCE is within Sensors.",
+        "trigger": "Immediately after any character takes any action or movement, while the target of REQUEST: RECORD SEQUENCE is within Sensors.",
         "name": "REQUEST: ERASE SEQUENCE",
-        "detail": "Gain 4 Heat. The target of REQUEST: RECORD SEQUENCE is returned to the marked position, and the effects of any actions they have taken this turn are undone."
+        "detail": "Gain 4 Heat. The target of REQUEST: RECORD SEQUENCE is returned to the marked position, and the effects the most recent action they took this turn is undone."
       }
     ],
     "tags": [
@@ -1002,5 +1002,21 @@
       }
     ],
     "description": "<i>Give 'em the heater.</i>"
+  },
+  {
+    "id": "ice_angel_special",
+    "name": "Severed Consciousness",
+    "type": "System",
+    "sp": 0,
+    "source": "ICE",
+    "license": "ANGEL",
+    "license_level": 2,
+    "effect":"If a pilot's body is killed while they are piloting the Angel, their consciousness becomes locked in a state of limbo. This system contains what remains of their entire being. If it is installed in a mech, that mech becomes their body, in a sense, and it must be installed for them to pilot any mech other than the Angel.<br/><br/>This system should not be used under any other circumstances.",
+    "tags": [
+      {
+        "id": "tg_ai"
+      }
+    ],
+    "description": "<i>It's terrifying to know just what this thing is.</i>"
   }
 ]

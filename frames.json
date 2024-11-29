@@ -333,7 +333,7 @@
       "integrated": ["mw_muninn_integrated"]
     },
     "data_type": "frame",
-    "image_url": "https://lh4.googleusercontent.com/ycLNhoJrL_7eBw6d9RgCS1L4X5_vgOQDzUAkMFVawyU_Ujc4QUnA-DebcdFokmtgY6s=w2400"
+    "image_url": ""
   },
   {
     "id": "asg_fafnir",
@@ -383,7 +383,7 @@
       "use": "Encounter"
     },
     "data_type": "frame",
-    "image_url": "https://lh5.googleusercontent.com/HKgB0oT0l5ZybXSDdTI4PBC61RclF29QqIdqNG1N1UL1QtnwHt9txwfsFJnsZVi1ZS4=w2400"
+    "image_url": ""
   },
   {
     "id": "lumico_virtuoso",
@@ -473,19 +473,20 @@
     ],
     "core_system": {
       "name": "\"NOVA\" Perfect Causality Engine",
-      "description": "READY -&gt;<br>I WILL GRANT YOU ONE WISH... -&gt;<br>3... 2... 1... GO! -&gt;",
+      "description": "READY -&gt;<br>I WILL GRANT YOU ONE WISH... -&gt;",
       "passive_name": "Causality Micro-Fracture",
+      "passive_effect": "The Philosopher always has access to the <i>REQUEST: REPEAT SQUENCE</i> Reaction.",
       "passive_actions": [
         {
           "activation": "Reaction",
           "name": "REQUEST: REPEAT SEQUENCE",
           "trigger": "Any other character within Sensors takes one of the following actions:<ul><li>Makes a weapon attack that does not use a Superheavy weapon.</li><li>Takes a Quick Tech action, either on its own or as a part of a Full Tech action.</li><li>Boosts, Rams, or Grapples.</li><li>Activates a System as a Quick Action.</il></ul>",
-          "detail": "That character immediately takes the same action again as a free action. They do not need to choose the same target, but they must use the same systems/weapons and use the same profile, if applicable. If an attack was made with a Loading weapon, the target may attack with it even with the weapon unloaded. Limited systems and weapons act as though they expended a single charge without actually doing so.<br><br>On your next turn after using this action, you may only take 1 quick action and you may not take full actions. If <i>Forge of Hours</i> is active, this penalty does not apply.",
+          "detail": "That character immediately takes the same action again as a free action. They do not need to choose the same target, but they must use the same systems/weapons and use the same profile, if applicable. If an attack was made with a Loading weapon, the target may attack with it even with the weapon unloaded. Limited systems and weapons act as though they expended a single charge without actually doing so.<br><br>On your next turn after using this action, you may only take 1 Quick Action and you may not take Full Actions, though you may still move and take Free Actions as normal. If <i>Forge of Hours</i> is active, this penalty does not apply.",
           "frequency": "1/Round"
         }
       ],
       "active_name": "Forge of Hours",
-      "active_effect": "NOVA prepares to alter the passage of time on a larger scale. At the start of your next turn gain a Miracle die, 1d6 starting at 3, and enter a transcendent state: you gain immunity to all effects, hostile and friendy, and access to a suite of powerful actions. During your turn, you may take no movement or actions except ones provided by the Philosopher's Core System. Each time you use one of the actions granted by this action, reduce the Miracle die by 1. When the Miracle die's value would be reduced to 0, this effect ends.",
+      "active_effect": "NOVA prepares to alter the passage of time on a larger scale. At the start of your next turn gain a Miracle die, 1d6 starting at 3, and enter a transcendent state: you gain Immunity to all effects, hostile and friendy, and access to a suite of powerful actions. During your turn, you may take no movement or actions except ones provided by the Philosopher's Core System. Each time you use one of the actions granted by this action, reduce the Miracle die by 1. When the Miracle die's value would be reduced to 0, this effect ends.",
       "activation": "Full",
       "active_actions": [
         {
@@ -497,12 +498,12 @@
           "activation": "Reaction",
           "name": "REQUEST: ALTER SEQUENCE",
           "trigger": "An ally within Sensors is damaged by an attack.",
-          "detail": "The damage from the attack is prevented. That ally teleports to any space where they could validly attack the attacker, then immediately attacks the target with a valid weapon. You may not take actions on your next turn."
+          "detail": "The damage and any secondary effects from the attack is prevented. That ally teleports to any space where they could validly attack the attacker, then immediately attacks the target with a valid weapon. You may not take actions on your next turn."
         },
         {
           "activation": "Full",
           "name": "REQUEST: ENHANCE SEQUENCE",
-          "detail": "Target hostile character within Sensors is Stunned and Shredded until the end of their next turn."
+          "detail": "Target hostile character within Sensors is Stunned and Shredded until the end of your next turn."
         }
       ]
     },
@@ -558,7 +559,7 @@
     ],
     "core_system": {
       "name": "\"PIONEER\" Combat Engine",
-      "description": "<i>\"Go West, Pioneer, go West,<br>With your gun in hand,<br>Go West, Pioneer, go West,<br>And take the Promised Land.\"</i>",
+      "description": "<i>\"Go west, Pioneer, go west,<br>With your gun in hand,<br>Go west, Pioneer, go west,<br>And take the Promised Land.\"</i>",
       "passive_name": "Work Song",
       "passive_effect": "Gain a Verse die, 1d6 beginning at 3.<br>1/Turn, when the Trailblazer deals damage with a melee or ranged attack, the value of the Verse die decreases by 1 if either:<ul><li>The Trailblazer already dealt damage with with the opposite type this round (e.g., if the Trailblazer deals damage with a melee attack after it dealt damage with a ranged attack.)</li><li>Or, the Trailblazer deals bonus damage with <i>Burning Heart</i>.</li></ul> When the die would be reduced to 0, the Trailblazer immediately makes a special attack with a single weapon against an enemy within Range 3. This attack does not count as an action or reaction and ignores Difficulty from all sources. If this attack would damage multiple characters, all characters beyond the first take a maximum of 1 damage from the attack. Then, reset the Verse Die to 3.",
       "active_name": "Call & Response",
@@ -585,7 +586,7 @@
       "armor": 0,
       "hp": 6,
       "evasion": 12,
-      "edef": 8,
+      "edef": 6,
       "heatcap": 4,
       "repcap": 3,
       "sensor_range": 5,
@@ -630,7 +631,156 @@
       "integrated": ["mw_savant_integrated"]
     },
     "data_type": "frame",
-    "image_url": "https://lh5.googleusercontent.com/HKgB0oT0l5ZybXSDdTI4PBC61RclF29QqIdqNG1N1UL1QtnwHt9txwfsFJnsZVi1ZS4=w2400"
+    "image_url": ""
+  },
+  {
+    "id": "ice_icebreaker",
+    "license_level": 2,
+    "source": "ICE",
+    "name": "ICEBREAKER",
+    "mechtype": ["Balanced"],
+    "y_pos": 15,
+    "description": "What began as a personal project founded by Peter, ICEBREAKERS LLC, then PD&J, would begin to balloon in scale and in profit. While ASGARD and Lumiera Corporation had the benefit of an established company, PD&J had the strength of a true understanding of the needs and ethos of the Frontier Sector. Aided by their unusually friendly relationship with the OFSA and the Frontier’s factions of scrappers, PD&J would explode onto the market, hitting critical mass as a major mech manufacturer at a rate that was completely unexpected and left most other players in the region scrambling to catch up. While ASGARD had the fortune of existing establishment in the frontier and Lumico operated in a higher end market than what PD&J targeted, most other competitors struggled to become anything other than niche players in the region as PD&J expanded their reach. While they would eventually grow their mech lineup to include a number of specialized frames, none would ever sell better than their very first: the Icebreaker, a generalist mech that would come to rival the Everest model’s popularity, albeit only in the Frontier.",
+    "mounts": ["Flex", "Flex"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Equilibrium",
+        "description": "At the start of the Icebreaker's turn, if it is in the Danger Zone, it loses 1 Heat. Otherwise, it gains 1 Heat."
+      },
+      {
+        "name": "Thermocycle",
+        "description": "While the Icebreaker is in the Danger Zone, its Speed is increased by 1 and its Sensors are increased by 5."
+      }
+    ],
+    "core_system": {
+      "name": "Regenerative Thermal Engine",
+      "description": "The Regenerative Thermal Engine installed on the Icebreaker is able to use a portion of the heat lost by through normal Mech operation to slowly charge its core battery. By saving this power for later, the Icebreaker is able to operate as though it was fresh out of the foundry.",
+      "active_name": "New Frontier",
+      "active_effect": "Reset your Overcharge counter. You must be in the Danger Zone to use this ability, and cannot use this ability outside of combat.",
+      "activation": "Quick"
+    },
+    "data_type": "frame",
+    "image_url": ""
+  },
+  
+  {
+    "id": "ice_greenhorn",
+    "license_level": 2,
+    "source": "ICE",
+    "name": "GREENHORN",
+    "mechtype": ["Defender", "Striker"],
+    "y_pos": 15,
+    "description": "<i>The following information details ICEBREAKER LLC. proprietary research. If you are not entitled to this information, do not continue or you may be in violation of trade law.</i><br/><br/>Metavault Research Result - Stabilized Prototype 004 <i>'GREENHORN'</i><br/><br/>I think that this prototype all but proves that the contents of the Metavaults aren't completely random, as was the popular theory, but in fact may connect to entirely different stable realities. What we are shown may seem to be effectively nonsense, but it's in fact several parallel variant realities blending together rapidly. What the existence of these alternate variants actually implies is up to interpretation, however. My peers have a number of theories ranging from the existence of a 'multiverse' to the idea of our emotions generating these potential timelines dynamically. I believe that it's even more complex, based on my experiences during the Siege of Niflheim: there seem to be meta-beings on a different level than us that control not only our actions but the very nature of our existence simply through their imagination, and these realities are simply their fantasies. Regardless of the cause of these variants, using the same technology that was used by NULL and BAYHOUND to stabilize the connection to Terminus in the Eljuthnir drilling station, we can force the Metavault to temporarily stabilize, allowing us to peek into one variant for a short time. We copied the structure of the Greenhorn from the frozen Metavault and despite all expectations, I can confirm: it's a living plant with no technological components whatsoever. It's made of normal wood.This may very well be <i>literal magic</i> from a variant where that isn't a ridiculous thing to say.",
+    "mounts": ["Heavy", "Main"],
+    "stats": {
+      "size": 2,
+      "structure": 5,
+      "stress": 0,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 4,
+      "heatcap": 0,
+      "repcap": 6,
+      "sensor_range": 0,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Organic",
+        "description": "The Greenhorn is made entirely of organic matter and possesses no computer systems natively. While systems can be adapted to use on it, it has the Biological tag and cannot take Tech Actions.<br/><br/><i>Characters with the Biological tag have Immunity to all tech actions (even beneficial ones) except Lock On and Scan, although they can be targeted by electronic systems such as drones and smart weapons. If a Biological character would take heat, they instead take an equivalent amount of energy damage. Since the Greenhorn cannot gain Heat, it cannot Overheat and has no Stress.</i>"
+      },
+      {
+        "name": "Rampant Growth",
+        "description": "At the start of its turn, the Greenhorn regains 1/2 of its total HP. If it takes energy damage or gains Burn, it does not regain HP at the start of its next turn."
+      }
+    ],
+    "core_system": {
+      "name": "Verdant Canopy",
+      "description": "The Regenerative Thermal Engine installed on the Icebreaker is able to use a portion of the heat lost by through normal Mech operation to slowly charge its core battery. By saving this power for later, the Icebreaker is able to operate as though it was fresh out of the foundry.",
+      "passive_name": "Leafcoat",
+      "passive_effect": "The Greenhorn can alter its appearance during a Full Repair or rest to better match the flora of a battlefield, allowing it to blend in with the natural environment. The Greenhorn can Hide on a turn where it has not moved, even if it would not normally be able to, though it loses the Hidden status upon moving. In particularly barren environments, like deserts, tundras, or the interior of ships or buildings, this ability has no effect.",
+      "active_name": "Ingrain",
+      "active_effect": "The Greenhorn triggers a massive growth surge, rooting into the ground and locking itself in place. Until you end this effect as a Protocol:<ul><li>The Greenhorn is Immobilized and has Immunity to all forced movement.</li><li>The Greenhorn gains 4 Armor. Any character that makes a melee attack against it take 3 Kinetic damage.</li><li>If the Greenhorn is rooted to an organic surface, such as dirt or rock, Rampant Growth heals it for 100% of its total HP instead of its normal amount.</li></ul>",
+      "activation": "Protocol"
+    },
+    "data_type": "frame",
+    "image_url": ""
+  },
+  {
+    "id": "ice_angel",
+    "license_level": 2,
+    "source": "ICE",
+    "name": "ANGEL",
+    "mechtype": ["Controller", "Support"],
+    "y_pos": 15,
+    "description": "<i>This thing is a variant of the Vessels that we used during the Siege of Niflheim to house Caliph and Luke's minds when they passed through Terminus. Apparently, the original designs were based on anomalous entities that were appearing within the Metavault, according to the notes that the designer left behind. I used to think that these things were horrific, but after some of the things I've seen in the Vault, I'm realizing that these half-organic 'divine machines' aren't even below the water's surface on this iceberg.<br/>Ha ha...<br/><br/>- Dr. Lavender Briggs</i>",
+    "mounts": ["Main/Aux"],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 7,
+      "edef": 12,
+      "heatcap": 8,
+      "repcap": 2,
+      "sensor_range": 0,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Guilt",
+        "description": "Whenever the Angel is hit by an Attack, the attacker gains 1 Heat."
+      },
+      {
+        "name": "Reality Meltdown",
+        "description": "NHPs on the Angel can cascade even if they normally would not. When making Cascade checks, the NHP will begin to Cascade on a roll of 5 or lower. If any NHP installed on the Angel is cascading, all other NHPs installed on it will begin to Cascade at the start of the Angel's next turn. While an NHP on the Angel is cascading, the pilot still takes a limited turn after all cascading NHPs have rolled: they take one Quick Action and their standard movement, and may take Free Actions as normal.<br/><br/>Furthermore, cascading NHPs on the Angel will behave abnormally, even by the standards of cascading NHPs. At the start of each of the Angel's turns, roll a d20 for each Cascading NHP, which determines how it will act:<br/><ul><li><i>1</i> : Do not roll for any other NHPs. This NHP takes total control over the Angel and begins to Cascade normally, falling under the GM's control. If the Cascading NHP is normally immune to Cascade, their Cascade ends immediately and they may choose to end the Cascade of all other NHPs installed on the Angel as well.</li><li><i>2-5</i> : This NHP acts erratically, taking one Quick Action under the GM's control, following normal Cascade behavior and generating 1 Heat on the Angel.</li><li><i>6-10</i> : This NHP panics, having seen something it cannot understand. It forcibly teleports the Angel 3 Spaces away from a character of the pilot's choice.</li><li><i>11-15</i> : This NHP attempts to reveal secrets from another reality to another Mech's pilot or NHPs. It makes a Fragment Signal Invade against a mech of the Pilot's choice, generating 2 Heat on the Angel in the process.</li><li><i>16-20</i> : This NHP acts with clarity, taking one Quick Action under the player's control. If the pilot is the NHP that makes this roll, the limited turn they would normally take while NHPs are cascading is replaced by a normal full turn instead.</li></ul>"
+      }
+    ],
+    "core_system": {
+      "name": "Soulsync",
+      "description": "<i>\"The longer someone pilots this thing, the more the delusions start to set in. Make sure to take <u>long</u> breaks. Don't stay in it too long. If the pilot says that damage to the Angel is hurting them, <u>get them out of it immediately.</u><br/><br/>Use any means necessary.\"</i>",
+      "passive_name": "Transubstantiation",
+      "passive_effect": "The Angel cannot be piloted normally. Instead, the pilot must transfer their consciousness into the mech, leaving their body catatonic at its current location. The pilot can transfer their consciousness between their body and the Angel as long as they remain in physical contact and the Angel is still functional.<br/><br/>While transferred to the Angel, the pilot is treated as an NHP, following all normal rules for NHPs, including the ability to Cascade. However, if the pilot is cascading, the GM never gains control of them: whenever they would take an action under the GM's control, the player takes that action instead.<br/><br/>The pilot's body can be killed while they piloting the Angel. If this occurs, they become trapped as an NHP, and must install the <i>Severed Consciousness</i> system on any other frames they use.",
+      "passive_actions": [
+        {
+          "activation": "Reaction",
+          "name": "Conciousness Ejection",
+          "trigger": "The Angel is destroyed.",
+          "detail": "The Angel fires a small biocanister toward an empty space or friendly Mech within Range 15. If the target is a friendly mech, the Pilot installs themself as an NHP onto that mech until the end of combat. This can exceed the normal limit of NHPs for that mech. Otherwise, the canister falls on the ground as a size 1/2 object. The Pilot's consciousness can be transferred back to their body or to another Mech through physical contact with the biocanister.<br/><br/>If the biocanister is destroyed, the pilot is killed.",
+          "frequency": "Unlimited"
+        }
+      ],
+      "active_name": "Apotheosis",
+      "active_effect": "All NHPs installed on the Angel, including the pilot, begin to cascade, temporarily collecting their minds into a single being. Until this cascade ends or combat ends, all NHPs installed on the Angel benefit from the protection normally offered to the pilot: whenever they would take an action under the GM's control, the player takes that action instead. Furthermore, all 1s rolled during a Reality Meltdown check become a 2 instead.",
+      "activation": "Full Tech"
+    },
+    "data_type": "frame",
+    "image_url": ""
   },
   {
     "id": "ind_slowpoke",
@@ -778,7 +928,7 @@
       "stress": 4,
       "armor": 0,
       "hp": 12,
-      "evasion": 12,
+      "evasion": 10,
       "edef": 8,
       "heatcap": 6,
       "repcap": 6,
