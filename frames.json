@@ -620,7 +620,7 @@
     ],
     "core_system": {
       "name": "\"COVENANT\" Direct Service Engine",
-      "description": "<i>Congratulations on your subscription to Lumiera Corporation's COVENANT Direct Service support system! An engineer has been assigned to your account and is on standby to provide personal support by blinking </i>",
+      "description": "<i>Congratulations on your subscription to Lumiera Corporation's COVENANT Direct Service support system! An engineer has been assigned to your account and is on standby to provide personal support by blinking light weapons directly into your hands. Our system engineer is trained to ensure that you always have access to exactly what you need, right when you need it,as long as your subscription is maintained.</i>",
       "passive_name": "Divine Armory",
       "passive_effect": "At the start of each Scene, gain two Armory dice: 2d6, starting on random values, which are used to attack with the Divine Armory. All Armory Dice are lost at the end of each scene.<br/>1/Round when you target a character with a Thrown attack, you may open the Divine Armory to make an attack with it against the same target as a free action. This is the only way you may attack with the Divine Armory.",
       "active_name": "Seven Seals",

@@ -195,8 +195,8 @@
     "actions": [
       {
         "activation": "Full",
-        "name": "Start the Game",
-        "detail": "Choose an adjacent Mech. The target must succeed at an Agility save or have a Reverse Beartrap attached to them. A charge is only expended if the device is attached successfully.<br>Once a Beartrap is attached to a target, it will explode at the end of their next turn. While the device is attached, they may try to remove the device by attemping a Hull save as a Full Action, with +2 Difficulty if they are Engaged.<br>If they fail to remove the device before it explodes, they take kinetic damage equal to their current HP when it detonates. This damage cannot be reduced or prevented in any way. If the target is not destroyed by this damage, they are Stunned until the end of their next turn.<br>Once a character has successfully had a Beartrap attached to them, they may not be targeted by this action for the rest of the scene."
+        "name": "The Game",
+        "detail": "Choose an adjacent Mech. The target must succeed at an Agility save or have a Reverse Beartrap attached to them. A charge is only expended if the device is attached successfully.<br>Once a Beartrap is attached to a target, it will explode at the end of their next turn, ripping open their cockpit and allowing the pilot to be targeted by systems and attacks directly at -2 Difficulty. Enemies with the Ultra template can destroy the Beartrap as a Full Action, removing it safely and preventing further Beartraps from being attached to them."
       }
     ],
     "description": "A horrific device that attempts to rip a mech's cockpit open, apparently originally designed for use on humans and scaled up for use on mechs. ASGARD public relations has disavowed its use."
@@ -239,7 +239,7 @@
     "source": "ASG",
     "license": "JORMUNGANDR",
     "license_level": 3,
-    "effect": "While this system is active, your you are Immobilized, your Evasion cannot exceed 5, and you project a field of nanomachines that can influence the battlefield. All Drones and Deployables of your choice within this System's Aura regain 5 HP at the start of each of your turns and gain resistance to all damage, Heat and Burn while this System is active. In addition, you gain access to this system's actions, which may only be used while this System's Aura is active.",
+    "effect": "While this system is active, you are Immobilized, your Evasion is reduced to 5 if it is greater, and you project a field of nanomachines that can influence the battlefield. All Drones and Deployables of your choice within this System's Aura regain 5 HP at the start of each of your turns and gain resistance to all damage, Heat and Burn while this System is active. In addition, you gain access to this system's actions, which may only be used while this System's Aura is active.",
     "actions": [
       {
         "activation": "Quick Tech",
@@ -417,7 +417,7 @@
             "name": "Hunt/Kill",
             "activation": "Free",
             "frequency": "1/Round",
-            "detail": "Move this drone up to 3 spaces, then make a Smart ranged attack against an enemy Mech within range 3 of it with it, gaining your Grit as a bonus to its roll. On a hit, it deals 3 Energy damage. Against targets currently affected by a UV Recon Grenade, it deals 1d3+3 Energy damage and applies Lock On on a hit, instead."
+            "detail": "Move this drone up to 3 spaces, then make a Smart ranged attack against an enemy Mech within range 3 of it with it, gaining your Grit as a bonus to the roll. On a hit, it deals 1d3 Energy damage. Against targets currently affected by a UV Recon Grenade, it deals an additional 3 Energy damage and applies Lock On on hit."
           }
         ]
       }
@@ -483,7 +483,7 @@
       {
         "name": "Martial Stance: Brutalizer",
         "activation": "Protocol",
-        "detail": "Gain 2 heat. Until the end of the turn, your Improvised Attacks gain Knockback 3. 1/Round, after inflicting Knockback as part of any Melee Attack, you may move an equal number of spaces towards the same target by the most direct route possible. If you do, you may make an Improvised Attack with no Knockback against the target for half damage as a free action.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
+        "detail": "Gain 1 heat. Until the end of the turn, your Improvised Attacks gain Knockback 3. 1/Round, after inflicting Knockback as part of any Melee Attack, you may move an equal number of spaces towards the same target by the most direct route possible.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
       },
       {
         "name": "Combo: Hullbreaker",
@@ -524,6 +524,49 @@
     "description": "The \"Martial Doctrine\" are a set of emergency subroutines that improve a mech's capabilities in the situation that it is forced into disarmed combat. Though they were distributed by ASGARD in three different releases, they were clearly intended to form a greater whole, as each version has hidden code that only activates in the presence of the others."
   },
   {
+    "id": "asg_pyrokins",
+    "name": "Pyrokins",
+    "type": "System",
+    "sp": 2,
+    "source": "ASG",
+    "license": "MUNINN",
+    "license_level": 1,
+    "tags": [
+      {
+        "id": "tg_grenade"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Quick",
+        "name": "Launch Pyrokins",
+        "range": [
+          {
+            "type": "Cone",
+            "val": 3
+          }
+        ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": 2
+          },
+          {
+            "type": "Heat",
+            "val": 1
+          }
+        ],
+        "detail": "Launch a barrage of pyrokins, dealing 2 Explosive and 1 Heat damage to all characters in a cone."
+      }
+    ],
+    "effect": "Whenever you take Structure or Stress damage, you regain up to 2 uses of this system.",
+    "description": "Pyrokins themselves are a type of sharp disk-like metal projectile coated in a basic explosive powder. The pyrokin launcher contains a basic forge manned by tiny microbots, akin to a nexus, that can process damaged scrap severed from a mech's hull into more pyrokins during the middle of a battle."
+  },
+  {
     "id": "asg_skadi_nhp",
     "name": "SKADI-Class NHP",
     "type": "System",
@@ -556,7 +599,7 @@
     "license": "FAFNIR",
     "license_level": 1,
     "effect": "Whenever you Boost, you clear 1 Heat. Clearing Heat in this way does not trigger the effects of your own weapons, systems, core bonuses, or frame traits.",
-    "description": "Mech boost-jets generate heat and therefore have sophisticated heatsinks built into them which use the motion of air to help keep a mech from overheating. By routing some of the coolant of a mech's other systems through these air coolers, one achieves a tiny bit of additional passive cooling."
+    "description": "Mech boosters generate an noticeable amount of heat which are mitigated by sophisticated heatsinks which use the motion of air around the boosting Mech to reduce the chance of overheating. By routing some of the coolant of a mech's other systems through these air coolers, one achieves a tiny bit of additional passive cooling."
   },
   {
     "id": "asg_solid_fuel_booster",
@@ -598,7 +641,7 @@
       {
         "activation": "Protocol",
         "name": "Explosive Fire Suppression",
-        "detail": "Trigger an explosive deployment of flame-retardant foam that saturates your mech both inside and out, clearing all Heat and Burn affecting you. Until the start of your next turn: you have resistance to Explosive and Energy damage and immunity to Burn and Heat, but your Speed is reduced to 4 and you are Slowed. Furthermore, on this turn you cannot take Full Actions and may only take one Quick Action. The negative effects of this system cannot be prevented and bypass immunity.",
+        "detail": "Trigger an explosive deployment of flame-retardant foam that saturates your mech both inside and out, clearing all Heat and Burn affecting you. Until the start of your next turn: you have resistance to Explosive and Energy damage and immunity to Burn and Heat, but your Speed is reduced to 4 and you are Slowed. Furthermore, on this turn you may only move and take one Quick Action: you may not Overcharge, take Free Actions, or take Full Actions. The negative effects of this system cannot be prevented and bypass immunity.",
         "frequency": "1/Combat"
       }
     ],
@@ -622,7 +665,7 @@
       {
         "activation": "Full Tech",
         "name": "Atmospheric Launch",
-        "detail": "You gain 8 Heat and launch 30 Spaces directly upward before beginning to hover. After launching in this way, you cannot take any actions other than the Dragonfly protocol granted by this system, but you cannot be targeted or affected by any other mech's actions. At the start of your turn, if you choose not to use the Dragonfly protocol, you remain hovering and gain 2 Heat. If your mech has a the ability to fly, you can choose to drop to a height of 10 Spaces an begin flying normally, instead.<br/><br/>Activating this system indoors causes the mech to collide with the ceiling, Stunning them until the start of their next turn and causing them to immediately fall to the ground where they launched from. When colliding with thin barriers, the mech may punch through instead of falling back to the ground, which can cause disastrous explosive decompression on space vessels."
+        "detail": "You gain 8 Heat and launch 30 Spaces directly upward before beginning to hover. After launching in this way, you cannot take any actions other than the Dragonfly protocol granted by this system, but you cannot be targeted or affected by any other mech's actions. At the start of your turn, if you choose not to use the Dragonfly protocol, you remain hovering and gain 2 Heat. If your mech has the ability to fly, you can choose to drop to a height of 10 Spaces an begin flying normally, instead.<br/><br/>Activating this system indoors causes the mech to collide with the ceiling, Stunning them until the start of their next turn and causing them to immediately fall to the ground where they launched from. When colliding with thin barriers, the mech may punch through instead of falling back to the ground, which can cause disastrous explosive decompression on space vessels."
       },
       {
         "activation": "Protocol",
@@ -632,7 +675,7 @@
       }
     ],
     "effect": "All actions granted by this system are considered movement and cannot be taken while Slowed or Immobilized.",
-    "description": "The DRAGONFLY is similar in construction to other flight systems, albiet much bulkier and less flexibile. What it sacrifices in general utility, it makes up for with vertical launch power, allowing for mechs to reposition themselves on the battlefield with explosive speed."
+    "description": "The DRAGONFLY is similar in construction to other flight systems, albiet much bulkier and less flexibile. What it sacrifices in general utility it makes up for with vertical launch power, allowing for mechs to reposition themselves on the battlefield with explosive speed."
   },
   {
     "id": "lumico_fugue_system",
@@ -937,6 +980,12 @@
             "val": 5
           }
         ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": 3
+          }
+        ],
         "detail": "Choose a target within Range. They take 3 AP Explosive damage and are knocked Prone."
       }
     ],
@@ -952,6 +1001,6 @@
         "val": 3
       }
     ],
-    "description": ""
+    "description": "<i>Give 'em the heater.</i>"
   }
 ]

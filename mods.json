@@ -10,7 +10,14 @@
     "source": "LUMICO",
     "license": "VIRTUOSO",
     "license_level": 3,
-    "effect": "1/Round as a protocol, you may activate this mod. If you do, during this turn, you may only attack with the weapon this mod is applied to as if it was a Superheavy weapon. If you do, the damage from the attack is Armor-Piercing and the attack deals 4 bonus Energy damage on hit for each Accuracy applied to the attack's final roll. After attacking this way, you may not attack with the modded weapon again until it is reloaded, as though it had the Loading tag.",
+    "actions": [
+      {
+        "activation": "Protocol",
+        "name": "Perfect Execution",
+        "detail": "During this turn, you may only attack with the weapon this mod is applied to as if it was a Superheavy weapon, but the attack gains the following benefits:<ul><li>The damage from the attack is Armor-Piercing.</li><li>The attack deals 4 bonus Energy damage on hit for each Accuracy applied to the attack's final roll.</li></ul>After attacking this way, you may not attack with the modded weapon again until it is reloaded, as though it had the Loading tag."
+      }
+    ],
+    "effect": "You gain the Perfect Execution protocol, allowing you to attempt a perfect attack with the modded weapon.",
     "description": "Lumiera Corporation encourages you to ask yourself: \"Why simply settle for <i>Good</i>, when you could be <i>Perfect?</i>\"",
     "tags": [
       {
@@ -21,17 +28,57 @@
   {
     "id": "lumico_whetstone",
     "name": "Whetstone Mod",
-    "sp": 1,
+    "sp": 2,
     "allowed_types": ["Melee"],
     "source": "LUMICO",
     "license": "TRAILBLAZER",
     "license_level": 2,
     "effect": "At the start of combat and after each time you Stabilize, the weapon this mod is applied to gains +1 Accuracy on all attacks until you deal damage with it. The damage of the attack that consumes this effect becomes Armor-Piercing. If the weapon this mod is applied to already deals Armor-Piercing damage, the enhanced attack deals 1d6 bonus Kinetic damage, instead.",
-    "description": "Ensure that your tools are kept sharp and well maintained, for best results.",
+    "description": "Ensure that your tools are kept sharp and well maintained, for best results."
+  },
+  {
+    "id": "lumico_dancingweapon",
+    "name": "Dancing Weapon",
+    "sp": 3,
+    "allowed_types": ["Melee"],
+    "source": "LUMICO",
+    "license": "Savant",
+    "license_level": 3,
+    "effect": "This mod may only be installed on weapons with the Thrown tag. After making a thrown attack with the weapon, you can choose to activate this mod, causing the weapon to autonomously attack that target on its own. While this mod is active, you may not make attacks with the modded weapon, except through the Bladedance protocol.",
+    "description": "<i>\"Metal flashes in the light, like stars illuminating a constellation of death.\"</i>",
+    "actions": [
+      {
+        "activation": "Protocol",
+        "name": "Bladedance",
+        "detail": "Make an attack with the modded weapon against its target. If you do not take this Protocol, the weapon returns to you and the mod deactivates."
+      }
+    ],
     "tags": [
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
       }
     ]
+  },
+  {
+    "id": "asg_ravenscope",
+    "name": "Ravenscope Mod",
+    "sp": 3,
+    "allowed_types": ["Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
+    "source": "ASG",
+    "license": "Muninn",
+    "license_level": 2,
+    "effect": "The weapon this mod is applied to gains the Guided tag and damage dealt by the modded weapon bypasses Overshield, dealing damage to HP directly.<br/><br/>You also gain the Rethink protocol, which can temporarily alter this weapon's targeting.",
+    "actions": [
+      {
+        "activation": "Protocol",
+        "name": "Rethink",
+        "detail": "The weapon this mod is applied to gains the Smart tag until the end of the turn. If it already has the Smart tag, it loses it until the end of the turn, instead."
+      }
+    ],
+    "description": "The Ravenscope unit is actually an extremely specialized variant of a COMP/CON unit, hyper-specialized to constantly calculate and re-calculate the weakest point on a target's hull, taking into account all environmental factors, including the strain caused by the target's movements, the effects of temperature on the material of the target's hull, and the historical effectiveness of the type of point defense used by the mech."
   }
 ]

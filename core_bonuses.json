@@ -19,13 +19,13 @@
     "name": "NO KILL LIKE OVERKILL",
     "source": "ASG",
     "description": "ASGARD believes that all combat should be handled with the biggest stick available at any given moment, and that nothing gives a pilot the same sort of adrenaline rush as firing heavy artillery at a target and seeing nothing but a crater when the smoke clears.",
-    "effect": "1/round, when you destroy a non-Grunt Mech with a damage from a Heavy or Superheavy weapon, you may move up to your Speed, then take a Skirmish action."
+    "effect": "!/Round, when you destroy a Mech with a damage from a Heavy or Superheavy weapon: you may move up to your Speed, then take a Skirmish action."
   },
   {
     "id": "lumico_bespoke_accessories",
     "name": "BESPOKE ACCESSORIES",
     "source": "LUMICO",
-    "description": "While Lumiera Corporation does not produce modifications to other manufacturers on masse, at a valued customer's request, they will produce high-end, single-use addons for any weapons to dramatically improve their functionality and utility in combat.",
+    "description": "While Lumiera Corporation does not produce modifications based on other manufacturer's specs on masse, at a valued customer's request they will produce bespoke, disposable accessories that can replicate the effects of any other manufacturer's products, which they deliver directly to the battlefield via a private blinkspace tunnel.",
     "effect": "Gain the <i>Attach Accessories</i> protocol, which has 3 uses. You regain 1 use when you rest, and all uses are regained during a Full Repair.",
     "actions": [
       {
