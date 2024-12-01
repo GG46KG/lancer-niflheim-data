@@ -1004,6 +1004,52 @@
     "description": "<i>Give 'em the heater.</i>"
   },
   {
+    "id": "ice_wavesync",
+    "name": "SA 0-919 'WAVESYNC'",
+    "type": "System",
+    "sp": 1,
+    "source": "ICE",
+    "license": "ANGEL",
+    "license_level": 1,
+    "effect": "Biological targets lose Immunity to your Tech Actions, including Invades. Invades used on Biological targets through the effect of this system do not inflict Heat.",
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-919<br/><br/>IT'S A TINY BIT OF CODE WRITTEN IN SOME ESOTERIC LANGUAGE.<br/>IT CAN READ CODE FRAGMENTS AND PRODUCE HIGH FREQUENCY PULSES OF EM RADIATION THAT INTERFERE WITH NEUROLOGICAL ACTIVITY.<br/>BIZARRE...</br>HOW DOES IT KNOW WHAT THE INTENTION OF THE SOURCE CODE IS?</i>"
+  },
+  {
+    "id": "ice_dropsy",
+    "name": "SA 0-238 'DROPSY'",
+    "type": "System",
+    "sp": 2,
+    "source": "ICE",
+    "license": "ANGEL",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Invade",
+        "name": "DROPSY",
+        "detail": "Until the end of your target's next turn, they take 1 AP Energy damage each time they gain Heat, including the Heat they gained from this Invade action."
+      }
+    ],
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-238<br/><br/>IT'S A SIGNAL CAUSES THE SECURITY SYSTEM OF A HOSTILE MECH TO MASSIVELY OVERREACT TO EXCEPTIONS.<br/>IT'S BASICALLY AN ALLERGIC REACTION.<br/>THE SYSTEM ENDS UP FLOODING ITSELF.</i>"
+  },
+  {
+    "id": "ice_flagellation",
+    "name": "SA 1-002 'FLAGELLATION'",
+    "type": "System",
+    "sp": 3,
+    "source": "ICE",
+    "license": "ANGEL",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Free",
+        "frequency": "1/Round",
+        "name": "MORTIFICATION",
+        "detail": "Clear any amount of Heat. You lose HP equal to the amount of Heat cleared. You cannot regain HP by any means except losing Structure or gain Overshield until the end of your next turn."
+      }
+    ],
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-002<br/><br/>[AUDIO TRANSCRIPTION FOLLOWS]<br/><br/>IF YOUR RIGHT HAND CAUSES YOU TO SIN, CUT IT OFF<br/>IF YOUR RIGHT EYE CAUSES YOU TO SIN, GOUGE IT OUT<br/>BETTER TO SUFFER THE FLESH<br/>THAN ENDURE CONDEMNATION</i>"
+  },
+  {
     "id": "ice_angel_special",
     "name": "Severed Consciousness",
     "type": "System",
@@ -1011,12 +1057,38 @@
     "source": "ICE",
     "license": "ANGEL",
     "license_level": 2,
-    "effect":"If a pilot's body is killed while they are piloting the Angel, their consciousness becomes locked in a state of limbo. This system contains what remains of their entire being. If it is installed in a mech, that mech becomes their body, in a sense, and it must be installed for them to pilot any mech other than the Angel.<br/><br/>This system should not be used under any other circumstances.",
+    "effect": "If a pilot's body is killed while they are piloting the Angel, their consciousness becomes locked in a state of limbo. This system contains what remains of their entire being. If it is installed in a mech, that mech becomes their body, in a sense. This system's 'One of a Kind' tag applies to each character trapped in this way; if multiple pilots are trapped due to the angel's effect, each pilot is One of a Kind.<br/><br/>This system must be installed for them to pilot any mech other than the Angel. <br/><br/>This system should not be used under any other circumstances.",
     "tags": [
       {
         "id": "tg_ai"
+      },
+      {
+        "id":"tg_oneofakind"
       }
     ],
     "description": "<i>It's terrifying to know just what this thing is.</i>"
+  },
+  {
+    "id": "ice_destinyfragment",
+    "name": "SA 2-176 'DESTINY FRAGMENT'",
+    "type": "System",
+    "sp": 3,
+    "source": "ICE",
+    "license": "ANGEL",
+    "license_level": 3,
+    "effect": "A character may only be affected by a single instance of the effects of this system at a time.",
+    "actions": [
+      {
+        "activation": "Invade",
+        "name": "SPEAR OF DESTINY",
+        "detail": "Choose a System, Tech Action, or Weapon that your target used on their previous turn. They may not activate that System, take that Tech Action, or attack with that weapon until the end of their next turn."
+      },
+      {
+        "activation": "Invade",
+        "name": "INDIRECT LANCE",
+        "detail": "Choose a System, Tech Action, or Weapon that your target used on their previous turn. Any checks or attacks that they make with the chosen System, Tech Action, or Weapon have +2 Difficulty."
+      }
+    ],
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-176<br/><br/>[AUDIO TRANSCRIPTION FOLLOWS]<br/><br/>WHAT I HOLD IS MERELY AN IMITATION OF THE TRUE SPEAR<br/>ALONGSIDE WHAT I HAVE GIVEN YOU, YOU POSSESS ALL THE PIECES OF THE REAL THING<br/>YOU WILL ONLY HAVE A SINGLE CHANCE TO USE IT ON HIM<br/>MAKE SURE THAT YOU MAKE IT COUNT<br/>OR HOPE WILL DIE WITH YOU</i>"
   }
 ]

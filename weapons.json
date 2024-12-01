@@ -477,11 +477,6 @@
         "effect": "If you begin a turn with this weapon in its Bloodstoked profile, you gain 1 Heat. If you do not attack with this weapon by the end of your turn, you take 5 AP Energy damage and it reverts to its Inactive profile."
       }
     ],
-    "tags": [
-      {
-        "id": "tg_oneofakind"
-      }
-    ],
     "description": "<i>It doesn't look like much, does it? But... it draws a lot more power than it seems like it should.</i>"
   },
   {
@@ -1212,6 +1207,76 @@
     "description": ""
   },
   {
+    "id": "mw_ice_wennsorin",
+    "name": "SA 2-580 'WENNSORIN'",
+    "mount": "Main",
+    "source": "ICE",
+    "license": "ANGEL",
+    "license_level": 3,
+    "type": "Launcher",
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+2"
+      }
+    ],
+    
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_seeking"
+      }
+    ],
+    "on_hit": "The target gains <i>[ 6 - X ]</i> Heat, where X is the amount of damage dealt by this weapon.",
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-580<br/><br/>IT KIND OF LOOKS LIKE A GREATBOW WITHOUT A STRING, DOESN'T IT?<br/>WHEN THE MECH DRAWS BACK FROM WHERE THE STRING OUGHT TO BE, AN INVISIBLE PULSE OF ENERGY IS GENERATED:<br/>IN UNDER A NANOSECOND, IT CAROMS AROUND THE TARGET, STRIKING THEM MULTIPLE TIMES.<br/><br/>ONE OF THE ASSISTANTS IGNORED SAFETY PROTOCOLS AND ACCIDENTALLY HIT THEMSELF WITH IT, SOMEHOW.<br/>THEY COLLAPSED, AND AUTOPSY SHOWED GAMMA BURNS IN THEIR BRAIN TISSUE.</i>"
+  },
+  {
+    "id": "mw_ice_spearoflight",
+    "name": "SA 1-203 'REVEALING LIGHT'",
+    "mount": "Main",
+    "source": "ICE",
+    "license": "ANGEL",
+    "license_level": 2,
+    "type": "Launcher",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    
+    "tags": [
+      {
+        "id": "tg_smart"
+      },
+      {
+        "id": "tg_thrown",
+        "val": 15
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "effect": "Charges of this weapon are only used up when making Thrown attacks and it does not need to be retrieved after a Thrown attack to continue to make attacks with it. This weapon cannot be used for Thrown attacks with no charges remaining, but normal melee attacks are still possible.",
+    "on_attack" : "When making a Thrown attack, this weapon deals damage to all characters in a Line 15 area toward the primary target of the attack, passing through walls and obstructions and ignoring cover. For every point of Kinetic damage the attack would normally do, it instead inflicts 1 Heat and 1 Burn. Thrown attacks with this weapon do not damage objects.",
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-203<br/><br/>WE GAVE THE CODE 'REVEALING LIGHT' TO THIS ARTIFACT, SINCE IT COULD INTERACT WITH OBJECTS THAT IT HAD NO CLEAR LINE OF SIGHT TO.<br/>'THROWING' IT FIRES OFF A LANCE OF LIGHT THAT CAN CAUSE SERIOUS BURNS IN HUMAN TISSUE AND DAMAGE NHPS.<br/>HAS NO EFFECT ON STATIC OBJECTS.<br/>SOMEHOW MECHS ARE DIFFERENT?</i>"
+  },
+  {
     "id": "mw_poke_integrated",
     "name": "Big Iron",
     "mount": "Jury-Rigged",
@@ -1286,7 +1351,7 @@
       {
         "activation": "Protocol",
         "name": "Lockdown",
-        "detail": "You choose the an area to <i>Cover</i> immediately, are Immobilized and Impaired until the start of your next turn, and may only target characters within the <i>Covered</i> area for Ranged and Tech attacks. You gain Immunity to damage and Burn from ranged attacks that originate within the <i>Covered</i> area this Round, instead of Resistance."
+        "detail": "You choose the an area to <i>Cover</i> immediately, are Immobilized and Impaired until the start of your next turn, and may only target characters within the <i>Covered</i> area for attacks. You gain Immunity to damage and Burn from ranged attacks that originate within the <i>Covered</i> area this Round, instead of Resistance."
       }
     ],
     "effect": "While installed, Mechs of Size 1 or less have their Speed reduced by 2 by this weapon.<br>At the end of your turn, you may Immobilize yourself until the start of your next turn to choose a Cone 30 area to <i>Cover</i>. You have Resistance to all damage and Burn from ranged attacks that originate within the <i>Covered</i> area until the start of your next turn. This effect ends if you move for any reason while it is active.",
