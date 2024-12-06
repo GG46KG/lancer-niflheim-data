@@ -1207,6 +1207,123 @@
     "description": ""
   },
   {
+    "id": "mw_ice_unity_banner",
+    "name": "Banner of Unity",
+    "mount": "Heavy",
+    "source": "ICE",
+    "license": "ICEBREAKER",
+    "license_level": 2,
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Full",
+        "name": "Flame of Hope",
+        "detail": "You may only take this action while in the Danger Zone.<br/><br/>You activate this system's Aura, granting [ 8 + your Grit ] Overshield to all allies in range. While this system's Aura is active, you gain access to this weapon's On Hit effect, but you cannot attack with any weapons other than this one and, upon clearing enough heat to leave the Danger Zone, you immediately gain Heat until you reach the Danger Zone."
+      }
+    ],
+    "on_hit": "If this weapon's Aura is active: deal 2 Burn to your target and choose an allied Character within this weapon's Aura. The chosen ally gains 4 Overshield and +2 Accuracy on their next attack or save.",
+    "tags": [
+      {
+        "id": "tg_aura",
+        "val": 10
+      },
+      {
+        "id": "tg_danger_zone"
+      },
+      {
+        "id": "tg_overshield"
+      }
+    ],
+    "effect": "You can only activate this weapon's Aura via the <i>Flame of Hope</i> action, though you can deactivate it normally.",
+    "description": "This polearm has a wide projector near the business end that allows it to project a curtain of superheated plasma, mostly fuelled by the exhaust of an overtaxed reactor. It appears as a banner made of flame, and much like the bannerets of yesteryear, the sight of one's ally proudly carrying the battle standard forward inspires morale in one's heart."
+  },
+  {
+    "id": "mw_ice_nuclear_sword",
+    "name": "Fusion Sword",
+    "mount": "Main",
+    "source": "ICE",
+    "license": "ICEBREAKER",
+    "license_level": 2,
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+1"
+      }
+    ],
+    "on_hit": "If you are in the Danger Zone, this weapon's damage is doubled and you roll 1d6 after each attack. If you roll a 6, the sword detonates and destroys the mount it is on: it deals 2d6+6 AP Explosive damage to your target and Stuns them until the end of their next turn, while also Stunning you until the end of your current turn.",
+    "description": "\"Get me closer!\" you hear the pilot in the advertisement yell, beaming with pride at the new weapon he carries, \"Get me closer so I can hit them with my nuclear sword!\""
+  },
+  {
+    "id": "mw_ice_swashbuckler",
+    "name": "Swashbuckler Gunblade",
+    "mount": "Main",
+    "source": "ICE",
+    "license": "ICEBREAKER",
+    "license_level": 3,
+    "type": "CQB",
+    "profiles": [
+      {
+        "name": "Gunner Stance",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 3
+          },
+          {
+            "type": "Range",
+            "val": 5
+          }
+        ],
+        "on_hit": "After dealing damage, this weapon changes to its Blade Stance profile.",
+        "effect": "Gain +1 Accuracy when making Overwatch attacks."
+      },
+      {
+        "name": "Blade Stance",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "on_hit": "After dealing damage, this weapon changes to its Gunner Stance profile.",
+        "effect": "This weapon is considered a Melee weapon in this profile. Immediately before or after you attack with this weapon, you may move up to 3 Spaces. This movement does not provoke Reactions."
+      }
+    ],
+    "effect": "At the start of your first turn in this scene, choose a profile to begin in. You can only change profiles through this weapon's On Hit effect.",
+    "description": "\"Wouldn't it be more practical to just... carry a gun and a sword, separately?\"<br/><i>- A question devised by the terminally uninteresting.</i>"
+  },
+  {
     "id": "mw_ice_wennsorin",
     "name": "SA 2-580 'WENNSORIN'",
     "mount": "Main",

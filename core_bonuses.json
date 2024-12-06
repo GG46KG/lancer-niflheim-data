@@ -19,7 +19,7 @@
     "name": "NO KILL LIKE OVERKILL",
     "source": "ASG",
     "description": "ASGARD believes that all combat should be handled with the biggest stick available at any given moment, and that nothing gives a pilot the same sort of adrenaline rush as firing heavy artillery at a target and seeing nothing but a crater when the smoke clears.",
-    "effect": "!/Round, when you destroy a Mech with a damage from a Heavy or Superheavy weapon: you may move up to your Speed, then take a Skirmish action."
+    "effect": "1/Round, when you destroy a Mech with a damage from a Heavy or Superheavy weapon: you may move up to your Speed, then take a Skirmish action."
   },
   {
     "id": "lumico_bespoke_accessories",

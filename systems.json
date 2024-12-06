@@ -74,7 +74,7 @@
     "source": "ASG",
     "license": "NIDHOGG",
     "license_level": 3,
-    "effect": "While this system's Aura is active, you are Immobilized, your Evasion is reduced to 5, your EDef is incresed to 10 if it is lower, and you and all allied Mechs within this system's Aura gain +1 Accuracy and +3 Range when attacking with Cannon, Launcher, or Ordnance weapons. On a critical hit with an affected weapon, the target takes 1d6 bonus Explosive damage.",
+    "effect": "Your Mech gains the AI tag. While this system's Aura is active, you are Immobilized, your Evasion is reduced to 5, your EDef is incresed to 10 if it is lower, and you and all allied Mechs within this system's Aura gain +1 Accuracy and +5 Range when attacking with Cannon, Launcher, or Ordnance weapons. On a critical hit with an affected weapon, the target takes 1d6 bonus Explosive damage.",
     "description": "VALKYRIE has been ASGARD's NHP of choice for siege platforms almost since the founding of the company. VALKYRIE-class NHPs are generally friendly and just a bit too enthusiastic about blowing things up, which makes them a perfect fit for ASGARD's preferred method of operation."
   },
   {
@@ -92,9 +92,6 @@
       {
         "id": "tg_limited",
         "val": 3
-      },
-      {
-        "id": "tg_indestructible"
       }
     ],
     "source": "ASG",
@@ -150,6 +147,7 @@
         "detail": "Throw a held character up to Range 5. If the target is friendly, they can choose to enter a friendly mech or Jockey a hostile mech that they would pass through or adjacent to during the throw as a Reaction. They receive +1 Accuracy and the target receives +1 Difficulty if they attempt to Jockey. While being thrown, the character does not provoke reactions."
       }
     ],
+    "effect": "Your mech gains the AI tag and the Jaws of the Wolf and Down the River Ván actions.",
     "description": "By separating the Fenriswolf NHP from the Fenrir's architecture, it gained increased awareness of the fragility of the pilots it interacted with. It did retain its reckless and aggressive nature, however, leading to the invention of some <i>unorthodox</i> techniques."
   },
   {
@@ -234,6 +232,9 @@
       {
         "id": "tg_aura",
         "val": 15
+      },
+      {
+        "id": "tg_overshield"
       }
     ],
     "source": "ASG",
@@ -584,10 +585,10 @@
       },
       {
         "id": "tg_heat_self",
-        "val": 3
+        "val": 2
       }
     ],
-    "effect": "Whenever Lock-On is consumed on a hostile character within this system's Aura and line of sight, you gain 1 Heat and immediately reapply Lock On to them.",
+    "effect": "Your Mech gains the AI tag. Whenever Lock-On is consumed on a hostile character within this system's Aura and line of sight, you gain 1 Heat and immediately reapply Lock On to them.",
     "description": "The SKADI-class NHP is unusually focused on, in her words, 'the hunt'. Once locked on to a target, SKADI will not lose sight of them. This predilication extends to SKADI's interactions with humans, who can find her behavior obsessive and unnerving."
   },
   {
@@ -864,11 +865,11 @@
       {
         "activation": "Quick Tech",
         "name": "Gravitational Crush",
-        "detail": "You may only take this action if this system's Aura is active. All characters within the Aura must make a Hull save or take 1d6 Energy damage and be pulled up to 2 spaces toward the center of the Aura and Immobilized until the end of their next turn. On a success, they only take the damage. Characters within the <i>Event Horizon</i> take 2d6 AP Energy damage, which cannot be reduced in any way, instead. Objects within the Aura take 20 AP Energy damage. Using this action does not consume charges from this system.",
+        "detail": "You may only take this action if this system's Aura is active. All characters within the Aura must make a Hull save or take 1d6 Energy damage and be pulled up to 2 spaces toward the center of the Aura. On a success, they are not pulled. Characters within the <i>Event Horizon</i> take 2d6 AP Energy damage, instead. All objects within the Aura take 20 AP Energy damage. Using this action does not consume charges from this system.",
         "frequency": "1/Round"
       }
     ],
-    "effect": "When this Aura is activated, choose a point within sensors. This system's Aura is centered on that point, rather than the user.<br>Any character adjacent to or on the same space as the center of the Aura is within this system's <i>Event Horizon</i>. Characters within the Aura are Slowed and have resistance to all damage, Heat, and Burn from attacks.",
+    "effect": "When this Aura is activated, choose a point within Sensors. This system's Aura is centered on that point, rather than the user.<br>Any character adjacent to or on the same space as the center of the Aura is within this system's <i>Event Horizon</i>. Characters within the Aura are Slowed.",
     "description": "By generating an extremely small but superdense mass, one can harness and direct gravitational waves to directly affect ambient energy. At this scale, Hawking radiation causes the object to degrade at a high speed and the object will evaporate if it is not actively maintained by the generator."
   },
   {
@@ -937,7 +938,7 @@
             "val": 5
           }
         ],
-        "detail": "Throw a Lamplight Grenade within Range 5. The target must succeed on an Agility save or become coated in an unstable substance. Coated targets are Slowed and do not benefit from Invisibility unless the substance is removed, which affected characters may do as a quick action. When a coated target receives any Heat or Burn, the substance degrades explosively, removing the coating and causing the affected target to take 1d6 AP Explosive damage."
+        "detail": "Throw a Lamplight Grenade within Range 5. The target must succeed on an Agility save or become coated in an unstable substance. Coated targets are Slowed and do not benefit from Invisibility unless the substance is removed, which affected characters may do as a quick action. When a coated target receives any Heat or Burn, the substance degrades explosively: the coating is removed and the affected target takes 1d6 AP Explosive damage."
       }
     ],
     "deployables": [
@@ -1004,6 +1005,65 @@
     "description": "<i>Give 'em the heater.</i>"
   },
   {
+    "id": "ice_banner",
+    "name": "",
+    "type": "System",
+    "sp": 2,
+    "source": "ICE",
+    "license": "ICEBREAKER",
+    "license_level": 2,
+    "effect": "While this system is active, allies within this system's Aura gain 1 Armor.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_danger_zone"
+      }
+    ],
+    "description": "<i>Give 'em the heater.</i>"
+  },
+  {
+    "id": "ice_baba",
+    "name": "BABA-Class Comp/Con",
+    "type": "System",
+    "sp": 4,
+    "source": "ICE",
+    "license": "ICEBREAKER",
+    "license_level": 3,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_overshield"
+      }
+    ],
+    "deployables": [
+      {
+        "type": "Drone",
+        "name": "BABA",
+        "activation": "Quick",
+        "detail": "BABA may only be deployed to or recalled from adjacent spaces.<br/><br/>At the start of each turn while deployed, allied or hostile, BABA will determine the first procedure below whose conditions are met, then move 1 space in an attempt to follow that procedure.<ol><li>BOOM: If BABA is prioritizing BOOM or has 5 or less HP, it will move towards the nearest hostile character and explode upon reaching a an adjacent space to its target, dealing 2d6 AP Explosive damage to and knocking Prone all characters within Burst 1, destroying itself in the process.</li><li>HIDE: If BABA took damage during the previous turn, it will become Invisible until it moves into a space adjacent to another character. It will not move during this turn.</li><li>POWER: If any allied Mech is Stunned, BABA will move toward the nearest Stunned allied Mech and clear the condition upon reaching an adjacent space.</li><li>PET: If an allied Mech is missing HP and has no Overshield, BABA will move toward the nearest allied Mech that meets that criteria and grant them 3 Overshield upon reaching an allied space.</li><li>PUSH: If BABA has not attempted to Ram this Round, BABA will move toward the nearest hostile character and attempt to Ram them, gaining your Grit as a bonus to its roll. It may only attempt to Ram a target 1/Round.</li><li>SLEEP: If BABA has no other priorities, it will remain in place and do nothing.</li></ol>",
+        "size": 0.5,
+        "hp": "20",
+        "actions": [
+          {
+            "name": "BABA IS DONE",
+            "activation": "Protocol",
+            "frequency": "1/Scene",
+            "detail": "BABA is ordered to prioritize the BOOM procedure."
+          }
+        ]
+      }
+    ],
+    "effect": "Your Mech can deploy BABA and gains the AI tag as long as BABA is not deployed. BABA isn't a full NHP and cannot Cascade.<br/>Only one BABA can be deployed at a time across an entire scene. While BABA is deployed, the AI is present on the drone.",
+    "description": "The BABA-class COMP/CON unit is a pleasant little autonomous helper that is doing its very best."
+  },
+  {
     "id": "ice_wavesync",
     "name": "SA 0-919 'WAVESYNC'",
     "type": "System",
@@ -1012,6 +1072,11 @@
     "license": "ANGEL",
     "license_level": 1,
     "effect": "Biological targets lose Immunity to your Tech Actions, including Invades. Invades used on Biological targets through the effect of this system do not inflict Heat.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
     "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-919<br/><br/>IT'S A TINY BIT OF CODE WRITTEN IN SOME ESOTERIC LANGUAGE.<br/>IT CAN READ CODE FRAGMENTS AND PRODUCE HIGH FREQUENCY PULSES OF EM RADIATION THAT INTERFERE WITH NEUROLOGICAL ACTIVITY.<br/>BIZARRE...</br>HOW DOES IT KNOW WHAT THE INTENTION OF THE SOURCE CODE IS?</i>"
   },
   {
@@ -1029,6 +1094,11 @@
         "detail": "Until the end of your target's next turn, they take 1 AP Energy damage each time they gain Heat, including the Heat they gained from this Invade action."
       }
     ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
     "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-238<br/><br/>IT'S A SIGNAL CAUSES THE SECURITY SYSTEM OF A HOSTILE MECH TO MASSIVELY OVERREACT TO EXCEPTIONS.<br/>IT'S BASICALLY AN ALLERGIC REACTION.<br/>THE SYSTEM ENDS UP FLOODING ITSELF.</i>"
   },
   {
@@ -1044,7 +1114,16 @@
         "activation": "Free",
         "frequency": "1/Round",
         "name": "MORTIFICATION",
-        "detail": "Clear any amount of Heat. You lose HP equal to the amount of Heat cleared. You cannot regain HP by any means except losing Structure or gain Overshield until the end of your next turn."
+        "detail": "Clear any amount of Heat. You lose HP equal to the amount of Heat cleared, and cannot recover HP by any means until the end of your next turn."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
       }
     ],
     "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-002<br/><br/>[AUDIO TRANSCRIPTION FOLLOWS]<br/><br/>IF YOUR RIGHT HAND CAUSES YOU TO SIN, CUT IT OFF<br/>IF YOUR RIGHT EYE CAUSES YOU TO SIN, GOUGE IT OUT<br/>BETTER TO SUFFER THE FLESH<br/>THAN ENDURE CONDEMNATION</i>"
@@ -1057,7 +1136,7 @@
     "source": "ICE",
     "license": "ANGEL",
     "license_level": 2,
-    "effect": "If a pilot's body is killed while they are piloting the Angel, their consciousness becomes locked in a state of limbo. This system contains what remains of their entire being. If it is installed in a mech, that mech becomes their body, in a sense. This system's 'One of a Kind' tag applies to each character trapped in this way; if multiple pilots are trapped due to the angel's effect, each pilot is One of a Kind.<br/><br/>This system must be installed for them to pilot any mech other than the Angel. <br/><br/>This system should not be used under any other circumstances.",
+    "effect": "If a pilot's body is killed while they are piloting the Angel, their consciousness becomes locked in a state of limbo. This system contains what remains of their entire being. If it is installed in a mech, that mech becomes their body, in a sense. This system's 'One of a Kind' tag applies to each character trapped in this way; if multiple pilots are trapped due to the Angel's effect, each pilot is One of a Kind.<br/><br/>This system must be installed for them to pilot any mech other than the Angel and grants that mech the AI tag. The pilot is not a normal NHP and cannot cascade.<br/><br/>This system should not be used under any other circumstances and can never be installed on the Angel.",
     "tags": [
       {
         "id": "tg_ai"
@@ -1087,6 +1166,11 @@
         "activation": "Invade",
         "name": "INDIRECT LANCE",
         "detail": "Choose a System, Tech Action, or Weapon that your target used on their previous turn. Any checks or attacks that they make with the chosen System, Tech Action, or Weapon have +2 Difficulty."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
       }
     ],
     "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-176<br/><br/>[AUDIO TRANSCRIPTION FOLLOWS]<br/><br/>WHAT I HOLD IS MERELY AN IMITATION OF THE TRUE SPEAR<br/>ALONGSIDE WHAT I HAVE GIVEN YOU, YOU POSSESS ALL THE PIECES OF THE REAL THING<br/>YOU WILL ONLY HAVE A SINGLE CHANCE TO USE IT ON HIM<br/>MAKE SURE THAT YOU MAKE IT COUNT<br/>OR HOPE WILL DIE WITH YOU</i>"
