@@ -16,20 +16,20 @@
     "source": "ASG",
     "license": "NIDHOGG",
     "license_level": 3,
-    "effect": "The missiles provided by this system were not designed for use on a mech: they are launched from the exterior of the chassis and may be targeted as a deployable that shares a space with you while they are primed. A primed missile shares your evasion, is immune to tech actions and has (10 + twice your Hull) HP, resistance to Kinetic and Energy damage, and immunity to Burn. If the missile is reduced to 0 HP, it detonates: you lose one charge and the missile deals damage as though you were the target of the strike. You can not use the actions provided by this system if you are Jammed.",
+    "effect": "The missiles provided by this system were not designed for use on a mech: they are launched from the exterior of the chassis and may be targeted as a deployable that shares a space with you while they are primed. A primed missile shares your evasion, is immune to tech actions and has (10 + twice your Hull) HP, resistance to Kinetic and Energy damage, and immunity to Burn. If the missile is reduced to 0 HP, it detonates: you lose one charge and the missile deals damage as though you were the target of the strike.",
     "actions": [
       {
         "activation": "Quick",
         "name": "Prime Missile",
-        "detail": "You prepare for a ballistic strike, readying a missile into its launch position. When you begin readying a missile, you are Immobilized, and the missile becomes a valid target for attacks. These effects last until you cancel the launch as a free action or launch the missile. At the start of your next turn, you fully prime the missile, gaining access to the <i>Ballistic Launch</i> action. You may not take this action more than 1/turn for any reason."
+        "detail": "You prepare for a ballistic strike, warping a missile from remote storage onto a launch rack on your mech. When you begin readying a missile, you are Immobilized, and the missile becomes a valid target for attacks. These effects last until you cancel the launch as a free action or launch the missile. At the start of your next turn, you fully prime the missile, gaining access to the BALLISTIC LAUNCH action. You may not take this action more than 1/Turn."
       },
       {
         "activation": "Full",
         "name": "Ballistic Launch",
-        "detail": "You may only use this action after a missile is fully primed. Expend a charge to launch a missile at a target affected by Lock On. Lock On is consumed, and the target and all characters and objects in a Burst 3 area around them take 3d6+6 AP Explosive damage, which ignores Resistance and Immunity to Explosive damage. All characters besides the primary target must attempt a Hull Save or be Stunned until the start of their next turn. The primary target is Stunned until the end of their next turn, without the ability to make a Save."
+        "detail": "You may only use this action after a missile is fully primed and cannot take this action while Jammed. Expend a charge to launch a missile at a target affected by Lock On. Lock On is consumed, and the target and all characters and objects in a Burst 3 area around them take 2d6+6 AP Explosive damage, which ignores Resistance and Immunity to Explosive damage. All characters besides the primary target must attempt a Hull Save or be Impaired until the start of their next turn. The primary target is knocked Prone and Impaired until the end of their next turn, without the ability to make a Save."
       }
     ],
-    "description": "An ASGARD Class-3 BDM (which stands for \"Ballistic Dispersion Missile\" and not \"Big Damn Missile\", contrary to what many believe), is actually a fairly small missile in the context it was originally designed for: space-based ship to ship combat. However, large scale naval combat became less and less common, the commercial demand for batteries of missiles began to shrink. Rather than limit their manufacturing, ASGARD instead developed a novel blinkspace storage system which allows them to be deployed from a remote location to ground vehicles and mechs. Simply load a friendly satellite with a few BDMs, then watch as your enemies flee in terror at the sight of an Everest preparing to launch a 5 meter long missile from its back—at least until they realize that they can shoot at it."
+    "description": "An ASGARD Class-3 BDM (which stands for \"Ballistic Dispersion Missile\" and not \"Big Damn Missile\", contrary to what many believe), is actually a fairly small missile in the context it was originally designed for: space-based ship to ship combat. However, large scale naval combat became less and less common, the commercial demand for batteries of missiles began to shrink. Rather than limit their manufacturing, ASGARD instead developed a novel orbital warehousing system which allows these missile to be deployed to ground vehicles and mechs via blinkspace teleportation. Simply load a friendly satellite with a few BDMs, then watch as your enemies flee in terror at the sight of an Everest carrying a 5 meter long missile on its back... at least until they realize that they can shoot at it."
   },
   {
     "id": "asg_dreadnought_engine",
@@ -47,7 +47,7 @@
     "source": "ASG",
     "license": "NIDHOGG",
     "license_level": 2,
-    "effect": "Your speed is reduced by 3 minus your size, rounded up, as long as this system is installed. While you are in the Danger Zone, you may take 1 Heat to Boost as a free action 1/round. If you do, all adjacent allied Characters may move the same number of Spaces as a reaction.",
+    "effect": "Your speed is reduced by 3 minus your size, rounded up, as long as this system is installed. While you are in the Danger Zone, you may take 2 Heat to Boost as a free action 1/round. If you do, all adjacent allied Characters may move the same number of Spaces as a reaction.",
     "description": "A thermal engine used to provide some extra power for Dreadnoughts, <i>slightly</i> miniaturized."
   },
   {
@@ -97,7 +97,7 @@
     "source": "ASG",
     "license": "NIDHOGG",
     "license_level": 1,
-    "effect": "You may deploy a Lockdown System to a free adjacent space. Deploying the Lockdown System does not consume charges, and a new Lockdown System may be deployed without penalty if an active one is destroyed. Only one Lockdown System may be deployed at a time. While the Lockdown System is deployed, you gain the Active Defense reaction.",
+    "effect": "You may deploy a Lockdown System to a free adjacent space. Deploying the Lockdown System does not consume charges, and a new Lockdown System may be deployed without penalty if an active one is destroyed. Only one Lockdown System may be deployed at a time. While the Lockdown System is deployed, you gain the ACTIVE DEFENSE reaction.",
     "deployables": [
       {
         "type": "Drone",
@@ -144,7 +144,7 @@
       {
         "activation": "Free",
         "name": "Down the River Ván",
-        "detail": "Throw a held character up to Range 5. If the target is friendly, they can choose to enter a friendly mech or Jockey a hostile mech that they would pass through or adjacent to during the throw as a Reaction. They receive +1 Accuracy and the target receives +1 Difficulty if they attempt to Jockey. While being thrown, the character does not provoke reactions."
+        "detail": "Throw a held character up to Range 5. The thrown character can choose to enter a friendly mech or Jockey a hostile mech that they would pass through or adjacent to during the throw as a Reaction. They receive +1 Accuracy and the target receives +1 Difficulty if they attempt to Jockey. While being thrown, the character does not provoke reactions."
       }
     ],
     "effect": "Your mech gains the AI tag and the Jaws of the Wolf and Down the River Ván actions.",
@@ -194,7 +194,7 @@
       {
         "activation": "Full",
         "name": "The Game",
-        "detail": "Choose an adjacent Mech. The target must succeed at an Agility save or have a Reverse Beartrap attached to them. A charge is only expended if the device is attached successfully.<br>Once a Beartrap is attached to a target, it will explode at the end of their next turn, ripping open their cockpit and allowing the pilot to be targeted by systems and attacks directly at -2 Difficulty. Enemies with the Ultra template can destroy the Beartrap as a Full Action, removing it safely and preventing further Beartraps from being attached to them."
+        "detail": "Choose an adjacent Mech. The target must succeed at an Agility save or have a Reverse Beartrap attached to them. A charge is only expended if the device is attached successfully.<br>Once a Beartrap is attached to a target, it will explode at the end of their next turn, ripping open their cockpit and allowing the pilot to be targeted by systems and attacks directly at +2 Difficulty. Enemies with the Ultra template can destroy the Beartrap as a Full Action, removing it safely and preventing further Beartraps from being attached to them."
       }
     ],
     "description": "A horrific device that attempts to rip a mech's cockpit open, apparently originally designed for use on humans and scaled up for use on mechs. ASGARD public relations has disavowed its use."
@@ -600,7 +600,7 @@
     "license": "FAFNIR",
     "license_level": 1,
     "effect": "Whenever you Boost, you clear 1 Heat. Clearing Heat in this way does not trigger the effects of your own weapons, systems, core bonuses, or frame traits.",
-    "description": "Mech boosters generate an noticeable amount of heat which are mitigated by sophisticated heatsinks which use the motion of air around the boosting Mech to reduce the chance of overheating. By routing some of the coolant of a mech's other systems through these air coolers, one achieves a tiny bit of additional passive cooling."
+    "description": "Mech boosters generate a noticeable amount of heat which are mitigated by sophisticated heatsinks which use the motion of air around the boosting Mech to reduce the chance of overheating. By routing some of the coolant of a mech's other systems through these air coolers, one achieves a tiny bit of additional passive cooling."
   },
   {
     "id": "asg_solid_fuel_booster",
@@ -747,13 +747,13 @@
       {
         "activation": "Invade",
         "name": "REQUEST: RECORD SEQUENCE",
-        "detail": "You may use this Invade on Biological targets. Mark the current position of the target. Gain access to the REQUEST: ERASE SEQUENCE reaction, until that reaction is used. Only one target may be under this effect at a time: using this action on another target ends this effect on the original."
+        "detail": "You may use this Invade on Biological targets, but it does not generate Heat when used in this way. Mark the current position of the target. Gain access to the REQUEST: ERASE SEQUENCE reaction, until that reaction is used. Only one target may be under this effect at a time: using this action on another target ends this effect on the original."
       },
       {
         "activation": "Reaction",
         "trigger": "Immediately after any character takes any action or movement, while the target of REQUEST: RECORD SEQUENCE is within Sensors.",
         "name": "REQUEST: ERASE SEQUENCE",
-        "detail": "Gain 4 Heat. The target of REQUEST: RECORD SEQUENCE is returned to the marked position, and the effects the most recent action they took this turn is undone."
+        "detail": "Gain 4 Heat. The target of REQUEST: RECORD SEQUENCE is returned to the marked position and the effect of the triggering action or movement is undone."
       }
     ],
     "tags": [
@@ -1005,23 +1005,48 @@
     "description": "<i>Give 'em the heater.</i>"
   },
   {
-    "id": "ice_banner",
-    "name": "",
+    "id": "ice_silent_running",
+    "name": "Silent Running Mode",
     "type": "System",
-    "sp": 2,
+    "sp": 1,
     "source": "ICE",
     "license": "ICEBREAKER",
-    "license_level": 2,
-    "effect": "While this system is active, allies within this system's Aura gain 1 Armor.",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Protocol",
+        "name": "Silent Running",
+        "detail": "You activate your mech's silent running mode, suppressing your exhaust and powering down many systems to hide it from enemy sensors. You can end this mode as a free action.<br/>While in silent running, you are also Jammed and Slowed, and cannot lose Heat by any means. If you would Overheat with silent running active, the effect ends automatically. However, you gain the following benefits:<ul><li>You are immune to SCAN and LOCK ON.</li><li>If you become Invisible or if you are Invisible at the start of your turn, you also become Hidden automatically.</li><li>Smart weapons, tech attacks, and Drones always treat you as though you were Invisible.</li><li>Autonomous systems and scanners that rely entirely on Sensors rather than visual recognition will not be able to detect you. Systems that use both cannot detect you unless you are visible to cameras or other visual detectors.</li></ul>"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "description": "Silent running mode is a simple modification to a vehicle's operation that closes all exhaust vents and massively reduces the output of any onboard systems. Originally, this was mainly used by space smugglers hiding their ships from system-wide scans that would potentially reveal their activities as they slowly snuck into spaceports. While more useful in the vast, empty darkness of space, where is it nigh impossible to see objects from a distance, disguising one's mech in this way can be useful, provided it can be hidden from sight as well."
+  },
+  {
+    "id": "ice_regen_brake",
+    "name": "Regenerative Heat Shield",
+    "type": "System",
+    "sp": 3,
+    "source": "ICE",
+    "license": "ICEBREAKER",
+    "license_level": 3,
+    "effect": "If you BRACE while in the Danger Zone, on your next turn you may take your Standard Movement and up to 1 Free Action in addition to the Quick Action you would normally receive.",
     "tags": [
       {
         "id": "tg_unique"
       },
       {
         "id": "tg_danger_zone"
+      },
+      {
+        "id": "tg_shield"
       }
     ],
-    "description": "<i>Give 'em the heater.</i>"
+    "description": "This shielding system can project a temporary, powerful energy shield around a mech, powered by a miniature thermal engine that runs off the heat generated by a mech's systems. The barrier it projects consumes all the power it has generated in a matter of seconds, making it ineffective for long term point defense, but it can take a great deal of the load off of a mech bracing for a more intense hit."
   },
   {
     "id": "ice_baba",
@@ -1099,7 +1124,7 @@
         "id": "tg_unique"
       }
     ],
-    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-238<br/><br/>IT'S A SIGNAL CAUSES THE SECURITY SYSTEM OF A HOSTILE MECH TO MASSIVELY OVERREACT TO EXCEPTIONS.<br/>IT'S BASICALLY AN ALLERGIC REACTION.<br/>THE SYSTEM ENDS UP FLOODING ITSELF.</i>"
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-238<br/><br/>IT'S A SIGNAL THAT CAUSES THE SECURITY SYSTEM OF A HOSTILE MECH TO MASSIVELY OVERREACT TO EXCEPTIONS.<br/>IT'S BASICALLY AN ALLERGIC REACTION.<br/>THE SYSTEM ENDS UP FLOODING ITSELF.</i>"
   },
   {
     "id": "ice_flagellation",
@@ -1165,7 +1190,7 @@
       {
         "activation": "Invade",
         "name": "INDIRECT LANCE",
-        "detail": "Choose a System, Tech Action, or Weapon that your target used on their previous turn. Any checks or attacks that they make with the chosen System, Tech Action, or Weapon have +2 Difficulty."
+        "detail": "Choose a System, Tech Action, or Weapon that your target used on their previous turn. Any checks or attacks that they make with the chosen System, Tech Action, or Weapon have +2 Difficulty until the end of their next turn."
       }
     ],
     "tags": [

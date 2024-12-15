@@ -180,7 +180,7 @@
   },
   {
     "id": "mw_asg_mini_mjollnir",
-    "name": "ASG-N10 Novic-Lovelace Nanite Weapon",
+    "name": "ASG-N10 Nović-Lovelace Nanite Weapon",
     "mount": "Heavy",
     "source": "ASG",
     "license": "NIDHOGG",
@@ -288,7 +288,7 @@
         "val": "1d3"
       }
     ],
-    "on_hit": "Until the end of your turn, when you hit a target with a Melee weapon attack, you deal 1d3 bonus Energy damage.",
+    "on_hit": "Until the end of your turn, each time you hit your target with a Melee attack you deal 1d3 bonus Energy damage. This weapon never applies this bonus damage.",
     "description": "Attacks with the Injection Blade leave volatile chemicals on the target's armor, which can be \"encouraged\" into a violent reaction through the application of force.",
     "tags": [
       {
@@ -659,7 +659,7 @@
     "license": "FAFNIR",
     "license_level": 3,
     "type": "CQB",
-    "sp": 3,
+    "sp": 2,
     "profiles": [
       {
         "name": "Heavy Lance",
@@ -830,7 +830,7 @@
   {
     "id": "mw_lumico_sycamore_axe",
     "name": "Sycamore Axe",
-    "mount": "Heavy",
+    "mount": "Main",
     "source": "LUMICO",
     "license": "TRAILBLAZER",
     "license_level": 3,
@@ -838,7 +838,7 @@
     "range": [
       {
         "type": "Threat",
-        "val": 2
+        "val": 1
       }
     ],
     "damage": [
@@ -969,11 +969,7 @@
     "damage": [
       {
         "type": "Energy",
-        "val": 2
-      },
-      {
-        "type": "Heat",
-        "val": 1
+        "val": 3
       }
     ],
     "tags": [
@@ -991,7 +987,7 @@
     ],
     "effect": "You do not need to retrieve this weapon after using it for a Thrown attack to continue using it for attacks. This weapon can only deal Bonus Damage once per turn. Whenever you would make any attack as a free action, you may sacrifice the original attack to make a Thrown attack with this weapon instead.",
     "on_attack": "If you are Barraging, you may choose this weapon for both attacks. After you Barrage, you may attack with this weapon once as a free action for each attack you made with this weapon during the Barrage.",
-    "description": "The Psi Blade Array produces blades made of hardlight which can be controlled using the brainwaves of the pilot. Though they dissapate on contact with the enemy mech, these projectiles are so light that they can be thrown over and over in quick succession, wearing the enemy down under a hail of blades."
+    "description": "The Psi Blade Array produces blades made of violet hardlight which can be controlled using the brainwaves of the pilot. Though they dissapate on contact with the enemy mech, these projectiles are so light that they can be thrown over and over in quick succession, wearing the enemy down under a hail of blades."
   },
   {
     "id": "mw_lumico_atlasstone",
@@ -1027,7 +1023,7 @@
       }
     ],
     "effect": "You may only make Thrown attacks with this weapon. This weapon cannot be automatically retrieved or have its range increased through the effect of frame traits, talents, or systems, and cannot have mods applied to it.",
-    "on_attack": "Double this weapon's damage, threat, Reliable rating, and Thrown rating until the end of combat.",
+    "on_attack": "Double this weapon's damage, threat, Reliable rating, and Thrown rating until the end of the scene.",
     "description": "An atlas stone is an immense and weighty sphere, used by humans to demonstrate their strength beyond normal limits. This weapon is such a stone, a sphere the size of a human being made of hard rock. Supposedly, it was designed to strain a mech's computers and pneumatics to their limits, and to ignite the 'spirit of defiance' within the machine. While there is no scientific evidence for this phenomenon, almost all NHPs introduced to the atlas stone have displayed an unusual degree of hatred and respect for this otherwise innocuous object."
   },
   {
@@ -1087,7 +1083,7 @@
         "val": 1
       }
     ],
-    "description": "This heavy sword opens down the middle to expose a deadly spike, chained to a winch just above the sword's hilt. When a Mech is speared on the spike, the winch begins to turn, reeling the unfortunate victim between the Viceblade's deadly jaws."
+    "description": "This heavy sword's blade opens down the middle like a pair of scissors, exposing a deadly spike chained to a winch just above the sword's hilt. The spike itself is the size of a javelin, and can be thrown in the same manner, or launched directly from the weapon itself. When a target is speared on the spike, the winch begins to turn and retract, reeling the unfortunate victim between the Viceblade's open jaws."
   },
   {
     "id": "mw_savant_integrated",
@@ -1255,7 +1251,7 @@
     "mount": "Main",
     "source": "ICE",
     "license": "ICEBREAKER",
-    "license_level": 2,
+    "license_level": 1,
     "type": "Melee",
     "range": [
       {
@@ -1269,7 +1265,7 @@
         "val": "1d3+1"
       }
     ],
-    "on_hit": "If you are in the Danger Zone, this weapon's damage is doubled and you roll 1d6 after each attack. If you roll a 6, the sword detonates and destroys the mount it is on: it deals 2d6+6 AP Explosive damage to your target and Stuns them until the end of their next turn, while also Stunning you until the end of your current turn.",
+    "on_hit": "If you are in the Danger Zone, this weapon's base damage is doubled and you roll 1d6. If you roll a 6, the sword overloads, detonating and destroying the mount it is on. The explosion deals 1d6+6 AP Explosive damage to your target and Stuns them until the end of their next turn, while also Stunning you until the end of your current turn.",
     "description": "\"Get me closer!\" you hear the pilot in the advertisement yell, beaming with pride at the new weapon he carries, \"Get me closer so I can hit them with my nuclear sword!\""
   },
   {
@@ -1278,7 +1274,7 @@
     "mount": "Main",
     "source": "ICE",
     "license": "ICEBREAKER",
-    "license_level": 3,
+    "license_level": 2,
     "type": "CQB",
     "profiles": [
       {
@@ -1362,7 +1358,7 @@
     "source": "ICE",
     "license": "ANGEL",
     "license_level": 2,
-    "type": "Launcher",
+    "type": "Melee",
     "range": [
       {
         "type": "Threat",
@@ -1392,6 +1388,34 @@
     "effect": "Charges of this weapon are only used up when making Thrown attacks and it does not need to be retrieved after a Thrown attack to continue to make attacks with it. This weapon cannot be used for Thrown attacks with no charges remaining, but normal melee attacks are still possible.",
     "on_attack" : "When making a Thrown attack, this weapon deals damage to all characters in a Line 15 area toward the primary target of the attack, passing through walls and obstructions and ignoring cover. For every point of Kinetic damage the attack would normally do, it instead inflicts 1 Heat and 1 Burn. Thrown attacks with this weapon do not damage objects.",
     "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-203<br/><br/>WE GAVE THE CODE 'REVEALING LIGHT' TO THIS ARTIFACT, SINCE IT COULD INTERACT WITH OBJECTS THAT IT HAD NO CLEAR LINE OF SIGHT TO.<br/>'THROWING' IT FIRES OFF A LANCE OF LIGHT THAT CAN CAUSE SERIOUS BURNS IN HUMAN TISSUE AND DAMAGE NHPS.<br/>HAS NO EFFECT ON STATIC OBJECTS.<br/>SOMEHOW MECHS ARE DIFFERENT?</i>"
+  },
+  {
+    "id": "mw_ice_woodhammer",
+    "name": "SA 2-635 'WOOD HAMMER'",
+    "mount": "Heavy",
+    "source": "ICE",
+    "license": "GREENHORN",
+    "license_level": 3,
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "2d6+4"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_overshield"
+      }
+    ],
+    "on_hit": "You take Kinetic damage equal to the damage you dealt with your attack. Then, you gain Overshield equal to the amount of damage you dealt to yourself after reductions from Armor or Resistance.",
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-635<br/><br/>THIS THING HAS A <u>LOT</u> OF POWER BEHIND IT, ENOUGH TO REALLY ROCK A MECH'S INTERNALS.<br/>BASICALLY, IT WORKS LIKE A PILE BUNKER: A DETONATION OF ORGANIC CHEMICALS IN THE WEAPON CAUSE A BLAST THAT PROPELS THE HEAD OF THE WEAPON FORWARD, ADDING TO THE SWING FORCE THAT THE MECH PROVIDES. THIS IS REALLY DESTRUCTIVE, AND LEAVES A SLOUGHED OFF SHELL OF DEAD MATTER BEHIND. THE PILOT CAN USE IT TO BLOCK A BIT OF ENEMY FIRE WHILE THE WEAPON REGROWS.</i>"
   },
   {
     "id": "mw_poke_integrated",

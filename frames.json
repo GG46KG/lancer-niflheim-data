@@ -74,7 +74,7 @@
       "structure": 4,
       "stress": 4,
       "armor": 1,
-      "hp": 10,
+      "hp": 9,
       "evasion": 8,
       "edef": 6,
       "heatcap": 4,
@@ -95,7 +95,7 @@
         "description": "The Fenrir gains the AI tag, if it doesn't already have it from its systems.<br>While you are wearing the Tyr Battlesuit, as long as it is not in Emergency Standby, any NHP that pilots your mech benefits from your talents."
       },
       {
-        "name": "Weak Computer",
+        "name": "Underspec Computer",
         "description": "The Fenrir receives +1 Difficulty on all SYSTEM saves and checks.",
         "synergies": [
           {
@@ -113,7 +113,7 @@
       "activation": "Protocol",
       "use": "Encounter",
       "passive_name": "Tyr Battlesuit",
-      "passive_effect": "When you dismount from the Fenrir for any reason, you may choose to exit while wearing the linked Tyr Battlesuit, instead of your normal Hardsuit. Doing so offers several benefits as long as the Battlesuit is worn:<ul><li>Your speed is increased to match the Fenrir's.</li><li>You gain an HP boost of 5. This bonus HP is inherent to the Battlesuit, and is not regained each time you exit the mech if it was previously lost.<li>You gain 2 Armor.</li><li>Your Evasion and E-Defense are increased to 11.</li><li>You have Resistance to damage and Burn from attacks that target more than one character.</li><li>You gain access to the ASG-BERSERK Stimulant Injection Reaction and the Wolfstooth weapon.</li></ul>However, the Battlesuit needs to draw power from the Fenrir to function. If you end your turn more than range 5 away from the Fenrir, or if the Fenrir is destroyed, your Battlesuit enters Emergency Standby: you are Immobilized and Jammed until the Fenrir comes back into range or until you exit the Battlesuit as a Full Action. In addition, any Tech Actions that affect the Fenrir affect the Tyr Battlesuit, as well.",
+      "passive_effect": "When you dismount from the Fenrir for any reason, you may choose to exit while wearing the linked Tyr Battlesuit, instead of your normal Hardsuit. Doing so offers several benefits as long as the Battlesuit is worn:<ul><li>Your speed is increased to match the Fenrir's.</li><li>You gain an HP boost of 5.<li>You gain 2 Armor.</li><li>Your Evasion and E-Defense are increased to 11.</li><li>You have Resistance to damage and Burn from attacks that target more than one character.</li><li>You gain access to the ASG-BERSERK Stimulant Injection Reaction and the Wolfstooth weapon.</li></ul>However, the Battlesuit needs to draw power from the Fenrir at the end of each of your turns to function. If you are more than range 8 away from the Fenrir or if the Fenrir is destroyed when you end your turn, your Battlesuit enters Emergency Standby: you are Immobilized and Jammed until the Fenrir comes back into range or until you exit the Battlesuit as a Full Action. In addition, any Tech Actions that affect the Fenrir affect the Tyr Battlesuit, as well.",
       "passive_actions": [
         {
           "activation": "Reaction",
@@ -260,7 +260,7 @@
       "name": "ASG-BERSERK REVISION ZERO",
       "description": "<i>I warned you.</i>",
       "active_name": "GIVE IN",
-      "active_effect": "This action may only be taken if you are physically present in the Draugr. Until the end of combat:<ul><li>You cannot make Ranged attacks.</li><li>You cannot take or be affected by tech actions, friendly or hostile.</li><li>Your Improvised Attacks gain +1 Accuracy, deal 1d3 bonus Kinetic damage and cannot have their damage reduced in any way.</li><li>You ignore the normal restrictions on duplicate actions for Inprovised Attacks.</li><li>At the end of each of your turns, if you did deal damage with an attack, the Draugr's Pilot takes 3 Energy damage.</li></ul>If you, the pilot, are killed or knocked Down and Out, the Draugr begins to pilot itself, as though it was controlled by a cascading NHP.<br/><br/>It is, however, <i>not</i> controlled by an NHP: just the echoes of the pilot's last, panicked thoughts.",
+      "active_effect": "This action may only be taken if you are physically present in the Draugr. Until the end of combat:<ul><li>You cannot make Ranged attacks.</li><li>You cannot take or be affected by tech actions, friendly or hostile.</li><li>Your Improvised Attacks gain +1 Accuracy, deal 1d3 bonus Kinetic damage and cannot have their damage reduced in any way.</li><li>You ignore the normal restrictions on duplicate actions for Inprovised Attacks.</li><li>At the end of each of your turns, if you did not deal damage with an attack, the Draugr's Pilot takes 3 Energy damage.</li></ul>If you, the pilot, are killed or knocked Down and Out, the Draugr begins to pilot itself, as though it was controlled by a cascading NHP.<br/><br/>It is, however, <i>not</i> controlled by an NHP: just the echoes of the pilot's last, panicked thoughts.",
       "activation": "Protocol",
       "use": "Encounter"
     },
@@ -598,7 +598,7 @@
     "traits": [
       {
         "name": "Impalement Arts",
-        "description": "Aux and Main weapons installed on the Savant without the Thrown tag gain Thrown 3, while those with the Thrown property gain +3 Range on Thrown attacks. The Savant's Thrown attacks ignore cover granted by its target's allies.",
+        "description": "Aux and Main melee weapons installed on the Savant without the Thrown tag gain Thrown 3, while those with the Thrown property gain +3 Range on Thrown attacks. The Savant's Thrown attacks ignore cover granted by its target's allies.",
         "synergies": [
           {
             "locations": [
@@ -686,7 +686,7 @@
     "name": "GREENHORN",
     "mechtype": ["Defender", "Striker"],
     "y_pos": 15,
-    "description": "<i>The following information details ICEBREAKER LLC. proprietary research. If you are not entitled to this information, do not continue or you may be in violation of trade law.</i><br/><br/>Metavault Research Result - Stabilized Prototype 004 <i>'GREENHORN'</i><br/><br/>I think that this prototype all but proves that the contents of the Metavaults aren't completely random, as was the popular theory, but in fact may connect to entirely different stable realities. What we are shown may seem to be effectively nonsense, but it's in fact several parallel variant realities blending together rapidly. What the existence of these alternate variants actually implies is up to interpretation, however. My peers have a number of theories ranging from the existence of a 'multiverse' to the idea of our emotions generating these potential timelines dynamically. I believe that it's even more complex, based on my experiences during the Siege of Niflheim: there seem to be meta-beings on a different level than us that control not only our actions but the very nature of our existence simply through their imagination, and these realities are simply their fantasies. Regardless of the cause of these variants, using the same technology that was used by NULL and BAYHOUND to stabilize the connection to Terminus in the Eljuthnir drilling station, we can force the Metavault to temporarily stabilize, allowing us to peek into one variant for a short time. We copied the structure of the Greenhorn from the frozen Metavault and despite all expectations, I can confirm: it's a living plant with no technological components whatsoever. It's made of normal wood.This may very well be <i>literal magic</i> from a variant where that isn't a ridiculous thing to say.",
+    "description": "<i>The following information details ICEBREAKER LLC. proprietary research. If you are not entitled to this information, do not continue or you may be in violation of trade law.</i><br/><br/>Metavault Research Result - Stabilized Prototype 004 <i>'GREENHORN'</i><br/><br/>I think that this prototype all but proves that the contents of the Metavaults aren't completely random, as was the popular theory, but in fact may connect to entirely different stable realities. What we are shown may seem to be effectively nonsense, but it's in fact several parallel independent realities (<i>\"Variants\"</i>) blending together rapidly. What the existence of these variants actually implies is up to interpretation, however. My peers have a number of theories ranging from the existence of a 'multiverse' to the idea of that our emotions generate these potential timelines dynamically. I believe that it's even more complex, based on my experiences during the Siege of Niflheim: there seem to be meta-beings on a different level than us that control not only our actions but the very nature of our existence simply through their imagination, and these realities are simply their fantasies. Regardless of the cause of these variants, using the same technology that was used by NULL and BAYHOUND to stabilize the connection to Terminus in the Eljuthnir drilling station, we can force the Metavault to temporarily stabilize, allowing us to peek into one variant for a short time. We copied the structure of the Greenhorn from the frozen Metavault and despite all expectations, I can confirm: it's a living plant with no technological components whatsoever. It's made of normal wood. This may very well be <i>literal magic</i> from a variant where that isn't a ridiculous thing to say.",
     "mounts": ["Heavy", "Main"],
     "stats": {
       "size": 2,
@@ -707,7 +707,7 @@
     "traits": [
       {
         "name": "Organic",
-        "description": "The Greenhorn is made entirely of organic matter and possesses no computer systems natively. While systems can be adapted to use on it, it has the Biological tag and cannot take Tech Actions.<br/><br/><i>Characters with the Biological tag have Immunity to all tech actions (even beneficial ones) except Lock On and Scan, although they can be targeted by electronic systems such as drones and smart weapons. If a Biological character would take heat, they instead take an equivalent amount of energy damage. Since the Greenhorn cannot gain Heat, it cannot Overheat and has no Stress.</i>"
+        "description": "The Greenhorn is made entirely of organic matter and possesses no computer controls natively. While systems can be adapted to use on it, it has the Biological tag and cannot take Tech Actions.<br/><br/><i>Characters with the Biological tag have Immunity to all tech actions (even beneficial ones) except Lock On and Scan, although they can be targeted by electronic systems such as drones and smart weapons. If a Biological character would take heat, they instead take an equivalent amount of energy damage. Since the Greenhorn cannot gain Heat, it cannot Overheat and has no Stress.</i>"
       },
       {
         "name": "Rampant Growth",
@@ -716,7 +716,7 @@
     ],
     "core_system": {
       "name": "Verdant Canopy",
-      "description": "The Regenerative Thermal Engine installed on the Icebreaker is able to use a portion of the heat lost by through normal Mech operation to slowly charge its core battery. By saving this power for later, the Icebreaker is able to operate as though it was fresh out of the foundry.",
+      "description": "It's alive, it grows. It can produce vines that connect to systems as though they were wires. It runs on water, sunlight, and and whatever you can use as fertilizer. Honestly, it's much easier to maintain than a traditional mech, in terms of the amount of resources you have to put into it, but it does require some botanical knowledge that, frankly, doesn't overlap well with the skill set of most mech pilots. We're drafting up a manual to help potential pilots understand what they need to do to keep their Greenhorn alive, but frankly, I don't know how popular it'll be, as a design. Between the extra maintenance and the... general dislike of all things Paracausal, I think this is going to be a hard sell. At least it's never shown any signs of like... spontaneously developing a hostile consciousness. We have that on HORUS, at least.",
       "passive_name": "Leafcoat",
       "passive_effect": "The Greenhorn can alter its appearance during a Full Repair or rest to better match the flora of a battlefield, allowing it to blend in with the natural environment. The Greenhorn can Hide on a turn where it has not moved, even if it would not normally be able to, though it loses the Hidden status upon moving. In particularly barren environments, like deserts, tundras, or the interior of ships or buildings, this ability has no effect.",
       "active_name": "Ingrain",
