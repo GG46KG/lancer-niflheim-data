@@ -207,6 +207,9 @@
       {
         "id": "tg_limited",
         "val": 6
+      },
+      {
+        "id": "tg_unique"
       }
     ],
     "effect": "When this System is reduced to 0 charges, it is destroyed. You may spend 2 Repairs to restore all of this System's charges. If you do, it is also fixed if it was destroyed.",
@@ -588,7 +591,7 @@
         "val": 2
       }
     ],
-    "effect": "Your Mech gains the AI tag. Whenever Lock-On is consumed on a hostile character within this system's Aura and line of sight, you gain 1 Heat and immediately reapply Lock On to them.",
+    "effect": "Your Mech gains the AI tag. While this system's Aura is active: whenever Lock-On is consumed on a hostile character within this system's Aura and line of sight, you gain 1 Heat and immediately reapply Lock On to them.",
     "description": "The SKADI-class NHP is unusually focused on, in her words, 'the hunt'. Once locked on to a target, SKADI will not lose sight of them. This predilication extends to SKADI's interactions with humans, who can find her behavior obsessive and unnerving."
   },
   {
@@ -679,6 +682,27 @@
     "description": "The DRAGONFLY is similar in construction to other flight systems, albiet much bulkier and less flexibile. What it sacrifices in general utility it makes up for with vertical launch power, allowing for mechs to reposition themselves on the battlefield with explosive speed."
   },
   {
+    "id": "lumico_accessory_case",
+    "name": "Accessory Case",
+    "type": "System",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Protocol",
+        "name": "Attach Accessories",
+        "detail": "Choose a weapon installed on your Mech and a single weapon mod that could be applied to it, even if you do not possess the license for that mod. For the rest of the turn, treat that weapon as though that mod was applied to it. If the chosen mod would cost 3 or more SP to install, it consumes 2 of this system's charges.<br><i>If the chosen mod has limited uses, you may always use it as though it still had charges remaining. If the chosen mod has multiple states (e.g. the Caliban's Supermassive Mod), the mod can be activated in the state of your choice.</i>"
+      }
+    ]
+  },
+  {
     "id": "lumico_fugue_system",
     "name": "Fugue System",
     "type": "Tech",
@@ -702,7 +726,7 @@
         "val": 1
       }
     ],
-    "description": "The Lumiera Corporation Fugue System synchronizes the target's active defenses and evasive algorithms into operating at a synchronized frequency, causing gaps to appear in the target's defenses at regular intervals."
+    "description": "The Lumiera Corporation Fugue System synchronizes the target's active defenses and evasive algorithms into operating at a harmonized frequency, causing gaps to appear in the target's defenses at regular intervals."
   },
   {
     "id": "lumico_choreograph_system",
@@ -739,7 +763,7 @@
     "id": "lumico_nova_recorder",
     "name": "NOVA Fragment: Record",
     "type": "Tech",
-    "sp": 4,
+    "sp": 3,
     "source": "LUMICO",
     "license": "PHILOSOPHER",
     "license_level": 2,
@@ -780,7 +804,7 @@
         "val": "1"
       }
     ],
-    "effect": "You may not regain uses of this systems, except during a Full Repair.",
+    "effect": "You may not regain uses of this system, except during a Full Repair.",
     "actions": [
       {
         "activation": "Full",
@@ -806,7 +830,7 @@
         "id": "tg_unique"
       }
     ],
-    "effect": "During you a rest, you may activate this system to recharge your and one ally's core power. This system only has one use, regained when you make a Full Repair.",
+    "effect": "During a rest, you may activate this system to recharge your own and one ally's core power. This system only has one use, regained when you make a Full Repair.",
     "description": "Lumico's Near-Zero-Mass Fusion Reactor, internally dubbed the \"Pocket Star\", provides an ingenious method of storing energy. Originally intented to fulfill a similar role to a mech's standard reactor, logistical issues related to actually <i>extracting</i> the energy produced by the Pocket Star meant that it was more valuable as an emergency reserve of energy rather than as a primary power source."
   },
   {
@@ -904,7 +928,7 @@
     "source": "LUMICO",
     "license": "TRAILBLAZER",
     "license_level": 3,
-    "effect": "While this system's Aura is active:<ul><li>You cannot take tech actions.</li><li>You are immune to the effect of tech actions.</li></ul>After a character within this system's Aura attacks you, they are Jammed until the end of the current turn.",
+    "effect": "While this system's Aura is active:<ul><li>You cannot take tech actions.</li><li>You are immune to the effect of tech actions that originate from within this system's Aura.</li><li>After a character within this system's Aura attacks you, they are Jammed until the end of the current turn.</li></ul>",
     "tags": [
       {
         "id": "tg_unique"
@@ -915,7 +939,7 @@
       },
       {
         "id": "tg_heat_self",
-        "val": 2
+        "val": 3
       }
     ],
     "description": "Lumiera Corporation's \"Lullaby\" system projects a chaotic signal that disrupts the operation of mech systems, preventing them from accurately targeting the source of the signal. During testing, however, pilots of mechs targeted by the Lullaby's signal reported extreme distress, citing phantom sounds produced within the cockpit. Lumiera Corporation intended to delay its release but an error caused the system to be released to the public anyway."
@@ -1089,6 +1113,121 @@
     "description": "The BABA-class COMP/CON unit is a pleasant little autonomous helper that is doing its very best."
   },
   {
+    "id": "ice_bloomcoat",
+    "name": "SA 0-363 'BLOOMCOAT'",
+    "type": "System",
+    "sp": 2,
+    "source": "ICE",
+    "license": "GREENHORN",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Protocol",
+        "name": "Magnabloom",
+        "detail": "Trigger a sudden bloom of heavy, colorful flowers in the plants surrounding your mech, granting the following effects until the flowers are dislodged:<ul><li>You gain Soft Cover, even in the open.</li><li>All spaces adjacent to you are considered Difficult Terrain.</li><li>If an adjacent character is targeted by a Smart, Seeking or Guided weapon attack, roll 1d6. On a 4-6, the colors of the flowers disrupt that attack's targeting, redirecting the attack to you.</li></ul>If you take any movement other than your Standard Move, the flowers are knocked free of your mech and this effect ends."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-363<br/><br/>THIS VINEY FLORA IS GROWN IN AQUACULTURE VATS ON THE SURFACE OF THE MECH.<br/>MUCH LIKE MOST OF THE OTHER PLANTS WE'VE PULLED OUT OF THE VAULT, THESE BLOOM <u>VERY</u> FAST.<br/>ADD A LITTLE BIT OF HEAT, AND YOU'LL BE DAZZLED BY THE COLORS.</i>"
+  },
+  {
+    "id": "ice_chloropaint",
+    "name": "SA 0-009 'CHLOROPAINT'",
+    "type": "System",
+    "sp": 1,
+    "source": "ICE",
+    "license": "GREENHORN",
+    "license_level": 1,
+    "effect": "When using a system or making an attack would cause you to gain Heat or to expend at least one charge of a Limited system, roll 1d6. On a roll of 6, that action does not cause you to gain heat and you expend one less charge than you would have. This system's effect is then disabled until your next Rest or Full Repair.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_indestructible"
+      }
+    ],
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-009<br/><br/>THIS PAINT CONTAINS THE SEEDS FOR A KIND OF MOSS THAT BUILDS UP LITTLE ELECTRICAL CHARGES OVER TIME.<br/>THE MECH CAN DRAW FROM THAT, AND USE IT FOR A TINY BURST OF ENERGY FOR COMPUTERS OR ONBOARD PRINTERS.<br/>OBVIOUSLY, YOU HAD BETTER LIKE THE COLOR GREEN.</i>"
+  },
+  {
+    "id": "ice_seedbed",
+    "name": "SA 1-886 'Maliflora GENUS SEEDBED'",
+    "type": "System",
+    "sp": 3,
+    "source": "ICE",
+    "license": "GREENHORN",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Protocol",
+        "name": "Epigenetic Hypergrowth",
+        "detail": "Gain 6 Heat to activate the growbeds within this system. You can take the SPROUTSEED actions granted by this system 2 times before you must take this action again."
+      },
+      {
+        "activation": "Quick",
+        "name": "M. solimani Sproutseed",
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          }
+        ],
+        "detail": "Throws a fast blooming Heatseeker Vine seed at a target, which begins to rapidly grow and strangle the target: the Vine will clear 2 heat from all  characters within Burst 3 of the target and deal Kinetic damage to the target equal to the total heat cleared. The target may attempt a Hull save to reduce the radius of the heat drain to Burst 1."
+      }
+    ],
+    "deployables": [
+      {
+        "type": "Mine",
+        "name": "M. terranguis Sproutseed",
+        "activation": "Quick",
+        "detail": "This Sproutseed immediately 'detonates' when it initially arms, covering all terrain within Burst 3 of the mine's location with throttling Earthsnake Vines, converting it into Dangerous and Difficult Terrain until the end of the scene."
+      },
+      {
+        "type": "Mine",
+        "name": "M. agilis Sproutseed",
+        "activation": "Quick",
+        "detail": "After this Sproutseed arms, it covers a Burst 2 area in sensitive Shockwave Vines. When a character in this area, friendly or enemy, would take damage, the vines will react to the impact and energy, 'detonating' to shroud the damaged character and grant them 8 Overshield before they are damaged."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      },
+      {
+        "id": "tg_overshield"
+      }
+    ],
+    "effect":"The SPROUTSEED actions granted by this system cannot be used until you have taken the EPIGENETIC HYPERGROWTH Protocol to cause new sprouts to bloom.",
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-886<br/><br/>WOW, THESE VINES GROW REALLY FAST.<br/>WE BROUGHT IN A BOTANIST TO TAKE A LOOK AT THEM, AND HE SAID THAT THEY'RE ALL PRETTY CLOSELY RELATED TO EACH OTHER.<br/>MAKES SENSE, THEY'RE RIDICULOUSLY FAST GROWING PARASITIC VINES THAT STRANGLE OUT OTHER PLANTS.<br/>THEY DIE QUICKLY, THOUGH, SO TO MAKE THEM USEFUL, WE KEEP HAVING TO GROW MORE.<br/>WHY ARE ALL THESE EXTRADIMENSIONAL PLANTS SO DIFFICULT TO KEEP ALIVE?</i>"
+  },
+  {
+    "id": "ice_parasite_weed",
+    "name": "SA 2-401 'PARASITE WEED' (Mech Stabilizer)",
+    "type": "System",
+    "sp": 1,
+    "source": "ICE",
+    "license": "GREENHORN",
+    "license_level": 3,
+    "effect": "While this System is installed on your Mech, you can benefit from the PARASITE WEED pilot gear.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-401b<br/><br/>IT'S A SHAME THAT THESE DESIGNATIONS CAN'T BE CHANGED LATER.<br/>'STABILIZED ARTIFACT: PARASITE WEED' DOESN'T INSPIRE MUCH CONFIDENCE.<br/>I MEAN, IT'S AN ACCURATE NAME IN A SENSE, BUT IT'S MUTUALISTIC WITH THE PILOT.<br/>HELL, IT'S SO WEAK THAT WE EVEN HAVE TO INSTALL A SYSTEM ON THE MECH TO KEEP IT FROM JUST DYING OUTRIGHT ON THE HOST'S BODY.<br/>THE NAME MAKES IT SOUND LIKE A GODDAMN HORROR MOVIE.</i>"
+  },
+  {
     "id": "ice_wavesync",
     "name": "SA 0-919 'WAVESYNC'",
     "type": "System",
@@ -1116,7 +1255,7 @@
       {
         "activation": "Invade",
         "name": "DROPSY",
-        "detail": "Until the end of your target's next turn, they take 1 AP Energy damage each time they gain Heat, including the Heat they gained from this Invade action."
+        "detail": "Until the end of your target's next turn, they take 1 AP Energy damage each time they gain Heat (regardless of the amount of Heat they gained), including the Heat they gained from this Invade action."
       }
     ],
     "tags": [
@@ -1180,17 +1319,12 @@
     "source": "ICE",
     "license": "ANGEL",
     "license_level": 3,
-    "effect": "A character may only be affected by a single instance of the effects of this system at a time.",
+    "effect": "Each character may only be affected by this system 1/scene.",
     "actions": [
       {
         "activation": "Invade",
         "name": "SPEAR OF DESTINY",
-        "detail": "Choose a System, Tech Action, or Weapon that your target used on their previous turn. They may not activate that System, take that Tech Action, or attack with that weapon until the end of their next turn."
-      },
-      {
-        "activation": "Invade",
-        "name": "INDIRECT LANCE",
-        "detail": "Choose a System, Tech Action, or Weapon that your target used on their previous turn. Any checks or attacks that they make with the chosen System, Tech Action, or Weapon have +2 Difficulty until the end of their next turn."
+        "detail": "Your target gains 4 Heat. If this causes them to Overheat, they do not make their Overheat roll as normal, they are instead automatically STUNNED until the end of their next turn. STUNNED caused by this effect cannot be cleared by other means." 
       }
     ],
     "tags": [

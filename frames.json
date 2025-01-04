@@ -447,7 +447,7 @@
       "hp": 4,
       "evasion": 6,
       "edef": 12,
-      "heatcap": 4,
+      "heatcap": 6,
       "repcap": 2,
       "sensor_range": 20,
       "tech_attack": 2,
@@ -459,6 +459,19 @@
       {
         "name": "DISPLAYING MESSAGE FROM ADMINISTRATOR... ->",
         "description": "<code class='horus'>DON'T LET NOVA FOOL YOU. YOU ARE NOT IN CONTROL.</code>"
+      },
+      {
+        "name": "Subjective Selection",
+        "description": "Gain the Subjective Selection reaction.",
+        "actions": [
+          {
+            "activation": "Reaction",
+            "name": "Subjective Selection",
+            "trigger": "The Philosopher is affected by an enemy's action.",
+            "detail": "Time is altered to a more favorable timeline, negating all effects of that action (including damage, heat, conditions, or forced movement) that would apply to the Philosopher. The Philosopher may take this action even if it would not normally be able to, such as if it is Stunned.",
+            "frequency": "2/Scene"
+          }
+        ]
       },
       {
         "name": "Slow",
@@ -621,7 +634,7 @@
     ],
     "core_system": {
       "name": "\"COVENANT\" Direct Service Engine",
-      "description": "<i>Congratulations on your subscription to Lumiera Corporation's COVENANT Direct Service support system! An engineer has been assigned to your account and is on standby to provide personal support by blinking light weapons directly into your hands. Our system engineer is trained to ensure that you always have access to exactly what you need, right when you need it,as long as your subscription is maintained.</i>",
+      "description": "<i>Congratulations on your subscription to Lumiera Corporation's COVENANT Direct Service support system! An engineer has been assigned to your account and is on standby to provide personal support by blinking light weapons directly into your hands. Our system engineer is trained to ensure that you always have access to exactly what you need, right when you need it, as long as your subscription is maintained.</i>",
       "passive_name": "Divine Armory",
       "passive_effect": "At the start of each Scene, gain two Armory dice: 2d6, starting on random values, which are used to attack with the Divine Armory. All Armory Dice are lost at the end of each scene.<br/>1/Round when you target a character with a Thrown attack, you may open the Divine Armory to make an attack with it against the same target as a free action. This is the only way you may attack with the Divine Armory.",
       "active_name": "Seven Seals",
@@ -707,7 +720,7 @@
     "traits": [
       {
         "name": "Organic",
-        "description": "The Greenhorn is made entirely of organic matter and possesses no computer controls natively. While systems can be adapted to use on it, it has the Biological tag and cannot take Tech Actions.<br/><br/><i>Characters with the Biological tag have Immunity to all tech actions (even beneficial ones) except Lock On and Scan, although they can be targeted by electronic systems such as drones and smart weapons. If a Biological character would take heat, they instead take an equivalent amount of energy damage. Since the Greenhorn cannot gain Heat, it cannot Overheat and has no Stress.</i>"
+        "description": "The Greenhorn is made entirely of organic matter and possesses no computer controls natively. While systems can be adapted to use on it, it has the Biological tag, cannot take Tech Actions, and cannot install systems with the AI tag.<br/><br/><i>Characters with the Biological tag have Immunity to all tech actions (even beneficial ones) except Lock On and Scan, although they can be targeted by electronic systems such as drones and smart weapons. If a Biological character would take heat, they instead take an equivalent amount of energy damage. Since the Greenhorn cannot gain Heat, it cannot Overheat and has no Stress.</i>"
       },
       {
         "name": "Rampant Growth",
@@ -716,7 +729,7 @@
     ],
     "core_system": {
       "name": "Verdant Canopy",
-      "description": "It's alive, it grows. It can produce vines that connect to systems as though they were wires. It runs on water, sunlight, and and whatever you can use as fertilizer. Honestly, it's much easier to maintain than a traditional mech, in terms of the amount of resources you have to put into it, but it does require some botanical knowledge that, frankly, doesn't overlap well with the skill set of most mech pilots. We're drafting up a manual to help potential pilots understand what they need to do to keep their Greenhorn alive, but frankly, I don't know how popular it'll be, as a design. Between the extra maintenance and the... general dislike of all things Paracausal, I think this is going to be a hard sell. At least it's never shown any signs of like... spontaneously developing a hostile consciousness. We have that on HORUS, at least.",
+      "description": "It's alive, it grows. It can produce vines that connect to systems as though they were wires. It runs on water, sunlight, and and whatever you can use as fertilizer. Honestly, it's much easier to maintain than a traditional mech, in terms of the amount of resources you have to put into it, but it does require some botanical knowledge that, frankly, doesn't overlap well with the skill set of most mech pilots. We're drafting up a manual to help potential pilots understand what they need to do to keep their Greenhorn alive, but frankly, I don't know how popular it'll be, as a design. Between the extra maintenance and the... general dislike of all things paracausal, I think this is going to be a hard sell. At least it's never shown any signs of like... spontaneously developing a hostile consciousness. We have that on HORUS, at least.",
       "passive_name": "Leafcoat",
       "passive_effect": "The Greenhorn can alter its appearance during a Full Repair or rest to better match the flora of a battlefield, allowing it to blend in with the natural environment. The Greenhorn can Hide on a turn where it has not moved, even if it would not normally be able to, though it loses the Hidden status upon moving. In particularly barren environments, like deserts, tundras, or the interior of ships or buildings, this ability has no effect.",
       "active_name": "Ingrain",
@@ -765,7 +778,7 @@
       "name": "Soulsync",
       "description": "<i>\"The longer someone pilots this thing, the more the delusions start to set in. Make sure to take <u>long</u> breaks. Don't stay in it too long. If the pilot says that damage to the Angel is hurting them, <u>get them out of it immediately.</u><br/><br/>Use any means necessary.\"</i>",
       "passive_name": "Transubstantiation",
-      "passive_effect": "The Angel cannot be piloted normally. Instead, the pilot must transfer their consciousness into the mech, leaving their body catatonic at its current location. The pilot can transfer their consciousness between their body and the Angel as long as they remain in physical contact and the Angel is still functional.<br/><br/>While transferred to the Angel, the pilot is treated as an NHP, following all normal rules for NHPs, including the ability to Cascade. However, if the pilot is cascading, the GM never gains control of them: whenever they would take an action under the GM's control, the player takes that action instead.<br/><br/>The pilot's body can be killed while they piloting the Angel. If this occurs, they become trapped as an NHP, and must install the <i>Severed Consciousness</i> system on any other frames they use.",
+      "passive_effect": "The Angel cannot be piloted normally. Instead, the pilot must transfer their consciousness into the mech, leaving their body catatonic at its current location. The pilot can transfer their consciousness between their body and the Angel as long as they remain in physical contact and the Angel is still functional.<br/><br/>While transferred to the Angel, the pilot is treated as an NHP, following all normal rules for NHPs, including the ability to Cascade. However, if the pilot is cascading, the GM never gains control of them: whenever they would take an action under the GM's control, the player takes that action instead.<br/><br/>The pilot's body can be killed while they are piloting the Angel. If this occurs, they become trapped as an NHP and attempts to perform a subjectivity override onto a clone will fail: they must install the <i>Severed Consciousness</i> system on any other frames they use.",
       "passive_actions": [
         {
           "activation": "Reaction",

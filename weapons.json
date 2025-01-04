@@ -1390,6 +1390,67 @@
     "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-203<br/><br/>WE GAVE THE CODE 'REVEALING LIGHT' TO THIS ARTIFACT, SINCE IT COULD INTERACT WITH OBJECTS THAT IT HAD NO CLEAR LINE OF SIGHT TO.<br/>'THROWING' IT FIRES OFF A LANCE OF LIGHT THAT CAN CAUSE SERIOUS BURNS IN HUMAN TISSUE AND DAMAGE NHPS.<br/>HAS NO EFFECT ON STATIC OBJECTS.<br/>SOMEHOW MECHS ARE DIFFERENT?</i>"
   },
   {
+    "id": "mw_ice_leafblade",
+    "name": "SA 1-717 'BLADE OF GRASS'",
+    "mount": "Main",
+    "source": "ICE",
+    "license": "GREENHORN",
+    "license_level": 2,
+    "type": "Melee",
+    "profiles": [
+      {
+        "name": "Honed",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_accurate",
+            "val": 2
+          },
+          {
+            "id": "tg_reliable",
+            "val": 2
+          }
+        ],
+        "on_crit": "You deal 1d6 bonus Kinetic damage to your target and all damage from your attack becomes Armor-Piercing, but this weapon changes to its Torn profile."
+      },
+      {
+        "name": "Torn",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": 1
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "actions": [
+          {
+            "activation": "Full",
+            "name": "Whetting Growth",
+            "detail": "Gain 5 Heat. Rebloom the Blade of Grass, returning it to its Honed profile."
+          }
+        ]
+      }
+    ],
+    "effect": "This weapon begins in its Honed profile after a Full Repair or a Rest.",
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-717<br/><br/>WHO WOULD HAVE KNOWN THAT A SWORD MADE OF PLANT MATERIAL WOULD BE SO SHARP?<br/>IT CLEAVES THROUGH MECH ARMOR LIKE BUTTER.<br/>IT IS A PLANT, THOUGH.<br/>DON'T BE TOO HARD ON IT IF IT BREAKS.</i>"
+  },
+  {
     "id": "mw_ice_woodhammer",
     "name": "SA 2-635 'WOOD HAMMER'",
     "mount": "Heavy",

@@ -25,24 +25,9 @@
     "id": "lumico_bespoke_accessories",
     "name": "BESPOKE ACCESSORIES",
     "source": "LUMICO",
-    "description": "While Lumiera Corporation does not produce modifications based on other manufacturer's specs on masse, at a valued customer's request they will produce bespoke, disposable accessories that can replicate the effects of any other manufacturer's products, which they deliver directly to the battlefield via a private blinkspace tunnel.",
-    "effect": "Gain the <i>Attach Accessories</i> protocol, which has 3 uses. You regain 1 use when you rest, and all uses are regained during a Full Repair.",
-    "actions": [
-      {
-        "activation": "Protocol",
-        "name": "Attach Accessories",
-        "detail": "Choose a weapon installed on your Mech and a single weapon mod that could be applied to it, even if you do not possess the license for that mod. For the rest of the turn, treat that weapon as though that mod was applied to it. If the chosen mod would cost 3 or more SP to install, it consumes 2 uses of Attach Accessories when chosen.<br><i>If the chosen mod has limited uses, you may always use it as though it still had charges remaining. If the chosen mod has multiple states (e.g. the Caliban's Supermassive Mod), the mod can be activated in the state of your choice.</i>"
-      }
-    ],
-    "counters": [
-      {
-        "id": "ctr_bespoke",
-        "name": "Attach Accessories",
-        "default_value": 3,
-        "min": 0,
-        "max": 3
-      }
-    ]
+    "description": "While Lumiera Corporation does not produce aftermarket weapon attachments on masse, at a valued customer's request they will produce bespoke, disposable accessories that can replicate the effects of any other manufacturer's products, which they deliver directly to the battlefield via a private blinkspace tunnel.",
+    "effect": "Gain the Acessory Case system.",
+    "integrated": ["lumico_accessory_case"]
   },
   {
     "id": "lumico_pulse_battery",
