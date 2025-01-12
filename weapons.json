@@ -248,11 +248,11 @@
     "profiles": [
       {
         "name": "Guillotine",
-        "on_hit": "The target must attempt a Hull save to avoid being knocked Prone.",
+        "on_hit": "The targets must attempt a Hull Save to avoid being knocked Prone.",
         "damage": [
           {
             "type": "Kinetic",
-            "val": "1d6+2"
+            "val": "2d6+2"
           }
         ],
         "range": [
@@ -264,17 +264,16 @@
         "tags": [
           {
             "id": "tg_reliable",
-            "val": 2
+            "val": 3
           }
         ]
       },
       {
         "name": "Full Moon",
-        "on_hit": "The target must attempt a Hull save to avoid being knocked Prone.",
         "damage": [
           {
             "type": "Kinetic",
-            "val": "1d6+2"
+            "val": "2d6+2"
           }
         ],
         "range": [
@@ -287,16 +286,20 @@
           {
             "id": "tg_knockback",
             "val": 2
+          },
+          {
+            "id": "tg_reliable",
+            "val": 3
           }
         ]
       },
       {
         "name": "Slayer",
-        "on_hit": "The target must attempt a Hull save to avoid being knocked Prone.",
+        "on_hit": "Damage dealt by this weapon ignores Resistance.",
         "damage": [
           {
             "type": "Kinetic",
-            "val": "1d6+2"
+            "val": "2d6+2"
           }
         ],
         "range": [
@@ -311,13 +314,12 @@
           },
           {
             "id": "tg_reliable",
-            "val": 2
+            "val": 3
           }
         ]
       }
     ],
-    "effect": "This weapon is so large that it requires a mount to brace it, but may be used as though it were a Heavy weapon, instead of Superheavy.",
-    "on_attack": "Choose which profile you will attack with. After each attack with this weapon, you gain a cumulative +1 Difficulty on all Attacks and Saves you make until the start of your next turn.",
+    "effect": "This weapon is so large that it requires a mount to brace it and may be mounted on Superheavy mounts, but it is otherwise treated as a Heavy Melee weapon, instead of a Superheavy Melee weapon.<br/><br/>Before each attack with this weapon, you may choose any of its profiles to attack with. After each attack with this weapon, you gain a cumulative +1 Difficulty on all Attacks and Saves you make until the start of your next turn.",
     "description": "This sword, with its thick blade, is one of the largest of its kind. Highly destructive, if intolerably heavy, it is little more than a heap of raw iron."
   },
   {
@@ -1520,7 +1522,7 @@
     "damage": [
       {
         "type": "Kinetic",
-        "val": "2d6+4"
+        "val": "2d6"
       }
     ],
     "tags": [
