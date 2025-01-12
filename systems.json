@@ -80,7 +80,7 @@
   {
     "id": "asg_lockdown",
     "name": "Asgard Lockdown System",
-    "type": "System",
+    "type": "Drone",
     "sp": 2,
     "tags": [
       {
@@ -226,7 +226,7 @@
   {
     "id": "asg_command_system",
     "name": "HEIMDALL Nanobot Command System",
-    "type": "System",
+    "type": "Tech",
     "sp": 4,
     "tags": [
       {
@@ -331,7 +331,7 @@
   {
     "id": "asg_r1_concussion",
     "name": "R1 Concussion Charges",
-    "type": "System",
+    "type": "Deployable",
     "sp": 2,
     "source": "ASG",
     "license": "JORMUNGANDR",
@@ -384,7 +384,7 @@
   {
     "id": "asg_laser_scan_grenades",
     "name": "Full Spectrum Hunt/Kill System",
-    "type": "System",
+    "type": "Drone",
     "sp": 3,
     "source": "ASG",
     "license": "JORMUNGANDR",
@@ -573,7 +573,7 @@
   {
     "id": "asg_skadi_nhp",
     "name": "SKADI-Class NHP",
-    "type": "System",
+    "type": "AI",
     "sp": 3,
     "source": "ASG",
     "license": "MUNINN",
@@ -660,7 +660,7 @@
   {
     "id": "asg_dragonfly",
     "name": "DRAGONFLY Atmospheric Repositioning System",
-    "type": "System",
+    "type": "Flight System",
     "sp": 3,
     "source": "ASG",
     "license": "FAFNIR",
@@ -867,7 +867,7 @@
   {
     "id": "lumico_black_hole",
     "name": "Nanoscopic Black Hole Projector",
-    "type": "System",
+    "type": "Tech",
     "sp": 3,
     "source": "LUMICO",
     "license": "PHILOSOPHER",
@@ -947,7 +947,7 @@
   {
     "id": "lumico_lamplighter",
     "name": "Lamplight Chemical Charges",
-    "type": "System",
+    "type": "Deployable",
     "sp": 2,
     "source": "LUMICO",
     "license": "TRAILBLAZER",
@@ -1053,7 +1053,7 @@
   {
     "id": "ice_regen_brake",
     "name": "Regenerative Heat Shield",
-    "type": "System",
+    "type": "Shield",
     "sp": 3,
     "source": "ICE",
     "license": "ICEBREAKER",
@@ -1075,7 +1075,7 @@
   {
     "id": "ice_baba",
     "name": "BABA-Class Comp/Con",
-    "type": "System",
+    "type": "Drone",
     "sp": 4,
     "source": "ICE",
     "license": "ICEBREAKER",
@@ -1096,7 +1096,7 @@
         "type": "Drone",
         "name": "BABA",
         "activation": "Quick",
-        "detail": "BABA may only be deployed to or recalled from adjacent spaces.<br/><br/>At the start of each turn while deployed, allied or hostile, BABA will determine the first procedure below whose conditions are met, then move 1 space in an attempt to follow that procedure.<ol><li>BOOM: If BABA is prioritizing BOOM or has 5 or less HP, it will move towards the nearest hostile character and explode upon reaching a an adjacent space to its target, dealing 2d6 AP Explosive damage to and knocking Prone all characters within Burst 1, destroying itself in the process.</li><li>HIDE: If BABA took damage during the previous turn, it will become Invisible until it moves into a space adjacent to another character. It will not move during this turn.</li><li>POWER: If any allied Mech is Stunned, BABA will move toward the nearest Stunned allied Mech and clear the condition upon reaching an adjacent space.</li><li>PET: If an allied Mech is missing HP and has no Overshield, BABA will move toward the nearest allied Mech that meets that criteria and grant them 3 Overshield upon reaching an allied space.</li><li>PUSH: If BABA has not attempted to Ram this Round, BABA will move toward the nearest hostile character and attempt to Ram them, gaining your Grit as a bonus to its roll. It may only attempt to Ram a target 1/Round.</li><li>SLEEP: If BABA has no other priorities, it will remain in place and do nothing.</li></ol>",
+        "detail": "BABA may only be deployed to or recalled from adjacent spaces.<br/><br/>At the start of each allied turn while it is deployed, BABA will determine the first procedure below whose conditions are met, then move 1 space in an attempt to follow that procedure.<ol><li>BOOM: If BABA is prioritizing BOOM or has 5 or less HP, it will move towards the nearest hostile character and explode upon reaching a an adjacent space to its target, dealing 2d6 AP Explosive damage to and knocking Prone all characters within Burst 1, destroying itself in the process.</li><li>HIDE: If BABA took damage during the previous turn, it will become Invisible until it moves into a space adjacent to another character. It will not move during this turn.</li><li>POWER: If any allied Mech is Stunned, BABA will move toward the nearest Stunned allied Mech and clear the condition upon reaching an adjacent space.</li><li>PET: If an allied Mech is missing HP and has no Overshield, BABA will move toward the nearest allied Mech that meets that criteria and grant them 3 Overshield upon reaching an allied space.</li><li>PUSH: If BABA has not attempted to Ram this Round, BABA will move toward the nearest hostile character and attempt to Ram them, gaining your Grit as a bonus to its roll. It may only attempt to Ram a target 1/Round.</li><li>SLEEP: If BABA has no other priorities, it will remain in place and do nothing.</li></ol>",
         "size": 0.5,
         "hp": "20",
         "actions": [
@@ -1230,7 +1230,7 @@
   {
     "id": "ice_wavesync",
     "name": "SA 0-919 'WAVESYNC'",
-    "type": "System",
+    "type": "Tech",
     "sp": 1,
     "source": "ICE",
     "license": "ANGEL",
@@ -1246,7 +1246,7 @@
   {
     "id": "ice_dropsy",
     "name": "SA 0-238 'DROPSY'",
-    "type": "System",
+    "type": "Tech",
     "sp": 2,
     "source": "ICE",
     "license": "ANGEL",
@@ -1295,7 +1295,7 @@
   {
     "id": "ice_angel_special",
     "name": "Severed Consciousness",
-    "type": "System",
+    "type": "AI",
     "sp": 0,
     "source": "ICE",
     "license": "ANGEL",
@@ -1314,7 +1314,7 @@
   {
     "id": "ice_destinyfragment",
     "name": "SA 2-176 'DESTINY FRAGMENT'",
-    "type": "System",
+    "type": "Tech",
     "sp": 3,
     "source": "ICE",
     "license": "ANGEL",
@@ -1324,7 +1324,7 @@
       {
         "activation": "Invade",
         "name": "SPEAR OF DESTINY",
-        "detail": "Your target gains 4 Heat. If this causes them to Overheat, they do not make their Overheat roll as normal, they are instead automatically STUNNED until the end of their next turn. STUNNED caused by this effect cannot be cleared by other means." 
+        "detail": "Your target gains 2 Heat. If the heat from the successful Invade or this Invade option causes your target to Overheat: the target does not make their Overheat roll as normal. Instead, after clearing Heat, they are Stunned until the end of their next turn. Stun caused by this effect cannot be cleared by other means." 
       }
     ],
     "tags": [

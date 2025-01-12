@@ -245,27 +245,80 @@
     "license": "FENRIR",
     "license_level": 3,
     "type": "Melee",
-    "range": [
+    "profiles": [
       {
-        "type": "Line",
-        "val": 3
+        "name": "Guillotine",
+        "on_hit": "The target must attempt a Hull save to avoid being knocked Prone.",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Line",
+            "val": 3
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_reliable",
+            "val": 2
+          }
+        ]
+      },
+      {
+        "name": "Full Moon",
+        "on_hit": "The target must attempt a Hull save to avoid being knocked Prone.",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Burst",
+            "val": 1
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_knockback",
+            "val": 2
+          }
+        ]
+      },
+      {
+        "name": "Slayer",
+        "on_hit": "The target must attempt a Hull save to avoid being knocked Prone.",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ap"
+          },
+          {
+            "id": "tg_reliable",
+            "val": 2
+          }
+        ]
       }
     ],
-    "damage": [
-      {
-        "type": "Kinetic",
-        "val": "3d6"
-      }
-    ],
-    "effect": "After each attack with this weapon, you suffer +1 Difficulty on all attacks, saves, and skill checks until the start of your next turn, even if the attack was rerolled.",
-    "on_attack": "This weapon is so large that it ignores Invisibility and Resistance to Kinetic damage.",
-    "description": "This sword, with its thick blade, is one of the largest of its kind. Highly destructive, if intolerably heavy, it is little more than a heap of raw iron.",
-    "tags": [
-      {
-        "id": "tg_reliable",
-        "val": "4"
-      }
-    ]
+    "effect": "This weapon is so large that it requires a mount to brace it, but may be used as though it were a Heavy weapon, instead of Superheavy.",
+    "on_attack": "Choose which profile you will attack with. After each attack with this weapon, you gain a cumulative +1 Difficulty on all Attacks and Saves you make until the start of your next turn.",
+    "description": "This sword, with its thick blade, is one of the largest of its kind. Highly destructive, if intolerably heavy, it is little more than a heap of raw iron."
   },
   {
     "id": "mw_asg_injectionblade",
@@ -358,7 +411,7 @@
         "val": "4"
       }
     ],
-    "on_attack": "You may choose to launch a grenade from another System instead of this weapon's typical ammunition. If you do, expend a charge from system with the Grenade tag instead of this weapon.",
+    "on_attack": "You may choose to launch a grenade from another System instead of this weapon's typical ammunition. If you do, expend a charge from a system with the Grenade tag instead of this weapon.",
     "on_hit": "If you chose to fire a grenade from another system, this weapon deals no Explosive damage, but the chosen Grenade's effects trigger at the target's location. The target of the attack automatically fails any saves associated with the Grenade's detonation. Other affected characters still attempt saves as normal.",
     "description": "ASGARD's Hymir-model grenade launcher was adapted to fire most types of mass produced contact charge through the use of a large container that acts somewhat like a sabot. While the flexibility this provides is praiseworthy, the actual projectiles don't fly with any particular grace, limiting their effective range compared to the capabilities of similar launchers."
   },
@@ -1000,30 +1053,30 @@
     "range": [
       {
         "type": "Threat",
-        "val": 1
+        "val": 3
       }
     ],
     "damage": [
       {
         "type": "Kinetic",
-        "val": 1
+        "val": 3
       }
     ],
     "tags": [
       {
         "id": "tg_thrown",
-        "val": 1
+        "val": 3
       },
       {
         "id": "tg_reliable",
-        "val": 1
+        "val": 3
       },
       {
         "id": "tg_ap"
       }
     ],
     "effect": "You may only make Thrown attacks with this weapon. This weapon cannot be automatically retrieved or have its range increased through the effect of frame traits, talents, or systems, and cannot have mods applied to it.",
-    "on_attack": "Double this weapon's damage, threat, Reliable rating, and Thrown rating until the end of the scene.",
+    "on_attack": "After your attack resolves, increase this weapon's damage, threat, Reliable rating, and Thrown rating by 3 until the end of the scene.",
     "description": "An atlas stone is an immense and weighty sphere, used by humans to demonstrate their strength beyond normal limits. This weapon is such a stone, a sphere the size of a human being made of hard rock. Supposedly, it was designed to strain a mech's computers and pneumatics to their limits, and to ignite the 'spirit of defiance' within the machine. While there is no scientific evidence for this phenomenon, almost all NHPs introduced to the atlas stone have displayed an unusual degree of hatred and respect for this otherwise innocuous object."
   },
   {
@@ -1698,7 +1751,7 @@
       }
     ],
     "effect": "This weapon may only be used to attack as a part of a Reaction.<br/>If a Mech or Vehicle is destroyed due to damage from this weapon, the Pilot or Crew always survive the Mech or Vehicle's destruction. Human targets take no damage from this weapon and are Jammed instead.",
-    "on_crit": "This weapon deals 3 extra Burn and its Energy damage is maximized.",
+    "on_crit": "This weapon deals 2 extra Burn and its Energy damage is maximized.",
     "description": "<i>Deep calls to deep in the roar of your waterfalls; all your waves and breakers have swept over me.</i>"
   }
 ]
