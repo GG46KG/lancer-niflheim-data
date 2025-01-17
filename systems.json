@@ -444,7 +444,7 @@
     "id": "asg_martial_doctrine_3",
     "name": "Martial Doctrine III",
     "type": "System",
-    "sp": 4,
+    "sp": 3,
     "source": "ASG",
     "license": "DRAUGR",
     "license_level": 3,
@@ -458,7 +458,7 @@
       {
         "name": "Martial Stance: Core Ripper",
         "activation": "Protocol",
-        "detail": "Gain 2 heat. Until the end of the turn, if you damage a target you are Grappling with an Improvised Attack, the target must succeed on a Hull Save or become Exposed. This can only target a character 1/Scene.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
+        "detail": "Gain 2 heat. Until the end of the turn, if you damage a target you are Grappling with an Improvised Attack, the target must attempt a Hull Save. If they fail, you treat that target as Exposed until the end of the turn. This can only target a character 1/Scene.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
       },
       {
         "name": "Combo: Suplex",
@@ -565,9 +565,32 @@
           }
         ],
         "detail": "Launch a barrage of pyrokins, dealing 2 Explosive and 1 Heat damage to all characters in a cone."
+      },
+      {
+        "activation": "Reaction",
+        "name": "Reactive Pyrokins",
+        "frequency": "1/turn",
+        "trigger": "A character makes a melee attack against you.",
+        "range": [
+          {
+            "type": "Cone",
+            "val": 3
+          }
+        ],
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": 2
+          },
+          {
+            "type": "Heat",
+            "val": 1
+          }
+        ],
+        "detail": "After the attack resolves, hit or miss, launch a barrage of pyrokins, dealing 2 Explosive and 1 Heat damage to all characters in a cone. This cone must target the character who attacked you."
       }
     ],
-    "effect": "Whenever you take Structure or Stress damage, you regain up to 2 uses of this system.",
+    "effect": "Whenever you take Structure or Stress damage, you regain up to 2 uses of this system. ",
     "description": "Pyrokins themselves are a type of sharp disk-like metal projectile coated in a basic explosive powder. The pyrokin launcher contains a basic forge manned by tiny microbots, akin to a nexus, that can process damaged scrap severed from a mech's hull into more pyrokins during the middle of a battle."
   },
   {
