@@ -421,11 +421,12 @@
       }
     ],
     "core_system": {
-      "name": "\"CAPTIVE AUDIENCE\" Theory Engine",
-      "description": "<i>In this moment, an evil man stands above the beaten and broken hero, mighty and seemingly invulnerable... but the Play has entered its Third Act. He does not know it, but in this—his moment of greatest triumph—he has already lost.</i>",
+      "name": "\"CURTAIN CALL\" Weapons System",
+      "description": "The body of the Virtuoso conceals a massive integrated cannon that can pierce through most armor, its parts hidden within the right arm of the mech. Deploying this cannon converts the other limbs of the mech into stabilizers that lock it in place while it aims, providing incredible accuracy and power. This, of course, comes at the expense of leaving the Virtuoso vulnerable to enemy fire.",
       "active_name": "Third Act",
-      "active_effect": "Delivers a single-use payload of code so destructive that it shatters a Mech's defenses. Gain an Act die, 1d6 starting at 3. Choose a character within Sensors: their Armor, Evasion and E-Defence are reduced to 0. 1/Round, at the end of each of their turns, reduce the value of the Act die by 1. When the Act die's value would reduced to 0, the effect ends.",
-      "activation": "Full"
+      "active_effect": "Activates the integrated weapon system, converting the Virtuoso into a massive cannon emplacement. Gain an Act die, 1d6 starting at 3. While you have the Act die: you are Immobilized, and you cannot attack with any weapon except the Third Act integrated weapon. Each attack with the Third Act reduces the Act die by 1, and the final attack is exceptionally strong. If you are moved from your location by any effect while you possess the Act Die, the Act die is discarded. You may also discard the Act die as a free action.",
+      "activation": "Protocol",
+      "integrated": ["mw_virtuoso_integrated"]
     },
     "data_type": "frame",
     "image_url": "https://lh3.googleusercontent.com/yZN_o-F39Y8M_J5hPrSL9Ylz9KHmhpWdi972JtEOE-2GwDHKSZH5ExykxnYjkF5JT8I=w2400"

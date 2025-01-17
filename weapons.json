@@ -56,7 +56,7 @@
             "detail": "Activate this weapon's Recon mode."
           }
         ],
-        "effect": "Your speed is halved while in this mode.<br>Attacks made against targets affected by Lock On deal 1 bonus Explosive damage and are Armor Piercing and Accurate.",
+        "effect": "Your speed is halved while in this mode.<br>Attacks made against targets affected by Lock On deal 1 bonus Explosive damage and are Armor Piercing and Accurate, even if Lock On is not consumed.",
         "tags": [
           {
             "id": "tg_ordnance"
@@ -777,6 +777,41 @@
     ],
     "effect": "You may use this weapon with Skirmish and Overwatch in its Heavy Lance and Revolver Cannon profiles. When you Barrage with this weapon, you may make a single attack with it in its Exhaust Blast profile or make two attacks with it in its other profiles. You may choose the same profile twice when attacking this way.",
     "description": "The Drachenlanze weapon system is the epitome of ASGARD design: a massive steel lance fitted with an explosive, revolving-cylinder cannon and a burst flamethrower. By other manufacturer's standards, it is not complex. By ASGARD's standards, it is a joy to use and a force to be reckoned with."
+  },
+  {
+    "id": "mw_virtuoso_integrated",
+    "name": "THIRD ACT",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "range": [
+      {
+        "type": "Line",
+        "val": 30
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+3"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_reliable",
+        "val": 4
+      },
+      {
+        "id": "tg_luxury",
+        "val": 4
+      }
+    ],
+    "on_attack": "If the Act Die is 1, this attack becomes a guaranteed Critical Hit on any enemies hit.",
+    "on_crit": "The attack is AP, bypasses Overshield, and deals 3 bonus Kinetic damage.",
+    "effect": "You may only attack with this weapon while you possess the Act Die granted by the Virtuoso's Core Power, and you may only attack with this weapon 1/turn. After resolving an attack with this weapon, reduce the Act Die by 1. If the Act Die is 1, you discard it instead.",
+    "description": "<i>The curtain rises on your final act.</i>"
   },
   {
     "id": "mw_lumico_quint_rifle",

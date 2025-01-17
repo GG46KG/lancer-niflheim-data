@@ -110,7 +110,7 @@
       {
         "name": "Eat Hot and Spicy Horseradish Roast Beef",
         "activation": "Full",
-        "detail": "You fueled on by the bitter spice and get +10 on one skill check not associated with a Downtime action. This only lasts for a few minutes immediately after eating the sandwich.",
+        "detail": "You are fueled on by the bitter spice and get +10 on one skill check not associated with a Downtime action. This only lasts for a few minutes immediately after eating the sandwich.",
         "pilot": true
       },
       {
