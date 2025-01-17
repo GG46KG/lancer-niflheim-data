@@ -792,7 +792,7 @@
     "damage": [
       {
         "type": "Kinetic",
-        "val": "1d6+3"
+        "val": "2d6+3"
       }
     ],
     "tags": [
@@ -808,9 +808,9 @@
         "val": 4
       }
     ],
-    "on_attack": "If the Act Die is 1, this attack becomes a guaranteed Critical Hit on any enemies hit.",
-    "on_crit": "The attack is AP, bypasses Overshield, and deals 3 bonus Kinetic damage.",
-    "effect": "You may only attack with this weapon while you possess the Act Die granted by the Virtuoso's Core Power, and you may only attack with this weapon 1/turn. After resolving an attack with this weapon, reduce the Act Die by 1. If the Act Die is 1, you discard it instead.",
+    "on_attack": "If the Act die is 1, this attack becomes a guaranteed Critical Hit on any enemies hit.",
+    "on_crit": "The attack is AP and bypasses Overshield. If the Act die is 1, affected targets must attempt a Hull save or be Stunned until the end of their next turn.",
+    "effect": "You may only attack with this weapon while you possess the Act die granted by the Virtuoso's Core Power, and you may only attack with this weapon 1/turn. After resolving an attack with this weapon, reduce the Act die by 1. If the Act die is 1, you discard it instead.",
     "description": "<i>The curtain rises on your final act.</i>"
   },
   {
