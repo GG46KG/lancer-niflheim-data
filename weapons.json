@@ -1569,6 +1569,34 @@
     "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-635<br/><br/>THIS THING HAS A <u>LOT</u> OF POWER BEHIND IT, ENOUGH TO REALLY ROCK A MECH'S INTERNALS.<br/>BASICALLY, IT WORKS LIKE A PILE BUNKER: A DETONATION OF ORGANIC CHEMICALS IN THE WEAPON CAUSE A BLAST THAT PROPELS THE HEAD OF THE WEAPON FORWARD, ADDING TO THE SWING FORCE THAT THE MECH PROVIDES. THIS IS REALLY DESTRUCTIVE, AND LEAVES A SLOUGHED OFF SHELL OF DEAD MATTER BEHIND. THE PILOT CAN USE IT TO BLOCK A BIT OF ENEMY FIRE WHILE THE WEAPON REGROWS.</i>"
   },
   {
+    "id": "mw_harbinger_integrated",
+    "name": "DRAIN",
+    "mount": "Heavy",
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6"
+      }
+    ],
+    "effect": "This weapon is used by OMEN to attack while it is summoned in its HAUNT form. It can choose this weapon twice when Barraging. Any heat gained from this weapon's attacks is inflicted on the Harbinger instead of OMEN.",
+    "description": "<i>RED EYES IN THE SHADOWS, BLACK CLAWS IN THE DARK</i>",
+    "tags": [
+      {
+        "id": "tg_overkill"
+      },
+      {
+        "id": "tg_ap"
+      }
+    ]
+  },
+  {
     "id": "mw_poke_integrated",
     "name": "Big Iron",
     "mount": "Jury-Rigged",

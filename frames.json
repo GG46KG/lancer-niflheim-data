@@ -107,7 +107,7 @@
     ],
     "core_system": {
       "name": "WARWOLVES",
-      "description": "The Revision Two ASG-BERSERK system is a complex network of neural jacks and chemical injectors within the Tyr Battlesuit that allows the pilot of the mech to control and communicate with it at the speed of thought, effectively allowing the pilot to control the mech in the same way as an NHP. Pilots who use the system have reported feeling a strong connection to the NHPs installed on their mech, and have more than once referred to them as their \"pack\". Medical and psychological analysis of said pilots show no significant or unexpected divergance from a typical pilot's neural patterns, and so the phenomenon is largely attributed to the eccentricity of mech pilots and the name of the frame, itself.",
+      "description": "The Revision Two ASG-BERSERK system is a complex network of neural jacks and chemical injectors within the Tyr Battlesuit that allows the pilot of the mech to control and communicate with it at the speed of thought, effectively allowing the pilot to control the mech in the same way as an NHP. Pilots who use the system have reported feeling a strong connection to the NHPs installed on their mech, and have more than once referred to them as their \"pack\". Medical and psychological analysis of said pilots show no significant or unexpected divergance from a typical pilot's neural patterns, and so the phenOMENon is largely attributed to the eccentricity of mech pilots and the name of the frame, itself.",
       "active_name": "Beasts of Slaughter",
       "active_effect": "Immediately recharge ASG-BERSERK Stimulant Injection. For the rest of the scene, whenever you attack with the Wolfstooth, the Fenrir may Overwatch your target.",
       "activation": "Protocol",
@@ -362,7 +362,7 @@
     },
     "traits": [
       {
-        "name": "Momentum",
+        "name": "MOMENtum",
         "description": "Due to the speed with which it moves, the Fafnir has limited mobility.<ul><li>When taking any movement action or reaction (such as a Boost) and when taking its standard move, the Fafnir can only move in a straight line.</li><li>The Fafnir cannot split its standard move. Once it stops during a standard move, it loses all unused movement.</li></ul>"
       },
       {
@@ -648,6 +648,61 @@
     "image_url": ""
   },
   {
+    "id": "lumico_paragon",
+    "license_level": 2,
+    "source": "LUMICO",
+    "name": "PARAGON",
+    "mechtype": ["Defender"],
+    "y_pos": 22,
+    "description": "IN PROGRESS",
+    "mounts": ["Main/Aux", "Aux/Aux"],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 9,
+      "evasion": 6,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Quest",
+        "description": "If the Paragon has not activated its core power this scene, it may move an additional 2 spaces when it Boosts and its allies can use it for soft cover."
+      },
+      {
+        "name": "Shining Armor",
+        "description": "The Paragon can disrupt certain targeting systems through the Shining Armor reaction, which it can use 1/Round.",
+        "actions": [
+          {
+            "activation": "Reaction",
+            "name": "Shining Armor",
+            "detail": "Redirect the attack or Lock On to the Paragon. You do not reduce the Bulwark die due to damage from attacks redirected in this way.",
+            "trigger": "An adjacent allied character is targeted by a Seeking attack, an attack that targets multiple characters, or receives Lock On.",
+            "frequency": "1/Round"
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "\"PLATEMAIL\" Reactive Armor",
+      "description": "Explosive reactive armor lines the outside of the Paragon's frame, covering it with hundreds of plates of metal containing rods of explosive material. When agitated by a heavy impact, these rods detonate and redirect some of the attack's force outward. The PLATEMAIL system improves upon this age-old technology by using an onboard printer to repair and recharge expended plates while deployed in an active combat scenario. Furthermore, if the situation demands, the armor plates can be jettisoned, sacrificing the Paragon's normal resilience for better agility and offensive flexibility.",
+      "passive_name": "Platemail",
+      "passive_effect": "Gain a Bulwark die, 1d6 beginning at 3. As long as you have the Bulwark die, you use its current value as your Armor, ignoring any other effects that might increase or decrease your Armor. Each time you take kinetic, energy, or explosive damage, including if the damage is reduced to 0 by your Armor, reduce the Bulwark die by 1, to a minimum of 1. Whenever you Overwatch or take the Shining Armor reaction, increase the Bulwark die by 1, to a maximum of 4.",
+      "active_name": "Sword and Shield",
+      "active_effect": "Sacrifice the Bulwark die to choose one of the following, which lasts until the end of the Scene:<ul><li><b>SWORD</b>: Your Armor is reduced to 0, but your Speed is increased by 3, your installed weapons gain +1 Threat, and you deal 1 bonus Kinetic damage when you land any weapon attack.</li><li><b>SHIELD</b>: You are permanently Slowed and you have +1 Difficulty on attacks made on your turn, but your Armor is increased to 4. Any attacks made against allied characters adjacent to you gain +1 Difficulty and deal 1 less damage to their target, reduced before resistances.</li></ul><br/>This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.",
+      "activation": "Quick"
+    },
+    "data_type": "frame"
+  },
+  {
     "id": "ice_icebreaker",
     "license_level": 2,
     "source": "ICE",
@@ -692,7 +747,6 @@
     "data_type": "frame",
     "image_url": ""
   },
-  
   {
     "id": "ice_greenhorn",
     "license_level": 2,
@@ -792,6 +846,140 @@
       "active_name": "Apotheosis",
       "active_effect": "All NHPs installed on the Angel, including the pilot, begin to cascade, temporarily collecting their minds into a single being. Until this cascade ends or combat ends, all NHPs installed on the Angel benefit from the protection normally offered to the pilot: whenever they would take an action under the GM's control, the player takes that action instead. Furthermore, all 1s rolled during a Reality Meltdown check become a 2 instead.",
       "activation": "Full Tech"
+    },
+    "data_type": "frame",
+    "image_url": ""
+  },
+  {
+    "id": "ice_catalyst",
+    "license_level": 2,
+    "source": "ICE",
+    "name": "CATALYST",
+    "mechtype": ["Controller"],
+    "y_pos": 15,
+    "description": "IN PROGRESS",
+    "mounts": ["Heavy", "Main", "Main"],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 4,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 3,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Deconstruction",
+        "description": "Whenever the Catalyst deals damage to terrain or an object, it deals an additional 5 AP Energy damage to its target. This can only affect a given object 1/Round, but the same piece of terrain can receive this damage multiple times in a single round."
+      },
+      {
+        "name": "Heatproofing",
+        "description": "The Catalyst's Armor also reduces Heat or Burn it receives that is not self-inflicted."
+      },
+      {
+        "name": "Danger Close",
+        "description": "The Catalyst has Immunity to damage originating from allied characters and objects deployed by allied characters."
+      }
+    ],
+    "core_system": {
+      "name": "Magma Chamber",
+      "description": "IN PROGRESS",
+      "active_name": "Eruption",
+      "active_effect": "Gain an Criticality die until the end of the scene, 1d6 beginning at 4. While you have the Criticality die:<ul><li>You are always considered to be in the Danger Zone, regardless of how much Heat you have.</li><li>1/turn, you can reroll any attack you make. You must use the new result if you do.</li><li>You have Resistance to Kinetic, Energy, and Explosive damage.</li></ul>At the end of your turn, decrease the Criticality die by 1. If the Criticality die is already 1, the Catalyst Self-Destructs immediately, instead.<br/><br/>This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used. <br/>However, the starting value of the Criticality die decreases by 1 after each use of this ability, to a minimum of 1, only resetting after completing a Full Repair.",
+      "activation": "Protocol"
+    },
+    "data_type": "frame",
+    "image_url": ""
+  },
+  {
+    "id": "ice_harbinger",
+    "license_level": 2,
+    "source": "ICE",
+    "name": "HARBINGER",
+    "mechtype": ["Striker"],
+    "y_pos": 15,
+    "description": "IN PROGRESS",
+    "mounts": ["Flex", "Flex"],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 9,
+      "edef": 5,
+      "heatcap": 0,
+      "repcap": 6,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Skulk",
+        "description": "1/Round, if the Harbinger is Hidden or Invisible, it may teleport up to half its Speed as a free action.",
+        "actions": [
+          {
+            "activation": "Free",
+            "name": "Skulk",
+            "detail": "Teleport a number of spaces up to half the Harbinger's speed. You may only take this action while Hidden or Invisible, and using this action does not remove Hidden.",
+            "frequency": "1/Round"
+          }
+        ]
+      },
+      {
+        "name": "Fade",
+        "description": "At the end of its turn, if the Harbinger hasn't made any attacks or forced any saves, it becomes Invisible until it makes an attack or forces a save."
+      }
+    ],
+    "core_system": {
+      "name": "Yukimochi's Haunting",
+      "description": "<i>So, OMEN displays certain abilities that are a bit like an unshackled NHP. Reality warping powers. It's just much less powerful than an unshackled NHP. So... what is it, exactly? The shadow of a being from a different reality? A nascent NHP of the more traditional variety? A </i>real ghost<i>? R&D doesnt know. I certainly don't know.<br/><br/>This is the kind of stuff we keep finding in the metavault. Maybe we should stop.</i>",
+      "passive_name": "Omen",
+      "passive_effect": "The Harbinger plays host to a shadowy and protean entity known as OMEN that is bound to loyally serve the pilot. This grants the Harbinger the AI tag and counts against the number of AIs that the Harbinger may install. As OMEN isn't an AI at all, at least in the conventional sense of one, it cannot enter cascade.<br/><br/>As a quick action, the pilot can summon OMEN to the battlefield, forcing it to take a corporeal form temporarily.",
+      "passive_actions": [
+        {
+          "activation": "Quick",
+          "name": "Manifestation",
+          "detail": "Choose one of the following forms for OMEN to take, summoning it to the battlefield. Each form has a unique appearance and summoning conditions. Once OMEN has been summoned, its form cannot be changed and it cannot be given control of the Harbinger until it is reabsorbed by the Harbinger as a quick action.<br/><br/><ul><li><b>WRAITH</b>: Choose a location within Burst 15. OMEN is summoned to that location in the form of a Raven (SIZE 1/2, Tags: DEPLOYABLE, IMMUNITY to all damage and effects). The area within Burst 5 of OMEN is considered to be within your Sensors. As a Protocol, you can move OMEN to any space within Sensors.</li><li><b>GRIM</b>: OMEN is summoned to that location in the form of a Hound (SIZE 1, Tags: DEPLOYABLE, IMMUNITY to all damage and effects). Any character adjacent to OMEN is considered to be within the Threat of your weapons for the purpose of Overwatch, regardless of their actual distance from you. As a Protocol, you can move OMEN up to 6 Spaces.</li><li><b>SHADE</b>: OMEN is summoned as a shadow that moves across and underneath the Harbinger. While OMEN remains summoned, you have Resistance to all damage from attacks and abilities that originate from more than 5 spaces away. As a Protocol, you may use the Harbinger's SKULK action, even if you aren't Invisible or Hidden. If you do, you cannot use SKULK again this Round.</li></ul><br/>",
+          "frequency": "1/Round"
+        },
+        {
+          "activation": "Quick",
+          "name": "Exorcise",
+          "detail": "Reabsorb OMEN into the Harbinger, ending its summoning."
+        }
+      ],
+      "active_name": "Weirding",
+      "active_effect": "OMEN is summoned to a location withing sensors in the form of a looming, beastly figure known as a HAUNT. While deployed in this way, OMEN takes its own set of actions on your turn, including a standard movement. You may summon this form of OMEN even if it is already summoned, without needing to reabsorb it first, changing it to this now form immediately at its current location. However, as long as OMEN is summoned in this way it saps the strength of the Harbinger. The Harbinger is Slowed, Exposed, and has limited actions: it can still take its standard movement and free actions as normal, but it cannot Overcharge, may only take one quick action, and cannot take full actions. If the Harbinger Braces while in this state, it is Stunned during its next turn.",
+      "deployables": [
+        {
+          "name": "HAUNT",
+          "type": "Drone",
+          "detail": "This form of OMEN takes a full turn simultaneously with the Harbinger's. It has the Biological tag, IMMUNITY to Jammed, and has a limited set of actions it can take: it can Barrage, Skirmish, Boost, Grapple, Ram, Self-Destruct, and Overwatch. It may only make attacks with the integrated DRAIN weapon.<br/><br/>If OMEN is destroyed while in this form, it is forcefully banished back to the Harbinger, ending its summoning. For the rest of the scene, the Harbinger cannot use the MANIFESTATION action.",
+          "activation": "Full",
+          "size": 2,
+          "evasion": 8,
+          "edef": 14,
+          "speed": 6,
+          "armor": 2,
+          "save": 12,
+          "sensor_range": 5,
+          "hp": "15 + {grit}"
+        }
+      ],
+      "integrated": ["mw_harbinger_integrated"],
+      "activation": "Full"
     },
     "data_type": "frame",
     "image_url": ""

@@ -1,12 +1,5 @@
 [
   {
-    "id": "asg_final_hour",
-    "name": "FINAL HOUR",
-    "source": "ASG",
-    "description": "ASGARD Mechs are powered with Thermal Engines, a proprietary technology of the company. By removing all safety restrictions on the engine, one can allow it to enter a slow meltdown that will eventually result in the mech's destruction, but potentially buy the pilot just enough to survive the final hour of a battle by forcing the engine to keep running regardless of how damaged the mech becomes.",
-    "effect": "During a short rest, you may choose to activate your Mech's <i>Final Hour.</i> Once you choose to do this, this effect cannot be ended except during a Full Repair.<br>During your <i>Final Hour</i>:<ul><li>You are considered to be in the Danger Zone at all times, regardless of your current Heat.</li><li>Reduce your Mech's Structure to 1. For each Structure lost this way, regain 1 Stress (minimum of 1). This can exceed your Mech's Stress cap.</li><li>Any time you would take damage, you take the same amount of Heat instead. This Heat gain cannot be reduced by any means, and the amount of Heat gained is determined before damage reduction, like Armor or Resistance.</li><li>You cannot clear Heat except through Overheating.</li><li>Whenever you would make a Overheat roll, you always roll 1 die, regardless of how much Stress you are missing.</li></ul>"
-  },
-  {
     "id": "asg_disposable_heatsinks",
     "name": "DISPOSABLE HEATSINKS",
     "source": "ASG",
@@ -15,11 +8,26 @@
     "integrated": ["asg_disposable_heatsink"]
   },
   {
+    "id": "asg_final_hour",
+    "name": "FINAL HOUR",
+    "source": "ASG",
+    "description": "ASGARD Mechs are powered with Thermal Engines, a proprietary technology of the company. By removing all safety restrictions on the engine, one can allow it to enter a slow meltdown that will eventually result in the mech's destruction, but potentially buy the pilot just enough to survive the final hour of a battle by forcing the engine to keep running regardless of how damaged the mech becomes.",
+    "effect": "During a short rest, you may choose to activate your Mech's <i>Final Hour.</i> Once you choose to do this, this effect cannot be ended except during a Full Repair.<br>During your <i>Final Hour</i>:<ul><li>You are considered to be in the Danger Zone at all times, regardless of your current Heat.</li><li>Reduce your Mech's Structure to 1. For each Structure lost this way, regain 1 Stress (minimum of 1). This can exceed your Mech's Stress cap.</li><li>Any time you would take damage, you take the same amount of Heat instead. This Heat gain cannot be reduced by any means, and the amount of Heat gained is determined before damage reduction, like Armor or Resistance.</li><li>You cannot clear Heat except through Overheating.</li><li>Whenever you would make a Overheat roll, you always roll 1 die, regardless of how much Stress you are missing.</li></ul>"
+  },
+  {
     "id": "asg_no_kill_like_overkill",
     "name": "NO KILL LIKE OVERKILL",
     "source": "ASG",
     "description": "ASGARD believes that all combat should be handled with the biggest stick available at any given moment, and that nothing gives a pilot the same sort of adrenaline rush as firing heavy artillery at a target and seeing nothing but a crater when the smoke clears.",
     "effect": "1/Round, when you destroy a Mech with a damage from a Heavy or Superheavy weapon: you may move up to your Speed, then take a Skirmish action."
+  },
+  {
+    "id": "lumico_accept_nothing_less",
+    "name": "ACCEPT NOTHING LESS",
+    "source": "LUMICO",
+    "description": "Perfection, as Lumiera Corporation defines it, is largely based on a pilot's skill. Lumiera does understand that luck plays a factor in combat however, and they look positively on pilots who can make the most out of their circumstances.",
+    "effect": "Choose one weapon. When you roll a 19 or 20 on a die when making an attack roll with that weapon, you may make a second attack with that weapon as a free action. This extra attack deals half damage and does not trigger this effect again.",
+    "mounted_effect": "One weapon on this mount triggers extra attacks on a roll of 19 or 20."
   },
   {
     "id": "lumico_bespoke_accessories",
@@ -33,15 +41,48 @@
     "id": "lumico_pulse_battery",
     "name": "RADIO PULSE BATTERY",
     "source": "LUMICO",
-    "description": "By adding a secondary store of power designed to dramatically boost the power of continuous signals, the range of certain kinds of sustained systems is vastly increases.",
+    "description": "By adding a secondary store of power designed to dramatically boost the power of continuous signals, the range of certain kinds of sustained systems is vastly increased.",
     "effect": "The Aura range of any installed systems with the Aura tag is increased by 50% (rounded down)."
   },
   {
-    "id": "lumico_accept_nothing_less",
-    "name": "ACCEPT NOTHING LESS",
-    "source": "LUMICO",
-    "description": "Perfection, as Lumiera Corporation defines it, is largely based on a pilot's skill. Lumiera does understand that luck plays a factor in combat however, and they look positively on pilots who can make the most out of their circumstances.",
-    "effect": "Choose one weapon. When you roll a 19 or 20 on a die when making an attack roll with that weapon, you may make a second attack with that weapon as a free action. This extra attack deals half damage and does not trigger this effect again.",
-    "mounted_effect": "One weapon on this mount triggers extra attacks on a roll of 19 or 20."
+    "id": "ice_annihilation_standards",
+    "name": "ANNIHILATION STANDARDS",
+    "source": "ICE",
+    "description": "On frigid exoplanets, it's helpful to use a mech's reactor as a secondary source of heat. Icebreakers takes this a bit farther, adding a bit of extra <i>oomph</i> and radiation insulation to their mechs, providing a nice and toasty interior without needing an additional heating system. This does leave them prone to exploding violently, but some pilots see this as a special feature.",
+    "effect": "Your reactors are highly charged, and your mech is built to compensate:<ul><li>If your mech has a pending reactor meltdown or self-destruction, you can Eject as a free action.</li><li>If your Mech would be destroyed by a structure roll, you may choose to let its reactors go critical. If you do, your mech will undergo a reactor meltdown at the end of your next turn.</li><li>When your Mech is destroyed, you only need to spend 2 Repairs to rebuild it, instead of 4.</li></ul>"
+  },
+  {
+    "id": "ice_catalytic_computing",
+    "name": "CATALYTIC COMPUTING",
+    "source": "ICE",
+    "description": "By using thermal recycling, Icebreakers mechs can route heat losses from internal systems into thermoelectric generators, repurposing waste heat into power for targeting systems.",
+    "effect": "Whenever you consume Lock On while in the Danger Zone, roll 1d6. On a roll of 4-6, reapply Lock On to your target."
+  },
+  {
+    "id": "ice_hotswap_kit",
+    "name": "HOTSWAP KIT",
+    "source": "ICE",
+    "description": "Icebreakers mechs come with parts designed for field service: easily removable, modular, and cheap enough to carry a few replacements. With a knack for engineering, one could theoretically swap these parts out in the midst of an active battlefield.",
+    "effect": "You gain the ability to hotswap parts on your mech in combat. You can use one of the actions provided by this Core Bonus 1/scene. Using any of these actions prevents you from taking the others until the end of the scene.",
+    "actions": [
+      {
+        "name": "HOTSWAP COOLANT",
+        "activation": "Protocol",
+        "frequency": "1/scene",
+        "detail": "Expend a Repair to clear all Heat and Exposed."
+      },
+      {
+        "name": "HOTSWAP SUPPLY FEEDS",
+        "activation": "Protocol",
+        "frequency": "1/scene",
+        "detail": "Expend a Repair to reload one Loading weapon installed on your mech and restore 1 charge of a Limited system on your mech."
+      },
+      {
+        "name": "HOTSWAP COMPUTERS",
+        "activation": "Protocol",
+        "frequency": "1/scene",
+        "detail": "Expend a Repair to clear JAMMED and apply LOCK ON to a target. Your next attack this turn ignores all difficulty that would apply to it."
+      }
+    ]
   }
 ]
