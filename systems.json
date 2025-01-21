@@ -1052,6 +1052,36 @@
     "description": "<i>Give 'em the heater.</i>"
   },
   {
+    "id": "lumico_heroic_aura",
+    "name": "HEROIC AURA",
+    "type": "System",
+    "sp": 3,
+    "source": "LUMICO",
+    "license": "PARAGON",
+    "license_level": 2,
+    "effect": "While this system's Aura is active, all allies within the Aura have soft cover and you can take the FLASH OF LIGHT reaction to redirect damage to yourself.",
+    "actions": [
+      {
+        "activation": "Reaction",
+        "name": "Flash of Light",
+        "frequency": "1/Round",
+        "trigger": "A friendly character within this system's Aura Braces.",
+        "detail": "You redirect any damage the affected ally would take after reductions to yourself as Energy damage. You cannot reduce this redirected damage in any way."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_aura",
+        "val": 4
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      }
+    ],
+    "description": "The Heroic Aura projects a field of disruptive hardlight fragments around the user, making most targeting systems less effective. What attacks still land can be mitigated through the effect of a reactive hardlight projector that paints a lightscreen over an ally. However, this projector must be hardwired into the mech's reactor to support the needed power draw, and its sudden load on a mech can be exceptionally damaging—enough so that it often damages the user proportionately to the harm it prevents."
+  },
+  {
     "id": "ice_silent_running",
     "name": "Silent Running Mode",
     "type": "System",

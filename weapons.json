@@ -1293,6 +1293,170 @@
     "description": ""
   },
   {
+    "id": "mw_lumico_linkage_dirk",
+    "name": "LINKAGE DIRK",
+    "mount": "Auxiliary",
+    "source": "LUMICO",
+    "license": "Paragon",
+    "license_level": 1,
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "tags":[
+      {
+        "id":"tg_thrown",
+        "val": 3
+      }
+    ],
+    "on_attack": "If you have made at least one other attack with a LINKAGE weapon as a part of this action (e.g. during this Skirmish or Barrage), this weapon is Reliable 1.",
+    "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the arms, themselves. The LINKAGE Dirk is the humblest of the series, but its light weight and flexibility make it a core part of any LINKAGE based prefab."
+  },
+  {
+    "id": "mw_lumico_linkage_sword",
+    "name": "LINKAGE BROADBLADE",
+    "mount": "Main",
+    "source": "LUMICO",
+    "license": "Paragon",
+    "license_level": 1,
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+1"
+      }
+    ],
+    "on_attack": "If you have made at least one other attack with a LINKAGE weapon as a part of this action (e.g. during this Skirmish or Barrage), you gain +1 Accuracy.",
+    "on_hit": "If you have made at least one other attack with a LINKAGE weapon as a part of this action (e.g. during this Skirmish or Barrage), you deal 3 bonus Energy damage.",
+    "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the arms, themselves. The LINKAGE Broadblade fills the core of many LINKAGE based loadouts, offering a good mixture of power and consistency."
+  },
+  {
+    "id": "mw_lumico_linkage_bolter",
+    "name": "LINKAGE BOLTER",
+    "mount": "Main",
+    "source": "LUMICO",
+    "license": "Paragon",
+    "license_level": 2,
+    "type": "CQB",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      },
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+2"
+      }
+    ],
+    "tags":[
+      {
+        "id":"tg_limited",
+        "val": 3
+      }
+    ],
+    "on_attack": "If you have made at least one other attack with a LINKAGE weapon as a part of this action (e.g. during this Skirmish or Barrage), you can expend a charge to make a second attack with this weapon. The additional attack does not trigger this effect.",
+    "effect": "This weapon only expends charges when you choose to activate its On Attack effect, not when attacking normally.",
+    "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the arms, themselves. The LINKAGE Bolter fills a niche as a rapidfire short-range option for the series, offering some area control that the rest of the series lacks."
+  },
+  {
+    "id": "mw_lumico_linkage_lightshield",
+    "name": "LINKAGE LIGHTSHIELD",
+    "mount": "Main",
+    "source": "LUMICO",
+    "license": "Paragon",
+    "license_level": 3,
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "tags":[
+      {
+        "id":"tg_overshield"
+      }
+    ],
+    "on_attack": "If you have made at least one other attack with a LINKAGE weapon as a part of this action (e.g. during this Skirmish or Barrage), you gain 4 Overshield.",
+    "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the arms, themselves. The LINKAGE Lightshield projects a hardlight barrier around the user, designed to mitigate the potential damage of counterattacks instigated by the attacks of other weapons in the series."
+  },
+  {
+    "id": "mw_lumico_linkage_guardian",
+    "name": "LINKAGE CHIVALRIC NEXUS",
+    "mount": "Auxiliary",
+    "source": "LUMICO",
+    "license": "Paragon",
+    "license_level": 3,
+    "sp": 1,
+    "type": "Nexus",
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 3
+      }
+    ],
+    "tags":[
+      {
+        "id":"tg_smart"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_luxury",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Reaction",
+        "name": "Guardian Spirit",
+        "frequency": "1/Turn",
+        "trigger": "You make an attack with any LINKAGE weapon.",
+        "detail": "Make an attack with this weapon against an enemy in range."
+      }
+    ],
+    "effect": "You can only attack with this weapon through the effect of the GUARDIAN SPIRIT reaction provided by this weapon or during an Overwatch attack.",
+    "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the arms, themselves. The LINKAGE Chivalric Nexus provides semiautonomous support through a pair of ballistic drones branded as the \"shoulder angels\". Though it's not the primary weapon in any prefab, it's nice to have someone watching over your shoulder."
+  },
+  {
     "id": "mw_ice_unity_banner",
     "name": "Banner of Unity",
     "mount": "Heavy",
@@ -1319,7 +1483,7 @@
         "detail": "You may only take this action while in the Danger Zone.<br/><br/>You activate this system's Aura, granting [ 8 + your Grit ] Overshield to all allies in range. While this system's Aura is active, you gain access to this weapon's On Hit effect, but you cannot attack with any weapons other than this one and, upon clearing enough heat to leave the Danger Zone, you immediately gain Heat until you reach the Danger Zone."
       }
     ],
-    "on_hit": "If this weapon's Aura is active: deal 2 Burn to your target and choose an allied Character within this weapon's Aura. The chosen ally gains 4 Overshield and +2 Accuracy on their next attack or save.",
+    "on_hit": "If this weapon's Aura is active: deal 2 Burn to your target and choose an allied Character within this weapon's Aura. The chosen ally gains +1 Accuracy on their next attack or save.",
     "tags": [
       {
         "id": "tg_aura",
@@ -1493,7 +1657,7 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "1d6+2"
+            "val": "1d6+1"
           }
         ],
         "range": [
@@ -1570,7 +1734,7 @@
   },
   {
     "id": "mw_harbinger_integrated",
-    "name": "DRAIN",
+    "name": "CARVE",
     "mount": "Heavy",
     "type": "Melee",
     "range": [
@@ -1586,7 +1750,7 @@
       }
     ],
     "effect": "This weapon is used by OMEN to attack while it is summoned in its HAUNT form. It can choose this weapon twice when Barraging. Any heat gained from this weapon's attacks is inflicted on the Harbinger instead of OMEN.",
-    "description": "<i>RED EYES IN THE SHADOWS, BLACK CLAWS IN THE DARK</i>",
+    "description": "<i>「ユキモチさん、どうして怪奇現象を求めるですか？」</i>",
     "tags": [
       {
         "id": "tg_overkill"

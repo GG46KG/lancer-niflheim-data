@@ -1,22 +1,22 @@
 [
     {
       "id": "tg_luxury",
-      "name": "LUXURY {VAL}",
+      "name": "Luxury {VAL}",
       "description": "This weapon or system is built to exceedingly high standards: when you attack using this weapon or system, negate up to {VAL} Difficulty that would be applied to the attack from any source, except Engagement."
     },
     {
       "id": "tg_aura",
-      "name": "AURA {VAL}",
+      "name": "Aura {VAL}",
       "description": "This system can be activated or deactivated as a Protocol. While this system is active, it generates an \"Aura\" that affects all other characters in a Burst {VAL} area around the user. Only one system with the Aura tag may be active at once: activating a new Aura deactivates all others. If this system has the Heat (Self) or Limited tag, the user gains Heat or expends charges at the end of each of their turns that it is active, and immediately deactivates upon beginning any turn with no charges remaining. If you become Jammed or Shut Down, any active Auras deactivate."
     },
     {
       "id": "tg_oneofakind",
-      "name": "ONE OF A KIND",
+      "name": "One of a Kind",
       "description": "This weapon or system is the single example of its kind: a character can only have one copy of it installed at a time, and only one character in a party may have it installed."
     },
     {
       "id": "tg_guided",
-      "name": "GUIDED",
+      "name": "Guided",
       "description": "This weapon may only be used to attack targets affected by Lock On and must consume Lock On when used."
     }
 ]

@@ -253,14 +253,14 @@
       },
       {
         "name": "Unstable Targeting System",
-        "description": "The Draugr gets -2 to on all Ranged attack rolls."
+        "description": "The Draugr gets -2 to all Ranged attack rolls."
       }
     ],
     "core_system": {
       "name": "ASG-BERSERK REVISION ZERO",
       "description": "<i>I warned you.</i>",
       "active_name": "GIVE IN",
-      "active_effect": "This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.<br/><br/>This action may only be taken if you are physically present in the Draugr. Until the end of the scene:<ul><li>You cannot make Ranged attacks.</li><li>You cannot take or be affected by tech actions, friendly or hostile, and any AIs installed on the Draugr deactivate, falling inactive until this effect ends.</li><li>Your Improvised Attacks gain +1 Accuracy, deal 1d3 bonus Kinetic damage and cannot have their damage reduced in any way.</li><li>You ignore the normal restrictions on duplicate actions for Inprovised Attacks.</li><li>At the end of each of your turns, the Draugr's Pilot takes 3 Energy damage.</li></ul>If you, the pilot, are killed or knocked Down and Out, the Draugr begins to pilot itself, as though it was controlled by a cascading NHP.<br/><br/>It is, however, <i>not</i> controlled by an NHP: just the echoes of the pilot's last, panicked thoughts.",
+      "active_effect": "This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.<br/><br/>This action may only be taken if you are physically present in the Draugr. Until the end of the scene:<ul><li>You cannot make Ranged attacks.</li><li>You cannot take or be affected by tech actions, friendly or hostile, and any AIs installed on the Draugr deactivate, falling inactive until this effect ends.</li><li>Your Improvised Attacks gain +1 Accuracy, deal 1d3 bonus Kinetic damage and cannot have their damage reduced in any way.</li><li>You ignore the normal restrictions on duplicate actions for Inprovised Attacks.</li><li>At the end of each of your turns, the Draugr's Pilot loses 3 HP if they are alive and conscious.</li></ul>If you, the pilot, are killed or knocked Down and Out, the Draugr begins to pilot itself, as though it was controlled by a cascading NHP.<br/><br/>It is, however, <i>not</i> controlled by an NHP: just the echoes of the pilot's last, panicked thoughts.",
       "activation": "Protocol",
       "use": "Encounter"
     },
@@ -655,7 +655,7 @@
     "mechtype": ["Defender"],
     "y_pos": 22,
     "description": "IN PROGRESS",
-    "mounts": ["Main/Aux", "Aux/Aux"],
+    "mounts": ["Main/Aux", "Flex"],
     "stats": {
       "size": 2,
       "structure": 4,
@@ -940,7 +940,18 @@
       {
         "name": "Fade",
         "description": "At the end of its turn, if the Harbinger hasn't made any attacks or forced any saves, it becomes Invisible until it makes an attack or forces a save."
+      },
+      {
+        "name": "Fragile",
+        "description": "The Harbinger receives +1 difficulty on Hull checks and saves.",
+        "synergies": [
+          {
+            "locations": ["hull", "skill_check"],
+            "detail": "The Harbinger receives +1 difficulty on Hull checks and saves."
+          }
+        ]
       }
+
     ],
     "core_system": {
       "name": "Yukimochi's Haunting",
@@ -951,7 +962,7 @@
         {
           "activation": "Quick",
           "name": "Manifestation",
-          "detail": "Choose one of the following forms for OMEN to take, summoning it to the battlefield. Each form has a unique appearance and summoning conditions. Once OMEN has been summoned, its form cannot be changed and it cannot be given control of the Harbinger until it is reabsorbed by the Harbinger as a quick action.<br/><br/><ul><li><b>WRAITH</b>: Choose a location within Burst 15. OMEN is summoned to that location in the form of a Raven (SIZE 1/2, Tags: DEPLOYABLE, IMMUNITY to all damage and effects). The area within Burst 5 of OMEN is considered to be within your Sensors. As a Protocol, you can move OMEN to any space within Sensors.</li><li><b>GRIM</b>: OMEN is summoned to that location in the form of a Hound (SIZE 1, Tags: DEPLOYABLE, IMMUNITY to all damage and effects). Any character adjacent to OMEN is considered to be within the Threat of your weapons for the purpose of Overwatch, regardless of their actual distance from you. As a Protocol, you can move OMEN up to 6 Spaces.</li><li><b>SHADE</b>: OMEN is summoned as a shadow that moves across and underneath the Harbinger. While OMEN remains summoned, you have Resistance to all damage from attacks and abilities that originate from more than 5 spaces away. As a Protocol, you may use the Harbinger's SKULK action, even if you aren't Invisible or Hidden. If you do, you cannot use SKULK again this Round.</li></ul><br/>",
+          "detail": "Choose one of the following forms for OMEN to take, summoning it to the battlefield. Each form has a unique appearance and summoning conditions. Once OMEN has been summoned, its form cannot be changed and it cannot be given control of the Harbinger until it is reabsorbed by the Harbinger as a quick action.<br/><br/><ul><li><b>WRAITH</b>: Choose a location within Burst 15. OMEN is summoned to that location in the form of a Raven (SIZE 1/2, Tags: DEPLOYABLE, IMMUNITY to all damage and effects). The area within Burst 5 of OMEN is considered to be within your Sensors. As a Protocol, you can move OMEN to any space within Sensors.</li><li><b>GRIM</b>: OMEN is summoned to that location in the form of a Hound (SIZE 1, Tags: DEPLOYABLE, IMMUNITY to all damage and effects). Any character adjacent to OMEN is considered to be within the Threat of your weapons for the purpose of Overwatch, regardless of their actual distance from you. As a Protocol, you can move OMEN up to 4 Spaces.</li><li><b>SHADE</b>: OMEN is summoned as a shadow that moves across and underneath the Harbinger. While OMEN remains summoned, you have Resistance to all damage from attacks and abilities that originate from more than 5 spaces away. As a Protocol, you may use the Harbinger's SKULK action, even if you aren't Invisible or Hidden. If you do, you cannot use SKULK again this Round.</li></ul><br/>",
           "frequency": "1/Round"
         },
         {
@@ -961,12 +972,12 @@
         }
       ],
       "active_name": "Weirding",
-      "active_effect": "OMEN is summoned to a location withing sensors in the form of a looming, beastly figure known as a HAUNT. While deployed in this way, OMEN takes its own set of actions on your turn, including a standard movement. You may summon this form of OMEN even if it is already summoned, without needing to reabsorb it first, changing it to this now form immediately at its current location. However, as long as OMEN is summoned in this way it saps the strength of the Harbinger. The Harbinger is Slowed, Exposed, and has limited actions: it can still take its standard movement and free actions as normal, but it cannot Overcharge, may only take one quick action, and cannot take full actions. If the Harbinger Braces while in this state, it is Stunned during its next turn.",
+      "active_effect": "OMEN is summoned to a location withing sensors in the form of a looming, beastly figure known as a HAUNT. While deployed in this way, OMEN takes its own set of actions on your turn, including a standard movement. You may summon this form of OMEN even if it is already summoned, without needing to reabsorb it first, changing it to this now form immediately at its current location. However, as long as OMEN is summoned in this way it saps the strength of the Harbinger. The Harbinger is Slowed, Exposed, dies not benefit from its FADE trait, and has limited actions: it can still take its standard movement and free actions as normal, but it cannot Overcharge, may only take one quick action, and cannot take full actions. If the Harbinger Braces while in this state, it is Stunned during its next turn.",
       "deployables": [
         {
           "name": "HAUNT",
           "type": "Drone",
-          "detail": "This form of OMEN takes a full turn simultaneously with the Harbinger's. It has the Biological tag, IMMUNITY to Jammed, and has a limited set of actions it can take: it can Barrage, Skirmish, Boost, Grapple, Ram, Self-Destruct, and Overwatch. It may only make attacks with the integrated DRAIN weapon.<br/><br/>If OMEN is destroyed while in this form, it is forcefully banished back to the Harbinger, ending its summoning. For the rest of the scene, the Harbinger cannot use the MANIFESTATION action.",
+          "detail": "This form of OMEN takes a full turn simultaneously with the Harbinger's. It has the Biological tag, IMMUNITY to Jammed, and has a limited set of actions it can take: it can Barrage, Skirmish, Boost, Grapple, Ram, Self-Destruct, and Overwatch. It may only make attacks with the integrated CARVE weapon.<br/><br/>If OMEN is destroyed while in this form, it is forcefully banished back to the Harbinger, ending its summoning. For the rest of the scene, the Harbinger cannot use the MANIFESTATION action.",
           "activation": "Full",
           "size": 2,
           "evasion": 8,
