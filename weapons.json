@@ -1294,7 +1294,7 @@
   },
   {
     "id": "mw_lumico_linkage_dirk",
-    "name": "LINKAGE DIRK",
+    "name": "Linkage Dirk",
     "mount": "Auxiliary",
     "source": "LUMICO",
     "license": "Paragon",
@@ -1319,11 +1319,11 @@
       }
     ],
     "on_attack": "If you have made at least one other attack with a LINKAGE weapon as a part of this action (e.g. during this Skirmish or Barrage), this weapon is Reliable 1.",
-    "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the arms, themselves. The LINKAGE Dirk is the humblest of the series, but its light weight and flexibility make it a core part of any LINKAGE based prefab."
+    "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the armaments, themselves. The LINKAGE Dirk is the humblest of the series, but its light weight and flexibility make it a core part of any LINKAGE based prefab."
   },
   {
     "id": "mw_lumico_linkage_sword",
-    "name": "LINKAGE BROADBLADE",
+    "name": "Linkage Broadblade",
     "mount": "Main",
     "source": "LUMICO",
     "license": "Paragon",
@@ -1343,11 +1343,11 @@
     ],
     "on_attack": "If you have made at least one other attack with a LINKAGE weapon as a part of this action (e.g. during this Skirmish or Barrage), you gain +1 Accuracy.",
     "on_hit": "If you have made at least one other attack with a LINKAGE weapon as a part of this action (e.g. during this Skirmish or Barrage), you deal 3 bonus Energy damage.",
-    "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the arms, themselves. The LINKAGE Broadblade fills the core of many LINKAGE based loadouts, offering a good mixture of power and consistency."
+    "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the armaments, themselves. The LINKAGE Broadblade fills the core of many LINKAGE based loadouts, offering a good mixture of power and consistency."
   },
   {
     "id": "mw_lumico_linkage_bolter",
-    "name": "LINKAGE BOLTER",
+    "name": "Linkage Bolter",
     "mount": "Main",
     "source": "LUMICO",
     "license": "Paragon",
@@ -1377,11 +1377,11 @@
     ],
     "on_attack": "If you have made at least one other attack with a LINKAGE weapon as a part of this action (e.g. during this Skirmish or Barrage), you can expend a charge to make a second attack with this weapon. The additional attack does not trigger this effect.",
     "effect": "This weapon only expends charges when you choose to activate its On Attack effect, not when attacking normally.",
-    "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the arms, themselves. The LINKAGE Bolter fills a niche as a rapidfire short-range option for the series, offering some area control that the rest of the series lacks."
+    "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the armaments, themselves. The LINKAGE Bolter fills a niche as a rapidfire short-range option for the series, offering some area control that the rest of the series lacks."
   },
   {
     "id": "mw_lumico_linkage_lightshield",
-    "name": "LINKAGE LIGHTSHIELD",
+    "name": "Linkage Lightshield",
     "mount": "Main",
     "source": "LUMICO",
     "license": "Paragon",
@@ -1405,11 +1405,11 @@
       }
     ],
     "on_attack": "If you have made at least one other attack with a LINKAGE weapon as a part of this action (e.g. during this Skirmish or Barrage), you gain 4 Overshield.",
-    "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the arms, themselves. The LINKAGE Lightshield projects a hardlight barrier around the user, designed to mitigate the potential damage of counterattacks instigated by the attacks of other weapons in the series."
+    "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the armaments, themselves. The LINKAGE Lightshield projects a hardlight barrier around the user, designed to mitigate the potential damage of counterattacks instigated by the attacks of other weapons in the series."
   },
   {
     "id": "mw_lumico_linkage_guardian",
-    "name": "LINKAGE CHIVALRIC NEXUS",
+    "name": "Linkage Chivalric Nexus",
     "mount": "Auxiliary",
     "source": "LUMICO",
     "license": "Paragon",
@@ -1454,7 +1454,7 @@
       }
     ],
     "effect": "You can only attack with this weapon through the effect of the GUARDIAN SPIRIT reaction provided by this weapon or during an Overwatch attack.",
-    "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the arms, themselves. The LINKAGE Chivalric Nexus provides semiautonomous support through a pair of ballistic drones branded as the \"shoulder angels\". Though it's not the primary weapon in any prefab, it's nice to have someone watching over your shoulder."
+    "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the armaments, themselves. The LINKAGE Chivalric Nexus provides semiautonomous support through a pair of ballistic mini-drones branded as the \"shoulder angels\". Though it's not the primary weapon in any prefab, it's nice to have someone watching over you."
   },
   {
     "id": "mw_ice_unity_banner",
@@ -1759,6 +1759,84 @@
         "id": "tg_ap"
       }
     ]
+  },
+  {
+    "id": "mw_ice_pyroclastic_nexus",
+    "name": "SA 2-555 'PYROCLASTIC NEXUS'",
+    "mount": "Heavy",
+    "source": "ICE",
+    "license": "Catalyst",
+    "license_level": 3,
+    "type": "Nexus",
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d6+6"
+      }
+    ],
+    "tags":[
+      {
+        "id":"tg_smart"
+      },
+      {
+        "id":"tg_seeking"
+      },
+      {
+        "id":"tg_loading"
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Free",
+        "name": "Inner Fire",
+        "frequency": "1/Round",
+        "detail": "You may only take this action if you are in the Danger Zone. Gain 2 Heat and Reload this weapon."
+      }
+    ],
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-555<br/><br/>THIS DEVICE PRODUCES MOTES OF MOLTEN STONE THAT IT CONTROLS MAGNETICALLY.<br/>THEY FLY THROUGH THE AIR, EMITTING SPARKS, UNTIL THEY GET SLAMMED INTO THE TARGET AND EXPLODE.<br/>THEY LOOK A BIT LIKE FAIRIES, SO WE'VE TAKEN TO CALLING THEM \"SPRITES.\"<br/>NATURALLY, MELTING ROCK WITHIN A MECH'S FRAME NEEDS A LOT OF HEAT, SO BE PREPARED TO DEAL WITH THAT.</i>"
+  },
+  {
+    "id": "mw_ice_curse_nexus",
+    "name": "SA 1-783 'CURSE NEXUS'",
+    "mount": "Main",
+    "source": "ICE",
+    "license": "Harbinger",
+    "license_level": 2,
+    "sp": 1,
+    "type": "Nexus",
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      }
+    ],
+    "tags":[
+      {
+        "id":"tg_smart"
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "name": "VEX",
+        "detail": "Make an attack with this weapon against the CURSED enemy. The target does not need to be in line of sight, and only needs to be within range 50. You can take this action even if the target is Hidden, and this attack ignores Invisibility."
+      }
+    ],
+    "on_hit": "The target becomes CURSED.",
+    "on_attack": "All characters CURSED by you, other than your current target, cease to be CURSED.",
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-783<br/><br/>THIS \"WEAPON\" IS A SMALL SHRINE TO A SPIRIT OF SOME SORT, COMPLETE WITH CANDLES AND TALISMANS.<br/>WHICH IS NONSENSE.<br/>IT SHOULDN'T DO ANYTHING.<br/>BUT... I'VE SEEN THIS THING IN ACTION, RIPPING THINGS APART.<br/><br/>IT'S VINDICTIVE.</i>"
   },
   {
     "id": "mw_poke_integrated",
