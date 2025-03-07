@@ -1408,12 +1408,12 @@
   },
   {
     "id": "ice_lay_hands",
-    "name": "SA 0-016 'LAY ON HANDS'",
+    "name": "SA 1-016 'LAY ON HANDS'",
     "type": "System",
     "sp": 3,
     "source": "ICE",
     "license": "HARBINGER",
-    "license_level": 1,
+    "license_level": 2,
     "actions": [
       {
         "activation": "Quick",
@@ -1430,16 +1430,16 @@
         "val": 4
       }
     ],
-    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-016<br/><br/>THEY SAY THAT THE TOUCH OF A HOLY PERSON CAN PROVIDE HEALING TO OTHERS.<br/>ONE OF THE INTERNS SAYS THAT THIS SYSTEM AWAKENS THE HOLY SPIRIT OF THE MACHINE.<br/>NONSENSE.</i>"
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-016<br/><br/>THEY SAY THAT THE TOUCH OF A HOLY PERSON CAN PROVIDE HEALING TO OTHERS.<br/>ONE OF THE INTERNS SAYS THAT THIS SYSTEM AWAKENS THE HOLY SPIRIT OF THE MACHINE.<br/>NONSENSE.</i>"
   },
   {
     "id": "ice_evil_eye",
-    "name": "SA 1-585 'NAZAR'",
+    "name": "SA 0-585 'NAZAR'",
     "type": "Tech",
     "sp": 3,
     "source": "ICE",
     "license": "HARBINGER",
-    "license_level": 2,
+    "license_level": 1,
     "actions": [
       {
         "activation": "Quick Tech",
@@ -1459,7 +1459,7 @@
         "id": "tg_unique"
       }
     ],
-    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-585<br/><br/>THE NAZAR IS A TRADITIONAL CURSEWARD, DESIGNED TO KEEP AWAY THE 'EVIL EYE'.<br/>I DON'T BELIEVE IN MAGIC, BUT THIS SYSTEM PROVIDES UNUSUALLY RAPID INSIGHT INTO A PARTICULAR TARGETS INTENDED ACTION, SO I CHOSE THE DESIGNATION.<br/>IT SEEMS APPROPRIATE.</i>"
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-585<br/><br/>THE NAZAR IS A TRADITIONAL CURSEWARD, DESIGNED TO KEEP AWAY THE 'EVIL EYE'.<br/>I DON'T BELIEVE IN MAGIC, BUT THIS SYSTEM PROVIDES UNUSUALLY RAPID INSIGHT INTO A PARTICULAR TARGETS INTENDED ACTION, SO I CHOSE THE DESIGNATION.<br/>IT SEEMS APPROPRIATE.</i>"
   },
   {
     "id": "ice_angelic_aspect",

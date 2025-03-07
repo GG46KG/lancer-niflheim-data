@@ -1890,7 +1890,7 @@
     "mount": "Main",
     "source": "ICE",
     "license": "Harbinger",
-    "license_level": 2,
+    "license_level": 1,
     "type": "Melee",
     "range": [
       {
