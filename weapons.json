@@ -1934,7 +1934,7 @@
         "val": "1d6"
       }
     ],
-    "on_attack": "This weapon gains additional effects based on the actions the target took on their most recent turn. If the target took any of the following actions, your attack gains the following effect:<ul><li><i>Attack</i>: Deal 1 Reliable energy damage to the target for each attack the target made.</li><li><i>Tech Action</i>: Gain +1 Accuracy for each tech action the target took.</li><li><i>Boost</i>: The target must attempt a Systems save or be Slowed.</li></ul>",
+    "on_attack": "This weapon gains additional effects based on the actions the target took on their most recent turn. If the target took any of the following actions, your attack gains the following effect:<ul><li><i>Attack</i>: Deal 1 Reliable energy damage to the target for each attack the target made.</li><li><i>Tech Action</i>: Gain +1 Accuracy for each tech action the target took.</li><li><i>Boost</i>: The target must attempt a Systems save or be Immobilized until the end of their next turn.</li></ul>",
     "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-176<br/><br/>[AUDIO TRANSCRIPTION FOLLOWS]<br/><br/>FOUL MAGICS SHALL NOT BE TOLERATED.<br/>BURN THE HERETIC.<br/>HUNT THEM.</i>"
   },
   {
