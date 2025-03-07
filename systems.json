@@ -1451,7 +1451,7 @@
         "name": "CURSEWARD",
         "frequency": "1/Round",
         "trigger": "A character Marked by this system takes any action that affects one of your allies.",
-        "detail": "Choose one:<ul><li>Invade your target, gaining +2 Accuracy on your Tech Attack.</li><li>Make an attack against the target with any weapon they are within the Threat of. On hit, you deal 1d6 bonus Energy damage. This counts as taking the Overwatch reaction, and can only be taken if you are still able to take the Overwatch reaction this Round.</li></ul>" 
+        "detail": "Clear your Mark and choose one:<ul><li>Invade your target, gaining +2 Accuracy on your Tech Attack.</li><li>Make an attack against the target with any weapon they are within the Threat of. On hit, you deal 1d6 bonus Energy damage. This counts as taking the Overwatch reaction, and can only be taken if you are still able to take the Overwatch reaction this Round.</li></ul>" 
       }
     ],
     "tags": [
