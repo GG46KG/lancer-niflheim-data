@@ -1694,7 +1694,7 @@
         ],
         "actions": [
           {
-            "activation": "Full",
+            "activation": "Half",
             "name": "Whetting Growth",
             "detail": "Gain 5 Heat. Rebloom the Blade of Grass, returning it to its Honed profile."
           }
@@ -1762,11 +1762,11 @@
   },
   {
     "id": "mw_ice_pyroclastic_nexus",
-    "name": "SA 2-555 'PYROCLASTIC NEXUS'",
+    "name": "SA 1-555 'PYROCLASTIC NEXUS'",
     "mount": "Heavy",
     "source": "ICE",
     "license": "Catalyst",
-    "license_level": 3,
+    "license_level": 2,
     "type": "Nexus",
     "range": [
       {
@@ -1799,7 +1799,53 @@
         "detail": "You may only take this action if you are in the Danger Zone. Gain 2 Heat and Reload this weapon."
       }
     ],
-    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-555<br/><br/>THIS DEVICE PRODUCES MOTES OF MOLTEN STONE THAT IT CONTROLS MAGNETICALLY.<br/>THEY FLY THROUGH THE AIR, EMITTING SPARKS, UNTIL THEY GET SLAMMED INTO THE TARGET AND EXPLODE.<br/>THEY LOOK A BIT LIKE FAIRIES, SO WE'VE TAKEN TO CALLING THEM \"SPRITES.\"<br/>NATURALLY, MELTING ROCK WITHIN A MECH'S FRAME NEEDS A LOT OF HEAT, SO BE PREPARED TO DEAL WITH THAT.</i>"
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-555<br/><br/>THIS DEVICE PRODUCES MOTES OF MOLTEN STONE THAT IT CONTROLS MAGNETICALLY.<br/>THEY FLY THROUGH THE AIR, EMITTING SPARKS, UNTIL THEY GET SLAMMED INTO THE TARGET AND EXPLODE.<br/>THEY LOOK A BIT LIKE FAIRIES, SO WE'VE TAKEN TO CALLING THEM \"SPRITES.\"<br/>NATURALLY, MELTING ROCK WITHIN A MECH'S FRAME NEEDS A LOT OF HEAT, SO BE PREPARED TO DEAL WITH THAT.</i>"
+  },
+  {
+    "id": "mw_ice_volcanic_gun",
+    "name": "SA 2-097 'VOLCANIC CHAINGUN'",
+    "mount": "Superheavy",
+    "source": "ICE",
+    "license": "Catalyst",
+    "license_level": 3,
+    "type": "Cannon",
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "2d6"
+      },
+      {
+        "type": "Explosive",
+        "val": "3"
+      }
+    ],
+    "tags":[
+      {
+        "id":"tg_heat_self",
+        "val": 1
+      },
+      {
+        "id":"tg_overkill"
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Quick",
+        "name": "BARREL HEATER",
+        "frequency": "1/Round",
+        "detail": "Prime the Volcanic Gun, storing a <i>Chainfire</i> until the end of your next turn."
+      }
+    ],
+    "on_crit": "Store a <i>Chainfire</i>.",
+    "on_hit": "If any of the damage dice rolled for this weapon's damage landed on a 6, store a <i>Chainfire</i>.",
+    "on_attack": "After any attack with this weapon resolves: if you have any <i>Chainfires</i> remaining, you must expend a <i>Chainfire</i> and make another attack with this weapon. If you make an Overheating roll while you have <i>Chainfires</i> remaining, the Volcanic Gun discharges: discard all remaining <i>Chainfires</i> and inflict 2 Burn on yourself and any characters within Burst 3.",
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-555<br/><br/>UNSTABLE DOESN'T EVEN BEGIN TO DESCRIBE THIS WEAPON.<br/>IT SELF-PRODUCES A TYPE OF PRIMITIVE AMMUNITION THAT IS EXTREMELY PRONE TO CHAIN FIRING UNDER HEAT AND HAS A VERY HIGH RATE OF FIRE.<br/>AS SUCH, THE GUN GETS <b>HOT</b>, AND MORE HEAT MEANS MORE MISFIRES.<br/><br/>ALWAYS REMEMBER RULE NUMBER 2:<br/>NEVER POINT A GUN AT SOMETHING YOU AREN'T WILLING TO DESTROY.<br/>IT COUNTS FOR DOUBLE HERE.</i>"
   },
   {
     "id": "mw_ice_curse_nexus",
@@ -1836,7 +1882,60 @@
     ],
     "on_hit": "The target becomes CURSED.",
     "on_attack": "All characters CURSED by you, other than your current target, cease to be CURSED.",
-    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-783<br/><br/>THIS \"WEAPON\" IS A SMALL SHRINE TO A SPIRIT OF SOME SORT, COMPLETE WITH CANDLES AND TALISMANS.<br/>WHICH IS NONSENSE.<br/>IT SHOULDN'T DO ANYTHING.<br/>BUT... I'VE SEEN THIS THING IN ACTION, RIPPING THINGS APART.<br/><br/>IT'S VINDICTIVE.</i>"
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-783<br/><br/>THIS \"WEAPON\" IS A SMALL SHRINE TO A SPIRIT OF SOME SORT, COMPLETE WITH CANDLES AND TALISMANS.<br/>WHICH IS NONSENSE.<br/>IT SHOULDN'T DO ANYTHING.<br/>BUT... I'VE SEEN THIS THING IN ACTION, RIPPING THINGS APART.<br/><br/>IT'S VINDICTIVE.</i>"
+  },
+  {
+    "id": "mw_ice_athame",
+    "name": "SA 0-663 'ATHAME'",
+    "mount": "Main",
+    "source": "ICE",
+    "license": "Harbinger",
+    "license_level": 2,
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "tags":[
+      {
+        "id": "tg_thrown",
+        "val": 5
+      }
+    ],
+    "on_crit": "The target takes 2 Burn.",
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-783<br/><br/>THE ATHAME, A RITUAL DAGGER, OFTEN REPRESENTS THE ASPECT OF FIRE.<br/>IT MAY BE USED TO DRAW A MAGIC CIRCLE, PURIFYING THE AREA.</i>"
+  },
+  {
+    "id": "mw_ice_witch_hunter_blade",
+    "name": "SA 2-507 'WITCH HUNTING BLADE'",
+    "mount": "Main",
+    "source": "ICE",
+    "license": "Harbinger",
+    "license_level": 3,
+    "sp": 2,
+    "type": "Melee",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "on_attack": "This weapon gains additional effects based on the actions the target took on their most recent turn. If the target took any of the following actions, your attack gains the following effect:<ul><li><i>Attack</i>: Deal 1 Reliable energy damage to the target for each attack the target made.</li><li><i>Tech Action</i>: Gain +1 Accuracy for each tech action the target took.</li><li><i>Boost</i>: The target must attempt a Systems save or be Slowed.</li></ul>",
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-176<br/><br/>[AUDIO TRANSCRIPTION FOLLOWS]<br/><br/>FOUL MAGICS SHALL NOT BE TOLERATED.<br/>BURN THE HERETIC.<br/>HUNT THEM.</i>"
   },
   {
     "id": "mw_poke_integrated",

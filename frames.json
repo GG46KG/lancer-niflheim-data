@@ -972,7 +972,7 @@
         }
       ],
       "active_name": "Weirding",
-      "active_effect": "OMEN is summoned to a location withing sensors in the form of a looming, beastly figure known as a HAUNT. While deployed in this way, OMEN takes its own set of actions on your turn, including a standard movement. You may summon this form of OMEN even if it is already summoned, without needing to reabsorb it first, changing it to this now form immediately at its current location. However, as long as OMEN is summoned in this way it saps the strength of the Harbinger. The Harbinger is Slowed, Exposed, dies not benefit from its FADE trait, and has limited actions: it can still take its standard movement and free actions as normal, but it cannot Overcharge, may only take one quick action, and cannot take full actions. If the Harbinger Braces while in this state, it is Stunned during its next turn.",
+      "active_effect": "OMEN is summoned to a location withing sensors in the form of a looming, beastly figure known as a HAUNT. While deployed in this way, OMEN takes its own set of actions on your turn, including a standard movement. You may summon this form of OMEN even if it is already summoned, without needing to reabsorb it first, changing it to this now form immediately at its current location. However, as long as OMEN is summoned in this way it saps the strength of the Harbinger. The Harbinger is Slowed, Exposed, does not benefit from its FADE trait, and has limited actions: it can still take its standard movement and free actions as normal, but it cannot Overcharge, may only take one quick action, and cannot take full actions. If the Harbinger Braces while in this state, it is Stunned during its next turn.",
       "deployables": [
         {
           "name": "HAUNT",

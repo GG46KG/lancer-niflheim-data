@@ -853,8 +853,8 @@
         "id": "tg_unique"
       }
     ],
-    "effect": "During a rest, you may activate this system to recharge your own and one ally's core power. This system only has one use, regained when you make a Full Repair.",
-    "description": "Lumico's Near-Zero-Mass Fusion Reactor, internally dubbed the \"Pocket Star\", provides an ingenious method of storing energy. Originally intented to fulfill a similar role to a mech's standard reactor, logistical issues related to actually <i>extracting</i> the energy produced by the Pocket Star meant that it was more valuable as an emergency reserve of energy rather than as a primary power source."
+    "effect": "During a rest, you may activate this system to grant 1 Core Point to yourself and an ally of your choice. This system only has one use, regained when you make a Full Repair.",
+    "description": "Lumico's Near-Zero-Mass Fusion Reactor, internally dubbed the \"Pocket Star\", provides an ingenious method of storing energy. Originally intented to fulfill a similar role to a mech's standard reactor, technical issues related to effectively extracting the energy produced by the Pocket Star meant that it was deemed more valuable as a store of reserve energy rather than as a primary power source."
   },
   {
     "id": "lumico_nova_predict",
@@ -917,7 +917,7 @@
       }
     ],
     "effect": "When this Aura is activated, choose a point within Sensors. This system's Aura is centered on that point, rather than the user.<br>Any character adjacent to or on the same space as the center of the Aura is within this system's <i>Event Horizon</i>. Characters within the Aura are Slowed.",
-    "description": "By generating an extremely small but superdense mass, one can harness and direct gravitational waves to directly affect ambient energy. At this scale, Hawking radiation causes the object to degrade at a high speed and the object will evaporate if it is not actively maintained by the generator."
+    "description": "By generating an extremely small but superdense mass, one can harness and direct gravitational waves to directly affect ambient energy. At this scale, Hawking radiation causes the object to degrade at a high speed and it will quickly evaporate if it is not actively maintained by the generator."
   },
   {
     "id": "lumico_babel",
@@ -941,7 +941,7 @@
         "frequency": "1/Round"
       }
     ],
-    "description": "In the event of an emergency, the \"Babel\" System generates a cypher that causes an enemy to mistakenly target the system's user, instead. The system is somewhat basic, by Lumiera Corporation's standards, and generally will only confuse a hostile system if it isn't actively correcting for the interference."
+    "description": "In the event of an emergency, the \"Babel\" System generates a cypher that causes an enemy to mistakenly target the system's user, instead. The system is somewhat basic by Lumiera Corporation's standards, and will generally only confuse a hostile system while it isn't actively correcting for the interference."
   },
   {
     "id": "lumico_lullaby",
@@ -965,7 +965,7 @@
         "val": 3
       }
     ],
-    "description": "Lumiera Corporation's \"Lullaby\" system projects a chaotic signal that disrupts the operation of mech systems, preventing them from accurately targeting the source of the signal. During testing, however, pilots of mechs targeted by the Lullaby's signal reported extreme distress, citing phantom sounds produced within the cockpit. Lumiera Corporation intended to delay its release but an error caused the system to be released to the public anyway."
+    "description": "Lumiera Corporation's \"Lullaby\" system projects a chaotic signal that disrupts the operation of mech systems, preventing them from accurately targeting the source of the signal. During testing, pilots of mechs targeted by the Lullaby's signal reported extreme distress, citing phantom sounds produced within the cockpit. Lumiera Corporation intended to delay the system's release, but an error caused the system to be released to the public anyway."
   },
   {
     "id": "lumico_lamplighter",
@@ -1049,7 +1049,7 @@
         "val": 3
       }
     ],
-    "description": "<i>Give 'em the heater.</i>"
+    "description": "These charges are small, easy to throw, and reliably detonate on impact. Sometimes, simple is best: <i>Give 'em the heater.</i>"
   },
   {
     "id": "lumico_heroic_aura",
@@ -1386,5 +1386,103 @@
       }
     ],
     "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-176<br/><br/>[AUDIO TRANSCRIPTION FOLLOWS]<br/><br/>WHAT I HOLD IS MERELY AN IMITATION OF THE TRUE SPEAR<br/>ALONGSIDE WHAT I HAVE GIVEN YOU, YOU POSSESS ALL THE PIECES OF THE REAL THING<br/>YOU WILL ONLY HAVE A SINGLE CHANCE TO USE IT ON HIM<br/>MAKE SURE THAT YOU MAKE IT COUNT<br/>OR HOPE WILL DIE WITH YOU</i>"
+  },
+  {
+    "id": "ice_redline",
+    "name": "SA 2-095 'REDLINE'",
+    "type": "System",
+    "sp": 3,
+    "source": "ICE",
+    "license": "Catalyst",
+    "license_level": 3,
+    "effect": "While your current heat is equal to your maximum heat or if you have a pending Reactor Meltdown:<ul><li>You gain +1 Accuracy on all Attacks.</li><li>1/Round, you deal 1d6 bonus Energy damage when landing a weapon attack.</li><li>1/Round, when you fail a Save, you can reroll it. You must take the new result if you do.</li></ul>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id":"tg_danger_zone"
+      }
+    ],
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-095<br/><br/>[AUDIO TRANSCRIPTION FOLLOWS]<br/><br/>FIIIIRE! AHAHAHA! FIIIIIIIIRE!<br/><br/>(Further audio analysis suggests that the beeping heard in the recording was a Reactor Meltdown Warning.)</i>"
+  },
+  {
+    "id": "ice_lay_hands",
+    "name": "SA 0-016 'LAY ON HANDS'",
+    "type": "System",
+    "sp": 3,
+    "source": "ICE",
+    "license": "HARBINGER",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Quick",
+        "name": "LAY ON HANDS",
+        "detail": "Clear one of the following conditions from an ally in an adjacent space, expending the amount of charges indicated:<ul><li><i>1 Charge:</i> Slowed, Impaired, Lock On</li><li><i>2 Charges:</i> Immobilized, Shredded</li><li><i>4 Charges:</i> Jammed, Stunned</li>." 
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 4
+      }
+    ],
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-016<br/><br/>THEY SAY THAT THE TOUCH OF A HOLY PERSON CAN PROVIDE HEALING TO OTHERS.<br/>ONE OF THE INTERNS SAYS THAT THIS SYSTEM AWAKENS THE HOLY SPIRIT OF THE MACHINE.<br/>NONSENSE.</i>"
+  },
+  {
+    "id": "ice_evil_eye",
+    "name": "SA 1-585 'NAZAR'",
+    "type": "Tech",
+    "sp": 3,
+    "source": "ICE",
+    "license": "HARBINGER",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "name": "EVIL EYE",
+        "detail": "Gain 2 Heat. You Mark a hostile target within Sensors, removing any Mark placed by this system from all other characters." 
+      },
+      {
+        "activation": "Reaction",
+        "name": "CURSEWARD",
+        "frequency": "1/Round",
+        "trigger": "A character Marked by this system takes any action that affects one of your allies.",
+        "detail": "Choose one:<ul><li>Invade your target, gaining +2 Accuracy on your Tech Attack.</li><li>Make an attack against the target with any weapon they are within the Threat of. On hit, you deal 1d6 bonus Energy damage. This counts as taking the Overwatch reaction, and can only be taken if you are still able to take the Overwatch reaction this Round.</li></ul>" 
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-585<br/><br/>THE NAZAR IS A TRADITIONAL CURSEWARD, DESIGNED TO KEEP AWAY THE 'EVIL EYE'.<br/>I DON'T BELIEVE IN MAGIC, BUT THIS SYSTEM PROVIDES UNUSUALLY RAPID INSIGHT INTO A PARTICULAR TARGETS INTENDED ACTION, SO I CHOSE THE DESIGNATION.<br/>IT SEEMS APPROPRIATE.</i>"
+  },
+  {
+    "id": "ice_angelic_aspect",
+    "name": "SA 2-777 'CONSECRATION'",
+    "type": "Flight System",
+    "sp": 4,
+    "source": "ICE",
+    "license": "HARBINGER",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Full",
+        "name": "HALLOW",
+        "frequency": "1/Scene",
+        "detail": "Until the end of combat:<ul><li>You can count any and all of your movement as Flying.</li><li>You gain resistance to one of Kinetic, Energy or Explosive damage.</li><li>Any Heat you would cause to other characters becomes AP Energy damage instead.</li><li>You gain +2 Accuracy on Hull, Agility, and Systems saves, but +2 Difficulty on Engineering saves.</li><li>You take 2 Burn at the start of each of your turns. Burn caused by this system cannot be reduced or prevented in any way.</li></ul>You may not deactivate this system manually: it may only be deactivated by combat ending." 
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-777<br/><br/>YOU CAN SAVE THEM. YOU CAN SAVE THEM. YOU CAN SAVE THEM. YOU CAN SAVE THEM. YOU CAN SAVE THEM.</i>"
   }
 ]
