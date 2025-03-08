@@ -1418,7 +1418,7 @@
       {
         "activation": "Quick",
         "name": "LAY ON HANDS",
-        "detail": "Clear one of the following conditions from an ally in an adjacent space, expending the amount of charges indicated:<ul><li><i>1 Charge:</i> Slowed, Impaired, Lock On</li><li><i>2 Charges:</i> Immobilized, Shredded</li><li><i>4 Charges:</i> Jammed, Stunned</li>." 
+        "detail": "Clear one of the following conditions from an ally in an adjacent space, expending the amount of charges indicated:<ul><li><i>1 Charge:</i> Slowed, Impaired, Lock On</li><li><i>2 Charges:</i> Immobilized, Shredded</li><li><i>4 Charges:</i> Jammed, Stunned</li>" 
       }
     ],
     "tags": [

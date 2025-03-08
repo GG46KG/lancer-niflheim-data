@@ -1887,7 +1887,7 @@
   {
     "id": "mw_ice_athame",
     "name": "SA 0-663 'ATHAME'",
-    "mount": "Main",
+    "mount": "Auxiliary",
     "source": "ICE",
     "license": "Harbinger",
     "license_level": 1,
