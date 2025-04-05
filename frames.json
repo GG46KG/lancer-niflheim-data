@@ -915,7 +915,7 @@
       "armor": 0,
       "hp": 6,
       "evasion": 8,
-      "edef": 8,
+      "edef": 9,
       "heatcap": 7,
       "repcap": 3,
       "sensor_range": 7,
@@ -962,7 +962,7 @@
         {
           "activation": "Quick",
           "name": "Manifestation",
-          "detail": "Choose one of the following forms for OMEN to take, summoning it to the battlefield. Each form has a unique appearance and summoning conditions. Once OMEN has been summoned, its form cannot be changed and it cannot be given control of the Harbinger until it is reabsorbed by the Harbinger as a quick action.<br/><br/><ul><li><b>WRAITH</b>: Choose a location within Burst 15. OMEN is summoned to that location in the form of a Raven (SIZE 1/2, Tags: DEPLOYABLE, IMMUNITY to all damage and effects). The area within Burst 5 of OMEN is considered to be within your Sensors. As a Protocol, you can move OMEN to any space within Sensors.</li><li><b>GRIM</b>: OMEN is summoned to that location in the form of a Hound (SIZE 1, Tags: DEPLOYABLE, IMMUNITY to all damage and effects). Any character adjacent to OMEN is considered to be within the Threat of your weapons for the purpose of Overwatch, regardless of their actual distance from you. As a Protocol, you can move OMEN up to 4 Spaces.</li><li><b>SHADE</b>: OMEN is summoned as a shadow that moves across and underneath the Harbinger. While OMEN remains summoned, you have Resistance to all damage from attacks and abilities that originate from more than 5 spaces away. As a Protocol, you may use the Harbinger's SKULK action, even if you aren't Invisible or Hidden. If you do, you cannot use SKULK again this Round.</li></ul><br/>",
+          "detail": "Choose one of the following forms for OMEN to take, summoning it to the battlefield. Each form has a unique appearance and summoning conditions. Once OMEN has been summoned, its form cannot be changed and it cannot be given control of the Harbinger until it is reabsorbed by the Harbinger as a quick action.<br/><br/><ul><li><b>WRAITH</b>: Choose a location within Burst 15. OMEN is summoned to that location in the form of a Raven (SIZE 1/2, Tags: DEPLOYABLE, IMMUNITY to all damage and effects). The area within Burst 5 of OMEN is considered to be within your Sensors. As a Protocol, you can move OMEN to any space within Sensors.</li><li><b>GRIM</b>: OMEN is summoned to that location in the form of a Hound (SIZE 1, Tags: DEPLOYABLE, IMMUNITY to all damage and effects). Any character adjacent to OMEN is considered to be within the Threat of your weapons for the purpose of Overwatch, regardless of their actual distance from you. As a Protocol, you can move OMEN up to 4 Spaces.</li><li><b>SHADE</b>: OMEN is summoned as a shadow that moves across and underneath the Harbinger, rendering it slightly intangible. While OMEN remains summoned, you have Resistance to damage from effects that require a Save and when you succeed on a Save to reduce the damage from an effect, you take no damage from that effect. Furthermore, you may use the Harbinger's SKULK action even if you aren't Invisible or Hidden.</li></ul><br/>",
           "frequency": "1/Round"
         },
         {
@@ -1133,7 +1133,7 @@
     "name": "DOGMA",
     "mechtype": ["Defender", "Striker"],
     "y_pos": 15,
-    "description": "<i>Independent frames are not available as a part of any license and are only accessible as Exotic Gear.</i><br>Markus \"Dogma\" Brynjar could not have been more different than his father. Though both of them worked for ASGARD, Hakon \"Odin\" Brynjar had experienced true horror in his life and had chosen a path of isolation to insulate himself from tragedy. Hakon's ability to make hard decisions in times of stress made him a valuable asset to the ASGARD company-as a leader who could be ensured to get results, no matter the situation. Markus too had experienced the horrors of corporate war, of massacres committed by criminal gangs, and of deaths brought about by the sheer hostility of the Outer Arm Frontier Sector. Tragedy, however, merely hardened his resolve to resist the urge to harm those who hated him and to protect anyone he perceived to have even a flicker of innocence. To that end, he built this mech.",
+    "description": "<i>Independent frames are not available as a part of any license and are only accessible as Exotic Gear.</i><br>Markus \"Dogma\" Brynjar could not have been more different than his father. Though both of them worked for ASGARD, Hakon \"Odin\" Brynjar had experienced true horror in his life and had chosen a path of isolation to insulate himself from tragedy. Hakon's ability to make hard decisions in times of stress made him a valuable asset to the ASGARD company-as a leader who could be ensured to get results, no matter the situation. Markus too had experienced the horrors of corporate war, of massacres committed by criminal gangs, and of deaths brought about by the sheer hostility of the Outer Arm Frontier Sector. Tragedy, however, hardened his resolve to forgive those who hated him and to protect anyone he perceived to have even a flicker of innocence. To that end, he built this mech.",
     "mounts": ["Main"],
     "stats": {
       "size": 1,

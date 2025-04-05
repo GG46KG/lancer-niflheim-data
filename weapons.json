@@ -1777,7 +1777,7 @@
     "damage": [
       {
         "type": "Explosive",
-        "val": "1d6+6"
+        "val": "1d6+5"
       }
     ],
     "tags":[
@@ -1817,12 +1817,8 @@
     ],
     "damage": [
       {
-        "type": "Kinetic",
-        "val": "2d6"
-      },
-      {
         "type": "Explosive",
-        "val": "3"
+        "val": "2d6"
       }
     ],
     "tags":[
@@ -1844,7 +1840,7 @@
     ],
     "on_crit": "Store a <i>Chainfire</i>.",
     "on_hit": "If any of the damage dice rolled for this weapon's damage landed on a 6, store a <i>Chainfire</i>.",
-    "on_attack": "After any attack with this weapon resolves: if you have any <i>Chainfires</i> remaining, you must expend a <i>Chainfire</i> and make another attack with this weapon. If you make an Overheating roll while you have <i>Chainfires</i> remaining, the Volcanic Gun discharges: discard all remaining <i>Chainfires</i> and inflict 2 Burn on yourself and any characters within Burst 3.",
+    "on_attack": "After any attack with this weapon resolves: if you have any <i>Chainfires</i> remaining, you must expend a <i>Chainfire</i> and make another attack with this weapon. If you make an Overheating roll while you have <i>Chainfires</i> remaining, the Volcanic Gun discharges: discard all remaining <i>Chainfires</i> and inflict 1 Burn on yourself and any characters within Burst 3 for each <i>Chainfire</i> discarded.",
     "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-555<br/><br/>UNSTABLE DOESN'T EVEN BEGIN TO DESCRIBE THIS WEAPON.<br/>IT SELF-PRODUCES A TYPE OF PRIMITIVE AMMUNITION THAT IS EXTREMELY PRONE TO CHAIN FIRING UNDER HEAT AND HAS A VERY HIGH RATE OF FIRE.<br/>AS SUCH, THE GUN GETS <b>HOT</b>, AND MORE HEAT MEANS MORE MISFIRES.<br/><br/>ALWAYS REMEMBER RULE NUMBER 2:<br/>NEVER POINT A GUN AT SOMETHING YOU AREN'T WILLING TO DESTROY.<br/>IT COUNTS FOR DOUBLE HERE.</i>"
   },
   {
@@ -1920,7 +1916,7 @@
     "source": "ICE",
     "license": "Harbinger",
     "license_level": 3,
-    "sp": 2,
+    "sp": 1,
     "type": "Melee",
     "range": [
       {
@@ -1935,7 +1931,7 @@
       }
     ],
     "on_attack": "This weapon gains additional effects based on the actions the target took on their most recent turn. If the target took any of the following actions, your attack gains the following effect:<ul><li><i>Attack</i>: Deal 1 Reliable energy damage to the target for each attack the target made.</li><li><i>Tech Action</i>: Gain +1 Accuracy for each tech action the target took.</li><li><i>Boost</i>: The target must attempt a Systems save or be Immobilized until the end of their next turn.</li></ul>",
-    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-176<br/><br/>[AUDIO TRANSCRIPTION FOLLOWS]<br/><br/>FOUL MAGICS SHALL NOT BE TOLERATED.<br/>BURN THE HERETIC.<br/>HUNT THEM.</i>"
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-507<br/><br/>[AUDIO TRANSCRIPTION FOLLOWS]<br/><br/>FOUL MAGICS SHALL NOT BE TOLERATED.<br/>BURN THE HERETIC.<br/>HUNT THEM.</i>"
   },
   {
     "id": "mw_poke_integrated",
