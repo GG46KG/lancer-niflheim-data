@@ -780,6 +780,14 @@
       {
         "name": "Rampant Growth",
         "description": "At the start of its turn, the Greenhorn regains 1/2 of its total HP. If it takes energy damage or gains Burn, it does not regain HP at the start of its next turn."
+      },
+      {
+        "name": "Springleaf",
+        "description": "The GREENHORN deploys its deployables (including mines and drones) to any space within Range 5 and line of sight instead of the normal deployment range."
+      },
+      {
+        "name": "Rootseek",
+        "description": "The Greenhorn can Search for HIDDEN characters and mines in within Range 5. When it does, it uses Hull instead of Systems when making its check."
       }
     ],
     "core_system": {
@@ -788,7 +796,7 @@
       "passive_name": "Leafcoat",
       "passive_effect": "The Greenhorn can alter its appearance during a Full Repair or rest to better match the flora of a battlefield, allowing it to blend in with the natural environment. The Greenhorn can Hide on a turn where it has not moved, even if it would not normally be able to, though it loses the Hidden status upon moving. In particularly barren environments, like deserts, tundras, or the interior of ships or buildings, this ability has no effect.",
       "active_name": "Ingrain",
-      "active_effect": "The Greenhorn triggers a massive growth surge, rooting into the ground and locking itself in place. Until you end this effect as a Protocol:<ul><li>The Greenhorn is Immobilized and has Immunity to all forced movement.</li><li>The Greenhorn gains 4 Armor. Any character that makes a melee attack against it take 3 Kinetic damage.</li><li>If the Greenhorn is rooted to an organic surface, such as dirt or rock, Rampant Growth heals it for 100% of its total HP instead of its normal amount.</li></ul>",
+      "active_effect": "The Greenhorn triggers a massive growth surge, rooting into the ground and locking itself in place. Until you end this effect as a Protocol:<ul><li>The Greenhorn is IMMOBILIZED but has Immunity to all forced movement.</li><li>The Greenhorn gains resistance to Explosive and Kinetic Damage.</li><li>If the Greenhorn is rooted to an organic surface, such as dirt or rock, RAMPANT GROWTH heals for 100% of the Greenhorn's total HP instead of its normal amount.</li><li>The range of SPRINGLEAF and ROOTSEEK increase to 10.</li></ul>",
       "activation": "Protocol"
     },
     "data_type": "frame",
