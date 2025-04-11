@@ -537,6 +537,9 @@
     "license_level": 1,
     "tags": [
       {
+        "id": "tg_unique"
+      },
+      {
         "id": "tg_grenade"
       },
       {
@@ -603,6 +606,9 @@
     "license_level": 3,
     "tags": [
       {
+        "id": "tg_unique"
+      },
+      {
         "id": "tg_ai"
       },
       {
@@ -638,6 +644,9 @@
     "license_level": 2,
     "tags": [
       {
+        "id": "tg_unique"
+      },
+      {
         "id": "tg_limited",
         "val": 2
       },
@@ -650,7 +659,7 @@
       {
         "activation": "Free",
         "name": "Ignite Booster",
-        "detail": "Move up to 10 Spaces in a straight line, stopping early only if you collide with an object or another character. If you stop early, you and the character or object you collided with take 1 Kinetic damage for every two spaces you moved.",
+        "detail": "Move up to 10 Spaces in a straight line, stopping early only if you collide with an object or another character. If you stop early, you and the character or object you collided with take 1 Kinetic damage for every two spaces you moved. The movement provided by this system ignores engagement and does not provoke reactions.",
         "frequency": "1/Round"
       }
     ],
@@ -673,6 +682,9 @@
       }
     ],
     "tags": [
+      {
+        "id": "tg_unique"
+      },
       {
         "id": "tg_limited",
         "val": 1
@@ -699,6 +711,11 @@
         "name": "Dragonfly",
         "detail": "You rocket towards the ground, landing in any space on the battlefield. You deal 1d6 Explosive damage to and knock Prone all characters within Burst 2 of your landing spot.<br/><br/><i>You may only use this Protocol while hovering from the effect of Atmospheric Launch.</i>",
         "frequency": "1/Round"
+      }
+    ],    
+    "tags": [
+      {
+        "id": "tg_unique"
       }
     ],
     "effect": "All actions granted by this system are considered movement and cannot be taken while Slowed or Immobilized.",
@@ -1070,6 +1087,9 @@
       }
     ],
     "tags": [
+      {
+        "id": "tg_unique"
+      },
       {
         "id": "tg_aura",
         "val": 4
@@ -1478,6 +1498,9 @@
       }
     ],
     "tags": [
+      {
+        "id": "tg_unique"
+      },
       {
         "id": "tg_limited",
         "val": 1
