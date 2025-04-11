@@ -631,6 +631,11 @@
     "source": "ASG",
     "license": "FAFNIR",
     "license_level": 1,
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
     "effect": "Whenever you Boost, you clear 1 Heat. Clearing Heat in this way does not trigger the effects of your own weapons, systems, core bonuses, or frame traits.",
     "description": "Mech boosters generate a noticeable amount of heat which are mitigated by sophisticated heatsinks which use the motion of air around the boosting Mech to reduce the chance of overheating. By routing some of the coolant of a mech's other systems through these air coolers, one achieves a tiny bit of additional passive cooling."
   },
