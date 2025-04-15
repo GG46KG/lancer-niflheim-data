@@ -812,7 +812,7 @@
     "description": "<i>This thing is a variant of the Vessels that we used during the Siege of Niflheim to house Caliph and Luke's minds when they passed through Terminus. Apparently, the original designs were based on anomalous entities that were appearing within the Metavault, according to the notes that the designer left behind. I used to think that these things were horrific, but after some of the things I've seen in the Vault, I'm realizing that these half-organic 'divine machines' aren't even below the water's surface on this iceberg.<br/>Ha ha...<br/><br/>- Dr. Lavender Briggs</i>",
     "mounts": ["Main/Aux"],
     "stats": {
-      "size": 2,
+      "size": 1,
       "structure": 4,
       "stress": 4,
       "armor": 0,
@@ -865,7 +865,7 @@
     "name": "CATALYST",
     "mechtype": ["Controller"],
     "y_pos": 15,
-    "description": "<i>The following information details ICEBREAKER LLC. proprietary research. If you are not entitled to this information, do not continue or you may be in violation of trade law.</i><br/><br/>Metavault Research Result - Stabilized Prototype 321 <i>'CATALYST'</i><br/><br/>Goddamn, am I glad I got put on the CATALYST project instead of something else. I'm reading the briefs on the other frames and getting the willies. The CATALYST is close to a traditional frame, but powered by what's basically a magic portal to a Variant that's a huge unstable plane of fire instead of a reactor. It's a mech with a mini volcano in it! That's sick as hell. You're telling me I can grill sausages on my mech's power core <i>without</i> radiation exposure? Sign me up, and get me a beer.<br/><br/>Plus, there's no paracausal gobbledygook going on here. Sure, it's a bit <i>physically</i> unstable, but I'd take that over having to deal with any of that other stuff any day.",
+    "description": "<i>The following information details ICEBREAKER LLC. proprietary research. If you are not entitled to this information, do not continue or you may be in violation of trade law.</i><br/><br/>Metavault Research Result - Stabilized Prototype 321 <i>'CATALYST'</i><br/><br/>Goddamn, am I glad I got put on the CATALYST project instead of something else. I'm reading the briefs on the other frames and getting the willies. The CATALYST is close to a traditional frame, but instead of a reactor it's powered by a connection to a Variant that's just molten flows and eruptions as far as the eye can see. It's a mech with a mini volcano in it! That's sick as hell. You're telling me I can grill sausages on my mech's power core <i>without</i> radiation exposure? Sign me up, and get me a beer.<br/><br/>Plus, there's no paracausal gobbledygook going on here. Sure, it's a bit <i>physically</i> unstable, but I'd take that over having to deal with any of that other stuff any day.",
     "mounts": ["Heavy", "Main", "Main"],
     "stats": {
       "size": 2,
