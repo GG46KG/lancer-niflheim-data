@@ -260,7 +260,7 @@
       "name": "ASG-BERSERK REVISION ZERO",
       "description": "<i>I warned you.</i>",
       "active_name": "GIVE IN",
-      "active_effect": "This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.<br/><br/>This action may only be taken if you are physically present in the Draugr. Upon activation, your pilot loses 3 HP for each previous time you have activated this Core Power since your last Full Repair. Until the end of the scene:<ul><li>You cannot make Ranged attacks.</li><li>You cannot take or be affected by tech actions, friendly or hostile, and any AIs installed on the Draugr deactivate, falling inactive until this effect ends.</li><li>Your Improvised Attacks gain +1 Accuracy, deal 1d3 bonus Kinetic damage and cannot have their damage reduced in any way.</li><li>You ignore the normal restrictions on duplicate actions for Inprovised Attacks.</li><li>At the end of each of your turns, the Draugr's Pilot loses 3 HP if they are alive and conscious.</li></ul>If you, the pilot, are killed or knocked Down and Out, the Draugr begins to pilot itself, as though it was controlled by a cascading NHP.<br/><br/>It is, however, <i>not</i> controlled by an NHP: just the echoes of the pilot's last, panicked thoughts.",
+      "active_effect": "Until the end of the scene:<ul><li>You cannot make Ranged attacks.</li><li>You cannot take or be affected by tech actions, friendly or hostile, and any AIs installed on the Draugr deactivate, falling inactive until this effect ends.</li><li>Your Improvised Attacks gain +1 Accuracy, deal 1d3 bonus Kinetic damage and cannot have their damage reduced in any way.</li><li>You ignore the normal restrictions on duplicate actions for Improvised Attacks.</li><li>At the end of each of your turns, the Draugr's Pilot loses 3 HP if they are alive and conscious.</li></ul>If you, the pilot, are killed or knocked Down and Out, the Draugr begins to pilot itself, as though it was controlled by a cascading NHP.<br/><br/>It is, however, <i>not</i> controlled by an NHP: just the echoes of the pilot's last, panicked thoughts.",
       "activation": "Protocol",
       "use": "Encounter"
     },
@@ -342,7 +342,7 @@
     "name": "FAFNIR",
     "mechtype": ["Striker"],
     "y_pos": 35,
-    "description": "",
+    "description": "There's a saying the has lived on in the development of tech for war and civilian use alike: 'Do one thing well.' When you produce something, choose what it will do, and focus on that one thing. After all, when your development resources aren't split between multiple goals, you can focus on making your product the absolute best at what it does. This is the mentality that lead to the production of the FAFNIR frame: the fastest mech frame commericially available from ASGARD or any of its competitors. Its acceleration and deceleration produce forces more consistent with high speed aerial vehicles than with mech frames, and a special cockpit had to be designed to prevent pilots from blacking out due to the G-force that occurs during turns and stops. Leaks during its development were mistaken for schematics for a new atmospheric jet. The specs that were datamined couldn't have been those of a mech, after all, despite what ASGARD was hinting at.<br/><br/>When ASGARD unveiled the FAFNIR frame during a press release, they launched a supersonic drone. The FAFNIR on the runway didn't move. The press muttered, thinking something had gone wrong as the drone screamed toward the horizon.<br/><br/>Then, there was a bang and the mech was gone. And just as soon as it disappeared, it returned... with a crushed drone in its hand. The press agent for ASGARD stepped forward and simply said: 'The FAFNIR frame, new from ASGARD. Because, ladies and gentlemen, speed kills.'",
     "mounts": ["Heavy", "Aux/Aux"],
     "stats": {
       "size": 1,
@@ -392,7 +392,7 @@
     "name": "VIRTUOSO",
     "mechtype": ["Controller", "Artillery"],
     "y_pos": 22,
-    "description": "The Virtuoso is the only mech frame that Lumiera Corporation has produced for widespread release, if you can consider a release to a hand-vetted waitlist of pilots 'widespread'. It's gaudy, over-engineered, and ludicrously expensive, and yet, hordes of pilots clamber over one another to wait on a list for access to its license. Merely possessing this mech tells a potential employer, \"If I couldn't do everything I claim, Lumiera would have never let me pilot one of their precious mechs.\" After all, Lumiera's standards are astronomical, both for the capabilities of their own mechs and of the pilots that use them.<br><i>Note: Wings are for display purposes only. Lumiera Corporation requests that pilots disconnect the Virtuoso's wings before combat use.</i>",
+    "description": "The Virtuoso is the only mech frame that Lumiera Corporation has produced for widespread release, if you can consider a release to a hand-vetted waitlist of pilots 'widespread'. It's gaudy, over-engineered, and ludicrously expensive, and yet, hordes of pilots clamber over one another to wait on a list for access to its license. Merely possessing this mech tells a potential employer, \"If I couldn't do everything I claim, Lumiera would have never let me pilot one of their precious mechs.\" After all, Lumiera's standards are astronomical, both for the capabilities of their own mechs and of the pilots that use them. And Lumiera doesn't make mistakes.<br><i>Note: Wings are for display purposes only. Lumiera Corporation requests that pilots disconnect the Virtuoso's wings before combat use.</i>",
     "mounts": ["Heavy", "Flex"],
     "stats": {
       "size": 1,
@@ -531,7 +531,7 @@
     "name": "TRAILBLAZER",
     "mechtype": ["Striker"],
     "y_pos": 35,
-    "description": "The colonists of the Outer Arm are practical people, with no need or patience for the typical theatrical flair of the Lumiera Corporation. This proved to be an issue for the company, who had built their reputation on the idea that the greatest adventurers and pilots sought out their mechs as a prize. In an effort to convice the pioneers of the Outer Arm of their value, Lumiera Corporation developed the Trailblazer, released to specific individuals that the company deemed \"of interest\", built using practical designs that lacked some of the usual flair of Lumiera's other mechs. Whether its reception will lead to further release, only time will tell.",
+    "description": "The colonists of the Outer Arm are practical people, with no need or patience for the typical theatrical flair of the Lumiera Corporation. This proved to be an issue for the company, who had built their reputation on the idea that the greatest adventurers and pilots sought out their mechs as a prize. In an effort to convice the pioneers of the Outer Arm of their value, Lumiera Corporation developed the Trailblazer, released to specific individuals that the company deemed \"of interest\", and built using practical designs that lacked some of the usual flair of Lumiera's other mechs. Whether its reception will lead to further release, only time will tell.",
     "mounts": ["Heavy", "Main", "Flex"],
     "stats": {
       "size": 1,
@@ -591,7 +591,7 @@
     "name": "SAVANT",
     "mechtype": ["Striker"],
     "y_pos": 35,
-    "description": "",
+    "description": "Any mech pilot who spends enough time on the battlefield will see a mech throw a melee weapon at some point. Whether through desperation or clever thinking, knives and hatchets go flying every once in a while as a pilot tries to hit a bogey that's just a bit too evasive for normal melee strategies. Some pilots go a step further and incorporate throwing knives into their main strategy, using retrieval systems to ensure that they always have a weapon to throw. LUMICO, as they often do, saw an unusual niche and chose to provide a frame to serve it.",
     "mounts": ["Heavy", "Aux/Aux", "Flex"],
     "stats": {
       "size": 0.5,
@@ -635,7 +635,7 @@
     ],
     "core_system": {
       "name": "\"COVENANT\" Direct Service Engine",
-      "description": "<i>Congratulations on your subscription to Lumiera Corporation's COVENANT Direct Service support system! An engineer has been assigned to your account and is on standby to provide personal support by blinking light weapons directly into your hands. Our system engineer is trained to ensure that you always have access to exactly what you need, right when you need it, as long as your subscription is maintained.</i>",
+      "description": "<i>Congratulations on your subscription to Lumiera Corporation's COVENANT Direct Service support system! An engineer has been assigned to your account—and your account only—and is on standby to provide personal support by blinking hardlight weapons directly into your mech's hands. Our system engineer is trained to ensure that you always have access to exactly what you need, right when you need it, as long as your subscription is maintained.</i>",
       "passive_name": "Divine Armory",
       "passive_effect": "At the start of each Scene, gain two Armory dice: 2d6, starting on random values, which are used to attack with the Divine Armory. All Armory Dice are lost at the end of each scene.<br/>1/Round when you target a character with a Thrown attack, you may open the Divine Armory to make an attack with it against the same target as a free action. This is the only way you may attack with the Divine Armory.",
       "active_name": "Seven Seals",
@@ -654,7 +654,7 @@
     "name": "PARAGON",
     "mechtype": ["Defender"],
     "y_pos": 22,
-    "description": "IN PROGRESS",
+    "description": "The Lumiera Corporation PARAGON frame is something of a mystery. Its systems and frame are clearly LUMICO in their construction and underlying code, designed to the same standards as all of their frames, but its standard livery is fully grey, with only basic safety markings. It's a much bulkier mech than a typical LUMICO mech, built for slow movement and surviving hard hits. In the field, it is often mistaken for a Harrison Armories or IPS Northstar build, since it seems more at home with the style of those companies. And, even more unusual, it is seen in the field often enough for its mistaken identification to be a trend, despite not being listed in LUMICO's public designs catalog.<br/><br/>Theories abound as to how the PARAGON's designs and license are distributed, since the method doesn't follow LUMICO's typical patterns in any way, but those mercenary companies that deploy it frequently are tight-lipped about their agreements. 'It's in the contract, we can't say how we got access to the schematics,' they say, 'But even if we could... why would we tell you?'",
     "mounts": ["Main/Aux", "Flex"],
     "stats": {
       "size": 2,
@@ -663,7 +663,7 @@
       "armor": 0,
       "hp": 9,
       "evasion": 6,
-      "edef": 6,
+      "edef": 8,
       "heatcap": 6,
       "repcap": 5,
       "sensor_range": 10,
@@ -754,7 +754,7 @@
     "name": "GREENHORN",
     "mechtype": ["Defender", "Striker"],
     "y_pos": 15,
-    "description": "<i>The following information details ICEBREAKER LLC. proprietary research. If you are not entitled to this information, do not continue or you may be in violation of trade law.</i><br/><br/>Metavault Research Result - Stabilized Prototype 004 <i>'GREENHORN'</i><br/><br/>I think that this prototype all but proves that the contents of the Metavaults aren't completely random, as was the popular theory, but in fact may connect to entirely different stable realities. What we are shown may seem to be effectively nonsense, but it's in fact several parallel independent realities (<i>\"Variants\"</i>) blending together rapidly. What the existence of these variants actually implies is up to interpretation, however. My peers have a number of theories ranging from the existence of a 'multiverse' to the idea of that our emotions generate these potential timelines dynamically. I believe that it's even more complex, based on my experiences during the Siege of Niflheim: there seem to be meta-beings on a different level than us that control not only our actions but the very nature of our existence simply through their imagination, and these realities are simply their fantasies. Regardless of the cause of these variants, using the same technology that was used by NULL and BAYHOUND to stabilize the connection to Terminus in the Eljuthnir drilling station, we can force the Metavault to temporarily stabilize, allowing us to peek into one variant for a short time. We copied the structure of the Greenhorn from the frozen Metavault and despite all expectations, I can confirm: it's a living plant with no technological components whatsoever. It's made of normal wood. This may very well be <i>literal magic</i> from a variant where that isn't a ridiculous thing to say.",
+    "description": "<i>The following information details ICEBREAKER LLC. proprietary research. If you are not entitled to this information, do not continue or you may be in violation of trade law.</i><br/><br/>Metavault Research Result - Stabilized Prototype 004 <i>'GREENHORN'</i><br/><br/>I think that this prototype all but proves that the contents of the Metavaults aren't completely random, as was the popular theory, but in fact may connect to entirely different stable realities. What we are shown may seem to be effectively nonsense, but it's in fact several parallel independent realities (<i>\"Variants\"</i>) blending together rapidly. What the existence of these variants actually implies is up to interpretation, however. My peers have a number of theories ranging from the existence of a 'multiverse' to the idea of that our emotions generate these potential timelines dynamically. I believe that it's even more complex, based on my experiences during the Siege of Niflheim: there seem to be meta-beings on a different level than us that control not only our actions but the very nature of our existence simply through their imagination, and these realities are simply their fantasies. Regardless of the cause of these variants, using the same technology that was used by NULL and BAYHOUND to stabilize the connection to Terminus in the Eljuthnir drilling station, we can force the Metavault to temporarily stabilize, allowing us to peek into a single variant for a short time. We copied the structure of the Greenhorn from the frozen Metavault and despite all expectations, I can confirm: it's a living plant with no technological components whatsoever. It's made of normal wood. This may very well be <i>literal magic</i> from a variant where that isn't a ridiculous thing to say.",
     "mounts": ["Heavy", "Main"],
     "stats": {
       "size": 2,
@@ -865,13 +865,13 @@
     "name": "CATALYST",
     "mechtype": ["Controller"],
     "y_pos": 15,
-    "description": "IN PROGRESS",
+    "description": "<i>The following information details ICEBREAKER LLC. proprietary research. If you are not entitled to this information, do not continue or you may be in violation of trade law.</i><br/><br/>Metavault Research Result - Stabilized Prototype 321 <i>'CATALYST'</i><br/><br/>Goddamn, am I glad I got put on the CATALYST project instead of something else. I'm reading the briefs on the other frames and getting the willies. The CATALYST is close to a traditional frame, but powered by what's basically a magic portal to a Variant that's a huge unstable plane of fire instead of a reactor. It's a mech with a mini volcano in it! That's sick as hell. You're telling me I can grill sausages on my mech's power core <i>without</i> radiation exposure? Sign me up, and get me a beer.<br/><br/>Plus, there's no paracausal gobbledygook going on here. Sure, it's a bit <i>physically</i> unstable, but I'd take that over having to deal with any of that other stuff any day.",
     "mounts": ["Heavy", "Main", "Main"],
     "stats": {
       "size": 2,
       "structure": 4,
       "stress": 4,
-      "armor": 2,
+      "armor": 1,
       "hp": 10,
       "evasion": 8,
       "edef": 8,
@@ -894,10 +894,10 @@
       }
     ],
     "core_system": {
-      "name": "Magma Chamber",
-      "description": "IN PROGRESS",
+      "name": "Magma Core",
+      "description": "<i>If you hear the pilot say 'Is it hot in here, or is it just me?' over comms, assume it's because the Magma Core is getting close to blowing up. Best case scenario, they shut down before that happens. If not... they're definitely going to be hot after they get covered in molten rock.</i>",
       "active_name": "Eruption",
-      "active_effect": "Gain an Criticality die until the end of the scene, 1d6 beginning at 4. While you have the Criticality die:<ul><li>You are always considered to be in the Danger Zone, regardless of how much Heat you have.</li><li>1/turn, you can reroll any attack you make. You must use the new result if you do.</li><li>You have Resistance to Kinetic, Energy, and Explosive damage.</li></ul>At the end of your turn, decrease the Criticality die by 1. If the Criticality die is already 1, the Catalyst Self-Destructs immediately, instead.<br/><br/>This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used. <br/>However, the starting value of the Criticality die decreases by 1 after each use of this ability, to a minimum of 1, only resetting after completing a Full Repair.",
+      "active_effect": "Gain an Criticality die until the end of the scene, 1d6 beginning at 4. While you have the Criticality die:<ul><li>You are always considered to be in the Danger Zone, regardless of how much Heat you have.</li><li>1/Round, you can reroll any attack you make. You must use the new result if you do.</li><li>You have Resistance to Kinetic, Energy, and Explosive damage.</li></ul>At the end of your turn, decrease the Criticality die by 1. If the Criticality die is already 1, the Catalyst Self-Destructs immediately, instead.<br/><br/>This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used. <br/>However, the starting value of the Criticality die decreases by 1 after each use of this ability, to a minimum of 1, only resetting after completing a Full Repair.",
       "activation": "Protocol"
     },
     "data_type": "frame",
@@ -910,7 +910,7 @@
     "name": "HARBINGER",
     "mechtype": ["Striker"],
     "y_pos": 15,
-    "description": "IN PROGRESS",
+    "description": "<i>The following information details ICEBREAKER LLC. proprietary research. If you are not entitled to this information, do not continue or you may be in violation of trade law.</i><br/><br/>Metavault Research Result - Stabilized Prototype 199 <i>'HARBINGER'</i><br/><br/>NHPs are pretty different from what we thought they would be, aren't they? I always expected we'd keep getting better and better versions of COMP/CON units until eventually we had ones that could self actualize. Instead, we have... well, what we have. I have mixed feelings about NHPs, just like I have mixed feelings about OMEN, the... thing that's haunting this frame. Nothing in the schematics indicate why OMEN should be there, but if you build the mech just right, just as the pattern says to, it just spontaneously manifests overnight. It functions basically like an NHP, but there's no need to cycle it. It never gets to a point where you have to worry about it becoming unshackled, not that it's really shackled to begin with.<br/><br/>But each copy of OMEN is different, depending on where and when the mech was assembled. The subtleties only show up when it's dark, and when OMEN thinks it's alone. Sometimes, it rages against its condition and treatment. Sometimes it laments that it can't speak kindly with the pilot, the way it wants to. Sometimes, it just quietly weeps.<br/><br/>Then, the light comes, and it's back to its original self: cold, calculating... and hungry for death.",
     "mounts": ["Flex", "Flex"],
     "stats": {
       "size": 0.5,

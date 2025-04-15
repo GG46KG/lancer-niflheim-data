@@ -1330,7 +1330,7 @@
   },
   {
     "id": "ice_dropsy",
-    "name": "SA 0-238 'DROPSY'",
+    "name": "SA 0-238 'WEAKNESS OF BODY'",
     "type": "Tech",
     "sp": 2,
     "source": "ICE",
@@ -1341,6 +1341,11 @@
         "activation": "Invade",
         "name": "DROPSY",
         "detail": "Until the end of your target's next turn, they take 1 AP Energy damage each time they gain Heat (regardless of the amount of Heat they gained), including the Heat they gained from this Invade action."
+      },
+      {
+        "activation": "Invade",
+        "name": "CONSUMPTION",
+        "detail": "Until the end of your target's next turn, if they take any action that causes them to gain Heat, they are STUNNED until the end of their next turn at the end of that action. This can only be used 1/scene on each character."
       }
     ],
     "tags": [
