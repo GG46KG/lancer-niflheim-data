@@ -1691,9 +1691,9 @@
         ],
         "actions": [
           {
-            "activation": "Half",
+            "activation": "Quick",
             "name": "Whetting Growth",
-            "detail": "Gain 5 Heat. Rebloom the Blade of Grass, returning it to its Honed profile."
+            "detail": "Gain 3 Heat. Rebloom the Blade of Grass, returning it to its Honed profile."
           }
         ]
       }
