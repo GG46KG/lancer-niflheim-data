@@ -1759,7 +1759,7 @@
   },
   {
     "id": "mw_ice_pyretic_nexus",
-    "name": "SA 0-401 'PYRETIC NEXUS'",
+    "name": "SA 0-868 'PYRETIC NEXUS'",
     "mount": "Aux",
     "source": "ICE",
     "license": "Catalyst",
@@ -1787,7 +1787,7 @@
       }
     ],
     "on_attack": "1/Turn: If you are in the Danger Zone, you must make an additional attack against a different hostile target in range, if there is one.",
-    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-401<br/><br/>THIS NEXUS FIRES OFF ARCING BOLTS OF PLASMA AUTONOMOUSLY AGAINST NEARBY TARGETS.<br/>ONCE IT'S HEATED UP, ITS RATE OF FIRE INCREASES FEVERISHLY<br/>AND IT STARTS TO ARC ALL OVER THE PLACE.</i>"
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-868<br/><br/>THIS NEXUS FIRES OFF ARCING BOLTS OF PLASMA AUTONOMOUSLY AGAINST NEARBY TARGETS.<br/>ONCE IT'S HEATED UP, ITS RATE OF FIRE INCREASES FEVERISHLY<br/>AND IT STARTS TO ARC ALL OVER THE PLACE.</i>"
   },
   {
     "id": "mw_ice_hellraiser",
