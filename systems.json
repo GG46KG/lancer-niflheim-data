@@ -1397,7 +1397,7 @@
     "source": "ICE",
     "license": "ANGEL",
     "license_level": 3,
-    "effect": "While this system's Aura is activated, you can project a <i>Destiny Fragment</i>, a astral projection of yourself, to any space within the Aura. It remains as long as the Aura is active. The <i>Destiny Fragment</i> has the same Sensor range as you, and has IMMUNITY to all effects not caused by a Tech Action, and whenever it is affected by a Tech Action, the effects are applied to you, instead. This cannot cause you to be affected by a single Tech Action multiple times.<br/><br/>You can move the <i>Destiny Fragment</i> up to your Speed as a Protocol, but it must remain within the Aura.<br/><br/>Whenever you INVADE, the <i>Destiny Fragment</i> makes an INVADE using your Tech Attack bonus against a different target within its Sensors. It may choose a different INVADE option if it hits.",
+    "effect": "While this system's Aura is activated, you can project a <i>Destiny Fragment</i>, an astral projection of yourself, to any space within the Aura. It remains as long as the Aura is active. The <i>Destiny Fragment</i> has the same Sensor range as you, and has IMMUNITY to all effects not caused by a Tech Action, and whenever it is affected by a Tech Action, the effects are applied to you, instead. This cannot cause you to be affected by a single Tech Action multiple times.<br/><br/>You can move the <i>Destiny Fragment</i> up to your Speed as a Protocol, but it must remain within the Aura.<br/><br/>Whenever you INVADE, the <i>Destiny Fragment</i> makes an INVADE using your Tech Attack bonus against a different target within its Sensors. It may choose a different INVADE option if it hits.",
     "tags": [
       {
         "id": "tg_unique"
@@ -1430,7 +1430,7 @@
         "id":"tg_danger_zone"
       }
     ],
-    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-095<br/><br/>[AUDIO TRANSCRIPTION FOLLOWS]<br/><br/>FIIIIRE! AHAHAHA! FIIIIIIIIRE!<br/><br/>(Further audio analysis suggests that the beeping heard in the recording was a Reactor Meltdown Warning.)</i>"
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-095<br/><br/>[AUDIO TRANSCRIPTION FOLLOWS]<br/><br/>FIIIIRE! AHAHAHA! FIIIIIIIIRE!</i>"
   },
   {
     "id": "ice_lay_hands",

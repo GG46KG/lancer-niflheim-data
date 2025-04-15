@@ -83,5 +83,25 @@
       }
     ],
     "description": "The Ravenscope unit is actually an extremely specialized variant of a COMP/CON unit, hyper-specialized to constantly calculate and re-calculate the weakest point on a target's hull, taking into account all environmental factors, including the strain caused by the target's movements, the effects of temperature on the material of the target's hull, and the historical effectiveness of the type of point defense used by the mech."
+  },
+  {
+    "id": "ice_toba",
+    "name": "SA 1-631 'TOBA MOD'",
+    "sp": 3,
+    "allowed_types": ["Melee", "Rifle", "Cannon", "Launcher", "CQB", "Nexus"],
+    "source": "ICE",
+    "license": "Catalyst",
+    "license_level": 2,
+    "effect": "When you make an attack with the weapon this mod is attached to, you can choose to activate this mod. If you do, you can choose to gain 8 Heat instead of expending a charge of this mod.<br/><br/>When activated, your attack with the weapon this mod is applied to:<ul><li>Deals 1d3 bonus Explosive damage. Melee and Superheavy weapons deal 1d6 bonus Explosive damage, instead.</li><li>Gains Knockback 5 and Blast 3.</li></ul>You must apply the Knockback to all characters hit and the Knockback is always applied to you, even if you aren't hit by the attack. Any character that is knocked back is also knocked Prone.",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-095<br/><br/>[AUDIO TRANSCRIPTION FOLLOWS]<br/><br/>WHEN YOU ACTIVATE THIS, IT SUPERCHARGES THE WEAPON IT'S ATTACHED TO.<br/>IT'LL START VIBRATING AND GLOWING AND SHOOTING OFF SPARKS.<br/>JUST SMACK SOMEBODY OR FIRE IT ASAP.<br/>PLEASE.<br/><br/>IT'S NOT FUNNY WATCHING TESTERS RUN AROUND WITH A MATTER-DESTABILIZED PIECE OF METAL.</i>"
   }
 ]

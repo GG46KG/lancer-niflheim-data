@@ -1480,7 +1480,7 @@
       {
         "activation": "Full",
         "name": "Flame of Hope",
-        "detail": "You may only take this action while in the Danger Zone.<br/><br/>You activate this system's Aura, granting [ 8 + your Grit ] Overshield to all allies in range. While this system's Aura is active, you gain access to this weapon's On Hit effect, but you cannot attack with any weapons other than this one and, upon clearing enough heat to leave the Danger Zone, you immediately gain Heat until you reach the Danger Zone."
+        "detail": "You may only take this action while in the Danger Zone, and you cannot take this action on a turn where this weapon's Aura was active at any point.<br/><br/>You activate this system's Aura, granting [ 8 + your Grit ] Overshield to all allies in range. While this system's Aura is active, you gain access to this weapon's On Hit effect, but you cannot attack with any weapons other than this one and, upon clearing enough heat to leave the Danger Zone, you immediately gain Heat until you reach the Danger Zone."
       }
     ],
     "on_hit": "If this weapon's Aura is active: deal 2 Burn to your target and choose an allied Character within this weapon's Aura. The chosen ally gains +1 Accuracy on their next attack or save.",
@@ -1516,10 +1516,10 @@
     "damage": [
       {
         "type": "Energy",
-        "val": "1d3+1"
+        "val": "1d3"
       }
     ],
-    "on_hit": "If you are in the Danger Zone, this weapon's base damage is doubled and you roll 1d6. If you roll a 6, the sword overloads, detonating and destroying the mount it is on. The explosion deals 1d6+6 AP Explosive damage to your target and Stuns them until the end of their next turn, while also Stunning you until the end of your current turn.",
+    "on_hit": "If you are in the Danger Zone, this weapon's base damage is doubled and you roll 1d6 to determine the sword's stability. If you roll a 6, the sword overloads, detonating and destroying the mount it is on. The explosion deals 1d6+6 AP Explosive damage to your target and Stuns them until the end of their next turn, while also Stunning you until the end of your current turn.",
     "description": "\"Get me closer!\" you hear the pilot in the advertisement yell, beaming with pride at the new weapon he carries, \"Get me closer so I can hit them with my nuclear sword!\""
   },
   {

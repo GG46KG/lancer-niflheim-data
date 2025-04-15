@@ -453,7 +453,7 @@
       "sensor_range": 20,
       "tech_attack": 2,
       "save": 10,
-      "speed": 3,
+      "speed": 2,
       "sp": 8
     },
     "traits": [
@@ -884,10 +884,6 @@
       "sp": 7
     },
     "traits": [
-      {
-        "name": "Deconstruction",
-        "description": "Whenever the Catalyst deals damage to terrain or an object, it deals an additional 5 AP Energy damage to its target. This can only affect a given object 1/Round, but the same piece of terrain can receive this damage multiple times in a single round."
-      },
       {
         "name": "Heatproofing",
         "description": "The Catalyst's Armor also reduces Heat or Burn it receives that is not self-inflicted."
