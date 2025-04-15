@@ -235,7 +235,7 @@
     ],
     "effect": "This weapon is not mounted on the mech itself: instead, it is an integrated part of the Tyr Battlesuit and may only be used for attacks as though it were a pilot weapon. However, the Wolfstooth benefits from your talents as though it were a Mech weapon.<br>While Jockeying a hostile Mech, you may attack it with this weapon instead of the standard options. If you do, damage dealt by that attack is Armor-Piercing and deals 4 bonus kinetic damage.",
     "on_attack": "If the Fenrir damaged your target since the start of your previous turn, your attack gains +1 Accuracy.",
-    "description": "A sword, designed for the most foolhardy and dangerous mech pilots ever seen on a battlefield."
+    "description": "A lightweight armblade, designed for the most foolhardy and dangerous mech pilots ever seen on a battlefield."
   },
   {
     "id": "mw_asg_greatsword",

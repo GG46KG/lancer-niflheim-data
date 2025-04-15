@@ -16,7 +16,7 @@
     "source": "ASG",
     "license": "NIDHOGG",
     "license_level": 3,
-    "effect": "The missiles provided by this system were not designed for use on a mech: they are launched from the exterior of the chassis and may be targeted as a deployable that shares a space with you while they are primed. A primed missile shares your evasion, is immune to tech actions and has (10 + twice your Hull) HP, resistance to Kinetic and Energy damage, and immunity to Burn. If the missile is reduced to 0 HP, it detonates: you lose one charge and the missile deals damage as though you were the target of the strike.",
+    "effect": "The missiles provided by this system were not designed for use on a mech: they are launched from the exterior of the chassis and may be targeted as a deployable that shares a space with you while they are readying or primed. A missile shares your evasion, is immune to tech actions and has (10 + twice your Hull) HP, resistance to Kinetic and Energy damage, and immunity to Burn. If the missile is reduced to 0 HP, it detonates: you lose one charge and the missile deals damage as though you were the target of the strike.",
     "actions": [
       {
         "activation": "Quick",
@@ -29,7 +29,7 @@
         "detail": "You may only use this action after a missile is fully primed and cannot take this action while Jammed. Expend a charge to launch a missile at a target affected by Lock On. Lock On is consumed, and the target and all characters and objects in a Burst 3 area around them take 2d6+6 AP Explosive damage, which ignores Resistance and Immunity to Explosive damage. All characters besides the primary target must attempt a Hull Save or be Impaired until the start of their next turn. The primary target is knocked Prone and Impaired until the end of their next turn, without the ability to make a Save."
       }
     ],
-    "description": "An ASGARD Class-3 BDM (which stands for \"Ballistic Dispersion Missile\" and not \"Big Damn Missile\", contrary to what many believe), is actually a fairly small missile in the context it was originally designed for: space-based ship to ship combat. However, large scale naval combat became less and less common, the commercial demand for batteries of missiles began to shrink. Rather than limit their manufacturing, ASGARD instead developed a novel orbital warehousing system which allows these missile to be deployed to ground vehicles and mechs via blinkspace teleportation. Simply load a friendly satellite with a few BDMs, then watch as your enemies flee in terror at the sight of an Everest carrying a 5 meter long missile on its back... at least until they realize that they can shoot at it."
+    "description": "An ASGARD Class-3 BDM (which stands for \"Ballistic Dispersion Missile\" and not \"Big Damn Missile\", contrary to what many believe), is actually a fairly small missile in the context it was originally designed for: space-based ship to ship combat. However, as large scale naval combat became less and less common, the commercial demand for batteries of missiles began to shrink. Rather than limit their manufacturing, ASGARD instead developed a novel orbital warehousing system which allows these missile to be deployed to ground vehicles and mechs via blinkspace teleportation. Simply load a friendly satellite with a few BDMs, then watch as your enemies flee in terror at the sight of an Everest carrying a 5 meter long missile on its back... at least until they realize that they can shoot at it."
   },
   {
     "id": "asg_dreadnought_engine",
@@ -139,7 +139,7 @@
       {
         "activation": "Quick",
         "name": "Jaws of the Wolf",
-        "detail": "Scoop up an adjacent, willing, and friendly non-Mech character into your mech's arms. While held, the target gains hard cover while still being able to take all actions as normal. Furthermore, any time the held target would take damage, you may redirect that damage to your mech. The held character can jump free as a part of their movement."
+        "detail": "Scoop up an adjacent, willing, and friendly non-Mech character into your mech's arms. While held, the target gains hard cover while still being able to take actions as normal, though they can only FIGHT with ranged weapons. Furthermore, any time the held target would take damage, you may redirect that damage to your mech. The held character can jump free as a part of their movement."
       },
       {
         "activation": "Free",
@@ -306,7 +306,7 @@
       }
     ],
     "effect": "When you deploy a drone, it is deployed with a special integrated weapon with limited ammunition. When you use one of the Reactions granted by this system, you consume all of the ammunition on that Drone and cannot use it for this System's reactions unless you undeploy and redeploy it. All attacks made with this System gain your Grit as a bonus to the roll.",
-    "description": "The XS-Series is a mass-produciton kit provided by ASGARD to allow clever engineers to add concealed weaponry to drones that would not normally provide fire support in the field. ASGARD pilots familiar with this system tend to excersice caution around all drones, no matter how innocuous they may seem."
+    "description": "The XS-Series is a mass-produciton kit provided by ASGARD to allow clever engineers to add concealed weaponry to drones that would not normally provide fire support in the field. ASGARD pilots familiar with this system tend to exercize caution around all drones, no matter how innocuous they may seem."
   },
   {
     "id": "asg_bomb_bag",
