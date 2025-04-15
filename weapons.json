@@ -368,19 +368,16 @@
     "damage": [
       {
         "type": "Kinetic",
-        "val": "1d6+1"
+        "val": "1d6+2"
       }
     ],
     "tags": [
       {
         "id": "tg_reliable",
-        "val": 1
-      },
-      {
-        "id": "tg_overkill"
+        "val": 2
       }
     ],
-    "on_hit": "1/Turn, you may make another attack with this weapon against the same target as a Free Action",
+    "on_attack": "1/Turn, you may make another attack with this weapon against the same target.",
     "description": "A pair of mech sized shredder claws, to bring out the animal in any pilot."
   },
   {

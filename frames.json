@@ -107,7 +107,7 @@
     ],
     "core_system": {
       "name": "WARWOLVES",
-      "description": "The Revision Two ASG-BERSERK system is a complex network of neural jacks and chemical injectors within the Tyr Battlesuit that allows the pilot of the mech to control and communicate with it at the speed of thought, effectively allowing the pilot to control the mech in the same way as an NHP. Pilots who use the system have reported feeling a strong connection to the NHPs installed on their mech, and have more than once referred to them as their \"pack\". Medical and psychological analysis of said pilots show no significant or unexpected divergance from a typical pilot's neural patterns, and so the phenOMENon is largely attributed to the eccentricity of mech pilots and the name of the frame, itself.",
+      "description": "The Revision Two ASG-BERSERK system is a complex network of neural jacks and chemical injectors within the Tyr Battlesuit that allows the pilot of the mech to control and communicate with it at the speed of thought, effectively allowing the pilot to control the mech in the same way as an NHP. Pilots who use the system have reported feeling a strong connection to the NHPs installed on their mech, and have more than once referred to them as their \"pack\". Medical and psychological analysis of said pilots show no significant or unexpected divergance from a typical pilot's neural patterns, and so the phenomenon is largely attributed to the eccentricity of mech pilots and the name of the frame, itself.",
       "active_name": "Beasts of Slaughter",
       "active_effect": "Immediately recharge ASG-BERSERK Stimulant Injection. For the rest of the scene, whenever you attack with the Wolfstooth, the Fenrir may Overwatch your target.",
       "activation": "Protocol",
@@ -362,7 +362,7 @@
     },
     "traits": [
       {
-        "name": "MOMENtum",
+        "name": "Momentum",
         "description": "Due to the speed with which it moves, the Fafnir has limited mobility.<ul><li>When taking any movement action or reaction (such as a Boost) and when taking its standard move, the Fafnir can only move in a straight line.</li><li>The Fafnir cannot split its standard move. Once it stops during a standard move, it loses all unused movement.</li></ul>"
       },
       {

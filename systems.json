@@ -1187,7 +1187,7 @@
         ]
       }
     ],
-    "effect": "Your Mech can deploy BABA and gains the AI tag as long as BABA is not deployed. BABA isn't a full NHP and cannot Cascade.<br/>Only one BABA can be deployed at a time across an entire scene. While BABA is deployed, the AI is present on the drone.",
+    "effect": "Your Mech can deploy BABA and gains the AI tag as long as BABA is not deployed. BABA isn't a full NHP and cannot Cascade.<br/>While BABA is deployed, the AI is present on the drone and cannot be given control of a mech.",
     "description": "The BABA-class COMP/CON unit is a pleasant little autonomous helper that is doing its very best."
   },
   {
