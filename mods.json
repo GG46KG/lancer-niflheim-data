@@ -92,7 +92,7 @@
     "source": "ICE",
     "license": "Catalyst",
     "license_level": 2,
-    "effect": "When you make an attack with the weapon this mod is attached to, you can choose to activate this mod. If you do, you can choose to gain 8 Heat instead of expending a charge of this mod.<br/><br/>When activated, your attack with the weapon this mod is applied to:<ul><li>Deals 1d3 bonus Explosive damage. Melee and Superheavy weapons deal 1d6 bonus Explosive damage, instead.</li><li>Gains Knockback 5 and Blast 3.</li></ul>You must apply the Knockback to all characters hit and the Knockback is always applied to you, even if you aren't hit by the attack. Any character that is knocked back is also knocked Prone.",
+    "effect": "When you make an attack with the weapon this mod is attached to, you can choose to activate this mod. If you do, you can choose to gain 8 Heat instead of expending a charge of this mod.<br/><br/>When activated, your attack with the weapon this mod is applied to:<ul><li>Deals 1d3 bonus Explosive damage. Melee and Superheavy weapons deal 1d6 bonus Explosive damage, instead.</li><li>Gains Knockback 5 and Blast 2. If the attack already has an area of effect (Cone, Line, Blast, or Burst), increase the value of that area by 1, instead of gaining Blast 2.</li></ul>You must apply the Knockback to all characters hit and the Knockback is always applied to you, even if you aren't hit by the attack. Any character that is knocked back is also knocked Prone.",
     "tags": [
       {
         "id": "tg_unique"
@@ -102,6 +102,6 @@
         "val": 2
       }
     ],
-    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-095<br/><br/>[AUDIO TRANSCRIPTION FOLLOWS]<br/><br/>WHEN YOU ACTIVATE THIS, IT SUPERCHARGES THE WEAPON IT'S ATTACHED TO.<br/>IT'LL START VIBRATING AND GLOWING AND SHOOTING OFF SPARKS.<br/>JUST SMACK SOMEBODY OR FIRE IT ASAP.<br/>PLEASE.<br/><br/>IT'S NOT FUNNY WATCHING TESTERS RUN AROUND WITH A MATTER-DESTABILIZED PIECE OF METAL.</i>"
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-631<br/><br/>WHEN YOU ACTIVATE THIS, IT SUPERCHARGES THE WEAPON IT'S ATTACHED TO.<br/>IT'LL START VIBRATING AND GLOWING AND SHOOTING OFF SPARKS.<br/>JUST SMACK SOMEBODY OR FIRE IT ASAP.<br/>PLEASE.<br/><br/>IT'S NOT FUNNY WATCHING TESTERS RUN AROUND WITH A MATTER-DESTABILIZED PIECE OF METAL.</i>"
   }
 ]
