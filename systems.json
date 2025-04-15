@@ -1247,7 +1247,7 @@
       {
         "activation": "Protocol",
         "name": "Epigenetic Hypergrowth",
-        "detail": "Gain 6 Heat to activate the growbeds within this system. You can take the SPROUTSEED actions granted by this system 2 times before you must take this action again."
+        "detail": "Gain 6 Heat to activate the growbeds within this system. You can take the SPROUTSEED actions granted by this system 2 times this scene before you must take this action again."
       },
       {
         "activation": "Quick",
