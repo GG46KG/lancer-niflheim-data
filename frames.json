@@ -821,9 +821,9 @@
       "edef": 12,
       "heatcap": 8,
       "repcap": 2,
-      "sensor_range": 0,
+      "sensor_range": 20,
       "tech_attack": 1,
-      "save": 10,
+      "save": 11,
       "speed": 4,
       "sp": 7
     },

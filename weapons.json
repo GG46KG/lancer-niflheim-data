@@ -1536,7 +1536,7 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "1d6+2"
+            "val": "1d6"
           }
         ],
         "range": [
@@ -1557,7 +1557,7 @@
         "damage": [
           {
             "type": "Kinetic",
-            "val": "1d6"
+            "val": "1d6+2"
           }
         ],
         "range": [
@@ -1761,6 +1761,77 @@
     ]
   },
   {
+    "id": "mw_ice_hellraiser",
+    "name": "SA 0-401 'PYRETIC NEXUS'",
+    "mount": "AUX",
+    "source": "ICE",
+    "license": "Catalyst",
+    "license_level": 1,
+    "type": "NEXUS",
+    "range": [
+      {
+        "type": "Range",
+        "val": 3
+      }
+    ],
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "on_attack": "1/Turn: If you are in the Danger Zone, you must make an additional attack against a different hostile target in range, if there is one.",
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-401<br/><br/>THIS NEXUS FIRES OFF ARCING BOLTS OF PLASMA AUTONOMOUSLY AGAINST NEARBY TARGETS.<br/>ONCE IT'S HEATED UP, ITS RATE OF FIRE INCREASES FEVERISHLY<br/>AND IT STARTS TO ARC ALL OVER THE PLACE.</i>"
+  },
+  {
+    "id": "mw_ice_hellraiser",
+    "name": "SA 0-117 'HELLRAISER SHOTGUN'",
+    "mount": "MAIN",
+    "source": "ICE",
+    "license": "Catalyst",
+    "license_level": 1,
+    "type": "CQB",
+    "range": [
+      {
+        "type": "Range",
+        "val": 3
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ],
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+2"
+      }
+    ],
+    "tags":[
+      {
+        "id":"tg_limited",
+        "val": 6
+      }
+    ],
+    "actions": [
+      {
+        "activation": "Quick",
+        "name": "Hellraiser Shell",
+        "detail": "Gain 2 Heat. Your next attack with this weapon deals 4 bonus Explosive damage and gains Burst 1."
+      }
+    ],
+    "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-117<br/><br/>NICE LOOKING SHOTGUN WITH WEIRD ROUNDS.<br/>YOU CAN HEAT THE POWDER TO MAKE THEM REAL VOLATILE.<br/>RECORDS FROM THE METALOG SAID IT SHOWED UP WITH A MESSAGE CARVED INTO THE METAL.<br/>'GOOD FOR KILLING DEMONS.'<br/><br/>I AIN'T SEEN A DEMON BEFORE, BUT I'D IMAGINE THIS WOULD WORK ON ONE.</i>"
+  },
+  {
     "id": "mw_ice_pyroclastic_nexus",
     "name": "SA 1-555 'PYROCLASTIC NEXUS'",
     "mount": "Heavy",
@@ -1930,7 +2001,8 @@
         "val": "1d6"
       }
     ],
-    "on_attack": "This weapon gains additional effects based on the actions the target took on their most recent turn. If the target took any of the following actions, your attack gains the following effect:<ul><li><i>Attack</i>: Deal 1 Reliable energy damage to the target for each attack the target made.</li><li><i>Tech Action</i>: Gain +1 Accuracy for each tech action the target took.</li><li><i>Boost</i>: The target must attempt a Systems save or be Immobilized until the end of their next turn.</li></ul>",
+    "on_attack": "This weapon gains additional effects based on the actions the target took on their most recent turn. If the target took any of the following actions, your attack gains the following effect:<ul><li><i>Attack</i>: Deal 2 Reliable Energy damage to the target for each attack the target made.</li><li><i>Tech Action</i>: Gain +1 Accuracy for each tech action the target took.</li><li><i>Boost</i>: On a hit, your target must attempt a Hull save or be SLOWED until the end of their next turn.</li></ul>",
+    "on_crit": "If at least two unique bonuses were active when you made your attack, your target is IMPAIRED until the end of their next turn.",
     "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 2-507<br/><br/>[AUDIO TRANSCRIPTION FOLLOWS]<br/><br/>FOUL MAGICS SHALL NOT BE TOLERATED.<br/>BURN THE HERETIC.<br/>HUNT THEM.</i>"
   },
   {
