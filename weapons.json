@@ -1373,7 +1373,7 @@
       }
     ],
     "on_attack": "If you have made at least one other attack with a LINKAGE weapon as a part of this action (e.g. during this Skirmish or Barrage), you can expend a charge to make a second attack with this weapon. The additional attack does not trigger this effect.",
-    "effect": "This weapon only expends charges when you choose to activate its On Attack effect, not when attacking normally.",
+    "effect": "This weapon only requires and expends charges when you choose to activate its On Attack effect, not when attacking normally. This weapon can be destroyed (due to critical damage or other effects) even if it has no charges remaining.",
     "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the armaments, themselves. The LINKAGE Bolter fills a niche as a rapidfire short-range option for the series, offering some area control that the rest of the series lacks."
   },
   {
@@ -1636,8 +1636,8 @@
         "val": 2
       }
     ],
-    "effect": "Charges of this weapon are only used up when making Thrown attacks and it does not need to be retrieved after a Thrown attack to continue to make attacks with it. This weapon cannot be used for Thrown attacks with no charges remaining, but normal melee attacks are still possible.",
-    "on_attack" : "When making a Thrown attack, this weapon deals damage to all characters in a Line 15 area toward the primary target of the attack, passing through walls and obstructions and ignoring cover. For every point of Kinetic damage the attack would normally do, it instead inflicts 1 Heat and 1 Burn. Thrown attacks with this weapon do not damage objects.",
+    "effect": "Charges of this weapon are only used up when making Thrown attacks and it does not need to be retrieved after a Thrown attack to continue to make attacks with it. This weapon cannot be used for Thrown attacks with no charges remaining, but normal melee attacks are still possible. This weapon can be destroyed (due to critical damage or other effects) even if it has no charges remaining.",
+    "on_hit" : "When landing a Thrown attack, for every point of Kinetic damage the attack deals to the target, it inflicts 1 Heat and 1 Burn on all characters in Line 15 towards the target. This line can pass through walls and other obstructions, but does not damage them.",
     "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 1-203<br/><br/>WE GAVE THE CODE 'REVEALING LIGHT' TO THIS ARTIFACT, SINCE IT COULD INTERACT WITH OBJECTS THAT IT HAD NO CLEAR LINE OF SIGHT TO.<br/>'THROWING' IT FIRES OFF A LANCE OF LIGHT THAT CAN CAUSE SERIOUS BURNS IN HUMAN TISSUE AND DAMAGE NHPS.<br/>HAS NO EFFECT ON STATIC OBJECTS.<br/>SOMEHOW MECHS ARE DIFFERENT?</i>"
   },
   {
