@@ -458,7 +458,7 @@
       {
         "name": "Martial Stance: Core Ripper",
         "activation": "Protocol",
-        "detail": "Gain 2 heat. Until the end of the turn, if you damage a target you are Grappling with an Improvised Attack, the target must attempt a Hull Save. If they fail, you treat that target as Exposed until the end of the turn. This can only target a character 1/Scene.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
+        "detail": "Gain 2 heat. Until the end of the turn, if you hit a target you are Grappling with an Improvised Attack, the target must attempt a Hull Save. If they fail, you treat that target as Exposed until the end of the turn. This can only target a character 1/Scene.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
       },
       {
         "name": "Combo: Suplex",
