@@ -1763,11 +1763,11 @@
   {
     "id": "mw_ice_pyretic_nexus",
     "name": "SA 0-401 'PYRETIC NEXUS'",
-    "mount": "AUX",
+    "mount": "Aux",
     "source": "ICE",
     "license": "Catalyst",
     "license_level": 1,
-    "type": "NEXUS",
+    "type": "Nexus",
     "range": [
       {
         "type": "Range",
@@ -1795,7 +1795,7 @@
   {
     "id": "mw_ice_hellraiser",
     "name": "SA 0-117 'HELLRAISER SHOTGUN'",
-    "mount": "MAIN",
+    "mount": "Main",
     "source": "ICE",
     "license": "Catalyst",
     "license_level": 1,
