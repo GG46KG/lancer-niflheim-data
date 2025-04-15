@@ -516,7 +516,7 @@
       {
         "name": "Martial Stance: Hunter",
         "activation": "Protocol",
-        "detail": "Gain 2 heat. Once this turn, you may Boost towards a target as a part of an Improvised Attack. If you do, you gain +1 Accuracy on that attack.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
+        "detail": "Gain 2 heat. Once this turn, you may move 3 Spaces towards a target as a part of an Improvised Attack. This movement does not provoke Reactions and ignores engagement. If you do, you gain +1 Accuracy on that attack.<br/><i>Only one Martial Stance Protocol may be activated on a turn.</i>"
       },
       {
         "name": "Combo: Haymaker",
