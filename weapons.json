@@ -1770,7 +1770,7 @@
   {
     "id": "mw_ice_pyretic_nexus",
     "name": "SA 0-868 'PYRETIC NEXUS'",
-    "mount": "Aux",
+    "mount": "Auxiliary",
     "source": "ICE",
     "license": "Catalyst",
     "license_level": 1,
