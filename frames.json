@@ -119,7 +119,7 @@
           "activation": "Reaction",
           "name": "ASG-BERSERK Stimulant Injection",
           "trigger": "You would be reduced to 0 HP while wearing the Tyr Battlesuit.",
-          "detail": "You regain all HP and clear any Burn affecting you.<br>If you have already used this reaction during this scene, you may mark a repair when you Stabilize while directly piloting the Fenrir to \"recharge\" it, allowing you to use it again in the same scene.",
+          "detail": "You regain all HP and clear any Burn affecting you.<br>If you have already used this reaction during this scene, you may mark a repair when you Stabilize while directly piloting the Fenrir to \"recharge\" it, allowing you to use it again in the same scene.<br/>You can take this reaction even when you are normally unable to take reactions, such as if you are Stunned or Grappled.",
           "frequency": "1/Scene"
         }
       ],

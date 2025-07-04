@@ -1489,7 +1489,7 @@
         "name": "CURSEWARD",
         "frequency": "1/Round",
         "trigger": "A character Marked by this system takes any action that affects one of your allies.",
-        "detail": "Clear your Mark and choose one:<ul><li>Invade your target, gaining +2 Accuracy on your Tech Attack.</li><li>OVERWATCH the marked target. On your first against them, you deal 1d6 bonus Energy damage.</li></ul>" 
+        "detail": "Clear your Mark and choose one:<ul><li>Invade your target, gaining +2 Accuracy on your Tech Attack. If your invade causes the action taken by your target to become impossible (e.g. by jamming them while they are trying to attack), the action is prevented but your target become immunes to EVIL EYE for the rest of the scene.</li><li>OVERWATCH the marked target. On your first against them, you deal 1d6 bonus Energy damage.</li></ul>" 
       }
     ],
     "tags": [
