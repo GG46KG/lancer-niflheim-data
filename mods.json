@@ -92,7 +92,7 @@
     "source": "ICE",
     "license": "Catalyst",
     "license_level": 2,
-    "effect": "When you make an attack with the weapon this mod is attached to, you can choose to activate this mod. If you do, you can choose to gain 8 Heat instead of expending a charge of this mod.<br/><br/>When activated, your attack with the weapon this mod is applied to:<ul><li>Deals 1d3 bonus Explosive damage. Melee and Superheavy weapons deal 1d6 bonus Explosive damage, instead.</li><li>Gains Knockback 5 and Blast 2. If the attack already has an area of effect (Cone, Line, Blast, or Burst), increase the value of that area by 1, instead of gaining Blast 2.</li></ul>You must apply the Knockback to all characters hit and the Knockback is always applied to you, even if you aren't hit by the attack. Any character that is knocked back is also knocked Prone.",
+    "effect": "When you make an attack with the weapon this mod is attached to, you can choose to activate this mod. If you do, you can choose to gain 8 Heat instead of expending a charge of this mod.<br/><br/>When activated, your attack with the weapon this mod is applied to:<ul><li>Deals 1d3 bonus Explosive damage. Melee and Superheavy weapons deal 1d6 bonus Explosive damage, instead.</li><li>Gains Knockback 5 and Blast 2. If the attack already has an area of effect (Cone, Line, Blast, or Burst), increase the value of that area by 1, instead of gaining Blast 2.</li></ul>You must apply the Knockback to all characters hit and are pushed 5 Spaces away from your target. Any character that is knocked back is also knocked Prone.",
     "tags": [
       {
         "id": "tg_unique"

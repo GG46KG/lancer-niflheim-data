@@ -1807,33 +1807,72 @@
     "license": "Catalyst",
     "license_level": 1,
     "type": "CQB",
-    "range": [
+    "profiles": [
       {
-        "type": "Range",
-        "val": 3
+        "name": "STANDARD FIRE",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 3
+          },
+          {
+            "type": "Threat",
+            "val": 3
+          }
+        ],
+        "tags":[
+          {
+            "id":"tg_reliable",
+            "val": 2
+          }
+        ],
+        "actions": [
+          {
+            "activation": "Quick",
+            "name": "Hellraiser Shell",
+            "detail": "Gain 2 Heat. Load a Hellraiser Shell to change this weapon to its RAISE HELL profile."
+          }
+        ]
       },
       {
-        "type": "Threat",
-        "val": 3
-      }
-    ],
-    "damage": [
-      {
-        "type": "Kinetic",
-        "val": "1d6+2"
+        "name": "RAISE HELL",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+2"
+          },
+          {
+            "type": "Explosive",
+            "val": 4
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 3
+          },
+          {
+            "type": "Threat",
+            "val": 3
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "on_attack": "Return this weapon to its STANDARD FIRE profile."
       }
     ],
     "tags":[
       {
         "id":"tg_limited",
         "val": 6
-      }
-    ],
-    "actions": [
-      {
-        "activation": "Quick",
-        "name": "Hellraiser Shell",
-        "detail": "Gain 2 Heat. Your next attack with this weapon deals 4 bonus Explosive damage and gains Burst 1."
       }
     ],
     "description": "<i>ARTIFACT STABILIZATION LOG<br/>RECORD: 0-117<br/><br/>NICE LOOKING SHOTGUN WITH WEIRD ROUNDS.<br/>YOU CAN HEAT THE POWDER TO MAKE THEM REAL VOLATILE.<br/>RECORDS FROM THE METALOG SAID IT SHOWED UP WITH A MESSAGE CARVED INTO THE METAL.<br/>'GOOD FOR KILLING DEMONS.'<br/><br/>I AIN'T SEEN A DEMON BEFORE, BUT I'D IMAGINE THIS WOULD WORK ON ONE.</i>"

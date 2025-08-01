@@ -759,7 +759,12 @@
       {
         "activation": "Invade",
         "name": "Fugue Polyphony",
-        "detail": "This Invade option does not cause the target to take any Heat. All attacks against the target gain +1 Accuracy and a final attack roll against the target cannot be affected by difficulty. This effect lasts until the target is hit by an attack. The attack that consumes this effect deals 1d6 bonus Energy damage. Only one target may be under this effect at a time: using this action on a new target ends the effect on all others, even if the Invade misses."
+        "detail": "Weapon attacks against the target have +1 Accuracy, ignore Invisibility and gain the Seeking tag. This effect lasts until the target is hit by a weapon attack."
+      },
+      {
+        "activation": "Invade",
+        "name": "Fugue Harmony",
+        "detail": "Weapon attacks against the target cannot gain Accuracy, but the next weapon attack that hits the target deals 1d6 bonus Energy damage and is AP. If the attack was a Critical Hit, the bonus damage is doubled. This effect lasts until the target is hit by a weapon attack."
       }
     ],
     "tags": [

@@ -63,7 +63,7 @@
     "name": "HOTSWAP KIT",
     "source": "ICE",
     "description": "Icebreakers mechs come with parts designed for field service: easily removable, modular, and cheap enough to carry a few replacements. With a knack for engineering, one could theoretically swap these parts out in the midst of an active battlefield.",
-    "effect": "You gain a set of Hotswap actions you can use in during combat, spending repairs to gain effects. Using any of these actions prevents you from taking the others until the end of the scene.",
+    "effect": "You gain a set of Hotswap actions you can use in during combat, spending repairs to gain effects. You can only take one Hotswap action per scene",
     "actions": [
       {
         "name": "HOTSWAP COOLANT",
