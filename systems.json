@@ -900,7 +900,7 @@
       {
         "activation": "Invade",
         "name": "REQUEST: PREFER SEQUENCE",
-        "detail": "Choose an unobstructed space within your line of sight and Range 6 of the target's current location. Your target takes 2 Heat at the end of each of their turns until they end a turn on that space. Your target does not gain any heat from this effect if the chosen space is totally inaccessible to them (e.g. if an object is obstructing the space or if a barrier, such as a bulkhead, entirely prevents them from reaching the space)."
+        "detail": "Choose an unobstructed space within your line of sight and Range 6 of the target's current location. If your target does not end their turn on that spacee, they gain 2 Heat and are Impaired and Immobilized until the end of your next turn."
       }
     ],
     "tags": [
@@ -939,7 +939,7 @@
       {
         "activation": "Quick Tech",
         "name": "Gravitational Crush",
-        "detail": "You may only take this action if this system's Aura is active. All characters within the Aura must make a Hull save or take 1d6 Energy damage and be pulled up to 2 spaces toward the center of the Aura. On a success, they are not pulled. Characters within the <i>Event Horizon</i> take 2d6 AP Energy damage, instead. All objects within the Aura take 20 AP Energy damage. Using this action does not consume charges from this system.",
+        "detail": "You may only take this action if this system's Aura is active. All characters within the Aura must make a Hull save or take 1d6 Energy damage and be pulled up to 2 spaces toward the center of the Aura. On a success, they are not pulled. Characters within the <i>Event Horizon</i> take 2d6 AP Energy damage, instead. All objects within the Aura take 20 AP Energy damage. Using this action does not consume charges from this system, and this action affects Biological targets.",
         "frequency": "1/Round"
       }
     ],
