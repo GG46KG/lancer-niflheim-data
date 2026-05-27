@@ -284,7 +284,7 @@
       "armor": 0,
       "hp": 4,
       "evasion": 6,
-      "edef": 12,
+      "edef": 8,
       "heatcap": 6,
       "repcap": 4,
       "sensor_range": 15,
@@ -296,11 +296,11 @@
     "traits": [
       {
         "name": "High-Sensitivity Thermoscope",
-        "description": "When attacking Invisible characters, the Muninn may choose to receive +1 Difficulty. If it does, the Muninn treats the target as though it isn't Invisible for that attack."
+        "description": "When attacking INVISIBLE characters, the Muninn may choose to receive +1 Difficulty. If it does, the Muninn treats the target as though it isn't INVISIBLE for that attack."
       },
       {
         "name": "Raven's Eyes",
-        "description": "Seeking and Guided weapons installed on the Muninn have their range increased by 5 and gain an additional +1 Accuracy when consuming Lock On. Integrated weapons do not benefit from this effect.",
+        "description": "Ranged weapons installed on the Muninn gain an additional +1 Accuracy when consuming LOCK ON.",
         "synergies": [
           {
             "locations": [
@@ -311,13 +311,12 @@
               "Cannon",
               "Launcher",
               "CQB",
-              "Nexus",
-              "Melee"
+              "Nexus"
             ],
             "weapon_sizes": [
               "any"
             ],
-            "detail": "The range of the Muninn's Seeking and Guided weapons is increased by one and these weapons gain an additional +1 Accuracy when consuming Lock On."
+            "detail": "Ranged weapons installed on the Muninn gain an additional +1 Accuracy when consuming LOCK ON."
           }
         ]
       }
@@ -325,9 +324,9 @@
     "core_system": {
       "name": "Linked Seige Weapon \"HUGINN\"",
       "description": "Each Muninn frame is built with an onboard virtual tunnel connection to a linked Huginn-Class satellite capable of delivering electromagnetic pulse strikes and deploying space-to-surface ballistic weaponry. While the official version of the Huginn weapons platform is distributed with a conventional missile battery, a version capable of housing tactical fusion weaponry was also leaked. Though ASGARD claims to have no connection to the leak, they still provide full support for the NEVERMORE missile system anyway, provided that the user is discreet when they ask.",
-      "passive_effect": "At the start of every combat scene, your Muninn automatically connects to its paired Huginn orbital satellite weapon, which can be fired as a Full Tech Action if it is charged.",
+      "passive_effect": "At the start of every combat scene, your Muninn automatically connects to its paired Huginn orbital satellite weapon, which can be fired as a Full Tech Action if it is loaded.",
       "active_name": "NEVERMORE",
-      "active_effect": "Call for the delivery of a NEVERMORE air burst payload from HUGINN. Upon launch, the point defense systems of most mechs and vehicles will alert their operators to an impending nuclear strike.<br/><br/>At the end of the round, after all characters have acted, NEVERMORE will detonate somewhere above the battlefield, releasing a massive thermonuclear shockwave that causes all of the following effects immediately:<ul><li>All characters in the scene, including yourself, take 2d6 AP Explosive damage and 6 Burn from the detonation. Affected characters may attempt a Systems save to prevent the Burn damage. You and your allies gain +2 Accuracy on this save.<br></li><li>All mechs Shut Down immediately, though their systems trigger an emergency restart that allows them to Boot Up as a protocol. Biological targets are Stunned until the start of their next turn, instead. Unprotected individuals in the scene (i.e. Humans that aren't part of a Squad or in a Mech) are Stunned until they receive medical attention or a Corrective.</li><li>Until an affected Mech takes a Full Action to hard reboot their computers:<ul><li>Their Guided, Seeking and Smart weapons always miss when used for an attack.</li><li>They cannot take or be affected by Tech actions.</li><li>Their systems with the AI tag cannot be Activated.</li><li>Their NHPs and Comp/Con units cannot take any actions. If an NHP was in control of their Mech when NEVERMORE detonated, that mech is Stunned until a human pilot takes control of it.</li></ul></li><li>One of the following may occur, depending on the location of the battle:<ul><li>On an artificial structure such as a starbase or spaceship, the artificial gravity generation of the structure is disabled and the battlefield becomes zero-g until the end of combat.</li><li>On the surface of a planet with an atmosphere, the blast triggers a cloudburst that causes a short bout of heavy rain. All characters gain soft cover until the end of combat.</li></ul></li></ul>",
+      "active_effect": "Call for the delivery of a NEVERMORE air burst payload. The safety systems of any mechs on the battlefield will warn their pilots of the impending nuclear strike. At the end of the round after all characters have acted, the NEVERMORE missle detonates above the battlefield: All characters take 4+GRIT Burn and are STUNNED until the start of their turn. During this round all sophisticated technological systems are disrupted: all characters are JAMMED until the end of the round, though they can still make attacks that don't have the SMART, SEEKING, or GUIDED tags, and systems with the AI tag cannot be used.",
       "activation": "Full Tech",
       "use": "Encounter",
       "integrated": ["mw_muninn_integrated"]
@@ -685,7 +684,7 @@
             "activation": "Reaction",
             "name": "Shining Armor",
             "detail": "Redirect the attack or Lock On to the Paragon. You do not reduce the Bulwark die due to damage from attacks redirected in this way.",
-            "trigger": "An adjacent allied character is targeted by a Seeking attack, an attack that targets multiple characters, or receives Lock On.",
+            "trigger": "An adjacent allied character is targeted by a SEEKING attack, an attack that targets multiple characters, or receives Lock On.",
             "frequency": "1/Round"
           }
         ]
@@ -709,7 +708,7 @@
     "name": "ICEBREAKER",
     "mechtype": ["Balanced"],
     "y_pos": 15,
-    "description": "What began as a personal project founded by Peter, ICEBREAKERS LLC, then PD&J, would begin to balloon in scale and in profit. While ASGARD and Lumiera Corporation had the benefit of an established company, PD&J had the strength of a true understanding of the needs and ethos of the Frontier Sector. Aided by their unusually friendly relationship with the OFSA and the Frontier’s factions of scrappers, PD&J would explode onto the market, hitting critical mass as a major mech manufacturer at a rate that was completely unexpected and left most other players in the region scrambling to catch up. While ASGARD had the fortune of existing establishment in the frontier and Lumico operated in a higher end market than what PD&J targeted, most other competitors struggled to become anything other than niche players in the region as PD&J expanded their reach. While they would eventually grow their mech lineup to include a number of specialized frames, none would ever sell better than their very first: the Icebreaker, a generalist mech that would come to rival the Everest model’s popularity, albeit only in the Frontier.",
+    "description": "What began as a personal project founded by Peter Pachen, ICEBREAKERS LLC ballooned in scale and in profit far beyond its original goals. While other manufacturers had the benefit of established reputations, ICEBREAKERS had a deep understanding of the needs and ethos of the Frontier Sector. Aided by their unusually friendly relationship with the Outer Arm Frontier Security Administration and the Frontier’s factions of scrappers, ICEBREAKERS would explode onto the market, hitting critical mass as a major mech manufacturer at a rate that was completely unexpected and left most other players in the region scrambling to catch up. While ICEBREAKERS would eventually grow their mech lineup to include a number of more specialized frames, none would ever sell better than their very first: the eponymous \"Icebreaker\", a generalist mech that would come to rival the Everest model’s popularity, albeit only in this distant and disconnected part of the galaxy.",
     "mounts": ["Flex", "Heavy"],
     "stats": {
       "size": 1,
@@ -775,7 +774,7 @@
     "traits": [
       {
         "name": "Organic",
-        "description": "The Greenhorn is made entirely of organic matter and possesses no computer controls natively. While systems can be adapted to use on it, it has the Biological tag, cannot take Tech Actions, and cannot install systems with the AI tag.<br/><br/><i>Characters with the Biological tag have Immunity to all tech actions (even beneficial ones) except Lock On and Scan, although they can be targeted by electronic systems such as drones and smart weapons. If a Biological character would take heat, they instead take an equivalent amount of energy damage. Since the Greenhorn cannot gain Heat, it cannot Overheat and has no Stress.</i>"
+        "description": "The Greenhorn is made entirely of organic matter and possesses no computer controls natively. While systems can be adapted to use on it, it has the Biological tag, cannot take Tech Actions, and cannot install systems with the AI tag.<br/><br/><i>Characters with the Biological tag have Immunity to all tech actions (even beneficial ones) except Lock On and Scan, although they can be targeted by electronic systems such as drones and SMART weapons. If a Biological character would take heat, they instead take an equivalent amount of energy damage. Since the Greenhorn cannot gain Heat, it cannot Overheat and has no Stress.</i>"
       },
       {
         "name": "Rampant Growth",
@@ -931,19 +930,19 @@
     "traits": [
       {
         "name": "Skulk",
-        "description": "1/Round, if the Harbinger is Hidden or Invisible, it may teleport up to half its Speed as a free action.",
+        "description": "1/Round, if the Harbinger is Hidden or INVISIBLE, it may teleport up to half its Speed as a free action.",
         "actions": [
           {
             "activation": "Free",
             "name": "Skulk",
-            "detail": "Teleport a number of spaces up to half the Harbinger's speed. You may only take this action while Hidden or Invisible, and using this action does not remove Hidden.",
+            "detail": "Teleport a number of spaces up to half the Harbinger's speed. You may only take this action while Hidden or INVISIBLE, and using this action does not remove Hidden.",
             "frequency": "1/Round"
           }
         ]
       },
       {
         "name": "Fade",
-        "description": "At the end of its turn, if the Harbinger hasn't made any attacks or forced any saves, it becomes Invisible until it makes an attack or forces a save."
+        "description": "At the end of its turn, if the Harbinger hasn't made any attacks or forced any saves, it becomes INVISIBLE until it makes an attack or forces a save."
       },
       {
         "name": "Fragile",

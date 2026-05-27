@@ -550,32 +550,31 @@
       {
         "type": "Energy",
         "val": "2d6"
-      },
-      {
-        "type": "Heat",
-        "val": 4
       }
     ],
     "actions": [
       {
         "activation": "Full Tech",
         "name": "Signal Strike",
-        "detail": "Make an attack with GUNGNIR if it is loaded."
+        "detail": "Make an attack with GUNGNIR if it is ready."
       }
     ],
-    "effect": "This weapon cannot be reloaded normally, is fired as a Full Tech Action, ignores cover, and does not require line of sight to the target when declaring attacks. After you attack with this weapon, gain a Charge die, 1d6 starting at 2. At the start of each of your turns, reduce the Charge die by 1. When the Charge die would be reduced to 0, you lose the Charge die and this weapon reloads itself automatically.",
-    "on_attack": "Gain +2 Accuracy when attacking targets with an unobstructed view of the sky. This weapon's Blast must be centered on a character affected by Lock-On and must consume Lock On on that target.",
-    "on_hit": "Drones and NHP controlled mechs are Stunned until the end of their controller's next turn.",
-    "description": "GUNGNIR is a high-energy beam weapon installed on every HUGINN class satellite. It is capable of delivering a potent electromagnetic pulse to an area on the planet's surface, even through solid barriers, but requires guidance from a spotter to confirm the target.",
+    "effect": "Gungnir fires an energy pulse from orbit that can pierce through all but the most sturdy of structures and does not require a valid path to the target. However, this weapon can only be used with the SIGNAL STRIKE Action. Gain a Calibration die, starting at 4. Each time LOCK ON is applied to an enemy, reduce the Calibration die by 1. When the Calibration die would be reduced to 0, GUGNIR is readied and the Calibration die is reset to 4.",
+    "on_hit": "If the target was at the center of the attack's BLAST area, they take 2d6 bonus Explosive damage.",
+    "description": "GUNGNIR is a high-energy beam weapon installed on every HUGINN class satellite. It is capable of delivering a potent atomic pulse to a point on the planet's surface, able to even pass through solid barriers without damaging them, but it requires relay data from the surface to accurately charge and calibrate to avoid collateral damage. As such, the operator of the paired MUNINN mech must manually provide target locks before the weapon can fire.",
     "tags": [
       {
-        "id": "tg_loading"
-      },
-      {
-        "id": "tg_inaccurate"
-      },
-      {
         "id": "tg_indestructible"
+      },
+      {
+        "id": "tg_seeking"
+      },
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_reliable",
+        "val": "6"
       }
     ]
   },

@@ -17,6 +17,6 @@
     {
       "id": "tg_guided",
       "name": "Guided",
-      "description": "This weapon may only be used to attack targets affected by Lock On and must consume Lock On when used."
+      "description": "Attacks with this weapon must target characters affected by LOCK ON and must consume LOCK ON when used."
     }
 ]
