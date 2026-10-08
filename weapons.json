@@ -1463,6 +1463,78 @@
     "description": "The LINKAGE weapon series is built around a shared software package designed to allow for combination attacks. By using multiple LINKAGE weapons in quick succession, their capacities are greatly enhanced: the calculations to aim and compensate for other weapons in the series are built in and the weapons are able to easily pass data between them, allowing for on-the-fly updates coming from the armaments, themselves. The LINKAGE Chivalric Nexus provides semiautonomous support through a pair of ballistic mini-drones branded as the \"shoulder angels\". Though it's not the primary weapon in any prefab, it's nice to have someone watching over you."
   },
   {
+    "id": "mw_lumico_cascade_zero",
+    "name": "CASCADE V0.2",
+    "mount": "Main",
+    "source": "LUMICO",
+    "license": "CODETALKER",
+    "license_level": 1,
+    "type": "Launcher",
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "0"
+      }
+    ],
+    "tags":[
+      {
+        "id":"tg_reliable",
+        "val": 1
+      },
+      {
+        "id":"tg_limited",
+        "val": 6
+      }
+    ],
+    "effect": "You can RELOAD this weapon. When you do, it regains all of its Limited uses. This weapon cannot be modified or benefit from core bonuses.",
+    "on_attack": "You do not make an attack roll when attacking with this weapon. Instead, it only deals its Reliable damage. When you attack with this weapon, expend all of its Limited uses, making one attack for each Limited use expended.",
+    "description": ""
+  },
+  {
+    "id": "mw_lumico_cascade_one",
+    "name": "CASCADE V1.6",
+    "mount": "Heavy",
+    "source": "LUMICO",
+    "license": "CODETALKER",
+    "license_level": 3,
+    "sp": 2,
+    "type": "Launcher",
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "0"
+      }
+    ],
+    "tags":[
+      {
+        "id":"tg_reliable",
+        "val": 1
+      },
+      {
+        "id":"tg_limited",
+        "val": 8
+      },
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "effect": "You can RELOAD this weapon. When you do, it regains all of its Limited uses. This weapon cannot be modified or benefit from core bonuses.",
+    "on_attack": "You do not make an attack roll when attacking with this weapon. Instead, it only deals its Reliable damage. When you attack with this weapon, expend all of its Limited uses, making one attack for each Limited use expended.",
+    "description": "Though a marked improvement on the firepower of the V0 model in every meaningful way, the extra targeting computing resources and larger mounting required to ensure that all of the microrockets penetrate armor results in the V1.6 model of the CASCADE multilauncher not having reached full market saturation over its older sibling."
+  },
+  {
     "id": "mw_ice_unity_banner",
     "name": "Banner of Unity",
     "mount": "Heavy",

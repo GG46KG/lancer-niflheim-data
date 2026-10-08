@@ -702,6 +702,66 @@
     "data_type": "frame"
   },
   {
+    "id": "lumico_codetalker",
+    "license_level": 2,
+    "source": "LUMICO",
+    "name": "CODETALKER",
+    "mechtype": ["Artillery"],
+    "y_pos": 22,
+    "description": "",
+    "mounts": ["Heavy", "Flex"],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 9,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 15,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Cryptic Motivator",
+        "description": "If the Codetalker is JAMMED, during its turn it can make IMPROVISED ATTACKS as a Quick Action instead of a Full Action and can Boost as a Protocol.",
+        "actions": [
+          {
+            "activation": "Protocol",
+            "name": "Cryptic Motivator",
+            "detail": "The Codetalker Boosts. This action can only be taken while the Codetalker is JAMMED."
+          }
+        ]
+      },
+      {
+        "name": "Guru Meditation",
+        "description": "While the Codetalker’s Core Power is disabled, it is JAMMED."
+      }
+    ],
+    "core_system": {
+      "name": "Enigma Code Engine",
+      "description": "",
+      "passive_name": "Enigmatic Code Generation",
+      "passive_effect": "The Codetalker gains the AI tag, and this Core System counts against the limit of AI systems it can install. However, control of the mech cannot be granted to this System.<br/>At the start of each of its turns, before Protocols are taken, the pilot of the Codetalker rolls Enigma Dice: 3d6, choosing two. For each chosen die, trigger the associated effect:<br/><ol><li>The Codetalker is JAMMED until the end of the turn.</li><li>The Codetalker or an ally within Sensors gains 1 Overshield. This Overshield stacks with any existing Overshield affecting it.</li><li>The Codetalker or an allied Mech within Sensors clears 1 Heat.</li><li>The Codetalker or an allied Mech within Sensors restores 1 HP.</li><li>The Codetalker deals 1 typeless AP damage to an enemy Mech within Sensors.</li><li>The pilot chooses two of the other effects to apply. They must be different.</li></ol><br/>After the pilot chooses, they record the chosen pair of Enigma numbers until the end of Combat. If the pilot chooses a the same numbers as a recorded Enigma pair, or if they choose two ones at any time, the Codetalker instead has its Core System disabled until the end of combat.<br/><br/>In addition, the Codetalker has access to the SPIN DAEMON Protocol.",
+      "passive_actions": [
+        {
+          "activation": "Protocol",
+          "name": "Spin Daemon",
+          "detail": "Gain 3 Heat and roll an additional set of Enigma dice, choosing effects as normal."
+        }
+      ],
+      "active_name": "Clear Cache",
+      "active_effect": "Clear all Enigma pairs chosen during this combat: they are treated as they have not yet been rolled this combat. Then, roll three sets of Enigma Dice.<br/><br/>This ability is <b>Efficient</b> and will refund 1 Core Point at the end of any scene in which this ability was used.",
+      "activation": "Protocol"
+    },
+    "data_type": "frame"
+  },
+  {
     "id": "ice_icebreaker",
     "license_level": 2,
     "source": "ICE",

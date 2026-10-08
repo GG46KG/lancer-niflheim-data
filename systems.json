@@ -1110,6 +1110,110 @@
       }
     ],
     "description": "The Heroic Aura projects a field of disruptive hardlight fragments around the user, making most targeting systems less effective. What attacks still land can be mitigated through the effect of a reactive hardlight projector that paints a lightscreen over an ally. However, this projector must be hardwired into the mech's reactor to support the needed power draw, and its sudden load on a mech can be exceptionally damaging—enough so that it often damages the user proportionately to the harm it prevents."
+  },  
+  {
+    "id": "lumico_voracious_code",
+    "name": "Voracious Code",
+    "type": "System",
+    "sp": 3,
+    "source": "LUMICO",
+    "license": "CODETALKER",
+    "license_level": 1,
+    "actions": [
+      {
+        "activation": "Invade",
+        "name": "Thoughtseize",
+        "detail": "Choose a Tech Action or Invade option used by the target this combat. You recreate a simulacrum of that action, and can use it until the end of combat. You can only recreate one action at a time in this way, and each time you use a recreated action, you gain 2 Heat."
+      },
+      {
+        "activation": "Invade",
+        "name": "Thoughtrend",
+        "detail": "Choose a Tech Action used by the target this combat. The next time they use the chosen action, it fails. Use this option only 1/Combat."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "description": "By injecting a small amount of code into an mech's behavioral code, its routines can be slightly altered for a short moment before auto-correcting algorithms quickly remove the splice."
+  },  
+  {
+    "id": "lumico_little_mystery",
+    "name": "ENIGMA Mini",
+    "type": "System",
+    "sp": 4,
+    "source": "LUMICO",
+    "license": "CODETALKER",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Protocol",
+        "name": "Secondary Daemon",
+        "detail": "Roll 2 sets of Enigma Dice, following the same rules as the Codetalker Frame's core system.<br/><br/><i>Roll 3d6, choosing two. For each chosen die, trigger the associated effect:<br/><ol><li>The user is JAMMED until the end of the turn.</li><li>The user or an ally within Sensors gains 1 Overshield. This Overshield stacks with any existing Overshield affecting it.</li><li>The user or an allied Mech within Sensors clears 1 Heat.</li><li>The user or an allied Mech within Sensors restores 1 HP.</li><li>The user deals 1 typeless AP damage to an enemy Mech within Sensors.</li><li>The user chooses two of the other effects to apply. They must be different.</li></ol><br/>After the pilot chooses, they record the chosen pair of Enigma numbers until the end of Combat. If the pilot chooses a the same numbers as a recorded Enigma pair, or if they choose two ones at any time, this system is disabled until the end of Combat. If installed on the Codetalker Frame, the Codetalker's Core System is also disabled until the end of combat when this occurs.</i>"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      }
+    ],
+    "description": "A smaller version of the ENIGMA Code Engine with its own separate computational array, available for installation on any frame. For those who simply can't give up the gambling lifestyle."
+  },
+  {
+    "id": "lumico_altered_odds",
+    "name": "Instant Code Splicing",
+    "type": "System",
+    "sp": 3,
+    "source": "LUMICO",
+    "license": "CODETALKER",
+    "license_level": 2,
+    "actions": [
+      {
+        "activation": "Reaction",
+        "name": "Splice",
+        "frequency": "1/Turn",
+        "trigger": "Any Mech within Sensors makes any roll, but damage has not yet been applied as a result of the roll.",
+        "detail": "The triggering character may reroll the entire roll, but must take the new result."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 6
+      }
+    ],
+    "description": "By injecting a small amount of code into an mech's behavioral code, its routines can be slightly altered for a short moment before auto-correcting algorithms quickly remove the splice."
+  },
+  {
+    "id": "lumico_cryptic",
+    "name": "CRYPTIC Code Engine",
+    "type": "System",
+    "sp": 4,
+    "source": "LUMICO",
+    "license": "CODETALKER",
+    "license_level": 3,
+    "actions": [
+      {
+        "activation": "Full Tech",
+        "name": "Cryptic Command",
+        "frequency": "1/Round",
+        "detail": "Choose 2. Your choices must be different:<br/><ul><li>A hostile Mech within Sensors gains 2 Heat and moves up to three spaces in a direction of your choice.</li><li>An allied Mech within Sensors clears half its maximum Heat. If it falls below the Danger Zone, it can choose to gain heat until it is in the Danger Zone.</li><li>An allied Mech within Sensors gains the effects of the DISENGAGE action until the end of its next turn.</li><li>Regain 1 expended charge of all LIMITED Systems with at least LIMITED 4.</li></ul>"
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "description": "The CRYPTIC code engine, much like the other code engines developed for the Codetalker, produces code so bizarre it is functionally impossible to permanently guard against it. Most auto-correcting immune algorithms can removed the code injected by this engine, but not before its effects have already resolved. Seems like it would be a staple in many competitive mech gatherings, were LUMICO not so loathe to release their systems to the public."
   },
   {
     "id": "ice_silent_running",
