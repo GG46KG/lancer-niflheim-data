@@ -1496,7 +1496,7 @@
       }
     ],
     "effect": "You can RELOAD this weapon. When you do, it regains all of its Limited uses. This weapon cannot be modified or benefit from core bonuses.",
-    "on_attack": "You do not make an attack roll when attacking with this weapon. Instead, it only deals its Reliable damage. When you attack with this weapon, expend all of its Limited uses, making one attack for each Limited use expended. All attacks made as a part of a single SKIRMISH or BARRAGE with using this weapon must target enemies within a Blast 5 Area around the first target.",
+    "on_attack": "You do not make an attack roll when attacking with this weapon. Instead, it only deals its Reliable damage. When you attack with this weapon, expend all of its Limited uses, making one attack for each Limited use expended. All attacks made as a part of a single SKIRMISH or BARRAGE with this weapon must target enemies within a Blast 5 Area around the first target.",
     "description": "The CASCADE series of rocket launchers are named after the sheer volume of missiles that they can unload in a single volley, preferring quantity to quality. With minor locking technology, the spray of rockets will find its way to its targets, but not with the same finesse as most Lumico weaponry usually manages."
   },
   {
@@ -1537,7 +1537,7 @@
       }
     ],
     "effect": "You can RELOAD this weapon. When you do, it regains all of its Limited uses. This weapon cannot be modified or benefit from core bonuses.",
-    "on_attack": "You do not make an attack roll when attacking with this weapon. Instead, it only deals its Reliable damage. When you attack with this weapon, expend all of its Limited uses, making one attack for each Limited use expended. All attacks made as a part of a single SKIRMISH or BARRAGE with using this weapon must target enemies within a Blast 5 Area around the first target.",
+    "on_attack": "You do not make an attack roll when attacking with this weapon. Instead, it only deals its Reliable damage. When you attack with this weapon, expend all of its Limited uses, making one attack for each Limited use expended. All attacks made as a part of a single SKIRMISH or BARRAGE with this weapon must target enemies within a Blast 5 Area around the first target.",
     "description": "Though a marked improvement on the firepower of the V0 model in every meaningful way, the extra targeting computing resources and larger mounting required to ensure that all of the microrockets penetrate armor results in the V1.6 model of the CASCADE multilauncher not having reached full market saturation over its older sibling."
   },
   {
